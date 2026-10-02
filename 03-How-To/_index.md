@@ -26,6 +26,11 @@ Step-by-step procedures, grouped by topic (the notes themselves stay in one flat
 
 - [[Create an Assignment Rule]] - assign unassigned tasks by condition (documented)
 - [[Create an Assignment Data Lookup Rule]] - assign incidents from a lookup matrix (documented)
+- [[Configure Incident Auto-Close]] - days, resolution date or last update, run-as user of the job
+- [[Create an Incident Record Producer]] - record producer with variables and a template; module opening a templated incident
+- [[Create a Major Incident Trigger Rule]] - propose or promote incidents automatically
+- [[Create a Blackout or Maintenance Schedule]] - freeze periods and maintenance windows for conflict detection
+- [[Create an On-Call Escalation Trigger Rule]] - start an on-call escalation subflow from a task
 
 ## Service Catalog
 
@@ -34,6 +39,7 @@ Step-by-step procedures, grouped by topic (the notes themselves stay in one flat
 ## SLA and Schedules
 
 - [[Define a Schedule]]
+- [[Create an SLA Definition]] - duration, schedule, conditions, retroactive start, validating with the timeline
 
 ## Users, Groups and Access
 

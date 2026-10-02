@@ -38,17 +38,45 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Many-to-Many Task Relations]] - typed relationships between tasks and with knowledge articles (documented)
 - [[Time Cards and Time Sheets]] - time card management, policies, states, approvals (documented)
 - [[State Models and State Transitions]]: allowed state moves on task tables
+- [[Incident Management Overview and Lifecycle]] - channels, states, priority matrix, assignment, promotion to problem/change/request, resolve, close, reopen, roles
+- [[Incident Properties Reference]] - auto-close, copy, child, impacted services, major incident and notification-redirect properties
+- [[Major Incident Management]] - major incident state, propose/promote, trigger rules, workbench, post incident report, roles
+- [[Parent and Child Incidents]] - copy and child incidents, what is copied, parent-to-child state synchronisation
+- [[Incident Communications Management]] - communication plans and tasks, contacts and responsibilities, channels, closure cascade
+- [[Problem Management Overview and Lifecycle]] - guided states, roles, communicating workaround and fix to incidents, known errors, properties, models, migration utility
+- [[Change Management Overview and Lifecycle]] - types and state paths, processing actions, on hold, CIs, unauthorized changes, roles, flows, key properties
+- [[Change Models and Change Templates]] - model states, transitions and conditions, model properties, template life cycle
+- [[Standard Change Catalog]] - proposing, approving, modifying and retiring standard change templates; catalog properties
+- [[Change Approval Policies]] - approval definitions, decisions, policy inputs, flow action and workflow activity
+- [[Change Conflict Detection and Maintenance Schedules]] - conflict types, blackout and maintenance schedules, conflict properties, scheduling assistant
+- [[Change Risk Calculation and Assessment]] - risk conditions, risk assessment questionnaire, success score, calculated risk score, risk intelligence
+- [[CAB Workbench]] - CAB definitions, meetings, agenda items, running a meeting
+- [[Change Schedules Timeline]] - change schedule definitions, related definitions, style rules
+- [[On-Call Scheduling]] - shifts, rosters, rotation, escalation policies, trigger rules and subflows, tracking, roles, tables
+- [[Task Outages]] - outage records and the task_outage link, Create Outage UI action
+- [[Release Management]] - product, release, phase, task tables; state categories; scoping
+- [[Continual Improvement Management]] - improvement initiatives, states, goals and KPIs, workbench, integrations, properties
+- [[ITSM Application Suite Overview]] - map of every application in the ITSM guide to its vault note; short summaries of Benchmarks, Coaching, DEX, DPM, DPR, dashboards, Workforce Optimization
+- [[DevOps Change Velocity and DevOps Config]] - pipeline-driven change requests, integrations, data model, properties (overview)
 
 ## Service Catalog (`Service-Catalog/`)
+
+- [[Request Management Data Model and Process]] - REQ, RITM, SCTASK, cart and variable tables, checkout sequence, requests from incidents, Universal Request
 
 ## CMDB and Assets (`CMDB-and-Assets/`)
 
 - [[Companies and Normalization Data Services]] - company records and normalized company names (documented)
+- [[Service Portfolio Management]] - services, offerings, commitments, availability, portfolios, lifecycle mapping to CSDM, Service Builder
+- [[Models, Model Categories and the Product Catalog]] - how model categories link CI and asset classes; models, bundles, vendor and product catalog items
+- [[Asset Management Common Applications]] - contract management states and tables, procurement flows and tables, software asset basics
+- [[Expense Lines and Allocations]] - expense line sources and fields, allocation rules
 
 ## SLA and Schedules (`SLA-and-Schedules/`)
 
 - [[Schedules and Schedule Entries]]: business hours, holidays, child schedules, relative durations
 - [[Business Calendars and Fiscal Calendars]]: named periods for filters, reporting and job scheduling
+- [[SLA Definitions and Task SLAs]] - definition fields, start/pause/stop/reset conditions, evaluation order, actual vs business time, retroactive start, notifications
+- [[SLA Engine, Repair, Timeline and Breakdowns]] - recalculation jobs, engine properties, repair, timeline, breakdowns, timer configuration
 
 ## Users, Groups and Access (`Users-Groups-and-Access/`)
 
@@ -58,6 +86,7 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Impersonation]] - how it works, limits, logging and auditing (documented)
 - [[User Sessions and Timeouts]] - terminate, lock out, deactivate, timeout properties (documented)
 - [[Non-Interactive Users]] - web service access only accounts for integrations (documented)
+- [[ITSM Granular Roles]] - sn_incident/problem/change/request read and write roles, service desk agent, business stakeholder
 
 ## Forms and Lists (`Forms-and-Lists/`)
 
@@ -109,11 +138,15 @@ What things are, how they relate, and the settings that control them. Notes are 
 
 ## Portals and Workspaces (`Portals-and-Workspaces/`)
 
+- [[Service Operations Workspace for ITSM]] - users, applications, UI16 redirection, plus Simplified ITSM, Mobile Agent, Walk-up (overview)
+
 ## Security (`Security/`)
 
 ## AI (`AI/`)
 
 - [[Email Agentic Workflow and Notification Agent]]: intent to action on inbound email
+- [[Otto for ITSM Skills and Agentic Workflows]] - generative AI skills on incidents, changes and requests; agentic workflows; setup in AI Admin Hub (overview)
+- [[ITSM Predictive Intelligence, Task Intelligence and Virtual Agent]] - ML predictions, Virtual Agent topics, L1 AI specialist, ITSM MCP Server (overview)
 
 ## Data Management (`Data-Management/`)
 
