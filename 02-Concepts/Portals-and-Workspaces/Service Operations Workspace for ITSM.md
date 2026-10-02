@@ -2,7 +2,7 @@
 type: concept
 tags: [concept, workspace, incident, change, admin]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Service Operations Workspace for ITSM" (pp. 3215-3703), "Simplified IT Service Management" (pp. 223-291), "ITSM Mobile Agent" (pp. 2605-2727), "Walk-up Experience" (pp. 3792-3872), read 2026-10-02 at overview depth: introductions, outline, role and plugin lists and the UI16 redirection topic were read; the per-process workspace procedures, the Agent Workspace migration guide (pp. 3231-3279) and mobile/walk-up setup were not transcribed
+source: ServiceNow Australia IT Service Management PDF, "Service Operations Workspace for ITSM" (pp. 3215-3703), read in full 2026-10-02 (this note is the overview; detail is in the linked notes). The summaries of "Simplified IT Service Management" (pp. 223-291), "ITSM Mobile Agent" (pp. 2605-2727) and "Walk-up Experience" (pp. 3792-3872) at the end are still overview depth
 sn-release: Australia
 verified:
 updated: 2026-10-02
@@ -41,6 +41,39 @@ Properties seen: `sn_sow_inc.autoclose_origin.interaction` (close the originatin
 - Email links: `sow_email_notification_redirect` and its per-table variants ([[Incident Properties Reference]]).
 
 This matters for this vault: procedures written with classic navigation paths may land in the workspace on a new instance.
+
+## Detailed notes
+
+- [[Service Operations Workspace Access and Landing Page]]: roles, tiers, audiences, login redirection, landing page
+- [[Service Operations Workspace Admin Center and Process Setup]]: Admin Center cards, major incident and problem setup, notifications, password reset setup, AI Search
+- [[Service Operations Workspace Configuration and Customization Reference]]: every optional property, view, UX table and script include
+- [[Working Records in Service Operations Workspace]]: what agents do per record type
+- [[Investigation Framework, CI Actions and Remedial Actions]] · [[Recommended Actions for ITSM]] · [[Migrating from ITSM Agent Workspace to Service Operations Workspace]] · [[On-Call Scheduling]]
+
+## Extra roles for the SOW admin
+
+The SOW admin role alone does not open every Admin Center card:
+
+| Role | Opens |
+|---|---|
+| `sn_admin_center.read_only` | adoption blueprint on Overview and Learning |
+| `script_include_admin` | greeting and "Upcoming" configuration (script includes) |
+| `ui_builder_admin` | collapsed lists, contextual side panel app routes, list display count, Overview tab toggles |
+| `personalize`, `form_admin`, `personalize_form` | field layouts of incident / problem / change record pages and list views |
+| `dashboard_admin` | donut configurations |
+| `evam_admin` | announcements |
+| `user_criteria_admin` or `user_admin` | tier 1 visibility of the incident Overview tab |
+| `sn_templated_snip.template_snippet_writer` | response templates |
+| `incident_manager` | incident properties, major incident trigger rules, communication plan definitions |
+| `problem_manager` | problem settings |
+
+## Components and versions
+
+Plugins installed with `sn_sow_itsm_cont`: `com.glide.ux.user_criteria`, `com.snc.uib.sn_dyn_rel_rec` (dynamic related records), `sn_sow_record` (record page), `sn_sow_quick_links`, `sn_sow` (core), `sn_sow_chg`, `sn_sow_collab`, `sn_sow_inc`, `sn_sow_incident_rf`, `sn_sow_interaction`, `sn_sow_interceptor` (task type chooser), `sn_sow_itsm_common`, `sn_sow_on_call`, `sn_on_call_onboard`, `sn_sow_problem`, `sn_sow_req`.
+
+ITSM and ITOM workspace applications must be on matching versions (ITSM → ITOM): 1.1 → 21.0; 1.2 → 21.1; 1.3 → 21.2, 21.5, 21.6; 2.0 → 22.0; 2.1 → 22.1+; 3.1 → 23; 4 → 24; 5.0 → 24.2; 5.1.0 → 25.3; 6.1.1 → 26.1; 7.0 → 26.3.
+
+Terms: *universal request* = parent record grouping the primary tickets of one user issue; *primary ticket* = the incident or catalog task under it; *service desk group* = assignment group whose members get the tier 1 landing page.
 
 ## Related products in the same guide
 

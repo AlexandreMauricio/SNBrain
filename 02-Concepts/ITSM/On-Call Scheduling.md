@@ -2,7 +2,7 @@
 type: concept
 tags: [concept, incident, notifications, flows, users]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "On-Call Scheduling" (pp. 2889-2982), read 2026-10-02
+source: ServiceNow Australia IT Service Management PDF, "On-Call Scheduling" (pp. 2889-2982) and "Service Operations Workspace for ITSM > On-Call Scheduling in Service Operations Workspace" (pp. 3589-3618), read 2026-10-02
 sn-release: Australia
 verified:
 updated: 2026-10-02
@@ -86,6 +86,28 @@ With `com.snc.on_call_rotation.log_escalations` on, an icon next to **Assignment
 Reminder emails: job *On-Call Reminders*, lead time from the roster, else the shift, else 2 days; none are sent for daily rotations with a lead time above 1 day.
 
 Domain separation: Standard.
+
+## In Service Operations Workspace
+
+(From the workspace chapter, pp. 3589-3618.)
+
+- **Schedules** menu: *On-call Schedules* (calendar or timeline; filters for gaps, conflicts, members, pending and approved absences, draft shifts; **Share calendar** iCal), *On-call notification preferences* (rules with active days and hours or a preferred schedule, notification attempts by Slack, Teams, email; delivery channels: deleting one removes it from every rule that uses it). **Required actions** lists the agent's upcoming shifts or, for a manager, gaps, conflicts and time-off requests (**Approve** / **Reject**).
+- **Teams** menu: a team card with tabs *Schedule*, *Escalation triggers and policies*, *On-call team preferences* (shift managers, PTO requests, preferred start day of the week, shift overlap and its escalation rule).
+- Shift card: edit (Details, Members with rotation and responder levels, Escalation policies), **Save & publish**, draft / deactivate / delete, colour; **Provide coverage**, **Schedule extra time**, **Schedule absence** (with **Proposed cover**), **Delete absence**. Roles `rota_manager`, `rota_admin`; agents itil.
+- Escalation policy form: **Active on shift**, **Use as default**, **Order**, **Conditions**, escalation steps and levels, notification steps (user preference override, manual, or template). Trigger form as in the section above.
+- **Experts on-call** panel on a record: recommendations in the order primary service's support group, top support group of impacted services, primary CI's support group, top support group of affected CIs, the record's assignment group; **Shift details**, **Contact** (Teams chat, presence shown), next shift when nobody is on call; preferences hide empty shifts. The **on-call escalations** icon shows live tracking (needs `com.snc.on_call_rotation.log_escalations`). Customising it: [[Service Operations Workspace Configuration and Customization Reference]].
+
+### Bulk onboarding
+
+Plugin On-Call Onboarding (`com.snc.on_call_onboard`, app `sn_on_call_onboard`), role `rota_admin`: **Teams > On-Call Bulk Onboarding** (or **On-Call Scheduling > Bulk onboarding setup > Excel Upload**).
+
+1. Check that shift templates (and escalation policy templates) exist; choose *Escalate through a policy* or *Skip escalation policy*.
+2. Map teams to a shift template (**Connect teams**).
+3. **Download template** (`roster_template.xlsx`: one sheet per group, max 31 characters in the sheet name), fill the rosters, upload. Per roster: **Roster Name** (only Primary or Secondary), **Rotation Interval** (Daily, Weekly, Monthly), **Rotation Every**, **Day of Week**, **Monthly Rotation Type** (Specific Day / Last day of the month), **Start rotation on**, members one per row copied from the *Group Members* list. Never touch the "DO NOT DELETE, end of roster" row: the parser uses it.
+4. Optionally pick an escalation policy (and trigger conditions) per team.
+5. Review, **Create schedule**. Runs asynchronously, one group at a time; a failed group is rolled back alone and can be retried with **Redo**; existing schedules are not modified; an email arrives at the end.
+
+Blocking upload errors: no or duplicate or unknown group, missing or duplicate or renamed shift, no roster on a shift, placeholder text left in a member row, member not found, member name matching several users (use the user name). Warnings (defaults applied): missing day of week → Monday, missing monthly type → Specific Day, missing start day → 1; empty roster; duplicate member; member not in the group (still scheduled). File size limit: `com.glide.attachment.max_size`.
 
 ## Related
 

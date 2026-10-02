@@ -2,7 +2,7 @@
 type: concept
 tags: [concept, assets, cmdb]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Asset Management common applications" (pp. 292-510), read 2026-10-02 at summary depth. Only the overview, Contract Management components and life cycle, Procurement roles and flows, and Product Catalog were read in detail; the two ITSM Software Asset Management plugin sections (pp. 293-395) and the purchase order / receiving procedures (pp. 451-484) were skimmed
+source: ServiceNow Australia IT Service Management PDF, "Asset Management common applications" (pp. 292-510), read in full 2026-10-02; this note is the overview, the detail is in the linked notes
 sn-release: Australia
 verified:
 updated: 2026-10-02
@@ -55,9 +55,13 @@ Plugin `com.snc.procurement`. Roles `procurement_user` (contains `financial_mgmt
 
 Flows: *Service Catalog Request* (items over 1,000 need approval), *Source Request* and *Procurement Process Flow - Hardware* (a catalog task asks the procurement manager to **source** the requested item, from stock by transfer order or from a vendor by purchase order). Receiving a line into a stockroom creates the assets.
 
-## ITSM Software Asset Management (skimmed)
+## ITSM Software Asset Management
 
 Tables seen: `alm_license` (software entitlement), `alm_entitlement`, `alm_entitlement_user`, `alm_entitlement_asset` (allocations), `ast_license_software_instance`. Software counters compare installations against rights owned.
+
+## Detailed notes
+
+- [[Contract Management]] · [[Procurement]] · [[Software Asset Management Foundation Plugin]] · [[Legacy Software Asset Management Plugin]]
 
 ## Related
 

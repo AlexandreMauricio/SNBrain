@@ -67,6 +67,39 @@ Tables `sn_cim_inbound_m2m`, `sn_cim_outbound_m2m`. More tables are added by imp
 
 Domain separation: Basic.
 
+## Form reference
+
+| Tab | Fields |
+|---|---|
+| Header | **Business service**, **Service offering**, **Business process** (selecting one sets **Type** to Process), **CIM Coordinator** (must hold the coordinator role), **Approver group**, **Strategies** (CIM strategic objectives and enterprise strategies), **State** (read-only), **On hold reason**, **Priority** (1 Critical to 5 Planning), **Effort estimate** (Small, Medium, Large, Extra Large), **Benefits**, **Percent complete**, **Business justification** |
+| Goals | **Success measurement method**: *Automated: PA Indicator* (then **Improvement KPI**, **Breakdown**, **Element**, **2nd Breakdown**, **2nd Element**, **Time Series**), *Reports*, *Survey and Assessment*, *Manual*. **Base value**, **Percentage improvement**, **Target value** (one of the last two is calculated from the other; the target is synced to the PA indicator target), **Target review date** (never auto-filled), **Expected outcomes** |
+| Details | **Requested for**, **Type** (People, Process, Technology; several allowed), **Watch list**, **Parent initiative** (children appear in **Child Initiatives**), **Source/Parent** (the record it was created from) |
+| Schedule | **Planned start date** (defaults to creation), **Planned end date** (defaults to the next day), **Actual start date** (set on Implement), **Actual end date** (set when the last task completes) |
+| Notes | **Work notes** are required when submitting for re-approval |
+| Closure Notes | **Closure code** (Successful, Withdrawn, Unsuccessful), **Achieved outcome category** (Cost Reduction, Revenue Generation, Time Savings, Customer Satisfaction, Quality Improvement), **Close notes** |
+
+Phases and tasks share the table `sn_cim_task` (both numbered CIMT): a phase's **Parent** is the initiative, a task's **Parent** is a phase or the initiative. CIM task states: Pending, Open, Work in Progress, Closed Complete, Closed Incomplete, Closed Skipped, On Hold. A rejection by an approver in Assess sends the initiative back to **Accepted**; **Revert to Accepted** does the same by hand. A new phase's planned end date must be at least a day after the initiative's planned start.
+
+## Email notifications
+
+| Event | Manager | Coordinator | Requester | Watch list | Task assignee |
+|---|---|---|---|---|---|
+| Canceled | | ✔ | ✔ | ✔ | |
+| Approved | ✔ | ✔ | | ✔ | |
+| Closed | ✔ | ✔ | ✔ | ✔ | |
+| Target review date breached | ✔ | ✔ | | ✔ | |
+| CIM task assigned | | | | | ✔ |
+| CIM task closed | | ✔ | | | ✔ |
+
+## What changes on linked records
+
+- From a **demand**: the initiative is stored in the demand's **Improvement** field; closing the improvement completes the demand. A demand created from an initiative gets **Type** = Continual Improvement Management.
+- From an **incident** or **problem**: the form must be configured to show the **Improvement Initiatives** related list. Legacy problem state mapping: Open → New, Pending change → In Progress, Closed/Resolved → Closed.
+- From a **Benchmarks recommendation**: the link becomes the CIM number and the KPI fills **Improvement KPI**.
+- **Change** created from a CIM task: listed in the task's **Change Requests**; mapping CIM task New → change New, In Progress → Implement, Closed → Closed.
+
+Scheduled jobs: *[PA Continual Improvement] Daily* and *Historical* data collection. ATF tests: plugin `com.sn_cim_atf` (needs `sn_cim.create_default_phase`).
+
 ## Related
 
 - [[Problem Management Overview and Lifecycle]] (`sn_cim_register.source_id` is tracked as a problem fix) · [[Major Incident Management]]

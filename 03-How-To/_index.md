@@ -36,6 +36,8 @@ Step-by-step procedures, grouped by topic (the notes themselves stay in one flat
 
 ## CMDB and Assets
 
+- [[Configure a Service Availability KPI in Digital Portfolio Management]] - KPI group mapping, commitment, outage, PA collection job, check on the Run tab
+
 ## SLA and Schedules
 
 - [[Define a Schedule]]

@@ -2,45 +2,81 @@
 type: concept
 tags: [concept, ai, incident]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "ITSM MCP Server" (pp. 2588-2604), "ITSM Virtual Agent" and "ITSM Virtual Agent Lite" (pp. 2763-2861), "L1 IT Service Desk AI Specialist" (pp. 2862-2882), "Machine learning solutions for IT Service Management" (pp. 2883-2888), "Task Intelligence for ITSM" (pp. 3761-3787), read 2026-10-02 at overview depth: only the introductions and component lists were read
+source: ServiceNow Australia IT Service Management PDF, "Machine learning solutions for IT Service Management" (pp. 2883-2888) and "Task Intelligence for ITSM" (pp. 3761-3787), read in full 2026-10-02. The Virtual Agent, AI specialist and MCP server parts that used to be summarised here now have their own notes
 sn-release: Australia
 verified:
 updated: 2026-10-02
 ---
 
-# ITSM Predictive Intelligence, Task Intelligence, Virtual Agent and AI workers
+# ITSM Predictive Intelligence and Task Intelligence
 
-**In one line:** besides the generative skills in [[Otto for ITSM Skills and Agentic Workflows]], ITSM ships machine-learning predictions, a chatbot topic pack, an autonomous L1 "AI specialist" and an MCP server for external AI clients.
+**In one line:** two machine-learning layers trained on the instance's own incident history: **Predictive Intelligence** solution definitions (classification and similarity, called from business rules, flows or recommendations) and **Task Intelligence for ITSM**, a no-code console that trains, deploys and monitors field-prediction and similar-record models for incidents.
 
-## Predictive Intelligence for Incident
+(The file name still mentions Virtual Agent for link stability; see [[ITSM Virtual Agent Topics and Setup]], [[L1 IT Service Desk AI Specialist]], [[ITSM MCP Server]].)
 
-Plugins `com.snc.incident.ml` (solution definitions *Similar Open Problems*, *Similar Open Change Requests*, inactive by default) and `com.snc.incident.ml_solution` (separate subscription, requested through Now Support); `com.snc.incident.mim.ml_solution` supplies similar incidents to the major incident workbench. Solutions are trained on the instance's own history and can be called from flows and scripts for categorisation and assignment. Change equivalents: [[Change Risk Calculation and Assessment]], [[Standard Change Catalog]].
+## Predictive Intelligence for Incident Management
+
+Separate subscription; plugins requested through Now Support (**Request plugin** on the application list).
+
+| Plugin | Gives |
+|---|---|
+| `com.snc.incident.ml_solution` (with `com.glide.platform_ml`) | classification: *Incident Assignment*, *Incident Categorization*, *Incident Service*, *Incident Configuration Item*, each predicted from **Short description** |
+| `com.snc.incident.ml` (activates `com.snc.contextual_search_ml`) | similarity: *Similar Open Incidents*, *Similar Resolved Incidents*, *Similar Closed Incidents*, *Similar Incidents*, *Similar Knowledge Articles* (short description and description) |
+| `com.snc.incident.mim.ml_solution` (installs `com.snc.incident.mim` and the first plugin) | *Major Incident Detection* / *Major Incident Recommendation* (similar active major incidents to link to; similar incidents to propose a major incident), *Similar Incidents (Major Incident Workbench)* (similar incidents not yet children) |
+
+The shipped definitions are templates: copy them to customise.
+
+- Business rule *Update Prediction Results* on `incident` (runs when an incident is closed; server-side) updates the precision and coverage statistics of the assignment and categorization solutions.
+- The prediction business rule template: in the global domain list the solutions explicitly in the `solutionNames` array; for domain separation follow the commented code; it calls `applyPredictionForSolution()` so a prediction is made even when the field holds its default value.
+- Models drift: retrain or redefine them as the business changes.
+
+How the predictions reach agents: [[Recommended Actions for ITSM]].
 
 ## Task Intelligence for ITSM
 
-Plugin `com.snc.itsm_ml_task`; no-code **Admin Console** (`com.sn_ti_admin`; tables `sn_ti_admin_*`). Models: **Incident Categorization** (predicts incident fields), **Similar Incidents**, **Similar open Change Requests for Incidents**, **Similar open Problems for Incidents**. Predictions appear as recommendations in the Service Operations Workspace side panel. Roles `sn_itsm_ml_task.ti_admin` / `ti_analyst` / `ti_user` (and `sn_ti_admin.tia_*`). Supported from Utah patch 5.
+Application `com.snc.itsm_ml_task` (ITSM Pro; Utah patch 5 or later) with the Task Intelligence Admin Console (`com.sn_ti_admin`). Menu **Task Intelligence for ITSM > Setup** and **> Monitoring**.
 
-## ITSM Virtual Agent
+| Role | Can | Contains |
+|---|---|---|
+| `sn_itsm_ml_task.ti_admin` | create, edit, deploy, monitor | `sn_incident_read`, `sn_ti_admin.tia_admin` |
+| `sn_itsm_ml_task.ti_analyst` | monitoring dashboard | `sn_incident_read`, `sn_ti_admin.tia_analyst` |
+| `sn_itsm_ml_task.ti_user` | view-only dashboard | `sn_incident_read`, `sn_ti_admin.tia_user` |
 
-Pre-built conversation topics for common IT requests, in web chat and messaging integrations, with hand-off to a live agent. Some topics need IntegrationHub spokes (Microsoft Teams, Exchange, Azure AD, Zoom...). NLU languages: English, German, French (also Canadian), Korean, Spanish, Brazilian Portuguese, Japanese, Italian, Dutch, Simplified Chinese. Topic messages are translated through `gs.getMessageLang()` and `sys_ui_message`. **ITSM Virtual Agent Lite** is the reduced set.
+### Models
 
-## L1 IT Service Desk AI Specialist
-
-An "autonomous worker" assigned to a team: it is assigned incidents, investigates with knowledge and history, talks to the requester, resolves, and escalates to a human when confidence is low. Uses *incident service and category prediction* (Category, Subcategory, Service, Service Offering, Configuration Item from the descriptions). Roles: `sn_itsm_common.sn_service_desk_manager` (contains `sn_service_desk_agent`, `sn_aia.worker_manager`) onboards it. Property seen: `sn_itsm_aia.glide.ui.autoresolve.time`. Obtained through the account manager.
-
-## ITSM MCP Server
-
-Application `sn_itsm_mcp_server` (on `sn_mcp_server`): lets a Model Context Protocol client (the guide names Moveworks and Claude) work with the instance in natural language.
-
-| For | Capabilities |
+| Model | Predicts |
 |---|---|
-| Agents: incidents | read and update by number, assignees and groups, similar records, knowledge search and linking, Knowledge Graph questions |
-| Agents: changes | search and aggregate, create / update / close, suggest model or template, state transitions, risk, approvals, tasks, data-quality evaluation |
-| Requesters | create an incident (with knowledge deflection), check status of own incidents and requested items, escalate, comment (`sn_itsm_mcp_server.requester.*`) |
-| On-call (inactive by default) | who is on call, own shifts, time off and coverage requests |
+| Incident Categorization (card *Predict incident field choices to reduce handle time*) | chosen **Output fields** of the incident from chosen **Input fields** |
+| Similar Incidents | incidents similar to the current one |
+| Similar open Change Requests for Incident, Similar open Problems for Incident | changes / problems similar to the incident |
+| Major Incident Recommendation | major incidents to link to; incidents to propose as major |
 
-Activated by an administrator (`sn_mcp_server.admin`).
+The four similarity models are shipped: on a production instance they are **trained on your data and deployed automatically** at install, predicting in the background only (results stored in prediction tables, nothing shown on the form) and already linked to a recommended-action rule. The admin gets an email with the analytics link within about four weeks.
+
+### Wizard
+
+1. **Set up model** from the card.
+2. (Similarity) **Define the purpose**: prediction table, and training table Incident, Problem or Change request.
+3. **Train**: name; output / prediction table and fields; input / training table and fields; **Conditions** selecting the training records; (similarity) language and update or training frequency. At least **10,000 records** are needed; widen the conditions if the count is lower. **Launch training** (an email can announce the end).
+4. **Assess**: estimated number of auto-filled fields, **View sample results**, **Comparison**; then a **Prediction preference** per field:
+
+| Preference | Effect |
+|---|---|
+| Autofill (categorization only) | writes the best value into the field |
+| Recommendations | shows the top values or records; the agent accepts or rejects; the number shown is set in Advanced Recommended Actions |
+| Monitor only | runs in the background and stores predictions without touching records: the way to validate against live data |
+| Turn off predictions | |
+
+5. **Deploy**, then **Configure Recommended Actions**: map the model into the resource generator's **Model** field and make sure the rule is active.
+
+**Edit Model** (menu on the model): view current results, or retrain with new data or fields, **Compare models results**, **Redeploy** (nothing is saved until redeploy; the new model replaces the old). **Export model** downloads XML to carry to another instance in an update set.
+
+### Monitoring
+
+Per model: number of predictions over time, incident MTTR, predictions agents accepted, replaced, and skipped by the model, a performance table per model and output field, and usage of each field prediction per day (count or percentage, with the training baseline). Falling acceptance or rising replacement means retrain.
+
+Tables are named `sn_ti_admin_*`: template, solution, model (snapshot of production and staging configuration), model_prediction, feature, statistic, statistic_card, help, page, tag, implementation_detail, context, application_page.
 
 ## Related
 
-- [[On-Call Scheduling]] · [[Incident Management Overview and Lifecycle]]
+- [[Recommended Actions for ITSM]] · [[Otto for ITSM Skills and Agentic Workflows]] · [[Change Risk Calculation and Assessment]] · [[Incident Management Overview and Lifecycle]]

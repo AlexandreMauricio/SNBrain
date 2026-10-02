@@ -2,7 +2,7 @@
 type: concept
 tags: [concept, cmdb, sla, service-catalog]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Service Portfolio Management" (pp. 3704-3760) and "Service Builder" (pp. 3126-3136), read 2026-10-02. Read at summary depth; taxonomy-node procedures, offering form tabs and ATF tests not transcribed
+source: ServiceNow Australia IT Service Management PDF, "Service Portfolio Management" (pp. 3704-3760) and "Service Builder" (pp. 3126-3136), read in full 2026-10-02; form-level detail is in the companion note
 sn-release: Australia
 verified:
 updated: 2026-10-02
@@ -78,4 +78,4 @@ Domain separation: Basic with exceptions.
 
 ## Related
 
-- [[SLA Definitions and Task SLAs]] · [[Incident Management Overview and Lifecycle]] (Service and Service offering on tasks)
+- [[Service Offerings, Commitments and Availability]] · [[SLA Definitions and Task SLAs]] · [[Incident Management Overview and Lifecycle]] (Service and Service offering on tasks)

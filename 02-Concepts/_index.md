@@ -58,6 +58,31 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Continual Improvement Management]] - improvement initiatives, states, goals and KPIs, workbench, integrations, properties
 - [[ITSM Application Suite Overview]] - map of every application in the ITSM guide to its vault note; short summaries of Benchmarks, Coaching, DEX, DPM, DPR, dashboards, Workforce Optimization
 - [[DevOps Change Velocity and DevOps Config]] - pipeline-driven change requests, integrations, data model, properties (overview)
+- [[Change Management Plugins, Tables and Workspace Configuration]] - which plugin installs what, logging properties, legacy state-model scripts, workspace overview containers, legacy dashboards
+- [[Simplified IT Service Management]] - AI-first packaging: configuration console, simplified change models and roles, employee and fulfiller views, setup AI agents, shipped catalog items
+- [[Coaching]] - coaching opportunities, assessments, virtual coach, surveys, skills awarded; tables, roles, properties
+- [[Walk-up Experience]] - tech lounge queues: location settings, appointment booking, kiosks, badge readers, roles and tables
+- [[Workforce Optimization for ITSM]] - WFO (deprecated path noted): channels, shift scheduling, adherence, demand forecast, work scheduler, teams
+- [[Workforce Optimization Learning, Skills and Reference]] - WFO learning content and integrations, skill matrix, review, determination and prediction, roles, domain separation, mobile shift requests, landing pages, filters
+- [[DevOps Change Velocity Setup and Onboarding]] - personas, adoption phases, supported tools, install, roles and tasks, integration user, playbook onboarding pattern, pipeline step fields
+- [[DevOps Applications, Change Acceleration and Approval Flows]] - DevOps applications, change control and change receipt, the three approval flows, policies, default change handler, partial data, callback timeout
+- [[DevOps Change Models]] - type compatibility property, DevOps and DevOps Simplified models and flows, presets and attribute precedence, callback, pull requests, import based evidence
+- [[DevOps Artifacts, Packages, Commits and Pipeline UI]] - artifact versions and packages, staging codes, which commits a change shows, Pipeline UI, changeRequestDetails and auto close
+- [[DevOps Change Velocity Administration and Data Management]] - bulk onboarding, imports and polling, throttling and retries, cloning preservers, deletion rules, table cleanup and archiving
+- [[DevOps Change Velocity Reference]] - roles, jobs, tables, all properties, system health, common errors, health scan checks
+- [[DevOps Config Data Model and Changesets]] - CDM and PaCE, components / collections / deployables, uploads and XML / CSV parsing, variables, file nodes, changeset conflicts, CDM properties
+- [[DevOps Config Snapshots, Policies and Exporters]] - snapshot states, static and dynamic policy mapping, CdmPolicyUtil, exporters, component libraries, alert investigation, Insights
+- [[DevOps Config Reference]] - roles, CDM APIs, contextual variables, domain separation, shipped generic / Kubernetes / OpenShift policies, shipped exporters
+- [[Digital End-User Experience Overview and Architecture]] - DEX: what it monitors, components (ACC agent, browser extension, shared services), roles, limits; map of the DEX notes
+- [[DEX Agent Deployment and Connectivity]] - installing ACC MID-less on Windows and macOS, sudoers, connectivity tests, Intune and Jamf, proxy, switching instance, non-persistent VDI
+- [[DEX Monitoring Configuration, Alert Rules and Remedial Actions]] - application and page monitoring, metric and event rules, alerts and grouping, agent policies, remedial actions, custom PowerShell action, user and location mapping
+- [[DEX Reference]] - DEX tables, shipped remedial actions, check definitions, collected metrics, policies, event configurations, properties, reporting tables
+- [[Proactive Engagement]] - sn_pren: experience issues, resolution types, engagement settings, throttling properties, workbench, roles and tables
+- [[Digital Experience Score]] - DEX Score hierarchy and weights, normalization formulas, metric definitions, surveys, dashboard, demo data
+- [[Digital Product Release]] - DPR: release life cycle, timeline and stage processes, states, multi-product releases, restricted access, bundles, dashboards, risk score, AI release notes, GRC and SOW integration
+- [[Digital Product Release Configuration and Templates]] - install, external tools, release calendars and readiness targets, approval definitions, PaCE policies, release templates, product-level settings
+- [[Working a Digital Product Release]] - products, features, enhancements, planning board, creating releases, running phases, CIs, changes, artifacts, approvals, retarget, hold, close
+- [[Digital Product Release Reference]] - DPR roles, tables, scheduled jobs, properties, notifications, shipped policies and data collectors
 
 ## Service Catalog (`Service-Catalog/`)
 
@@ -70,6 +95,15 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Models, Model Categories and the Product Catalog]] - how model categories link CI and asset classes; models, bundles, vendor and product catalog items
 - [[Asset Management Common Applications]] - contract management states and tables, procurement flows and tables, software asset basics
 - [[Expense Lines and Allocations]] - expense line sources and fields, allocation rules
+- [[Service Offerings, Commitments and Availability]] - taxonomy nodes, service and offering fields, outages, availability calculations, SLA results, Service Builder detail
+- [[Contract Management]] - contract form, states and substates, nightly compliance checks, terms, rate cards, renewal workflow
+- [[Procurement]] - sourcing a request (consume, transfer, purchase), purchase order statuses, receiving, consumable merge, Coupa integration
+- [[Software Asset Management Foundation Plugin]] - discovery models, normalisation, entitlements, reconciliation results, migration from the legacy plugin
+- [[Legacy Software Asset Management Plugin]] - software counters, licence calculation types, suites, upgrades and downgrades, IBM PVU and Oracle packs
+- [[Service Builder]] - guided editor for services and offerings: roles, draft / approval / publish, fields per step; the SNC script include rule
+- [[Digital Portfolio Management]] - DPM workspace: solutions through plan / build / run, home page cards and thresholds, personal and enterprise portfolios, templates, lists
+- [[DPM Solution Pages and Needs Attention]] - Plan, Build, Run, Risk and Info tabs per solution type, KPI inheritance for service instances, how records reach the Needs attention panel
+- [[DPM Administration, KPI Groups and Reference]] - Admin Center, properties, CSDM life-cycle mapping, KPI groups and mappings, Process Mining, roles, tables, plugins per view
 
 ## SLA and Schedules (`SLA-and-Schedules/`)
 
@@ -139,6 +173,17 @@ What things are, how they relate, and the settings that control them. Notes are 
 ## Portals and Workspaces (`Portals-and-Workspaces/`)
 
 - [[Service Operations Workspace for ITSM]] - users, applications, UI16 redirection, plus Simplified ITSM, Mobile Agent, Walk-up (overview)
+- [[Service Operations Workspace Access and Landing Page]] - SOW roles, tier 1 and tier 2 audiences, login redirection, landing page sections and how each is configured
+- [[Service Operations Workspace Admin Center and Process Setup]] - what each Admin Center card sets; major incident, problem, notification, password reset and AI Search setup
+- [[Service Operations Workspace Configuration and Customization Reference]] - lookup of optional SOW settings: UX page properties, views, Standard Record Page variants, chat tabs, Notify, CTI
+- [[Working Records in Service Operations Workspace]] - what agents do in SOW on interactions, incidents, requests, changes, CAB, problems, major incidents, universal requests
+- [[Investigation Framework, CI Actions and Remedial Actions]] - Investigate tab: metric definitions, CI actions, remedial actions, ACC and MECM providers, tables and roles
+- [[Migrating from ITSM Agent Workspace to Service Operations Workspace]] - migration utility and which Agent Workspace table maps to which UX table
+- [[ITSM Mobile Agent]] - mobile applets for agents and managers, AI Search setup, actionable and critical push notifications, migration notes
+- [[DEX Desktop Assistant]] - tray app for employees: install, home page cards, notifications API and troubleshooting, tables, theme variables
+- [[DEX Workspace Pages, Insights and Device Investigation]] - insights reports, bulk remediation, application and device pages, call quality, resolution strategies
+- [[DEX Self-Service and Device Actions]] - Device health check for employees, issue configurations, device actions, execution states, health rating calculation
+- [[DEX Incident Investigation for Service Desk Agents]] - Investigation tab for DEX devices: health checklist, top processes, suggested resolutions, playbook, automatic work notes
 
 ## Security (`Security/`)
 
@@ -146,7 +191,12 @@ What things are, how they relate, and the settings that control them. Notes are 
 
 - [[Email Agentic Workflow and Notification Agent]]: intent to action on inbound email
 - [[Otto for ITSM Skills and Agentic Workflows]] - generative AI skills on incidents, changes and requests; agentic workflows; setup in AI Admin Hub (overview)
-- [[ITSM Predictive Intelligence, Task Intelligence and Virtual Agent]] - ML predictions, Virtual Agent topics, L1 AI specialist, ITSM MCP Server (overview)
+- [[ITSM Predictive Intelligence, Task Intelligence and Virtual Agent]] - Predictive Intelligence solution definitions for incident and the Task Intelligence console (models, wizard, monitoring)
+- [[Recommended Actions for ITSM]] - contexts, rules, recommendations, resource generators and guidances behind the SOW Recommendations panel
+- [[Otto for ITSM Skill Inputs, Triggers and Customization]] - per generative skill: fields read, triggers, what can be customised; AI risk data sources; Virtual Agent LLM topics
+- [[Otto for ITSM Agentic Workflows and AI Agents Reference]] - each ITSM agentic workflow: agents, triggers, roles, prerequisites; change policy documents and quality scores
+- [[ITSM Virtual Agent Topics and Setup]] - pre-built NLU topics and blocks, actionable notifications, Issue Auto Resolution, deflection patterns, Lite, Employee Slate for Moveworks
+- [[L1 IT Service Desk AI Specialist]] - autonomous worker on a team: execution modes, task settings, monitoring
 
 ## Data Management (`Data-Management/`)
 

@@ -96,4 +96,4 @@ The vault will hold far more than fits in one session's context, and a new sessi
 
 ## Git
 
-Local repo, branch `main`. **No remote is configured yet**: don't push until the user sets one up (the Halo vault uses a private GitHub repo synced across machines by pull/push; do the same here once it exists, with `git pull` at the start of a session). Commit in small logical chunks with clear messages. Don't commit `.obsidian/workspace*.json` (ignored) or anything from rule 6.
+Branch `main`, remote `origin` = `https://github.com/AlexandreMauricio/SNBrain.git` (same pull/push routine as the Halo vault). Run `git pull` at the start of a session, and push only when the user asks. Commit in small logical chunks with clear messages. Don't commit `.obsidian/workspace*.json` (ignored) or anything from rule 6.
