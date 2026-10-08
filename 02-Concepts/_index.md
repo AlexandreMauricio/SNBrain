@@ -174,6 +174,10 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Classic Approvals]] - approval record, approval engines and rules, gating and process approvals, summarizer, e-signature, notifications
 - [[Intelligent Approvals]] - AI evaluation of requests against an uploaded policy PDF; outcomes, roles, allowlist, build and publish
 - [[Agentic Playbooks]] - AI agents performing playbook activities: shipped agents, collaborative or autonomous mode, instructions, runtime roles
+- [[Classic Workflow Overview]] - legacy Workflow Editor: parts, start and run-as, checkout and publish, properties, variables, subflows, scope, roles, tables
+- [[Classic Workflow Activities Reference]] - approval, condition, timer, task, notification and utility activities with variables, results and exits
+- [[Classic Workflow Stages, Validation and Update Sets]] - stage fields, stage sets and renderers; the validators; how workflows and input variables travel in update sets
+- [[Classic Workflow Administration and Troubleshooting]] - contexts, cancel, schedules, script error exits, run time metrics, pause utility, encrypted scratchpad, workflow events
 
 ## Notifications and Email (`Notifications-and-Email/`)
 

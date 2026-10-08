@@ -121,7 +121,7 @@ See [[Subflows in Workflow Studio]].
 
 ## Call a Workflow
 
-Runs a published, active legacy workflow (classic Workflow).
+Runs a published, active legacy workflow ([[Classic Workflow Overview]]).
 
 - Remove the workflow's own start conditions so it only runs from the flow.
 - Workflows on Requested Item cannot be selected: build a Service Catalog flow instead.

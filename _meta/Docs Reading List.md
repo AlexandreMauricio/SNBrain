@@ -114,6 +114,7 @@ Record the release family of each page: the same page can differ between release
 | Build workflows > Workflow Studio > Building spokes using Spoke Generator (whole chapter) | https://www.servicenow.com/docs/r/australia/build-workflows/workflow-studio/spoke-builder.html and the pages under it, read through the docs site API | Australia | 2026-10-08 | [[Spoke Generator]] |
 | Build workflows > Workflow Studio > Agentic Playbooks (whole chapter) | https://www.servicenow.com/docs/r/australia/build-workflows/workflow-studio/agentic-playbooks.html and the pages under it, read through the docs site API | Australia | 2026-10-08 | [[Agentic Playbooks]] |
 | Build workflows > Service Creator (whole chapter) | https://www.servicenow.com/docs/r/australia/build-workflows/service-creator/c_ServiceCreator.html and the pages under it, read through the docs site API | Australia | 2026-10-08 | [[Service Creator]] |
+| Build workflows > Classic Workflow (whole chapter, including Workflow activities) | https://www.servicenow.com/docs/r/australia/build-workflows/legacy-workflow/c_WorkflowOverview.html and the pages under it, read through the docs site API | Australia | 2026-10-08 | [[Classic Workflow Overview]], [[Classic Workflow Activities Reference]], [[Classic Workflow Stages, Validation and Update Sets]], [[Classic Workflow Administration and Troubleshooting]] |
 
 ## To read
 
