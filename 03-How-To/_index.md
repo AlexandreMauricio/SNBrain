@@ -95,6 +95,8 @@ Step-by-step procedures, grouped by topic (the notes themselves stay in one flat
 
 ## Security and single sign-on
 
+- [[Set Up SAML Single Sign-On]] - recovery user, IdP record from metadata, test connection, activation, routing users (documented, Brazil)
+
 ## AI
 
 ## API, integrations and imports

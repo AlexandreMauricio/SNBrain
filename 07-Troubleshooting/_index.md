@@ -20,3 +20,4 @@ Symptom, cause, fix.
 - [[SLA Does Not Attach or Cancels Instead of Pausing]]
 - [[ACL Not Working as Expected]]
 - [[LDAP Login or Import Problems]]
+- [[SSO Login Errors (SAML)]]
