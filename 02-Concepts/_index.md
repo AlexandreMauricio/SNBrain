@@ -124,6 +124,7 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Non-Interactive Users]] - web service access only accounts for integrations (documented)
 - [[ITSM Granular Roles]] - sn_incident/problem/change/request read and write roles, service desk agent, business stakeholder
 - [[Access Control Lists (ACLs)]] - parts of an ACL, operations, evaluation and processing order, deny by default, query, datatype and function field ACLs, scopes, properties, Role Management V2 additions (documented, Brazil)
+- [[Explicit Roles and Elevated Privilege Roles]] - snc_internal and snc_external (plugin behaviour, mutual exclusion), elevated roles, security_admin, forcing admins to elevate (documented, Brazil)
 
 ## Forms and Lists (`Forms-and-Lists/`)
 
@@ -220,6 +221,11 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Playbook Experience Design for Workspace, Portal and Mobile]] - UI Builder components and bundles, Guided view, Service Portal content items and widget, mobile embedding
 
 ## Security (`Security/`)
+
+- [[Security Attributes, Security Data Filters and Field Query Controls]] - reusable user and session attributes, in-query row filters, field query dictionary attributes, machine identity access controls (documented, Brazil)
+- [[Access Analyzer, Access Findings and Access Observer]] - evaluate and compare access, simulator, insights; daily access checks and the console; logging who reads a column
+- [[Scripting Governance Tool]] - the second permission layer on script fields since Zurich: Conditional Script Writer group, datatype ACLs, jobs, scan and removal
+- [[SNC Access Control (Support Staff Access to an Instance)]] - how support logs in (tokens, synthetic users) and how to restrict it by person and period
 
 ## AI (`AI/`)
 

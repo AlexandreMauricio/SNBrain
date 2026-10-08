@@ -43,8 +43,8 @@ updated: 2026-10-08
 Icons: green tick passed, red cross failed, grey circle not evaluated, blue = result taken from cache. Click an ACL name to open it.
 
 4. On a record-type ACL: **Show ACL Execution Plan** shows what runs for the table and field, with overridden ACLs struck through.
-5. For "who can access what" without impersonating: Access Analyzer (**not yet in the vault**; later chapter of the same guide).
+5. For "who can access what" without impersonating: [[Access Analyzer, Access Findings and Access Observer]].
 
 ## Related
 
-- [[Access Control Lists (ACLs)]] · [[Create an ACL]] · [[Impersonation]] · [[Role Management]]
+- [[Access Control Lists (ACLs)]] · [[Create an ACL]] · [[Access Analyzer, Access Findings and Access Observer]] · [[Scripting Governance Tool]] · [[Impersonation]] · [[Role Management]]
