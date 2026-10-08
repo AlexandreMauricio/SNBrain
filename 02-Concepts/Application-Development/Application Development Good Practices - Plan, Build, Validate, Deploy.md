@@ -127,4 +127,4 @@ Prefer the application repository (publish once, install on test, then productio
 
 ## Related
 
-- [[Application Development Tools and Lifecycle]] · [[Application Scope and Namespace Identifiers]] · [[Business Rules]] · [[Delegated Development and Deployment]] · [[ServiceNow IDE and ServiceNow SDK]]
+- [[Application Development Tools and Lifecycle]] · [[Application Scope and Namespace Identifiers]] · [[Business Rules]] · [[Delegated Development and Deployment]] · [[ServiceNow IDE and ServiceNow SDK]] · [[Update Sets]] · [[Move an Update Set between Instances]] · [[Application Repository, Publishing and Administering Apps]]

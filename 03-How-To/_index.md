@@ -104,6 +104,8 @@ Step-by-step procedures, grouped by topic (the notes themselves stay in one flat
 
 ## Update sets and moving changes between instances
 
+- [[Move an Update Set between Instances]] - create, complete, retrieve, preview, commit; XML alternative (documented, Brazil)
+
 ## Data Management
 
 - [[Create an Archive Rule]] - console wizard and Core UI form, related records, destroy rule (documented)

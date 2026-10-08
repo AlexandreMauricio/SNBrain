@@ -67,4 +67,4 @@ Default rules since Xanadu auto-retain skips on configuration tables, so they ne
 
 ## Related
 
-- [[Upgrades - Process, Upgrade Center and Upgrade Console]] · [[Process the Skipped Records List after an Upgrade]] · [[Dictionary Overrides]]
+- [[Upgrades - Process, Upgrade Center and Upgrade Console]] · [[Process the Skipped Records List after an Upgrade]] · [[Dictionary Overrides]] · [[Update Sets]]

@@ -83,4 +83,4 @@ Related property `glide.security.add_admin_contained_roles_to_system` (default t
 
 ## Related
 
-- [[Application Administration and Collaboration Descriptors]] · [[Application Access Settings and Cross-Scope Privileges]] · [[Team Development]] · [[Users, Groups and Roles Overview]] · [[Subscription Management]]
+- [[Application Administration and Collaboration Descriptors]] · [[Application Access Settings and Cross-Scope Privileges]] · [[Team Development]] · [[Users, Groups and Roles Overview]] · [[Subscription Management]] · [[Update Sets]] · [[Application Repository, Publishing and Administering Apps]]

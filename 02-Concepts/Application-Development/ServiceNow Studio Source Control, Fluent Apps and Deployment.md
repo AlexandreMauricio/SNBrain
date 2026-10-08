@@ -124,4 +124,4 @@ Preview supports UI pages (`sys_ui_page`) only. Collaboration permission default
 
 ## Related
 
-- [[ServiceNow Studio Overview, Access and Navigation]] · [[Metadata File Types and Primary Tables]] · [[Build Agent Usage, Checkpoints and Reference]] · [[Application Scope and Namespace Identifiers]]
+- [[ServiceNow Studio Overview, Access and Navigation]] · [[Metadata File Types and Primary Tables]] · [[Build Agent Usage, Checkpoints and Reference]] · [[Application Scope and Namespace Identifiers]] · [[ReleaseOps]] · [[Update Sets]] · [[Application Repository, Publishing and Administering Apps]]

@@ -31,6 +31,7 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Dynamic Schema]] - dynamic attribute store, attributes, categories, namespaces, choice sets (documented)
 - [[ServiceNow AI Platform Overview]]: what the platform is; experimentation and feature preview
 - [[Date and Time Fields, Formats and Time Zones]]: UTC storage, formats, time zones, time worked, resolve time
+- [[Update Sets]] - what is captured, states, default set, transfer, preview problems, collisions and coalesce strategies, commit, back out, batches, properties (documented, Brazil)
 
 ## ITSM (`ITSM/`)
 
@@ -321,3 +322,6 @@ Notes in this section come from the Brazil release of the Building applications 
 - [[ATF Records, Properties and Custom Step Configurations]] - tables not rolled back, result records and statuses, property list, scripted step configurations, workspace component actions, worked examples
 - [[ATF Quick Start Tests by Application]] - shipped suites and their plugins per application; ITSM tests in detail
 - [[ATF Headless Browser (Legacy Docker Runner)]] - running UI tests without a visible browser through Docker (legacy)
+- [[Performance Analyzer]] - page load times of UX framework pages by application, route and interaction; the other testing and debugging tools named
+- [[ReleaseOps]] - pipelines, releases, deployment requests, analyzer rules, runbook tasks, states, setup, the release documentation AI agent
+- [[Application Repository, Publishing and Administering Apps]] - repository, Store and update set publishing, entitlements, customizations, mode conversion, clones, air-gapped repository, queued CI/CD operations, ISV licensing

@@ -2,7 +2,7 @@
 type: concept
 tags: [concept, platform, admin, ai, reporting, release-specific]
 status: documented
-source: ServiceNow docs, Brazil, Building applications > AI Workflow Factory Prime and Learning about developing on the ServiceNow AI Platform (read 2026-10-08 through the docs site): AI Workflow Factory Prime, Learning about developing, Find ServiceNow developer products quickly (the pro-code and low-code finder pages, Reporting on data from pro-code / low-code apps, What ServiceNow product solves your problem), Programming basics, Early Availability guide, Low-code versus pro-code development, Modifying versus building an application, Understand the ServiceNow UI experiences, Support for developers, Licensing. https://www.servicenow.com/docs/r/application-development/build-applications.html
+source: ServiceNow docs, Brazil, Building applications > AI Workflow Factory Prime and Learning about developing on the ServiceNow AI Platform (read 2026-10-08 through the docs site): AI Workflow Factory Prime, Learning about developing, Find ServiceNow developer products quickly (the pro-code and low-code finder pages, Reporting on data from pro-code / low-code apps, What ServiceNow product solves your problem), Programming basics, Early Availability guide, Low-code versus pro-code development, Modifying versus building an application, Understand the ServiceNow UI experiences, Support for developers, Licensing; and the closing chapter Maintaining your application (96 cleaned lines, read in full 2026-10-08). https://www.servicenow.com/docs/r/application-development/build-applications.html
 sn-release: Brazil
 verified:
 updated: 2026-10-08
@@ -70,6 +70,18 @@ Two generations coexist: **Core UI** (the Reporting application on table data, P
 - An application needs an entitlement; with a *subscription* the application follows family upgrades automatically. Subscription types decide user allocation and custom application and table entitlements ([[Subscription Management]], [[Custom Tables and Entitlements]]).
 - **Early Availability** (Developer Program): the next release about a month before general availability, with PDIs, learning plans and API documentation. Scoped server APIs are the ones to build on; legacy (global) APIs are documented for existing global work.
 - Help: ServiceNow Community, the Developer Site (training, API and CLI docs, PDIs), training and certification, the developer video channel.
+
+## After deployment: maintaining
+
+The guide's last chapter is one page of pointers: keep changing the application with the builder it was made in, re-test with the testing tool ([[Automated Test Framework Overview]]), and watch it with:
+
+| Area | Tools named |
+|---|---|
+| Analytics | Platform Analytics Workspace (Analytics Center: every dashboard, visualization and natural-language analytics answer in one page), Analytics Hub (one indicator in depth: trend, forecast, breakdowns, records, targets, thresholds, comments), Performance Analytics dashboards. An *Analytics Center* page can be added to a workspace in App Engine Studio, as a new workspace or from the page template |
+| Monitoring | Application Service Dashboard: health counts of application services and the incomplete ones to finish populating |
+| Security and assets | Security Incident Response, Software Asset Management, Service Mapping |
+
+Deploying is covered in [[ReleaseOps]], [[Update Sets]] and [[Application Repository, Publishing and Administering Apps]]; page performance in [[Performance Analyzer]].
 
 ## Related
 

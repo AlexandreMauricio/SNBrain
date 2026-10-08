@@ -85,4 +85,4 @@ In-progress work that exists only on the target: work-in-progress update sets, a
 
 ## Related
 
-- [[Request, Schedule, Cancel or Roll Back a Clone]] · [[Register a Clone Target Instance]] · [[Configure Clone Exclusions, Preservers and Cleanup Scripts]] · [[Clone Options and States]] · [[Clone Target Registration Errors]]
+- [[Request, Schedule, Cancel or Roll Back a Clone]] · [[Register a Clone Target Instance]] · [[Configure Clone Exclusions, Preservers and Cleanup Scripts]] · [[Clone Options and States]] · [[Clone Target Registration Errors]] · [[Update Sets]] · [[Application Repository, Publishing and Administering Apps]]
