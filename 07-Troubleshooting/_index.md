@@ -21,3 +21,4 @@ Symptom, cause, fix.
 - [[ACL Not Working as Expected]]
 - [[LDAP Login or Import Problems]]
 - [[SSO Login Errors (SAML)]]
+- [[Credentials Fail in Discovery or Orchestration]] - checks, credentials_debug payload section, exclusion list, vault lookups

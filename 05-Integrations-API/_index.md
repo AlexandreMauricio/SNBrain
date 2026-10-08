@@ -29,3 +29,7 @@ REST and SOAP APIs, import sets and transform maps, IntegrationHub, MID Server, 
 - [[LDAP Integration]] - authentication, refresh, listener, on-demand login, connection options, records, transform map rules and LDAPUtils, deactivating disabled users (documented, Brazil)
 - [[OAuth 2.0 Inbound - The Instance as OAuth Provider]] - endpoints, grant types, Machine Identity Console and Application Registry, CIMD, tokens, properties
 - [[OAuth 2.0 Outbound - The Instance as OAuth Client]] - third-party provider records, JWT bearer, Private Key JWT, Workload Identity Federation (Azure, Google Cloud), OAuth client and JWT script APIs
+- [[Connections, Credentials and Aliases]] - connection, credential and alias model, tables and roles, order and affinity, Discovery credential aliases, scope protection, authentication algorithms
+- [[Credential Types Reference]] - every credential type with its fields; SSH sudo commands and Windows account requirements
+- [[External Credential Storage and CyberArk]] - credential resolvers, MID Server parameters, Credential ID formats, OAuth client secret in a vault
+- [[Connection and Credential Configuration Templates]] - one-dialog setup for spokes: default data, dynamic schema, post-processing and pre-edit scripts, OAuth through a MID Server
