@@ -125,6 +125,7 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[ITSM Granular Roles]] - sn_incident/problem/change/request read and write roles, service desk agent, business stakeholder
 - [[Access Control Lists (ACLs)]] - parts of an ACL, operations, evaluation and processing order, deny by default, query, datatype and function field ACLs, scopes, properties, Role Management V2 additions (documented, Brazil)
 - [[Explicit Roles and Elevated Privilege Roles]] - snc_internal and snc_external (plugin behaviour, mutual exclusion), elevated roles, security_admin, forcing admins to elevate (documented, Brazil)
+- [[External User Self-Registration]] - registration configuration, form fields, verification and onboarding subflows, portal link, reCAPTCHA (documented, Brazil)
 
 ## Forms and Lists (`Forms-and-Lists/`)
 
@@ -245,6 +246,7 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Otto for ITSM Agentic Workflows and AI Agents Reference]] - each ITSM agentic workflow: agents, triggers, roles, prerequisites; change policy documents and quality scores
 - [[ITSM Virtual Agent Topics and Setup]] - pre-built NLU topics and blocks, actionable notifications, Issue Auto Resolution, deflection patterns, Lite, Employee Slate for Moveworks
 - [[L1 IT Service Desk AI Specialist]] - autonomous worker on a team: execution modes, task settings, monitoring
+- [[Authentication Factors for AI Voice Agents and Human-Assisted SMS OTP]] - identifying and verifying callers (KBA, Soft PIN, TOTP, push, SMS, email, step-up); API for human agents to verify by texted code (documented, Brazil)
 
 ## Data Management (`Data-Management/`)
 
