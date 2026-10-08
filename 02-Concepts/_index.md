@@ -140,6 +140,7 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[E164 Phone Number Fields]] - territory logic, properties and attributes (documented)
 - [[List Configuration and List Controls]] - layout, list control options and scripts, sort order, personal lists, ranking, context menus (documented)
 - [[List Editor]] - what it bypasses, properties, list_edit ACL operation (documented)
+- [[Application Menus and Modules]] - navigator menus (sys_app_application) and modules (sys_app_module): fields, link types, encoding of arguments (documented, Brazil)
 
 ## Scripting (`Scripting/`)
 
@@ -313,3 +314,10 @@ Notes in this section come from the Brazil release of the Building applications 
 - [[UI Builder Pages, Variants and Layouts]] - page paths and parameters, templates, variant conditions and order, shared pages, preview, responsive authoring and breakpoints, column, flexbox and grid layouts
 - [[UI Builder Components, Events and Styling]] - property modes, presets, tabs, forms, modals, popovers, modeless dialogs, viewports, page collections, event sources and handlers, UI interactions and their steps, styles, AI panel
 - [[UI Builder Data Resources, Controllers and Client Scripts]] - binding syntax (@data, @state, @context, @payload, @item), data resource types, multi-table data, EVAM, controllers, client state, client script API, formulas, repeaters, Component Builder
+- [[Automated Test Framework Overview]] - what ATF is, tests, steps and suites, rollback, roles, where it must not run (documented, Brazil)
+- [[ATF Building and Running Tests]] - build, run and debug a test, client test runners, client errors, custom UI steps and sn-atf attributes, parameterised, reusable and mutually exclusive tests
+- [[ATF Test Step Categories Reference]] - every step by category: inputs, assert types, outputs, limits (form, list, catalog, navigator, REST, email, server)
+- [[ATF Test Suites, Schedules and Administration]] - suites, schedules, parallel runs, failure analysis, performance profiling, code coverage, retention, screenshots, REST profiles
+- [[ATF Records, Properties and Custom Step Configurations]] - tables not rolled back, result records and statuses, property list, scripted step configurations, workspace component actions, worked examples
+- [[ATF Quick Start Tests by Application]] - shipped suites and their plugins per application; ITSM tests in detail
+- [[ATF Headless Browser (Legacy Docker Runner)]] - running UI tests without a visible browser through Docker (legacy)
