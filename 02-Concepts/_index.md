@@ -244,6 +244,11 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[ServiceNow Vault and Otto for Vault]] - the data-protection bundle: Vault Suite contents, roles, guided setup, console metrics, default policies, AI skills and agentic workflows
 - [[Security Center]] - hardening compliance score, security scanner, Customer Actions, event notifications, security metrics, posture dashboards, Security Tasks, roles
 - [[Security Center Scan Checks and Best Practices]] - the Auditor suite checks and the best-practice list, as a review checklist
+- [[Hardening Settings - Overview and Baseline Versions]] - how to read the 328 hardening settings, setting families, highest-scoring and non-default settings, baseline versions and what each added or removed
+- [[Hardening Settings - Access Control]] - 101 settings: CSRF, ACL evaluation, scopes, roles and impersonation, public access, MID Server
+- [[Hardening Settings - Authentication and Session Management]] - 73 settings: MFA and basic authentication restriction, lockout, password reset, SSO, timeouts, concurrent sessions, cookies
+- [[Hardening Settings - API, Architecture, Communications and Configuration]] - 67 settings: authentication per inbound processor, IP allow lists, query ACLs, outbound TLS checks, HTTP headers
+- [[Hardening Settings - Validation, Files, Logging and Other]] - 87 settings: sanitizing and escaping, script sandbox, XML parsing, attachments, static analysis, audit and logging
 
 ## AI (`AI/`)
 
