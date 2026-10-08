@@ -19,3 +19,4 @@ Symptom, cause, fix.
 - [[Resolved Incidents Are Not Closing Automatically]]
 - [[SLA Does Not Attach or Cancels Instead of Pausing]]
 - [[ACL Not Working as Expected]]
+- [[LDAP Login or Import Problems]]

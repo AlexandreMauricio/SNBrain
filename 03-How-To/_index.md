@@ -99,6 +99,8 @@ Step-by-step procedures, grouped by topic (the notes themselves stay in one flat
 
 ## API, integrations and imports
 
+- [[Set Up an LDAP Integration]] - certificate, server, OU definitions, data source, transform map, schedule (documented, Brazil)
+
 ## Reporting and dashboards
 
 - [[Create a Database View]] - join tables, left joins, where clause rules, restrict and relabel fields (documented)

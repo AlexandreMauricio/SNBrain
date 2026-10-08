@@ -26,3 +26,4 @@ REST and SOAP APIs, import sets and transform maps, IntegrationHub, MID Server, 
 - [[Spoke Generator]] - build a custom spoke from OpenAPI, Postman, pasted API docs (AI) or by hand; roles, limits (documented)
 - [[ServiceNow CLI]] - snc command-line client: install, profiles, record commands, custom commands mapped to REST endpoints, ui-component extension, CMDB application service commands (documented, Brazil)
 - [[Inbound API Authentication and API Access Policies]] - basic auth restriction, API keys and HMAC, access policies and their priority, REST auth scopes, processor policies, external authorization servers for the MCP Server (documented, Brazil)
+- [[LDAP Integration]] - authentication, refresh, listener, on-demand login, connection options, records, transform map rules and LDAPUtils, deactivating disabled users (documented, Brazil)
