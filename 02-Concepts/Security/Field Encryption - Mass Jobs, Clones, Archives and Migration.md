@@ -73,6 +73,8 @@ Outline: configure Field Encryption for each edge-encrypted column and attachmen
 - Per field: a published module with parent `column_level_encryption` and a generated key; a single-module configuration on the same table and column; a role policy for a role that must encrypt and decrypt. The field then shows the lock icon.
 - Field Encryption has no tokenization like Edge Encryption (tokenized data must go into an encrypted field configuration) and cannot encrypt Service Catalog item variables.
 
+Edge Encryption itself: [[Edge Encryption Overview]].
+
 ## Related
 
 - [[Field Encryption - Modules, Encrypted Fields and Access]] · [[KMF Key Exchange and Key Import]] · [[Instance Clone Overview]] · [[System Archive and Archive Rules]] · [[Column Level Encryption (Legacy)]] · [[Encrypted Field Shows Empty or Unreadable]]

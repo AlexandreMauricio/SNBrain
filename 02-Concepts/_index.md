@@ -273,6 +273,13 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Field Encryption - Mass Jobs, Clones, Archives and Migration]] - security job types, clone behaviour and rekeying, archive tables, migration from encryption contexts and Edge Encryption (Brazil)
 - [[Field Encryption - Customer-Supplied Keys and External Key Management]] - bring your own key (wrap and upload) and hold your own key with AWS KMS, key status effects (Brazil)
 - [[Column Level Encryption (Legacy)]] - predecessor of Field Encryption, deprecation status and the differences (Brazil)
+- [[Cloud Encryption with Key Management]] - block-level database encryption, ServiceNow-managed and customer-managed keys, rotation, withdraw and resupply, quorum control, tamper detection, transactions (Brazil)
+- [[Database Encryption and Full Disk Encryption]] - the two older infrastructure options for data at rest, key hierarchy, key rotation requests, customer-controlled switch (Brazil)
+- [[Edge Encryption Overview]] - proxy-based encryption in the customer network: components, encryption types, patterns, keys, limits, installed tables and properties; being deprecated (Brazil)
+- [[Edge Encryption Proxy - Installation, Keystores and Upgrades]] - requirements, sizing, installer steps, keystores, authentication, load balancer and SSO, upgrades and rollback (Brazil)
+- [[Edge Encryption Proxy Properties Reference]] - edgeencryption.properties by area, wrapper.conf and log4j2 settings (Brazil)
+- [[Edge Encryption Configuration - Keys, Jobs, Patterns and Integrations]] - instance-side keys and rotation, field, attachment and variable configurations, jobs, patterns, record producers, MID Server, ODBC, monitoring (Brazil)
+- [[Edge Encryption Rules and Rule APIs]] - proxy-side rule scripts: condition, action, order, request object, JSON and XML APIs, prohibited keywords (Brazil)
 
 ## AI (`AI/`)
 

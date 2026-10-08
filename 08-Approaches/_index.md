@@ -16,3 +16,4 @@ Comparisons where several ways exist for the same task.
 - [[UI Policy or Client Script]] - declarative UI policy versus scripted client script (documented, client script side unverified)
 - [[UI Policy or Data Policy]] - dictionary, UI policy or data policy for mandatory and read-only (documented)
 - [[Inbound Email Flow or Inbound Email Action]]
+- [[Choosing an Encryption Option]] - full disk, database, cloud, field and edge encryption compared by who is kept out and who holds the key (documented)

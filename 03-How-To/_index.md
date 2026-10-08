@@ -105,6 +105,7 @@ Step-by-step procedures, grouped by topic (the notes themselves stay in one flat
 - [[Create a Cryptographic Module and Key]] - KMF roles, module, specification, generated key, access policy, rotation (Brazil)
 - [[Upload a Certificate to the Instance]] - trust store or keystore certificate record and validation (Brazil)
 - [[Encrypt a Field with Field Encryption]] - module, key, access policy, encrypted field configuration, mass encryption (Brazil)
+- [[Encrypt a Field with Edge Encryption]] - key alias, encryption configuration, mass encryption job, other entry points (Brazil; product being deprecated)
 
 ## AI
 
