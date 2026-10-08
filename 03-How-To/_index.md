@@ -129,6 +129,7 @@ Step-by-step procedures, grouped by topic (the notes themselves stay in one flat
 - [[Set Up Export to Google Sheets]] - Google OAuth app, application registry, alias, credential, connection, property (documented)
 - [[Restore a Deleted Record]] - Deleted Records and Delete Recovery modules (documented)
 - [[Roll Back a Patch, Plugin Activation or Background Script]] - rollback contexts and script execution history (documented)
+- [[Enable Auditing on a Table]] - Audit flag on the collection row, no_audit and audit_type=whitelist attributes, checking the result
 
 ## Instance Administration
 

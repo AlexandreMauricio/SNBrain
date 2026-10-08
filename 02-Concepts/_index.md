@@ -251,6 +251,10 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Hardening Settings - Validation, Files, Logging and Other]] - 87 settings: sanitizing and escaping, script sandbox, XML parsing, attachments, static analysis, audit and logging
 - [[Secrets Management - Secret Groups and Client-Side Secrets]] - secret groups over Password2 values, instance vs client accessible, client-side encryption with a MID Server key, security jobs, roles, clone behaviour (Enterprise edition being retired)
 - [[Code Signing and the Circle of Trust]] - signed records verified by MID Servers, trusted vs protected instance, signing jobs, ECC firewall rules, Root of Trust, quorum revocation, dashboard, audit, properties, roles
+- [[Antivirus Scanning]] - attachment scanning on upload and download, quarantine, exclusions, table attributes
+- [[HTML Sanitizer]] - what is stripped from HTML fields, properties, per-field attribute, HTMLSanitizerConfig allow and deny lists
+- [[High Security Settings]] - default deny, security_admin elevation, property read and write roles, the page of security switches
+- [[VPN between the Instance and a Company Network]] - IPsec tunnels for outbound calls only, addressing, redundancy, preferred alternatives
 
 ## AI (`AI/`)
 
@@ -275,6 +279,7 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Exporting Data]] - export routes, roles, what each format contains, surprises (documented)
 - [[Export Limits and Properties]] - row and cell limits, display value and header properties, URL parameters (documented)
 - [[Rollback and Delete Recovery]] - rollback contexts, modules, retention properties, database support (documented)
+- [[Auditing and Record History]] - what sys_audit records and what it skips, inclusion and exclusion lists, retention, history sets, history views, roles
 
 ## Instance Administration (`Instance-Administration/`)
 
