@@ -115,14 +115,14 @@ Record the release family of each page: the same page can differ between release
 | Build workflows > Workflow Studio > Agentic Playbooks (whole chapter) | https://www.servicenow.com/docs/r/australia/build-workflows/workflow-studio/agentic-playbooks.html and the pages under it, read through the docs site API | Australia | 2026-10-08 | [[Agentic Playbooks]] |
 | Build workflows > Service Creator (whole chapter) | https://www.servicenow.com/docs/r/australia/build-workflows/service-creator/c_ServiceCreator.html and the pages under it, read through the docs site API | Australia | 2026-10-08 | [[Service Creator]] |
 | Build workflows > Classic Workflow (whole chapter, including Workflow activities) | https://www.servicenow.com/docs/r/australia/build-workflows/legacy-workflow/c_WorkflowOverview.html and the pages under it, read through the docs site API | Australia | 2026-10-08 | [[Classic Workflow Overview]], [[Classic Workflow Activities Reference]], [[Classic Workflow Stages, Validation and Update Sets]], [[Classic Workflow Administration and Troubleshooting]] |
+| Build workflows > Workflow Studio > Playbooks: the pages after the point where the PDF stops (mobile embedding, Reflow, record generator, Playbooks patterns, Running Playbook Experience, Playbooks reference) | https://www.servicenow.com/docs/r/australia/build-workflows/workflow-studio/playbook-patterns.html and the pages around it, read through the docs site API | Australia | 2026-10-08 | [[Playbook Patterns and Runtime Use]], [[Playbook Activities Reference]]; small additions to [[Playbook Experience Design for Workspace, Portal and Mobile]] and [[Playbooks Administration, Roles and Access]] |
 
 ## To read
 
 | Page | URL | Why |
 |---|---|---|
 | Service Catalog and record producers | Australia PDF or docs site | variables, variable sets, flows behind items; the ITSM guide only gave the request tables and checkout sequence |
-| Build workflows guide, remaining chapters | Australia docs site (the published PDF does not contain them; confirmed by the user 2026-10-08) | the PDF ingested on 2026-10-08 has only Workflow Studio overview and Playbooks (210 pp.). Still missing: flows, subflows and actions; decision tables; Spoke Generator; intelligent approvals; classic approvals; classic business rules; system events; Service Creator; classic Workflow; agentic playbooks and the Playbooks reference of common activities |
-| Scripting (business rules, client scripts, script includes, Glide API) | Australia PDF, developer site | the admin guide references these without explaining them; 04-Scripts-Automation is empty |
+| Scripting (client scripts, script includes, UI actions, Glide API) | Australia docs site (API implementation and reference guide), developer site | business rules are now covered by [[Business Rules]] (2026-10-08); the other script types and the Glide classes are still only referenced |
 | Access control (ACLs), security and SSO | Australia PDF or docs site | roles are documented, ACL rules are not |
 | Import sets, transform maps, REST and SOAP APIs, MID Server | Australia PDF or docs site | 05-Integrations-API has only the overview |
 | Update sets and application scope | Australia PDF or docs site | referenced by upgrades, clone and Otto for Setup notes |

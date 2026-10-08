@@ -40,6 +40,8 @@ Recommended Store updates: Playbooks, Playbook Experience, Process Automation Co
 | `playbook.write` | build playbooks, subject to content filtering | `pd_shared.user` |
 | `playbook.designer_access` | open playbooks read-only, subject to content filtering | `pd_shared.user` |
 | `playbook.activity_def_read` | see all activity definitions that have no Required Roles | |
+| `playbook.read` | read all playbooks | |
+| `playbook.write.public_access`, `playbook.content_author.public_access`, `playbook.automation_runner` | public (guest) playbooks: edit them; set the public flag on activity definitions; the restricted identity their automations run as ([[Playbook Patterns and Runtime Use]]) | |
 | `pd_shared.user` / `pd_shared.admin` | read / edit Experience activity types (`sys_pd_activity`) and their properties (`sys_pd_activity_type_prop`) | |
 
 The guide writes some roles two ways (`playbook.admin` and `playbook_admin`; `pd_author` and `playbook_author`): check `sys_user_role`. Access can also be given through **delegated development** (an application plus the playbook developer permission).

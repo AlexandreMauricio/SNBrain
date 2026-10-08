@@ -57,7 +57,20 @@ A developer builds flows, actions and activity definitions; a playbook owner ass
 
 ## Not in this PDF
 
-The table of contents of the guide lists flows, subflows and actions, decision tables, Spoke Generator, intelligent and classic approvals, classic business rules, system events, Service Creator and classic Workflow, but the PDF as published ends at page 210, inside the Playbooks chapter (the user confirmed this is the full file ServiceNow offers). Those topics are only on the docs site and are still to be ingested from there.
+The published PDF ends at page 210, inside the Playbooks chapter (the user confirmed this is the full file ServiceNow offers). The rest of the guide was read from the docs site on 2026-10-08:
+
+| Chapter | Notes |
+|---|---|
+| Playbooks, remaining pages | [[Playbook Patterns and Runtime Use]], [[Playbook Activities Reference]] |
+| Agentic Playbooks | [[Agentic Playbooks]] |
+| Flows, subflows and actions | [[Flows, Subflows and Actions Overview and Architecture]], [[Building Flows - Properties, Triggers, Stages and Error Handling]], [[Subflows in Workflow Studio]], [[Custom Actions, Dynamic Inputs and Error Evaluation]], [[Saved Triggers and External Event Sources]], [[Flow Authoring Aids - History, Variables, Inline Scripts and AI]], [[Flow Administration, Execution Details and Access]], and the references [[Flow Core Actions Reference]], [[Flow Logic Reference]], [[Flow Trigger Types Reference]], [[Flow Action Steps Reference]], [[Flow Data Types and Transform Functions]], [[Flow System Properties Reference]], [[Flow Spokes Shipped with the Platform]] |
+| Decision tables | [[Decision Tables]] |
+| Spoke Generator | [[Spoke Generator]] |
+| Intelligent approvals, Classic approvals | [[Intelligent Approvals]], [[Classic Approvals]] |
+| Classic Business rules | [[Business Rules]] |
+| System Events | [[Events and the Event Queue]] |
+| Service Creator | [[Service Creator]] |
+| Classic Workflow | [[Classic Workflow Overview]], [[Classic Workflow Activities Reference]], [[Classic Workflow Stages, Validation and Update Sets]], [[Classic Workflow Administration and Troubleshooting]] |
 
 ## Related
 

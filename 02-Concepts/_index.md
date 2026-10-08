@@ -178,6 +178,8 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Classic Workflow Activities Reference]] - approval, condition, timer, task, notification and utility activities with variables, results and exits
 - [[Classic Workflow Stages, Validation and Update Sets]] - stage fields, stage sets and renderers; the validators; how workflows and input variables travel in update sets
 - [[Classic Workflow Administration and Troubleshooting]] - contexts, cancel, schedules, script error exits, run time metrics, pause utility, encrypted scratchpad, workflow events
+- [[Playbook Activities Reference]] - shipped interactive and non-interactive activities with inputs and outputs; process and activity execution states
+- [[Playbook Patterns and Runtime Use]] - nested, wizard, guided decision and guest-access playbooks; record generator, Reflow; restart, cancel, optional activities, ATF
 
 ## Notifications and Email (`Notifications-and-Email/`)
 
