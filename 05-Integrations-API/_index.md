@@ -33,3 +33,4 @@ REST and SOAP APIs, import sets and transform maps, IntegrationHub, MID Server, 
 - [[Credential Types Reference]] - every credential type with its fields; SSH sudo commands and Windows account requirements
 - [[External Credential Storage and CyberArk]] - credential resolvers, MID Server parameters, Credential ID formats, OAuth client secret in a vault
 - [[Connection and Credential Configuration Templates]] - one-dialog setup for spokes: default data, dynamic schema, post-processing and pre-edit scripts, OAuth through a MID Server
+- [[Log Export Service (LES)]] - streaming instance logs through Hermes (Kafka) to external analytics: sources, topics, Kafka and MID Server consumers, backfill runs, properties, roles

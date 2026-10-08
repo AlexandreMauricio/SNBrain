@@ -291,6 +291,7 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Subscription Management]]: subscription types, measured roles, custom table mapping
 - [[Otto for Setup and Multi-Instance Trust]]: guided setup, batch update sets, trust between instances
 - [[Custom Instance URLs]] - company host names for the instance, portal and identity provider per URL, the instance URL, DNS order, errors (documented, Brazil)
+- [[System Logs, Log Files and Protected Tables]] - the log tables and their fields, retention and rotation, node log files, log attribution, protected tables, log roles
 
 ## Search (`Search/`)
 
