@@ -27,3 +27,5 @@ REST and SOAP APIs, import sets and transform maps, IntegrationHub, MID Server, 
 - [[ServiceNow CLI]] - snc command-line client: install, profiles, record commands, custom commands mapped to REST endpoints, ui-component extension, CMDB application service commands (documented, Brazil)
 - [[Inbound API Authentication and API Access Policies]] - basic auth restriction, API keys and HMAC, access policies and their priority, REST auth scopes, processor policies, external authorization servers for the MCP Server (documented, Brazil)
 - [[LDAP Integration]] - authentication, refresh, listener, on-demand login, connection options, records, transform map rules and LDAPUtils, deactivating disabled users (documented, Brazil)
+- [[OAuth 2.0 Inbound - The Instance as OAuth Provider]] - endpoints, grant types, Machine Identity Console and Application Registry, CIMD, tokens, properties
+- [[OAuth 2.0 Outbound - The Instance as OAuth Client]] - third-party provider records, JWT bearer, Private Key JWT, Workload Identity Federation (Azure, Google Cloud), OAuth client and JWT script APIs

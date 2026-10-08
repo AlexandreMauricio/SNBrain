@@ -102,6 +102,7 @@ Step-by-step procedures, grouped by topic (the notes themselves stay in one flat
 ## API, integrations and imports
 
 - [[Set Up an LDAP Integration]] - certificate, server, OU definitions, data source, transform map, schedule (documented, Brazil)
+- [[Register an OAuth Client for Inbound REST Calls]] - client credentials or authorization code client, token request, checks and gotchas
 
 ## Reporting and dashboards
 

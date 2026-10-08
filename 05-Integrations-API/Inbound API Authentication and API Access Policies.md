@@ -19,7 +19,7 @@ From the Brazil docs. Overview of interfaces: [[Integration Options and Interfac
 | Method | Notes |
 |---|---|
 | Basic authentication (user name and password) | legacy; discouraged; being restricted (below) |
-| OAuth 2.0 access token | an application registry gives the client an id and secret (OAuth chapter, not yet in the vault) |
+| OAuth 2.0 access token | an application registry gives the client an id and secret ([[OAuth 2.0 Inbound - The Instance as OAuth Provider]]) |
 | OIDC ID token | from an external identity provider |
 | Client certificate (mutual TLS) | certificate mapped to a user |
 | **API key** | a token tied to a user, sent in a header or query parameter |
