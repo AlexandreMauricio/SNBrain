@@ -269,3 +269,13 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Languages, Translation Tables and Locale]]: language resolution, the five translation tables, translating custom content
 - [[Currency and Price Fields]]: reference vs session currency, price types, FX Currency
 - [[Localization Framework, Workspace and Dynamic Translation]]: machine translation and managed translation projects
+
+## Application Development (`Application-Development/`)
+
+Notes in this section come from the Brazil release of the Building applications guide unless they say otherwise.
+
+- [[Application Development Tools and Lifecycle]] - which builder for whom, tools by lifecycle stage, reporting options, UI experiences, licensing (documented, Brazil)
+- [[Application Scope and Namespace Identifiers]] - private and global scope, x_ prefixes, custom application record, application files and sys_metadata, protection policy, fix scripts, fulfillment tables
+- [[Application Access Settings and Cross-Scope Privileges]] - runtime access tracking, table application access, restricted caller access, restrictions across scopes, lists and forms in scoped apps
+- [[Application Administration and Collaboration Descriptors]] - locking admins out of sensitive applications, application admin roles, collaboration descriptors and permissions, script protection policy
+- [[Personal Developer Instances]] - PDI rules, hibernation and reclaim, instance actions on the Developer Site, email restriction
