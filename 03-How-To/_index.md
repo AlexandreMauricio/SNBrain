@@ -104,6 +104,7 @@ Step-by-step procedures, grouped by topic (the notes themselves stay in one flat
 - [[Find Sensitive Data with a Data Discovery Job]] - patterns, target tables, policy, sample job, classify the findings (Brazil)
 - [[Create a Cryptographic Module and Key]] - KMF roles, module, specification, generated key, access policy, rotation (Brazil)
 - [[Upload a Certificate to the Instance]] - trust store or keystore certificate record and validation (Brazil)
+- [[Encrypt a Field with Field Encryption]] - module, key, access policy, encrypted field configuration, mass encryption (Brazil)
 
 ## AI
 

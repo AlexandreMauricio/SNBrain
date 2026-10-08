@@ -23,3 +23,4 @@ Symptom, cause, fix.
 - [[SSO Login Errors (SAML)]]
 - [[Credentials Fail in Discovery or Orchestration]] - checks, credentials_debug payload section, exclusion list, vault lookups
 - [[Domain Separation Errors]] - invalid domain ids, wrong paths, loops, default-domain pile-ups, reading the domain query log
+- [[Encrypted Field Shows Empty or Unreadable]] - missing access policy, clone without key exchange, archive tables, script access, external key disabled (Brazil)

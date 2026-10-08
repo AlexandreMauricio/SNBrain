@@ -269,6 +269,10 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Unified Secrets Gateway]] - alias groups, identity groups and consumer grants controlling who can read secrets (Brazil)
 - [[Certificates on the Instance - Formats, Trust and Upload]] - certificate records, formats, default trust, LDAP certificates, making keystores (Brazil)
 - [[Infrastructure Security - TLS Ciphers and Customer-Signed Certificates]] - TLS 1.2 cipher selection and certificate signing requests for the instance URL (Brazil)
+- [[Field Encryption - Modules, Encrypted Fields and Access]] - Starter and Enterprise, modules, encrypted field configurations, what users see, row conditions and multiple modules, attachments, script APIs (Brazil)
+- [[Field Encryption - Mass Jobs, Clones, Archives and Migration]] - security job types, clone behaviour and rekeying, archive tables, migration from encryption contexts and Edge Encryption (Brazil)
+- [[Field Encryption - Customer-Supplied Keys and External Key Management]] - bring your own key (wrap and upload) and hold your own key with AWS KMS, key status effects (Brazil)
+- [[Column Level Encryption (Legacy)]] - predecessor of Field Encryption, deprecation status and the differences (Brazil)
 
 ## AI (`AI/`)
 
