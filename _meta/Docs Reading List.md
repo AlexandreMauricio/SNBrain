@@ -131,6 +131,7 @@ Record the release family of each page: the same page can differ between release
 | Building applications (Brazil) > Testing and debugging applications (introduction) and Performance Analyzer (128 cleaned lines, in full) | https://www.servicenow.com/docs/r/application-development/performance-analyzer/performance-analyzer-landing.html | Brazil | 2026-10-08 | [[Performance Analyzer]] |
 | Building applications (Brazil) > Deploying applications: introduction, ReleaseOps (1,267 lines), System update sets (1,147 lines), Administer your apps (1,180 lines); all read in full | https://www.servicenow.com/docs/r/application-development/deploying-applications.html and the pages under it | Brazil | 2026-10-08 | [[ReleaseOps]], [[Update Sets]], [[Move an Update Set between Instances]], [[Application Repository, Publishing and Administering Apps]] |
 | Building applications (Brazil) > Maintaining your application (one page, 96 lines, in full) | https://www.servicenow.com/docs/r/application-development/maintaining-applications.html | Brazil | 2026-10-08 | section added to [[Application Development Tools and Lifecycle]] |
+| Platform security (Brazil) > Access Management > Access Control Lists (ACLs) (whole section, 30 topics, 1,657 cleaned lines, read in full) | https://www.servicenow.com/docs/r/platform-security/access-control/access-control-rules.html | Brazil | 2026-10-08 | [[Access Control Lists (ACLs)]], [[Create an ACL]], [[ACL Not Working as Expected]] |
 
 ## To read
 
@@ -138,9 +139,8 @@ Record the release family of each page: the same page can differ between release
 |---|---|---|
 | Service Catalog and record producers | Australia PDF or docs site | variables, variable sets, flows behind items; the ITSM guide only gave the request tables and checkout sequence |
 | Scripting (client scripts, script includes, UI actions, Glide API) | Australia docs site (API implementation and reference guide), developer site | business rules are now covered by [[Business Rules]] (2026-10-08); the other script types and the Glide classes are still only referenced |
-| Access control (ACLs), security and SSO | Australia PDF or docs site | roles are documented, ACL rules are not |
+| Platform security guide (Brazil), remaining chapters | docs site API, map `V4HkxYleMr32qwc1nHrCsQ`; 1,760 topics, about 86,000 cleaned lines in 84 chapter files | link given by the user on 2026-10-08 (no release in the link = Brazil). Order: Access Management first (ACLs done), then the rest top to bottom. Still to read: rest of Access Management (security roles, Access Analyzer, security attributes, data filters, Scripting Governance, Zero Trust, domain separation, authentication incl. LDAP, MFA, SSO, OAuth, connections and credentials), Vault, Security Center, Hardening settings, Log Export Service, Logs, Secrets Management, Code Signing, Antivirus, HTML sanitizer, Auditing, High Security Settings, VPN, Platform Privacy, Encryption, Identity, Access observer, Granular admin roles, Agentic AI security |
 | Import sets, transform maps, REST and SOAP APIs, MID Server | Australia PDF or docs site | 05-Integrations-API has only the overview |
-| Update sets and application scope | Australia PDF or docs site | referenced by upgrades, clone and Otto for Setup notes |
 | CMDB and CSDM | Australia PDF or docs site | only companies and the SCCM import are covered |
 | Knowledge Management | Australia PDF or docs site | contextual search and translation notes assume it |
 | Reporting / Platform Analytics | Australia PDF or docs site | 06-Reporting has database views, metrics and timelines only |

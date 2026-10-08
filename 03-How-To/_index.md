@@ -48,6 +48,7 @@ Step-by-step procedures, grouped by topic (the notes themselves stay in one flat
 - [[Create a User]] - user form, password, identity type (documented)
 - [[Create a Group and Add Members]] - group form, members, hidden group business rule (documented)
 - [[Assign Roles to Users and Groups]] - group roles, user roles, nested roles, time-limited roles (documented)
+- [[Create an ACL]] - create a table or field ACL, check it with the execution plan and the watcher (documented, Brazil)
 
 ## Forms and Lists
 
