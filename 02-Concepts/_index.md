@@ -250,6 +250,7 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Hardening Settings - API, Architecture, Communications and Configuration]] - 67 settings: authentication per inbound processor, IP allow lists, query ACLs, outbound TLS checks, HTTP headers
 - [[Hardening Settings - Validation, Files, Logging and Other]] - 87 settings: sanitizing and escaping, script sandbox, XML parsing, attachments, static analysis, audit and logging
 - [[Secrets Management - Secret Groups and Client-Side Secrets]] - secret groups over Password2 values, instance vs client accessible, client-side encryption with a MID Server key, security jobs, roles, clone behaviour (Enterprise edition being retired)
+- [[Code Signing and the Circle of Trust]] - signed records verified by MID Servers, trusted vs protected instance, signing jobs, ECC firewall rules, Root of Trust, quorum revocation, dashboard, audit, properties, roles
 
 ## AI (`AI/`)
 
