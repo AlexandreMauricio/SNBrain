@@ -2,7 +2,7 @@
 type: concept
 tags: [concept, flows, automation, roles, domain-separation, scripting]
 status: documented
-source: ServiceNow docs, Australia, Build workflows > Workflow Studio > Decision tables (read 2026-10-08 through the docs site; whole chapter): Workflow Studio decision tables, Exploring decision tables, Decision tables workflow, Decision Builder user interface, Filter decision tables, Configure decision tables, Create decision tables in Workflow Studio, Duplicate a decision table, Edit decision tables using draft authoring, Modify decision table structure, Modify decision table rules, Use decision tables, Manage decision tables in Excel, View related objects, Test a decision table, Create decision table code snippets, Modify decision tables in the classic UI, Delete a decision table, Filter conditions, Use enhanced reference record, Set rows active or inactive, Decision Builder system properties, Domain separation and Decision Builder. https://www.servicenow.com/docs/r/australia/build-workflows/workflow-studio/decision-designer-overview.html
+source: ServiceNow docs, Australia, Build workflows > Workflow Studio > Decision tables (read 2026-10-08 through the docs site; whole chapter): Workflow Studio decision tables, Exploring decision tables, Decision tables workflow, Decision Builder user interface, Filter decision tables, Configure decision tables, Create decision tables in Workflow Studio, Duplicate a decision table, Edit decision tables using draft authoring, Modify decision table structure, Modify decision table rules, Use decision tables, Manage decision tables in Excel, View related objects, Test a decision table, Create decision table code snippets, Modify decision tables in the classic UI, Delete a decision table, Filter conditions, Use enhanced reference record, Set rows active or inactive, Decision Builder system properties, Domain separation and Decision Builder. https://www.servicenow.com/docs/r/australia/build-workflows/workflow-studio/decision-designer-overview.html Also ServiceNow docs, Brazil, Building applications > Builder library > Decision Tables (read 2026-10-08): Decision Tables, Decision tables in the classic environment, Create a decision table to resolve complex decisions. https://www.servicenow.com/docs/r/application-development/decision-tables/decision-table.html
 sn-release: Australia
 verified:
 updated: 2026-10-08
@@ -96,6 +96,19 @@ For large tables: **Export** (saved table) gives an .xlsx with the rows and an i
 ## Tables from the classic UI
 
 On first open, condition columns are created for every field the old conditions tested. Rules that use OR, test the same input or reference twice, use unsupported types or inactive inputs are shown as one merged condition expression (edited in the condition builder) and count as unsupported until simplified. Unsupported inputs and columns allow only label changes.
+
+### The classic records (Brazil docs)
+
+Without Workflow Studio the same decision is built from records under **System Definition > Decision Tables** (role `decision_table_admin`); the docs still recommend Workflow Studio.
+
+| Record | Table | Fields |
+|---|---|---|
+| Decision table | `sys_decision` | **Name**, **Application**, **Answer table** (any table; one of its fields must be the display value, shown as the answer label), **Accessible From** (all scopes or this scope only) |
+| Decision input | `sys_decision_input` | **Label**, **Column name**, **Type** (a flow can only pass data pills of this type), **Mandatory**, **Read only**, **Display**, **Choice** (list with or without None, or suggestion), **Default Value**, **Active** |
+| Decision | `sys_decision_question` | **Label**, **Order** (matters with *First decision that matches*), **Condition** (built on the inputs), **Answer** (a record of the answer table; reusable across decisions), **Default Answer** |
+| Answer | `sys_decision_multi_result_element` | the result elements; answer records themselves live in the chosen answer table (even `sys_choice`) |
+
+Script access: the DecisionTableAPI (scoped and global, server side).
 
 ## Limits and domains
 
