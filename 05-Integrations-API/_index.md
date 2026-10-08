@@ -24,3 +24,4 @@ REST and SOAP APIs, import sets and transform maps, IntegrationHub, MID Server, 
 - [[DevOps Docker Image and sndevopscli]] - environment variables and CLI commands for GitLab, GitHub Actions and Harness pipelines
 - [[DevOps Config Pipeline Integration]] - Azure DevOps tasks, Jenkins snDevOpsConfig actions and GitHub actions to upload, validate, publish and export config data
 - [[Spoke Generator]] - build a custom spoke from OpenAPI, Postman, pasted API docs (AI) or by hand; roles, limits (documented)
+- [[ServiceNow CLI]] - snc command-line client: install, profiles, record commands, custom commands mapped to REST endpoints, ui-component extension, CMDB application service commands (documented, Brazil)
