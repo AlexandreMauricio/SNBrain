@@ -262,6 +262,13 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Tokenization of Sensitive Data]] - reversible, format-preserving tokens, detokenization roles, policies and monitoring (Brazil)
 - [[Real Time Protection - Alerts, Blocking and Attachment Quarantine]] - alert data patterns, alert or block policies on a column, sensitive data logs, attachment quarantine and findings (Brazil)
 - [[Data Privacy Channel Policies - AI Prompts, Inbound Email and Virtual Agent]] - real time anonymization, two-way masking of AI prompts, bring your own PII detection, inbound email and chat masking (Brazil)
+- [[Key Management Framework (KMF)]] - cryptographic modules, specifications and algorithms, key hierarchy, key life-cycle states and actions, life-cycle policies, KMF roles, health page, licensing (Brazil)
+- [[Module Access Policies (MAPs)]] - who may encrypt and decrypt with a module: policy types and results, autogen policies, visualization page, session debugger (Brazil)
+- [[KMF Key Exchange and Key Import]] - getting keys to a cloned instance (automatic, clone, adhoc, rekey) and importing a wrapped key through the REST endpoint (Brazil)
+- [[Password2 Fields and the GlideEncrypter Deprecation]] - how password2 is encrypted, script methods, GlideEncrypter and 3DES retirement, FlowKMFEncrypter (Brazil)
+- [[Unified Secrets Gateway]] - alias groups, identity groups and consumer grants controlling who can read secrets (Brazil)
+- [[Certificates on the Instance - Formats, Trust and Upload]] - certificate records, formats, default trust, LDAP certificates, making keystores (Brazil)
+- [[Infrastructure Security - TLS Ciphers and Customer-Signed Certificates]] - TLS 1.2 cipher selection and certificate signing requests for the instance URL (Brazil)
 
 ## AI (`AI/`)
 

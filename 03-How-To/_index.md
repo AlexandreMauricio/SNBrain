@@ -102,6 +102,8 @@ Step-by-step procedures, grouped by topic (the notes themselves stay in one flat
 - [[Set Up Code Signing with a Trusted Instance]] - guided setup on the trusted and protected instances, guardrail check, then signed update sets
 - [[Anonymize a User with a Data Privacy Job]] - classify, policy, dry run, job and rollback for a right-to-be-forgotten request (Brazil)
 - [[Find Sensitive Data with a Data Discovery Job]] - patterns, target tables, policy, sample job, classify the findings (Brazil)
+- [[Create a Cryptographic Module and Key]] - KMF roles, module, specification, generated key, access policy, rotation (Brazil)
+- [[Upload a Certificate to the Instance]] - trust store or keystore certificate record and validation (Brazil)
 
 ## AI
 
