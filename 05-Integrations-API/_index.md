@@ -25,3 +25,4 @@ REST and SOAP APIs, import sets and transform maps, IntegrationHub, MID Server, 
 - [[DevOps Config Pipeline Integration]] - Azure DevOps tasks, Jenkins snDevOpsConfig actions and GitHub actions to upload, validate, publish and export config data
 - [[Spoke Generator]] - build a custom spoke from OpenAPI, Postman, pasted API docs (AI) or by hand; roles, limits (documented)
 - [[ServiceNow CLI]] - snc command-line client: install, profiles, record commands, custom commands mapped to REST endpoints, ui-component extension, CMDB application service commands (documented, Brazil)
+- [[Inbound API Authentication and API Access Policies]] - basic auth restriction, API keys and HMAC, access policies and their priority, REST auth scopes, processor policies, external authorization servers for the MCP Server (documented, Brazil)
