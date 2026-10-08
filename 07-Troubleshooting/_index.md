@@ -22,3 +22,4 @@ Symptom, cause, fix.
 - [[LDAP Login or Import Problems]]
 - [[SSO Login Errors (SAML)]]
 - [[Credentials Fail in Discovery or Orchestration]] - checks, credentials_debug payload section, exclusion list, vault lookups
+- [[Domain Separation Errors]] - invalid domain ids, wrong paths, loops, default-domain pile-ups, reading the domain query log

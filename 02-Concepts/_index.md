@@ -126,6 +126,10 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Access Control Lists (ACLs)]] - parts of an ACL, operations, evaluation and processing order, deny by default, query, datatype and function field ACLs, scopes, properties, Role Management V2 additions (documented, Brazil)
 - [[Explicit Roles and Elevated Privilege Roles]] - snc_internal and snc_external (plugin behaviour, mutual exclusion), elevated roles, security_admin, forcing admins to elevate (documented, Brazil)
 - [[External User Self-Registration]] - registration configuration, form fields, verification and onboarding subflows, portal link, reCAPTCHA (documented, Brazil)
+- [[Domain Separation Overview]] - tenants in one instance: data, process and UI separation, global / TOP / default domains, parent-child vs contains vs visibility, session and record scope, when it fits
+- [[Domain Separation Administration]] - plugins, domain records, properties, process overrides, application properties, migration and cleanup tools, Domain Separation Center
+- [[Domain Separation Recommended Practices]] - 80/15/5, default domain, hierarchy changes, contains and visibility cost, before-query rules, no domain paths in scripts
+- [[Domain Separation Support Levels by Application]] - No support / Basic / Standard / Enhanced and which application is at which level
 
 ## Forms and Lists (`Forms-and-Lists/`)
 
