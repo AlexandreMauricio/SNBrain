@@ -100,6 +100,8 @@ Step-by-step procedures, grouped by topic (the notes themselves stay in one flat
 - [[Raise the Hardening Compliance Score]] - work the non-compliant settings by score impact, update and compare the score
 - [[Configure Client-Accessible Secrets for a MID Server]] - key pair, secret group, identity group, key into the MID keystore, credential, test action
 - [[Set Up Code Signing with a Trusted Instance]] - guided setup on the trusted and protected instances, guardrail check, then signed update sets
+- [[Anonymize a User with a Data Privacy Job]] - classify, policy, dry run, job and rollback for a right-to-be-forgotten request (Brazil)
+- [[Find Sensitive Data with a Data Discovery Job]] - patterns, target tables, policy, sample job, classify the findings (Brazil)
 
 ## AI
 

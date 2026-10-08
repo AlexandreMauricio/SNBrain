@@ -255,6 +255,13 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[HTML Sanitizer]] - what is stripped from HTML fields, properties, per-field attribute, HTMLSanitizerConfig allow and deny lists
 - [[High Security Settings]] - default deny, security_admin elevation, property read and write roles, the page of security switches
 - [[VPN between the Instance and a Company Network]] - IPsec tunnels for outbound calls only, addressing, redundancy, preferred alternatives
+- [[Data Privacy Overview]] - the Data Privacy applications, licensing, limits, roles, supported field types, dashboard and the default alerting policy and discovery job (Brazil)
+- [[Data Discovery - Patterns, Policies, Jobs and Findings]] - regex and NER data patterns, Text to RegEx, target tables, policies, scan types, attachment scanning, findings, granular configuration, roles (Brazil)
+- [[Data Classification]] - data classes on dictionary entries, demo classes and sys_user assignments, dashboards, domain separation (Brazil)
+- [[Data Anonymization - Techniques, Policies and Jobs]] - techniques and parameters, policy types, jobs and dry run, rollback, post-clone anonymization, parallel workers, dp_ tables (Brazil)
+- [[Tokenization of Sensitive Data]] - reversible, format-preserving tokens, detokenization roles, policies and monitoring (Brazil)
+- [[Real Time Protection - Alerts, Blocking and Attachment Quarantine]] - alert data patterns, alert or block policies on a column, sensitive data logs, attachment quarantine and findings (Brazil)
+- [[Data Privacy Channel Policies - AI Prompts, Inbound Email and Virtual Agent]] - real time anonymization, two-way masking of AI prompts, bring your own PII detection, inbound email and chat masking (Brazil)
 
 ## AI (`AI/`)
 

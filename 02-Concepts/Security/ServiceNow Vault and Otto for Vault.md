@@ -12,7 +12,7 @@ updated: 2026-10-08
 
 **In one line:** Vault is a paid bundle of the platform's data-protection tools (discover and classify sensitive data, anonymize it, encrypt it, demand re-authentication to reach it, export logs, sign code) behind one console, with an AI companion (Otto for Vault) that performs the common set-up tasks by conversation.
 
-From the Brazil docs. The pieces it bundles that are already in the vault: [[Zero Trust Access - Session Access and Continuous Authentication]], [[Access Analyzer, Access Findings and Access Observer]]. Encryption, Data Privacy, Log Export Service and Code Signing are separate chapters of the same guide (not yet in the vault at the time of writing).
+From the Brazil docs. The pieces it bundles that are already in the vault: [[Zero Trust Access - Session Access and Continuous Authentication]], [[Access Analyzer, Access Findings and Access Observer]]. Other chapters of the same guide: [[Data Privacy Overview]], [[Log Export Service (LES)]], [[Code Signing and the Circle of Trust]]; Encryption is not yet in the vault at the time of writing.
 
 - Console: **All > Vault > Vault Console** (read-only until you elevate to the console admin role; preview-only until the console application is installed).
 - Subscription product; some plugins are activated with the purchase, others from the application list.
