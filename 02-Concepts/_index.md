@@ -226,6 +226,8 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Access Analyzer, Access Findings and Access Observer]] - evaluate and compare access, simulator, insights; daily access checks and the console; logging who reads a column
 - [[Scripting Governance Tool]] - the second permission layer on script fields since Zurich: Conditional Script Writer group, datatype ACLs, jobs, scan and removal
 - [[SNC Access Control (Support Staff Access to an Instance)]] - how support logs in (tokens, synthetic users) and how to restrict it by person and period
+- [[Adaptive Authentication]] - filter criteria, policies and contexts (pre, post, MFA, account recovery, session validation), properties, trusted mobile app (documented, Brazil)
+- [[Zero Trust Access - Session Access and Continuous Authentication]] - reduced roles for risky logins; re-authentication before protected tables, high assurance sessions
 
 ## AI (`AI/`)
 
