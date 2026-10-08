@@ -70,6 +70,7 @@ Step-by-step procedures, grouped by topic (the notes themselves stay in one flat
 ## Flows and Automation
 
 - [[Create a Scheduled Script Job]]
+- [[Create and Test a Playbook]] - new playbook, parent table, trigger, stages, activities, test run, activate
 
 ## Notifications and Email
 

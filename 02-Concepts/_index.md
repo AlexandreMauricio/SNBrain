@@ -150,6 +150,10 @@ What things are, how they relate, and the settings that control them. Notes are 
 
 - [[Events and the Event Queue]]: gs.eventQueue, registry, script actions, queues, states
 - [[Scheduled Jobs]]: script, report and template jobs; run options; inactivity monitors
+- [[Workflow Studio Overview]] - one builder for playbooks, flows, subflows, actions and decision tables; pages; when to use a flow or a playbook; updating
+- [[Playbooks Overview and Components]] - process definitions, triggers, stages, activities, start rules, properties, runtime, test, restart, security and domains
+- [[Playbook Activities, Decisions and Variants]] - activity definitions, UI layouts, questionnaire, AI agent and skill activities, delays, decisions, Go back, parallel branches, state mapping, variants
+- [[Playbooks Administration, Roles and Access]] - plugins per trigger table, roles, content filtering, archiving process contexts, data definitions, AI generation, MCP tools, translations
 
 ## Notifications and Email (`Notifications-and-Email/`)
 
@@ -184,6 +188,7 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[DEX Workspace Pages, Insights and Device Investigation]] - insights reports, bulk remediation, application and device pages, call quality, resolution strategies
 - [[DEX Self-Service and Device Actions]] - Device health check for employees, issue configurations, device actions, execution states, health rating calculation
 - [[DEX Incident Investigation for Service Desk Agents]] - Investigation tab for DEX devices: health checklist, top processes, suggested resolutions, playbook, automatic work notes
+- [[Playbook Experience Design for Workspace, Portal and Mobile]] - UI Builder components and bundles, Guided view, Service Portal content items and widget, mobile embedding
 
 ## Security (`Security/`)
 
