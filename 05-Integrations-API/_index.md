@@ -23,3 +23,4 @@ REST and SOAP APIs, import sets and transform maps, IntegrationHub, MID Server, 
 - [[DevOps Custom Tool Integrations, Test and Attachment APIs]] - endpoints and token auth, standard payloads, subflow contracts, record transformers, test and attachment APIs, credential expiry
 - [[DevOps Docker Image and sndevopscli]] - environment variables and CLI commands for GitLab, GitHub Actions and Harness pipelines
 - [[DevOps Config Pipeline Integration]] - Azure DevOps tasks, Jenkins snDevOpsConfig actions and GitHub actions to upload, validate, publish and export config data
+- [[Spoke Generator]] - build a custom spoke from OpenAPI, Postman, pasted API docs (AI) or by hand; roles, limits (documented)

@@ -71,6 +71,8 @@ Step-by-step procedures, grouped by topic (the notes themselves stay in one flat
 
 - [[Create a Scheduled Script Job]]
 - [[Create and Test a Playbook]] - new playbook, parent table, trigger, stages, activities, test run, activate
+- [[Build a Flow in Workflow Studio]] - create, add trigger and steps, test, activate, attach to a catalog item (documented)
+- [[Create a Decision Table in Workflow Studio]] - inputs, columns, rows, default result, test, publish, use from a flow (documented)
 
 ## Notifications and Email
 

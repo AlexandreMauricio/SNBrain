@@ -87,6 +87,7 @@ What things are, how they relate, and the settings that control them. Notes are 
 ## Service Catalog (`Service-Catalog/`)
 
 - [[Request Management Data Model and Process]] - REQ, RITM, SCTASK, cart and variable tables, checkout sequence, requests from incidents, Universal Request
+- [[Service Creator]] - legacy departmental services: category request, generated table and role, editors and fulfillers, template notifications
 
 ## CMDB and Assets (`CMDB-and-Assets/`)
 
@@ -145,6 +146,7 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Order of Execution for Rules, Engines and Notifications]] - before rules, engines, database operation, after rules, notifications (documented)
 - [[UI Policies]] - conditions, actions, order, inheritance, scripts, limits (documented)
 - [[Mail Scripts]] - template, email, event objects; examples (documented)
+- [[Business Rules]] - when they run, form fields, current / previous / g_scratchpad, recursion and abort rules, query rules, scope limits
 
 ## Flows and Automation (`Flows-and-Automation/`)
 
@@ -154,6 +156,24 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Playbooks Overview and Components]] - process definitions, triggers, stages, activities, start rules, properties, runtime, test, restart, security and domains
 - [[Playbook Activities, Decisions and Variants]] - activity definitions, UI layouts, questionnaire, AI agent and skill activities, delays, decisions, Go back, parallel branches, state mapping, variants
 - [[Playbooks Administration, Roles and Access]] - plugins per trigger table, roles, content filtering, archiving process contexts, data definitions, AI generation, MCP tools, translations
+- [[Flows, Subflows and Actions Overview and Architecture]] - what flows, subflows and actions are, engine architecture, limits, deployment (documented)
+- [[Building Flows - Properties, Triggers, Stages and Error Handling]] - run as, flow roles, triggers, editing and locks, test, stages, error handler, design guidelines
+- [[Subflows in Workflow Studio]] - inputs and outputs, publish, convert to subflow, dynamic flows, conversational skills
+- [[Custom Actions, Dynamic Inputs and Error Evaluation]] - action anatomy, error conditions, retry policy, dynamic inputs and outputs, complex data in script steps
+- [[Saved Triggers and External Event Sources]] - reusable record, scheduled, business calendar and webhook triggers; event source authentication; detach and delete
+- [[Flow Authoring Aids - History, Variables, Inline Scripts and AI]] - flow variables, fd_data inline scripts, history and compare, template builder, generative AI skills
+- [[Flow Administration, Execution Details and Access]] - execution details, reporting levels, retention tables, priority, roles, content filtering, FlowAPI, client callable flows
+- [[Flow Core Actions Reference]] - every ServiceNow Core action with inputs, outputs and rules (approval, wait, records, catalog, email, attachments, AI)
+- [[Flow Logic Reference]] - If, Make a decision, loops, Go back to, parallel, Try, Wait for a duration, End Flow, Dynamic Flow, Call a Workflow
+- [[Flow Trigger Types Reference]] - record trigger run options and advanced options, other trigger types, inbound email order, pills per trigger
+- [[Flow Action Steps Reference]] - Script, JSON Builder, REST, SOAP, JDBC, PowerShell, SSH, SFTP, ZIP, Kafka and data steps for custom actions
+- [[Flow Data Types and Transform Functions]] - variable types, password2 pills, catalog variable mapping, transform functions, user preferences, flow or subflow
+- [[Flow System Properties Reference]] - limits, logging, reporting, designer, stage and approval properties with defaults
+- [[Flow Spokes Shipped with the Platform]] - ITSM, Connect, VTB, CSM, FSM, ML, RPA, SecOps spokes and their actions
+- [[Decision Tables]] - inputs, condition and result columns, roles, draft authoring, Excel round trip, DecisionTableAPI, limits
+- [[Classic Approvals]] - approval record, approval engines and rules, gating and process approvals, summarizer, e-signature, notifications
+- [[Intelligent Approvals]] - AI evaluation of requests against an uploaded policy PDF; outcomes, roles, allowlist, build and publish
+- [[Agentic Playbooks]] - AI agents performing playbook activities: shipped agents, collaborative or autonomous mode, instructions, runtime roles
 
 ## Notifications and Email (`Notifications-and-Email/`)
 

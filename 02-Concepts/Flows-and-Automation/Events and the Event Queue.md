@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, automation, notifications, scripting, business-rule]
 status: documented
-source: ServiceNow Australia Platform Administration PDF, "System Events" (pp. 2724-2741), read 2026-10-01
+source: ServiceNow Australia Platform Administration PDF, "System Events" (pp. 2724-2741), read 2026-10-01. Compared on 2026-10-08 with the docs site chapter Build workflows > System Events (same topics; it added the change events sample scripts and the URI log field). https://www.servicenow.com/docs/r/australia/build-workflows/system-events/system-events-landing.html
 sn-release: Australia
 verified:
-updated: 2026-10-01
+updated: 2026-10-08
 ---
 
 # Events and the event queue
@@ -50,6 +50,8 @@ Records written through the event mechanism do not fire business rules on the ev
 
 `global.events(current)` in a business rule produces the standard set for a table: `<table>.inserted`, `.updated`, `.commented`, `.assigned`, `.inactive`.
 
+The shipped *change events* rule (after insert / update on change request) shows the usual pattern of one rule queuing many events: `change.inserted`, `change.updated`, `change.assigned` (parm1 new assignee, parm2 previous), `change.priority.1`, `change.risk.1`, and `change.calendar.notify` / `change.calendar.notify.remove` when the planned dates or the assignee change. For a custom table, write one *after* rule on insert, update and delete that tests `current.operation()` and field changes and calls `gs.eventQueue()` with a scoped event name ([[Business Rules]]).
+
 ## Who reacts
 
 - **Notifications** with *Send when: Event is fired* ([[Email Notifications]]). parm1/parm2 can carry recipients.
@@ -63,7 +65,7 @@ Records written through the event mechanism do not fire business rules on the ev
 
 ## Monitoring and replay
 
-- **System Logs > Events** shows Created, Name, Parm1, Parm2, Table, Processed, Processing time (ms), Queue.
+- **System Logs > Events** shows Created, Name, URI (the HTTP query that produced the event), Parm1, Parm2, Table, Processed, Processing time (ms), Queue.
 - **Reprocess Event** (related link on an event) puts it back in the queue: good for testing a notification.
 - During a platform upgrade only some events are processed: `glide.event_processor.all_events_upgrade_safe` (false) and `glide.event_processor.upgrade_safe_events` (list).
 
