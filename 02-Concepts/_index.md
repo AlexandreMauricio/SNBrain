@@ -294,3 +294,6 @@ Notes in this section come from the Brazil release of the Building applications 
 - [[App Engine Studio Overview, Setup and Roles]] - low-code builder: what it is, AES vs Build Agent, install and guided setup, roles and groups, installed tables, Git link, cloning (Brazil)
 - [[App Engine Studio Templates]] - the nine shipped app templates (tables, roles, main flows), custom templates: create, share, activate, publish, creation errors (Brazil)
 - [[App Engine Studio Building Reference]] - data (tables, spreadsheet import, data integration mapping), experiences, flows / decisions / notifications, roles, collaboration, Git operations, submit and publish, properties, template-supported metadata (Brazil)
+- [[ServiceNow Studio Overview, Access and Navigation]] - the unified developer workbench: who gets in, which role opens which tool, activity bar, search shortcuts, creating apps and files, builders, collaboration (Brazil)
+- [[ServiceNow Studio Source Control, Fluent Apps and Deployment]] - metadata vs Fluent Git integration, OAuth to a Git provider, source-code app structure, convert / build / sync, app summary agent, deployment routes, properties, sys_app form fields (Brazil)
+- [[Metadata File Types and Primary Tables]] - label-to-table lookup for every application file type in the Studio Navigator, with its editor; code search tables (Brazil)
