@@ -77,6 +77,7 @@ Step-by-step procedures, grouped by topic (the notes themselves stay in one flat
 ## Application Development
 
 - [[Build a Request App in Creator Studio]] - app, form, questions, publish, approval playbook, workspace list, test, submit for review, deploy (documented, Brazil)
+- [[Build an App in App Engine Studio]] - table extending Task, record producer, decision table, approval flow, test (documented, Brazil)
 
 ## Notifications and Email
 
