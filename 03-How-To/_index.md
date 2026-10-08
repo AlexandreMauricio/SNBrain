@@ -74,6 +74,10 @@ Step-by-step procedures, grouped by topic (the notes themselves stay in one flat
 - [[Build a Flow in Workflow Studio]] - create, add trigger and steps, test, activate, attach to a catalog item (documented)
 - [[Create a Decision Table in Workflow Studio]] - inputs, columns, rows, default result, test, publish, use from a flow (documented)
 
+## Application Development
+
+- [[Build a Request App in Creator Studio]] - app, form, questions, publish, approval playbook, workspace list, test, submit for review, deploy (documented, Brazil)
+
 ## Notifications and Email
 
 - [[Set Up Email with Your Own Mail Servers]] - own SMTP, POP3, IMAP, OAuth 2.0, Microsoft Graph (documented)
