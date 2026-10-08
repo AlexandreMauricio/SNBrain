@@ -279,3 +279,5 @@ Notes in this section come from the Brazil release of the Building applications 
 - [[Application Access Settings and Cross-Scope Privileges]] - runtime access tracking, table application access, restricted caller access, restrictions across scopes, lists and forms in scoped apps
 - [[Application Administration and Collaboration Descriptors]] - locking admins out of sensitive applications, application admin roles, collaboration descriptors and permissions, script protection policy
 - [[Personal Developer Instances]] - PDI rules, hibernation and reclaim, instance actions on the Developer Site, email restriction
+- [[App Engine Management Center]] - AEMC: governance types, pages, application intake setup, intake / app / collaboration requests, custom apps tabs, readiness and compliance report, developers (Brazil)
+- [[AEMC Pipelines and Deployments]] - pipeline setup (credentials, environments, controller, scan suites, Change Management properties), deployment request workflow and states, ReleaseOps in AEMC and pipeline migration (Brazil)
