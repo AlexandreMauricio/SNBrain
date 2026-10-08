@@ -232,6 +232,7 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Login Controls - IP Access Control, Session Limits and Installation Exits]] - allow and deny rules by address, concurrent session cap, the login, logout and password exits
 - [[Certificates in Authentication - Certificate Login, Mutual TLS and Outbound Certificate Policies]] - smart card and API certificate login, basic auth on SOAP, outbound mutual TLS, per-host validation policies
 - [[Personal OAuth Authentication and Web Embeddables Sessions]] - per-user outbound OAuth tokens in flows; embedded sessions with reduced roles
+- [[Multi-Factor Authentication]] - default enforcement since Yokohama and its timeline, exemptions, factors and factor policies, who is asked, MFA with SSO, resetting a user, dashboard
 
 ## AI (`AI/`)
 
