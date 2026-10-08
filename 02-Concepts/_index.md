@@ -281,3 +281,6 @@ Notes in this section come from the Brazil release of the Building applications 
 - [[Personal Developer Instances]] - PDI rules, hibernation and reclaim, instance actions on the Developer Site, email restriction
 - [[App Engine Management Center]] - AEMC: governance types, pages, application intake setup, intake / app / collaboration requests, custom apps tabs, readiness and compliance report, developers (Brazil)
 - [[AEMC Pipelines and Deployments]] - pipeline setup (credentials, environments, controller, scan suites, Change Management properties), deployment request workflow and states, ReleaseOps in AEMC and pipeline migration (Brazil)
+- [[Delegated Development and Deployment]] - Manage Developers permissions per scoped application, deployment permissions and their display properties, instance-wide installer roles, system-managed roles; intake form and data model choices (Brazil)
+- [[Team Development]] - parent / peer instance hierarchy, remote instances, local changes, queue and ignore, pull, push, reconcile, collisions, exclusion policies, code review (Brazil)
+- [[Update Versions and the Merge Tool]] - sys_update_version fields and states, compare to current, revert, record and field types that cannot be merged, suppress-version property (Brazil)
