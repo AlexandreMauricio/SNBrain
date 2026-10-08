@@ -228,6 +228,10 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[SNC Access Control (Support Staff Access to an Instance)]] - how support logs in (tokens, synthetic users) and how to restrict it by person and period
 - [[Adaptive Authentication]] - filter criteria, policies and contexts (pre, post, MFA, account recovery, session validation), properties, trusted mobile app (documented, Brazil)
 - [[Zero Trust Access - Session Access and Continuous Authentication]] - reduced roles for risky logins; re-authentication before protected tables, high assurance sessions
+- [[Local Authentication - Login, Password Policy and Password Reset]] - landing pages, public pages, lockout, password policy presets and properties, self-service reset, Remember me, nonce for digest SSO
+- [[Login Controls - IP Access Control, Session Limits and Installation Exits]] - allow and deny rules by address, concurrent session cap, the login, logout and password exits
+- [[Certificates in Authentication - Certificate Login, Mutual TLS and Outbound Certificate Policies]] - smart card and API certificate login, basic auth on SOAP, outbound mutual TLS, per-host validation policies
+- [[Personal OAuth Authentication and Web Embeddables Sessions]] - per-user outbound OAuth tokens in flows; embedded sessions with reduced roles
 
 ## AI (`AI/`)
 
