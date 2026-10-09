@@ -36,7 +36,7 @@ The CI keeps its `sys_id` ([[Sys ID]]). A record with that sys_id is inserted in
 ## Gotchas
 
 - **Avoid downgrades and switches: they lose data.**
-- **Identification can reclassify automatically** (on by default), which can cause the same loss without anyone touching the CI. The properties controlling it belong to IRE reclassification settings.
+- **Identification can reclassify automatically** (on by default), which can cause the same loss without anyone touching the CI. Properties, payload flags and restriction rules that control it: [[CI Reclassification During IRE Processing]].
 
 ## Related
 

@@ -120,6 +120,14 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[CI Form in CMDB Workspace]] - Explore CI view, sections, IRE on save, tags, resources, highlighted attributes
 - [[CMDB Workspace Reference - Properties, Roles, Jobs and Tables]] - sn_cmdb_ws properties, CMDB roles and containment, scheduled jobs, tables
 - [[API Insights]] - API inventory workspace on the CMDB: roles, data sources, settings, missing-data remediation, tag-based mapping, clustering, access requests, specification validation, properties
+- [[Identification and Reconciliation Engine (IRE) Overview]] - identification and reconciliation, APIs and enhanced options, payload shape, source keys, partial and incomplete payloads, non-CMDB tables, domain separation modes
+- [[IRE Identification Rules]] - CI identifier, regular / lookup / hybrid identifier entries, related entries, inheritance, inclusion rules, guidelines
+- [[IRE Reconciliation, Data Refresh and Data Source Rules]] - static and dynamic reconciliation, precedence, staleness by effective duration, blocking a source from inserting
+- [[Dynamic IRE]] - rule-free identification for hardware classes: simulation and committed modes, parity score, excluded classes
+- [[CI Reclassification During IRE Processing]] - the two property sets, payload flags, reclassification restriction rules, reclassification tasks
+- [[CMDB Dependent Relationship Rules - Hosting and Containment]] - hosting, containment and reference rules, constraints, CI Class Manager and Metadata Editor
+- [[Duplicate CI Detection in IRE]] - skip_duplicates and threshold, duplicate_of and main CI, lookup and related table duplicates
+- [[IRE Properties and Tables Reference]] - identification engine properties by area with defaults, and every IRE table
 
 ## SLA and Schedules (`SLA-and-Schedules/`)
 

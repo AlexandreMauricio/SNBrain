@@ -42,6 +42,9 @@ Step-by-step procedures, grouped by topic (the notes themselves stay in one flat
 - [[Create or Delete a CI Relationship]] - relationship editor with and without suggested relationships, upstream and downstream, deleting
 - [[Create a CI Relation Rollup]] - count, sum, max, min or mean of a child field onto the parent CI; the business rule that must be edited
 - [[Create a CI Manually in CMDB Workspace]] - Create CI flow through IRE: class, identifier entries, dependent-upon CI, relationships; admin options and extension point
+- [[Create a CI Identification Rule]] - add, edit or replace a class identification rule: identifier entries of the three kinds, related entries
+- [[Apply IRE to an Import Set]] - CMDBTransformUtil in an onBefore transform script, rows to different classes, restrictions
+- [[Simulate an IRE Payload with Identification Simulation]] - generate a payload for a class, run it without committing, read identification logs
 
 ## SLA and Schedules
 
