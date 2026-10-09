@@ -112,6 +112,8 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[CI Classes, Dependency and Principal Class]] - independent and dependent classes, related lists of components, Teams related list, Principal Class filter and its task property
 - [[Dependent CI Management and Cascade Cleanup]] - cascade retire, archive and delete of orphan dependent CIs through CMDB Data Manager: properties, ledgers, jobs, exclusions
 - [[CI Class Manager]] - sections per class with read and write roles, what can be configured from it, deleting CIs of a class
+- [[CI Relationships]] - parent, child and type; dependent and non-dependent relationships, key types, suggested relationships, governance rules, qualifiers, relations formatter, domain separation, security
+- [[Baseline CMDB]] - snapshots of CIs and baseline differences on the CI form; properties; being deprecated from Brazil
 
 ## SLA and Schedules (`SLA-and-Schedules/`)
 

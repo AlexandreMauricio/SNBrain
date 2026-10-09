@@ -35,3 +35,4 @@ One note per table, named with the exact table name. Overviews spanning a family
 - [[cmdb_ci_computer]] - Computer: OS, CPU, RAM, disk, IsVirtual (documented, column names not given)
 - [[cmdb_ci_server]] - Server: classification, used for, disaster backup; child server classes (documented, column names not given)
 - [[cmdb_ci_service]] - Service: business criticality, service classification, used for; svc_ci_assoc (documented, column names not given)
+- [[cmdb_rel_ci]] - CI Relationship: parent, child, type; related relationship tables (documented, column names not given)

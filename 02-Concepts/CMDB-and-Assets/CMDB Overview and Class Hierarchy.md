@@ -22,7 +22,7 @@ A CI is anything in the environment worth tracking and controlling: physical (a 
 |---|---|---|
 | Base Configuration Item | `cmdb` | root of the hierarchy; classes that descend from it but not from `cmdb_ci` are **non-IT CIs**. Uses the *table per partition* extension model ([[Table Extension and Extension Models]]) |
 | Configuration Item | `cmdb_ci` | extends `cmdb`; the common attributes of every IT CI. See [[cmdb_ci]] |
-| CI Relationship | `cmdb_rel_ci` | every relationship between two CIs |
+| CI Relationship | `cmdb_rel_ci` | every relationship between two CIs. See [[cmdb_rel_ci]] and [[CI Relationships]] |
 
 - Classes branch wherever a set of CIs needs an attribute its parent does not have: Configuration Item > Hardware (`cmdb_ci_hardware`) > Computer (`cmdb_ci_computer`) > Server (`cmdb_ci_server`) > UNIX Server (`cmdb_ci_unix_server`), and so on. See [[cmdb_ci_hardware]], [[cmdb_ci_computer]], [[cmdb_ci_server]].
 - The base system ships hundreds of class tables. The docs page "CMDB tables descriptions" lists them all (name, label, one-line description); it is not copied here. Typical name prefixes: `cmdb_ci_appl_*` applications, `cmdb_ci_app_server_*` application servers, `cmdb_ci_db_*` databases, `cmdb_ci_lb_*` load balancers, `cmdb_ci_*_server` operating-system server classes, `cmdb_ci_vcenter_*` / `cmdb_ci_hyper_v_*` / `cmdb_ci_kvm_*` virtualization, `cmdb_ci_san_*` / `cmdb_ci_storage_*` storage.

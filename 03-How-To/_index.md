@@ -39,6 +39,8 @@ Step-by-step procedures, grouped by topic (the notes themselves stay in one flat
 - [[Configure a Service Availability KPI in Digital Portfolio Management]] - KPI group mapping, commitment, outage, PA collection job, check on the Run tab
 - [[Create a CI Class]] - add a child class in CI Class Manager: basic info, attributes, identification, reconciliation, suggested relationships
 - [[Reclassify a CI]] - change the Class of a CI; upgrade, downgrade and switch, and the data a downgrade loses
+- [[Create or Delete a CI Relationship]] - relationship editor with and without suggested relationships, upstream and downstream, deleting
+- [[Create a CI Relation Rollup]] - count, sum, max, min or mean of a child field onto the parent CI; the business rule that must be edited
 
 ## SLA and Schedules
 
