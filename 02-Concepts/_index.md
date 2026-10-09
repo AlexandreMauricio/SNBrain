@@ -114,6 +114,11 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[CI Class Manager]] - sections per class with read and write roles, what can be configured from it, deleting CIs of a class
 - [[CI Relationships]] - parent, child and type; dependent and non-dependent relationships, key types, suggested relationships, governance rules, qualifiers, relations formatter, domain separation, security
 - [[Baseline CMDB]] - snapshots of CIs and baseline differences on the CI form; properties; being deprecated from Brazil
+- [[CMDB Workspace]] - views (Home, Governance, Explore and Search, Tasks, Data Owner, Lists), roles, prerequisites, important actions, configuration identifiers framework
+- [[CMDB Workspace Insights and SGC Central]] - Insights dashboards, feature adoption thresholds, performance insights and their fixes, Service Graph Connector monitoring tables and indicators
+- [[Cloud vs Non-cloud Resources Chart in CMDB Workspace]] - how CIs are classed cloud or non-cloud per class, datacenter types, job limits and resuming disabled jobs
+- [[CI Form in CMDB Workspace]] - Explore CI view, sections, IRE on save, tags, resources, highlighted attributes
+- [[CMDB Workspace Reference - Properties, Roles, Jobs and Tables]] - sn_cmdb_ws properties, CMDB roles and containment, scheduled jobs, tables
 
 ## SLA and Schedules (`SLA-and-Schedules/`)
 

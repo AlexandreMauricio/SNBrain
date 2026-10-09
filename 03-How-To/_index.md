@@ -41,6 +41,7 @@ Step-by-step procedures, grouped by topic (the notes themselves stay in one flat
 - [[Reclassify a CI]] - change the Class of a CI; upgrade, downgrade and switch, and the data a downgrade loses
 - [[Create or Delete a CI Relationship]] - relationship editor with and without suggested relationships, upstream and downstream, deleting
 - [[Create a CI Relation Rollup]] - count, sum, max, min or mean of a child field onto the parent CI; the business rule that must be edited
+- [[Create a CI Manually in CMDB Workspace]] - Create CI flow through IRE: class, identifier entries, dependent-upon CI, relationships; admin options and extension point
 
 ## SLA and Schedules
 
