@@ -49,6 +49,7 @@ Step-by-step procedures, grouped by topic (the notes themselves stay in one flat
 - [[Recompute CI Attribute Values with CMDB 360]] - back out a discovery source or apply new reconciliation rules; scope, delete action, recompute tasks
 - [[Create a CMDB Data Manager Policy]] - policy wizard: data filter and impact analysis, assignment types, options per policy type, schedule, publish, run on demand
 - [[Remediate a De-duplication Task]] - Duplicate CI Remediator step by step, and bulk remediation with de-duplication templates
+- [[Create and Run a Compliance Audit]] - filter, template conditions, audit with task assignment and schedule, preview, run, follow-on tasks
 
 ## SLA and Schedules
 

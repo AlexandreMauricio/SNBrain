@@ -136,6 +136,8 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Duplicate CI Remediation]] - main CI and duplicate_of rules, what merges, related tables with workflows off, special cases, templates and dashboard, properties, jobs
 - [[CI Attestation]] - confirming CIs exist: reviewing attestation tasks, smart detection and auto-attestation, run on demand
 - [[CMDB Data Certification]] - certifying field values: dashboard, reviewing and resetting tasks, failed fields, converting legacy schedules, retention
+- [[CMDB Compliance - Desired State, Architecture Compliance and Audits]] - filters, templates, audits and results; audit types, roles, versions, health window, threshold and stability, follow-on tasks
+- [[Scripted Compliance Audits]] - audit logic as a script with SNC.CertificationProcessing: sample with placeholders, API arguments
 
 ## SLA and Schedules (`SLA-and-Schedules/`)
 
