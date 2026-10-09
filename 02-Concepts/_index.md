@@ -119,6 +119,7 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Cloud vs Non-cloud Resources Chart in CMDB Workspace]] - how CIs are classed cloud or non-cloud per class, datacenter types, job limits and resuming disabled jobs
 - [[CI Form in CMDB Workspace]] - Explore CI view, sections, IRE on save, tags, resources, highlighted attributes
 - [[CMDB Workspace Reference - Properties, Roles, Jobs and Tables]] - sn_cmdb_ws properties, CMDB roles and containment, scheduled jobs, tables
+- [[API Insights]] - API inventory workspace on the CMDB: roles, data sources, settings, missing-data remediation, tag-based mapping, clustering, access requests, specification validation, properties
 
 ## SLA and Schedules (`SLA-and-Schedules/`)
 

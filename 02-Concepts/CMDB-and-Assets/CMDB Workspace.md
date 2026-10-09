@@ -15,7 +15,7 @@ updated: 2026-10-09
 - Store app, installed automatically with the product on install or upgrade.
 - Built on Performance Analytics: most cards drill down to a KPI Details pane with **Show Records**.
 - **Does not support domain separation.**
-- Can be opened in UI Builder like any configurable workspace ([[UI Builder]]).
+- Can be opened in UI Builder like any configurable workspace ([[UI Builder Overview and Concepts]]).
 
 ## Roles
 
