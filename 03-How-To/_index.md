@@ -45,6 +45,8 @@ Step-by-step procedures, grouped by topic (the notes themselves stay in one flat
 - [[Create a CI Identification Rule]] - add, edit or replace a class identification rule: identifier entries of the three kinds, related entries
 - [[Apply IRE to an Import Set]] - CMDBTransformUtil in an onBefore transform script, rows to different classes, restrictions
 - [[Simulate an IRE Payload with Identification Simulation]] - generate a payload for a class, run it without committing, read identification logs
+- [[Create and Schedule a CMDB 360 Query]] - Get Records, Find Gap and Compare Attribute Values queries, result limits, scheduling for a report
+- [[Recompute CI Attribute Values with CMDB 360]] - back out a discovery source or apply new reconciliation rules; scope, delete action, recompute tasks
 
 ## SLA and Schedules
 

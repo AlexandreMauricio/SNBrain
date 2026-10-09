@@ -128,6 +128,9 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[CMDB Dependent Relationship Rules - Hosting and Containment]] - hosting, containment and reference rules, constraints, CI Class Manager and Metadata Editor
 - [[Duplicate CI Detection in IRE]] - skip_duplicates and threshold, duplicate_of and main CI, lookup and related table duplicates
 - [[IRE Properties and Tables Reference]] - identification engine properties by area with defaults, and every IRE table
+- [[Populating the CMDB]] - Discovery, Service Graph Connectors, IntegrationHub ETL, import sets, API and manual creation, and which of them go through IRE
+- [[CMDB Groups]] - group types (Default, Health, CMDB Workspace), filling by CIs, saved queries or encoded queries, CI limit
+- [[CMDB 360]] - per-source attribute history (Multisource CMDB): enabling, dashboard cards and settings, excluded classes, properties, tables, roles
 
 ## SLA and Schedules (`SLA-and-Schedules/`)
 
