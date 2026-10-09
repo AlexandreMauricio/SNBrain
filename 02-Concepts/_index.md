@@ -131,6 +131,11 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Populating the CMDB]] - Discovery, Service Graph Connectors, IntegrationHub ETL, import sets, API and manual creation, and which of them go through IRE
 - [[CMDB Groups]] - group types (Default, Health, CMDB Workspace), filling by CIs, saved queries or encoded queries, CI limit
 - [[CMDB 360]] - per-source attribute history (Multisource CMDB): enabling, dashboard cards and settings, excluded classes, properties, tables, roles
+- [[CMDB Data Manager]] - policy types (retire, archive, delete, related entry, attestation, certification), tasks and approval, retirement definitions, archiving, exclusion lists
+- [[CMDB Data Manager Reference - Notifications, Properties, Jobs, Tables and Roles]] - notification list with recipients, properties and defaults, policy processor jobs, tables, roles, record retention
+- [[Duplicate CI Remediation]] - main CI and duplicate_of rules, what merges, related tables with workflows off, special cases, templates and dashboard, properties, jobs
+- [[CI Attestation]] - confirming CIs exist: reviewing attestation tasks, smart detection and auto-attestation, run on demand
+- [[CMDB Data Certification]] - certifying field values: dashboard, reviewing and resetting tasks, failed fields, converting legacy schedules, retention
 
 ## SLA and Schedules (`SLA-and-Schedules/`)
 

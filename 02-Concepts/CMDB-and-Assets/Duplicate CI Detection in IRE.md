@@ -59,5 +59,5 @@ The docs' two worked cases, payload with serials ABC123 and DEF456 for a new Lin
 
 ## Related
 
-- Remediation of the tasks belongs to *Duplicate CIs remediation* in CMDB data management (not yet read in this vault at the time of writing this note).
+- Resolving the tasks: [[Duplicate CI Remediation]] and [[Remediate a De-duplication Task]].
 - [[IRE Properties and Tables Reference]] · [[IRE Error Messages]]

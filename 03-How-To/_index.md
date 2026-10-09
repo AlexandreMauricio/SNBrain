@@ -47,6 +47,8 @@ Step-by-step procedures, grouped by topic (the notes themselves stay in one flat
 - [[Simulate an IRE Payload with Identification Simulation]] - generate a payload for a class, run it without committing, read identification logs
 - [[Create and Schedule a CMDB 360 Query]] - Get Records, Find Gap and Compare Attribute Values queries, result limits, scheduling for a report
 - [[Recompute CI Attribute Values with CMDB 360]] - back out a discovery source or apply new reconciliation rules; scope, delete action, recompute tasks
+- [[Create a CMDB Data Manager Policy]] - policy wizard: data filter and impact analysis, assignment types, options per policy type, schedule, publish, run on demand
+- [[Remediate a De-duplication Task]] - Duplicate CI Remediator step by step, and bulk remediation with de-duplication templates
 
 ## SLA and Schedules
 

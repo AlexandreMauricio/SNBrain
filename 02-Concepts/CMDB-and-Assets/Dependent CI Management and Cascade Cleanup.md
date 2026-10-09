@@ -18,7 +18,7 @@ Dependent and independent classes are explained in [[CI Classes, Dependency and 
 
 ## Turning it on
 
-1. Set up CMDB Data Manager.
+1. Set up [[CMDB Data Manager]] (retirement definitions, Managed by Group for approvals).
 2. Properties. **None of them exists in the base system: add each to `sys_properties` to see or change it.**
 
 | Property | Default | Effect |
