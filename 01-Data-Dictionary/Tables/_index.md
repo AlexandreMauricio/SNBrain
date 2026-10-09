@@ -30,3 +30,8 @@ One note per table, named with the exact table name. Overviews spanning a family
 - [[change_request]] - Change Request: type, risk, planning and CAB fields, conflict status, state values -5 to 4 (documented, some column names unconfirmed)
 - [[change_task]] - Change Task: task types, on hold, how tasks follow the change (documented)
 - [[task_sla]] - Task SLA: stage, breach time, actual and business timings; related SLA tables (documented, most column names unconfirmed)
+- [[cmdb_ci]] - Configuration Item: attributes shared by every IT CI, reference columns (documented, column names not given)
+- [[cmdb_ci_hardware]] - Hardware: hardware_status, hardware_substatus, default_gateway; serial number, adapter and IP tables (documented)
+- [[cmdb_ci_computer]] - Computer: OS, CPU, RAM, disk, IsVirtual (documented, column names not given)
+- [[cmdb_ci_server]] - Server: classification, used for, disaster backup; child server classes (documented, column names not given)
+- [[cmdb_ci_service]] - Service: business criticality, service classification, used for; svc_ci_assoc (documented, column names not given)

@@ -106,6 +106,12 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Digital Portfolio Management]] - DPM workspace: solutions through plan / build / run, home page cards and thresholds, personal and enterprise portfolios, templates, lists
 - [[DPM Solution Pages and Needs Attention]] - Plan, Build, Run, Risk and Info tabs per solution type, KPI inheritance for service instances, how records reach the Needs attention panel
 - [[DPM Administration, KPI Groups and Reference]] - Admin Center, properties, CSDM life-cycle mapping, KPI groups and mappings, Process Mining, roles, tables, plugins per view
+- [[CMDB Overview and Class Hierarchy]] - what a CI is, cmdb / cmdb_ci / cmdb_rel_ci, class tree, related tables, service tables, extended CMDB plugins, roles
+- [[CMDB Modelling Guidelines for Hardware, Virtual Machines and Cloud]] - where serial numbers, network adapters, IP addresses and software go; identification rule for hardware; VMware and cloud modelling
+- [[CMDB CI Class Models App]] - Store app adding technology class families, tables it writes to, integration class extensions
+- [[CI Classes, Dependency and Principal Class]] - independent and dependent classes, related lists of components, Teams related list, Principal Class filter and its task property
+- [[Dependent CI Management and Cascade Cleanup]] - cascade retire, archive and delete of orphan dependent CIs through CMDB Data Manager: properties, ledgers, jobs, exclusions
+- [[CI Class Manager]] - sections per class with read and write roles, what can be configured from it, deleting CIs of a class
 
 ## SLA and Schedules (`SLA-and-Schedules/`)
 
