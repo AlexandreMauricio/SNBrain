@@ -115,6 +115,7 @@ Step-by-step procedures, grouped by topic (the notes themselves stay in one flat
 - [[Register an OAuth Client for Inbound REST Calls]] - client credentials or authorization code client, token request, checks and gotchas
 - [[Create a Connection and Credential Alias]] - alias, credential, HTTP connection and attributes for a flow integration
 - [[Set Up Log Export Service]] - Hermes check, certificates, sources, then a Kafka or MID Server consumer
+- [[Set Up SCIM Provisioning into the Instance]] - plugin, scim_admin user, OAuth or basic profile, identity provider side, test (Brazil)
 
 ## Reporting and dashboards
 

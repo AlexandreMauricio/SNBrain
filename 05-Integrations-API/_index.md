@@ -34,3 +34,5 @@ REST and SOAP APIs, import sets and transform maps, IntegrationHub, MID Server, 
 - [[External Credential Storage and CyberArk]] - credential resolvers, MID Server parameters, Credential ID formats, OAuth client secret in a vault
 - [[Connection and Credential Configuration Templates]] - one-dialog setup for spokes: default data, dynamic schema, post-processing and pre-edit scripts, OAuth through a MID Server
 - [[Log Export Service (LES)]] - streaming instance logs through Hermes (Kafka) to external analytics: sources, topics, Kafka and MID Server consumers, backfill runs, properties, roles
+- [[SCIM Provider - Provisioning Users and Groups into the Instance]] - SCIM 2.0 endpoints, authentication profiles, schemas, extension schema and ETL mapping, scripts for unmapped attributes, source definitions (Brazil)
+- [[SCIM Client - Provisioning from the Instance to Other Systems]] - REST message, SCIM provider record, resource and attribute mappings, SCIM2Client, logs, troubleshooting (Brazil)

@@ -130,6 +130,11 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Domain Separation Administration]] - plugins, domain records, properties, process overrides, application properties, migration and cleanup tools, Domain Separation Center
 - [[Domain Separation Recommended Practices]] - 80/15/5, default domain, hierarchy changes, contains and visibility cost, before-query rules, no domain paths in scripts
 - [[Domain Separation Support Levels by Application]] - No support / Basic / Standard / Enhanced and which application is at which level
+- [[Identity and Access Audit]] - 30-day trail of changes to users, groups, roles, memberships and ACLs; trails, configuration, unsupported fields (Brazil)
+- [[Federated ID and Global Identity]] - hashed cross-instance user identifier, unique field rules, regenerating (Brazil)
+- [[Identity Center]] - a user's active sessions, login history and registered devices; identity metrics for admins (Brazil)
+- [[Machine Identity Console]] - integration accounts: overview, inbound integrations, security findings and score (Brazil)
+- [[Granular Admin Roles]] - what they are, instance operator, platform security roles, and the full cross-product list (Brazil)
 
 ## Forms and Lists (`Forms-and-Lists/`)
 
@@ -292,6 +297,8 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[ITSM Virtual Agent Topics and Setup]] - pre-built NLU topics and blocks, actionable notifications, Issue Auto Resolution, deflection patterns, Lite, Employee Slate for Moveworks
 - [[L1 IT Service Desk AI Specialist]] - autonomous worker on a team: execution modes, task settings, monitoring
 - [[Authentication Factors for AI Voice Agents and Human-Assisted SMS OTP]] - identifying and verifying callers (KBA, Soft PIN, TOTP, push, SMS, email, step-up); API for human agents to verify by texted code (documented, Brazil)
+- [[Role Masking for AI Agents]] - agents run with the intersection of the user's roles and an approved list; dynamic user or AI user; configuration (Brazil)
+- [[Agentic AI Security and Governance]] - overview of permissions, data protection, traceability, governance, AI Guardian and external agents (Brazil)
 
 ## Data Management (`Data-Management/`)
 
