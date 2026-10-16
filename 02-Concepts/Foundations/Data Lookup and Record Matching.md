@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, data-integrity, fields, incident, automation]
 status: documented
-source: ServiceNow Australia Platform Administration PDF, "Field administration", topic "Data lookup and record matching support" (pp. 851-856), read 2026-10-01
+source: ServiceNow Australia Platform Administration PDF, "Field administration", topic "Data lookup and record matching support" (pp. 851-856), read 2026-10-01; catalog data lookup section from ServiceNow docs, Brazil, Service Catalog > "Service catalog data lookup", "Create a catalog lookup definition", "Custom data lookup", https://www.servicenow.com/docs/r/servicenow-platform/service-catalog/c_ServiceCatalogDataLookup.html, read 2026-10-16
 sn-release: Australia
 verified:
-updated: 2026-10-01
+updated: 2026-10-16
 ---
 
 # Data lookup and record matching
@@ -41,6 +41,17 @@ Shipped example, Priority Data Lookup (`dl_u_priority`):
 - **Run on form change** reacts to a user or an onChange client script changing a field, not to changes made by other data lookup rules.
 - Plugin Data Lookup and Record Matching Support (`com.glide.data_lookup`). **Activating it manually replaces the `calculatePriority` business rule with the priority lookup and removes related scripts without carrying over custom logic**; recreate any customisation afterwards.
 - Runs as an engine between the low-order and high-order before business rules ([[Order of Execution for Rules, Engines and Notifications]]).
+
+## Catalog data lookups (Brazil Service Catalog docs, read 2026-10-16)
+
+The plugin **Data Lookup and Record Matching Support for Service Catalog** applies the same idea to **variables** on the catalog form, the RITM and catalog tasks (and the default variable editor of produced records):
+
+- New definition of type **Catalog Data Lookup Rule** (**System Policy > Rules > Data Lookup Definitions**): **Applies to** a catalog item or variable set, **Matcher Table** (same scope as the definition), then **Catalog Matcher Variable Definitions** and **Catalog Setter Variable Definitions** (**Source variable field**, **Matcher table field**, **Always replace**).
+- Only **Run on form change** works; *Run on Insert* and *Run on Update* are not supported for catalog lookups.
+- Roles `catalog_lookup_admin` (create and edit definitions) and `catalog_lookup_manager` (read definitions; give table rights on the matcher table to delegate its rows).
+- Option and check box variables always have a value, so tick **Always replace** for them.
+- Also defined on variable sets and MRVS; in Virtual Agent an item whose setter question comes before its matcher question is not conversational.
+- Source: https://www.servicenow.com/docs/r/servicenow-platform/service-catalog/c_ServiceCatalogDataLookup.html ([[Catalog Variables and Variable Types]]).
 
 ## Related
 

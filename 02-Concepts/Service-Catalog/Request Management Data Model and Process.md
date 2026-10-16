@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, request, service-catalog, task]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Request Management" (pp. 3112-3125), read 2026-10-02. The ITSM guide covers only the request side; catalog items, variables and flows are in the Service Catalog documentation (not read yet in this vault)
+source: ServiceNow Australia IT Service Management PDF, "Request Management" (pp. 3112-3125), read 2026-10-02. The ITSM guide covers only the request side; catalog items, variables and flows are covered by the Service Catalog notes made from the Brazil docs chapter (read 2026-10-16), linked under Related
 sn-release: Australia
 verified:
-updated: 2026-10-02
+updated: 2026-10-16
 ---
 
 # Request Management data model and process
@@ -55,3 +55,4 @@ Granular roles `sn_request_read`, `sn_request_write`, `sn_request_comment_write`
 ## Related
 
 - [[Incident Management Overview and Lifecycle]] (Create Request from an incident) · [[Create an Incident Record Producer]]
+- Catalog side (Brazil docs): [[Service Catalog Overview, Item Types and Roles]] · [[Catalog Variables and Variable Types]] · [[Cart, Checkout and Cart Layouts]] · [[Catalog Fulfilment - Flows, Workflows and Execution Plans]] · [[Delegated Requests and Requests from Other Records]] (Requested For, Request Parent Mapping, `sysparm_parent_*` parameters) · [[Order Guides]]
