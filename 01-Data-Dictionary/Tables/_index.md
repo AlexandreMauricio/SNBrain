@@ -30,3 +30,6 @@ One note per table, named with the exact table name. Overviews spanning a family
 - [[change_request]] - Change Request: type, risk, planning and CAB fields, conflict status, state values -5 to 4 (documented, some column names unconfirmed)
 - [[change_task]] - Change Task: task types, on hold, how tasks follow the change (documented)
 - [[task_sla]] - Task SLA: stage, breach time, actual and business timings; related SLA tables (documented, most column names unconfirmed)
+- [[sc_cat_item]] - Catalog Item: base of all item types, child classes, related tables (documented, most column names unconfirmed)
+- [[item_option_new]] - Variable (question): catalog variables, lookup_source, answer tables (documented, most column names unconfirmed)
+- [[user_criteria]] - User Criteria: who can see catalog items and categories, link tables (documented, column names unconfirmed)

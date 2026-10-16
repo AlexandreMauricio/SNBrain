@@ -5,7 +5,7 @@ status: documented
 source: ServiceNow Australia IT Service Management PDF, "Incident Management", topics "Incident templates and record producers", "Create incident template", "Create a module that uses incident template", "Create a record producer to log incidents", "Create a record producer using a template" (pp. 2439-2443), read 2026-10-02
 sn-release: Australia
 verified:
-updated: 2026-10-02
+updated: 2026-10-16
 ---
 
 # Create an incident record producer
@@ -47,4 +47,5 @@ A module can open a blank incident with a template directly: module **Link type*
 - Template values are **static**: no reference to other fields; use a script for that.
 - Template visibility: **Global**, or the named **User** / **Group**; with none of them only the creator sees it.
 - To link a request created from an incident back to it, the producer script needs `new LinkRecordProducerToIncident().linkRecordProducerToParentIncident(RP.getParameterValue('sysparm_req_parent'), current);` (server-side record producer script).
-- Background: [[Incident Management Overview and Lifecycle]] · [[Form Templates]].
+- The Brazil Service Catalog docs name the parent parameters `sysparm_parent_sys_id` and `sysparm_parent_table` instead of `sysparm_req_parent` (see [[Delegated Requests and Requests from Other Records]]); which one a release sends is unconfirmed.
+- Background: [[Incident Management Overview and Lifecycle]] · [[Form Templates]] · [[Record Producers]].

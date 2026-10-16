@@ -89,6 +89,26 @@ What things are, how they relate, and the settings that control them. Notes are 
 
 - [[Request Management Data Model and Process]] - REQ, RITM, SCTASK, cart and variable tables, checkout sequence, requests from incidents, Universal Request
 - [[Service Creator]] - legacy departmental services: category request, generated table and role, editors and fulfillers, template notifications
+- [[Service Catalog Overview, Item Types and Roles]] - catalogs, categories, item classes, roles, scope rules, internal tables (documented, Brazil)
+- [[Catalogs, Categories and the Catalog Home Page]] - catalog and category records, content items, home page, search and AI search, CMS and Classic Mobile legacy (documented, Brazil)
+- [[Record Producers]] - target table, variable-to-field mapping, producer script, redirect, default variable editor (documented, Brazil)
+- [[Order Guides]] - rule base, cascading, item variable assignments, sequencing, scriptable order guides (documented, Brazil)
+- [[Catalog Variables and Variable Types]] - every variable type, variable form, attributes, choices, regex, pricing, audit, prefill (documented, Brazil)
+- [[Variable Sets and Multi-Row Variable Sets]] - reuse, layout and order, MRVS rules and limits (documented, Brazil)
+- [[Catalog Client Scripts, UI Policies and Variable Editors]] - applies-on options, priority of states, VEditor and default variable editor (documented, Brazil)
+- [[Scripting with Catalog Variables]] - current.variables, GlideElementVariable, MRVS row API (documented, Brazil)
+- [[Catalog Fulfilment - Flows, Workflows and Execution Plans]] - process engines, execution plan tasks and scripts, state closure, service fulfillment steps (documented, Brazil)
+- [[Cart, Checkout and Cart Layouts]] - one or two-step checkout, cart layout records, quantity, cloning, wish list (documented, Brazil)
+- [[Catalog Pricing]] - price and recurring price, price-changing variables, custom calculators, hiding prices (documented, Brazil)
+- [[Delegated Requests and Requests from Other Records]] - Requested For variable, Access Type, also request for, Request Parent Mapping (documented, Brazil)
+- [[User Criteria and Catalog Access]] - available and not available for, match all, scripts, entitlements and migration (documented, Brazil)
+- [[Catalog Builder]] - templates, item states, limits, properties, update sets, translation (documented, Brazil)
+- [[Service Catalog Wizards]] - multi-step wizards on record producers, modes, declarative actions (documented, Brazil)
+- [[Service Catalog in Employee Center, Service Portal and Mobile]] - taxonomy topics, portal widgets and settings, My Requests filters, Now Mobile, Universal Request (documented, Brazil)
+- [[Domain Separation in Service Catalog]] - items as domain data, global catalogs and variables, effective domain (documented, Brazil)
+- [[Service Catalog and CSDM]] - Sell/Consume layer, service offerings, Product Catalog models (documented, Brazil)
+- [[Service Catalog Properties Reference]] - glide.sc properties by section (documented, Brazil)
+- [[Catalog Item, Record Producer and Order Guide Forms]] - form fields by tab (documented, Brazil)
 
 ## CMDB and Assets (`CMDB-and-Assets/`)
 
@@ -299,6 +319,8 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Authentication Factors for AI Voice Agents and Human-Assisted SMS OTP]] - identifying and verifying callers (KBA, Soft PIN, TOTP, push, SMS, email, step-up); API for human agents to verify by texted code (documented, Brazil)
 - [[Role Masking for AI Agents]] - agents run with the intersection of the user's roles and an approved list; dynamic user or AI user; configuration (Brazil)
 - [[Agentic AI Security and Governance]] - overview of permissions, data protection, traceability, governance, AI Guardian and external agents (Brazil)
+- [[Conversational Catalog Requests and Virtual Agent]] - Catalog Agent, LLM and NLU topic blocks, eligibility, slot filling, render types (documented, Brazil)
+- [[AI Authoring for Catalog Builder]] - Otto drafts catalog items, what it can generate, catalog item standards article (documented, Brazil)
 
 ## Data Management (`Data-Management/`)
 

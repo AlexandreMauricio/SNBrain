@@ -35,3 +35,5 @@ updated: 2026-10-01
 ## Recommendation
 
 Start with **A**. Move to **B** only when the condition needs code. Neither is a security control: use ACLs, data policies or dictionary read-only options ([[Read-Only Field Options]]) for rules that must hold outside the form.
+
+Catalog variables follow the same split with catalog UI policies and catalog client scripts: [[Catalog Client Scripts, UI Policies and Variable Editors]].

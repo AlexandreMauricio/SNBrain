@@ -34,6 +34,13 @@ Step-by-step procedures, grouped by topic (the notes themselves stay in one flat
 
 ## Service Catalog
 
+- [[Create a Catalog Item with Variables]] - classic item form, variables, choices, flow, user criteria (documented)
+- [[Create a Variable Set]] - single or multi-row set reused across items (documented)
+- [[Create an Order Guide]] - guide variables, rule base, cascading, item variable assignments (documented)
+- [[Create a Catalog UI Policy]] - conditions on variables and policy actions (documented)
+- [[Create and Apply a User Criteria Record]] - restrict an item or category, check with diagnostics (documented)
+- [[Create a Catalog Item in Catalog Builder]] - template, guided steps, publish (documented)
+
 ## CMDB and Assets
 
 - [[Configure a Service Availability KPI in Digital Portfolio Management]] - KPI group mapping, commitment, outage, PA collection job, check on the Run tab

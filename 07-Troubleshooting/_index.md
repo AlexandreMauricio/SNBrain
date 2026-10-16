@@ -24,3 +24,4 @@ Symptom, cause, fix.
 - [[Credentials Fail in Discovery or Orchestration]] - checks, credentials_debug payload section, exclusion list, vault lookups
 - [[Domain Separation Errors]] - invalid domain ids, wrong paths, loops, default-domain pile-ups, reading the domain query log
 - [[Encrypted Field Shows Empty or Unreadable]] - missing access policy, clone without key exchange, archive tables, script access, external key disabled (Brazil)
+- [[Debugging Service Catalog Items]] - user criteria diagnostics, variable action logger and watcher, SQL debugger, UI customization states, item diagnostic rules (Brazil)
