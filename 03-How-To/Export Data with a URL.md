@@ -2,10 +2,10 @@
 type: how-to
 tags: [how-to, data-management, encoded-query, api]
 status: documented
-source: ServiceNow Australia Platform Administration PDF, "Exporting data", topics "Export directly from a URL", "Call URL export programmatically", "Break up a large export" (pp. 656-661), read 2026-10-01
+source: ServiceNow Australia Platform Administration PDF, "Exporting data", topics "Export directly from a URL", "Call URL export programmatically", "Break up a large export" (pp. 656-661), read 2026-10-01; re-read in Brazil, https://www.servicenow.com/docs/r/integrate-applications/t_ExportDirectlyFromTheURL.html, 2026-10-16
 sn-release: Australia
 verified:
-updated: 2026-10-01
+updated: 2026-10-16
 ---
 
 # Export data with a URL
@@ -57,6 +57,8 @@ When the row count exceeds the export limit (10,000 by default):
 - `sysparm_default_export_fields` has no effect on XML unless `sysparm_view` names a non-default view.
 - The URL XML processor leaves out attachments and journal fields (Work notes, Additional comments). Use the list **Export > XML** for those.
 - Never put real credentials in notes or scripts stored in the vault; use placeholders.
+
+Checked against the Brazil docs (Workflow Data Fabric > Exports > "Export directly from a URL", read 2026-10-16): same parameters; basic authentication is enforced and only fields the user can read are exported.
 
 ## Related
 

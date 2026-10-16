@@ -5,7 +5,7 @@ status: documented
 source: ServiceNow Australia Platform Administration PDF, "ServiceNow AI Platform integrations" (pp. 2365-2390), read 2026-10-01. This chapter is an overview; REST, SOAP, import sets and MID Server are documented in other guides
 sn-release: Australia
 verified:
-updated: 2026-10-01
+updated: 2026-10-16
 ---
 
 # Integration options and interfaces overview
@@ -76,4 +76,5 @@ A SOAP incident exchange; the guide only describes moving it from test to produc
 
 ## Related
 
+- Import sets in detail (Brazil): [[Import Sets - Data Sources, Staging Tables and Cleanup]] · [[Transform Maps, Field Maps and Coalesce]] · [[Web Service Import Sets and Direct File Posting]] · [[Copying Records Between Instances]]
 - [[Non-Interactive Users]] · [[User Sessions and Timeouts]] · [[Transaction Quotas, Application Quotas and Operational Toggles]] · [[System Properties Reference]]

@@ -5,7 +5,7 @@ status: documented
 source: ServiceNow docs, Brazil, Platform security > Access Management > Authentication > LDAP integration (whole section, 58 topics, 3,092 cleaned lines, read in full 2026-10-08 through the docs site) - overview, FAQ, requirements, setup (certificate, server, listener, attributes, test, OU definitions, data source, auto provisioning, MID Server with monitoring, binary data and troubleshooting), import and map data (transform maps, scripting, choice action, verify), troubleshooting (monitor, error codes, one-time password), record synchronization (refresh filters, extraction, inactive accounts, script examples), Active Directory Application Mode (ADAM) with LDAPS and ADAMSync, Microsoft AD LDAPS certificates, global catalog, OpenLDAP schema change, deletions. The Windows-side procedures (ADAM, ADAMSync, certificate authority) and the ADAMSync XML samples are condensed to what matters on the instance side. https://www.servicenow.com/docs/r/platform-security/ldap-integration/c_LDAPIntegration.html
 sn-release: Brazil
 verified:
-updated: 2026-10-08
+updated: 2026-10-16
 ---
 
 # LDAP Integration
@@ -131,4 +131,4 @@ Read timeout with SSL: the lower of the server field and `com.glide.ssl.read.tim
 
 ## Related
 
-- [[Set Up an LDAP Integration]] · [[LDAP Login or Import Problems]] · [[Multi-Factor Authentication]] · [[Local Authentication - Login, Password Policy and Password Reset]] · [[Users, Groups and Roles Overview]] · [[Integration Options and Interfaces Overview]] · [[Business Rules]]
+- [[Set Up an LDAP Integration]] · [[LDAP Login or Import Problems]] · [[Multi-Factor Authentication]] · [[Local Authentication - Login, Password Policy and Password Reset]] · [[Users, Groups and Roles Overview]] · [[Integration Options and Interfaces Overview]] · [[Business Rules]] · [[Transform Scripts and Script Variables]] (all transform events and variables) · [[Import Sets - Data Sources, Staging Tables and Cleanup]]
