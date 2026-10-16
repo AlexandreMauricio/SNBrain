@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, automation, notifications, scripting, business-rule]
 status: documented
-source: ServiceNow Australia Platform Administration PDF, "System Events" (pp. 2724-2741), read 2026-10-01. Compared on 2026-10-08 with the docs site chapter Build workflows > System Events (same topics; it added the change events sample scripts and the URI log field). https://www.servicenow.com/docs/r/australia/build-workflows/system-events/system-events-landing.html
+source: ServiceNow Australia Platform Administration PDF, "System Events" (pp. 2724-2741), read 2026-10-01. Compared on 2026-10-08 with the docs site chapter Build workflows > System Events (same topics; it added the change events sample scripts and the URI log field). https://www.servicenow.com/docs/r/australia/build-workflows/system-events/system-events-landing.html; custom queue job copy from ServiceNow docs, Brazil, API implementation and reference > Scripting > Example scripts > "Server-side script use cases", https://www.servicenow.com/docs/r/api-reference/scripts/useful-server-side-scripts.html, read 2026-10-16
 sn-release: Australia
 verified:
-updated: 2026-10-08
+updated: 2026-10-16
 ---
 
 # Events and the event queue
@@ -62,6 +62,7 @@ The shipped *change events* rule (after insert / update on change request) shows
 
 - Events without a queue go to the default queue. A custom **Queue** isolates slow or urgent events; **Move to Default Queue** / **Move to Adaptive Event Queue** on the registration form switches. Timings: **System Diagnostics > Stats > Adaptive Events**.
 - **Queue Registration** (link on the registration form) sets up **automatic job scheduling** for a queue: **Event Processing Order** *Parallel* or *Sequential* (cannot be edited afterwards; delete and recreate), **Job configuration type** *Constant* or *Scale with node*, **Scale factor**, **Poll interval**. **Rollback** returns to the manual configuration.
+- Manual way described in the Brazil scripting examples ("Using custom queues to process events", read 2026-10-16): set the **Queue** on the registration, copy the scheduled job *text index events process* (**Insert and Stay**, never overwrite it), rename it and change `GlideEventManager('<queue>')` in its **Job context**; without such a job the events stay unprocessed. `gs.eventQueue(name, record, parm1, parm2, '<queue>')` can name the queue explicitly; otherwise the registry's queue applies. See [[GlideRecord Queries, GlideRecordSecure and Server Utilities]].
 
 ## Monitoring and replay
 

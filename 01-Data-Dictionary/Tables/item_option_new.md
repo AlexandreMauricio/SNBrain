@@ -28,7 +28,7 @@ updated: 2026-10-16
 
 - Belongs to a [[sc_cat_item]] or a variable set.
 - Choices: Question Choices related list (table `question_choice` from general knowledge, unconfirmed).
-- Answers: `sc_item_option` + `sc_item_option_mtom` (catalog items), `question_answer` (record producers), `sc_multi_row_question_answer` (MRVS rows). Internal tables: no business rules.
+- Answers: `sc_item_option` (columns `item_option_new` and `value`, per the Brazil scripting docs) + `sc_item_option_mtom` (columns `sc_item_option`, `request_item`) (catalog items); query example in [[Find Requested Items by Catalog Variable Value]], `question_answer` (record producers), `sc_multi_row_question_answer` (MRVS rows). Internal tables: no business rules.
 
 ## Useful queries
 

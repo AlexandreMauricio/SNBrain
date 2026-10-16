@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, scripting, business-rule, automation, notifications, flows, workflow]
 status: documented
-source: ServiceNow Australia Platform Administration PDF, "Table administration", topic "Precedence between data lookup, assignment, and business rules" (pp. 528-529), read 2026-10-01
+source: ServiceNow Australia Platform Administration PDF, "Table administration", topic "Precedence between data lookup, assignment, and business rules" (pp. 528-529), read 2026-10-01; confirmed identical in ServiceNow docs, Brazil, API implementation and reference > Scripting > "Execution order of scripts and engines", https://www.servicenow.com/docs/r/api-reference/scripts/r_ExecutionOrderScriptsAndEngines.html, read 2026-10-16
 sn-release: Australia
 verified:
-updated: 2026-10-01
+updated: 2026-10-16
 ---
 
 # Order of execution for rules, engines and notifications
