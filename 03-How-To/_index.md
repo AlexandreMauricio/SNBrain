@@ -123,6 +123,8 @@ Step-by-step procedures, grouped by topic (the notes themselves stay in one flat
 - [[Create a Connection and Credential Alias]] - alias, credential, HTTP connection and attributes for a flow integration
 - [[Set Up Log Export Service]] - Hermes check, certificates, sources, then a Kafka or MID Server consumer
 - [[Set Up SCIM Provisioning into the Instance]] - plugin, scim_admin user, OAuth or basic profile, identity provider side, test (Brazil)
+- [[Import Data with an Import Set]] - file data source, transform map, coalesce, run and review (documented)
+- [[Import Records from Another Instance with an XML Import Set]] - HTTPS XML data source, keep sys_ids, reconcile references (documented)
 
 ## Reporting and dashboards
 
@@ -144,6 +146,7 @@ Step-by-step procedures, grouped by topic (the notes themselves stay in one flat
 - [[Restore a Deleted Record]] - Deleted Records and Delete Recovery modules (documented)
 - [[Roll Back a Patch, Plugin Activation or Background Script]] - rollback contexts and script execution history (documented)
 - [[Enable Auditing on a Table]] - Audit flag on the collection row, no_audit and audit_type=whitelist attributes, checking the result
+- [[Create a Scheduled Export Set]] - definition, MID target, export set, daily delta schedule (documented)
 
 ## Instance Administration
 

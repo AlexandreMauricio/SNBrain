@@ -344,6 +344,8 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Export Limits and Properties]] - row and cell limits, display value and header properties, URL parameters (documented)
 - [[Rollback and Delete Recovery]] - rollback contexts, modules, retention properties, database support (documented)
 - [[Auditing and Record History]] - what sys_audit records and what it skips, inclusion and exclusion lists, retention, history sets, history views, roles
+- [[Easy Import]] - Excel insert and update templates from a list, validation, reference drop-downs, properties (documented, Brazil)
+- [[Export Sets]] - definitions, MID Server targets, scheduled delta and parallel exports, history states (documented, Brazil)
 
 ## Instance Administration (`Instance-Administration/`)
 
