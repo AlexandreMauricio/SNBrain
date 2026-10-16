@@ -12,3 +12,4 @@ Reusable discovery queries: encoded queries, GlideRecord and GlideAggregate snip
 
 <!-- One line per note: [[Note Name]] - short description -->
 - [[Filter and Sort a List with URL Parameters]] - sysparm_query, ORDERBY, sysparm_fixed_query, view and export parameters (documented)
+- [[Find Requested Items by Catalog Variable Value]] - query sc_item_option_mtom by variable name and value (documented)

@@ -181,6 +181,15 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[UI Policies]] - conditions, actions, order, inheritance, scripts, limits (documented)
 - [[Mail Scripts]] - template, email, event objects; examples (documented)
 - [[Business Rules]] - when they run, form fields, current / previous / g_scratchpad, recursion and abort rules, query rules, scope limits
+- [[Scripting Overview - Script Types and Where They Run]] - client or server per script type, global vs scoped, field values in scripts, messages, Glide stack (documented, Brazil)
+- [[JavaScript Engine and JavaScript Modes]] - ES12, ES5 and Compatibility modes, feature support, switching risks, Java regex flag, Packages calls (documented, Brazil)
+- [[Script Sandbox and Guarded Script]] - sandboxed client-sent scripts, guarded script phases, exemptions, restricted methods (documented, Brazil)
+- [[Script Includes and GlideAjax]] - script include form, Glide AJAX enabled, privacy, AbstractAjaxProcessor, scratchpad vs GlideAjax (documented, Brazil)
+- [[Client Scripts]] - onLoad, onChange, onSubmit, onCellEdit, isolate script, guidelines, mobile limits, client-plus-server UI action (documented, Brazil)
+- [[UI Scripts, UI Pages, UI Macros and Jelly]] - reusable client code, Jelly pages and macros, phases, page security (documented, Brazil)
+- [[GlideRecord Queries, GlideRecordSecure and Server Utilities]] - query operators, text search, NULL, GlideRecordSecure and query ACLs, DurationCalculator, XML, GSLog (documented, Brazil)
+- [[Background Scripts, Script Processors and Schedule Pages]] - Scripts - Background options, deprecated processors, schedule pages, installation settings (documented, Brazil)
+- [[JavaScript Syntax Editor]] - editor properties, shortcuts, macros, context menu (documented, Brazil)
 
 ## Flows and Automation (`Flows-and-Automation/`)
 
@@ -321,6 +330,7 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Agentic AI Security and Governance]] - overview of permissions, data protection, traceability, governance, AI Guardian and external agents (Brazil)
 - [[Conversational Catalog Requests and Virtual Agent]] - Catalog Agent, LLM and NLU topic blocks, eligibility, slot filling, render types (documented, Brazil)
 - [[AI Authoring for Catalog Builder]] - Otto drafts catalog items, what it can generate, catalog item standards article (documented, Brazil)
+- [[Otto for Code]] - code generation, autocomplete, explain; providers, roles, properties, AI line markers (documented, Brazil)
 
 ## Data Management (`Data-Management/`)
 
