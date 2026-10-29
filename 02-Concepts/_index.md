@@ -163,6 +163,11 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Unified Map]] - CI map in CMDB and Service Graph workspaces: reading it, filters and presets, panels, timeline, roles, editor limits (Brazil)
 - [[Unified Map Administration Settings]] - configuration identifiers, workspace config properties, related items, attributes, references, class profiles, shared presets (Brazil)
 - [[Dependency Views]] - legacy CI map being deprecated from Brazil: menus, virtual grouping, indicators, predefined filters, menu actions, dependency types, properties, tables
+- [[CMDB Query Builder]] - multi-class CMDB, Service Mapping and combination queries, V1 and V2 engines, batch size, properties, reports, schedules, export (Brazil)
+- [[CMDB Health]] - completeness, correctness, compliance and relationship KPIs, dashboards, tasks and remediation rules, domain separation (Brazil)
+- [[CMDB Health Configuration Reference]] - health metrics preferences, per-class rules, weights, properties, jobs, tables (Brazil)
+- [[CMDB and CSDM Data Foundations Dashboards]] - get-well metrics by tab with formulas, collection jobs, performance limits (Brazil)
+- [[CMDB Coverage]] - IPAM allocated IPs matched to discovered CIs, discovery schedule gaps, jobs and properties (Brazil)
 
 ## SLA and Schedules (`SLA-and-Schedules/`)
 

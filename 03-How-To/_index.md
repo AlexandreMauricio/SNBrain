@@ -59,6 +59,8 @@ Step-by-step procedures, grouped by topic (the notes themselves stay in one flat
 - [[Create and Run a Compliance Audit]] - filter, template conditions, audit with task assignment and schedule, preview, run, follow-on tasks
 - [[Propose, Verify and Apply a CI Change]] - proposed changes from Affected CIs, verify, apply after approval (Brazil)
 - [[Edit CI Relationships in Unified Map]] - add CIs, create, change and delete relationships in the map editor (Brazil)
+- [[Build a CMDB Query in Query Builder]] - classes, connections, filters, AND/OR, columns, run and save (Brazil)
+- [[Set Up CMDB Health]] - metrics, per-class rules, enabling the dashboard jobs, remediation (Brazil)
 
 ## SLA and Schedules
 
