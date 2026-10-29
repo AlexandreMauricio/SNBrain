@@ -61,3 +61,12 @@ updated: 2026-10-29
 - [[Service Graph Connector for Observability - New Relic]] - NerdGraph API; alert destination, channel and workflow
 - [[Service Graph Connector for OpenTelemetry]] - Cloud Observability (Lightstep) topology; inferred services; being deprecated from Australia
 - [[Service Graph Connector for SolarWinds]] - Orion inventory through a MID Server; air gap; SAM and NPM modules
+
+## API management
+
+- [[API Service Graph Connectors]] - Apigee Edge, Apigee X, AWS API Gateway, Azure API Management, Boomi, Kong Gateway, Kong Konnect, MuleSoft: common API data model, authentication per connector
+- [[Service Graph Connector for Akamai API Security]] - (listed under Security above)
+
+## Not documented in this guide
+
+OT connectors (Claroty CTD, Microsoft Defender for IoT, OT Excel import) are listed but documented elsewhere. SGC Central itself: [[SGC Central Application]].

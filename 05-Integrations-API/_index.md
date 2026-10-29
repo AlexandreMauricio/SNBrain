@@ -82,3 +82,5 @@ REST and SOAP APIs, import sets and transform maps, IntegrationHub, MID Server, 
 - [[Service Graph Connector for Observability - New Relic]] - New Relic NerdGraph import and alerts (Brazil)
 - [[Service Graph Connector for OpenTelemetry]] - Cloud Observability topology, inferred services (Brazil, being deprecated)
 - [[Service Graph Connector for SolarWinds]] - Orion inventory, air gap, data sources (Brazil)
+- [[API Service Graph Connectors]] - eight API gateway and management connectors, common API data model, authentication per connector (Brazil)
+- [[SGC Central Application]] - sn_sgc_central: install, collection jobs, explore connectors, playbooks, connections, diagnosis, tables (Brazil)

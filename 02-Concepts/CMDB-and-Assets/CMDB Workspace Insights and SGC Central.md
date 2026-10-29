@@ -5,7 +5,7 @@ status: documented
 source: ServiceNow Brazil docs, Platform Capabilities guide > CMDB > CMDB Workspace > Explore, topics "SGC view", "Insights view" and its dashboards (CMDB Health, CMDB Data Foundation, CSDM Data Foundation, CMDB success advisor, Feature adoption, Performance insights, Service instances, CMDB 360), and the three "Edit ... from CMDB performance insights" topics (under https://www.servicenow.com/docs/r/servicenow-platform/configuration-management-database-cmdb/cmdb-workspace.html), read through the docs site API 2026-10-09
 sn-release: Brazil
 verified:
-updated: 2026-10-09
+updated: 2026-10-29
 ---
 
 # CMDB Workspace Insights and SGC Central
@@ -82,7 +82,7 @@ You may have to switch application scope to the scope of the data source or impo
 
 ## SGC Central view
 
-Ingestion icon. Role `sgc_admin`, `cmdb_inst_admin` or `admin`. Filters: connector type, connection, data source, date range.
+Ingestion icon. Role `sgc_admin`, `cmdb_inst_admin` or `admin` (the SGC Central pages read 2026-10-29 name only SGC-admin and admin for the Overview page: unconfirmed). Filters: connector type, connection, data source, date range. Installing SGC Central, its collection jobs, playbooks, connection management and error diagnosis: [[SGC Central Application]].
 
 | Section | Cards |
 |---|---|
