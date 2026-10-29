@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, request, service-catalog, task]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Request Management" (pp. 3112-3125), read 2026-10-02. The ITSM guide covers only the request side; catalog items, variables and flows are covered by the Service Catalog notes made from the Brazil docs chapter (read 2026-10-16), linked under Related
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "Request Management" (pp. 3112-3125), read 2026-10-02; Brazil Platform Capabilities guide > Self-service > Service catalog requests (https://www.servicenow.com/docs/r/servicenow-platform/self-service/p_ServiceCatalogRequests.html), read 2026-10-29. The ITSM guide covers only the request side; catalog items, variables and flows are covered by the Service Catalog notes made from the Brazil docs chapter (read 2026-10-16), linked under Related
+sn-release: Australia (Brazil for the submitted-requests section)
 verified:
-updated: 2026-10-16
+updated: 2026-10-29
 ---
 
 # Request Management data model and process
@@ -51,6 +51,16 @@ Plugin `com.snc.universal_request`, property `sn_uni_req.com.snc.ur.request_inte
 ## Roles and domain
 
 Granular roles `sn_request_read`, `sn_request_write`, `sn_request_comment_write`: see [[ITSM Granular Roles]]. Domain separation: Standard; `sc_request`, `sc_req_item`, `sc_task` are domain separated.
+
+## Working with submitted requests (Brazil Self-service pages)
+
+From the Brazil Platform Capabilities guide > Self-service > Service catalog requests (read 2026-10-29, documented, not tested).
+
+- **Add New Item** on a request (**Service Catalog > Open Records > Requests**): only `admin` or `catalog_admin`, and only while the request is *Pending Approval*; changing a request does not send it through approval again.
+- **Delete items**: Requested Items related list > Actions > Delete; price and delivery date are recalculated. Any user may remove items from their own request before delivery (the page lists `admin` as the role, unconfirmed which applies).
+- **Status**: **Self-Service > Requested Items** > number > **Stage** field and **Backordered** field (comments explain restock).
+- **Create Incident / Create Change** from a requested item (`itil`): the admin must set **Active** = true on those UI actions for `sc_req_item`; the new record keeps a relationship to the item ([[UI Actions]]).
+- `glide.vm.checkout_redirect` (*One-step checkout redirect*, **Cloud Management > Administration > Properties**): false = Order Status form after Order Now, true = *My Virtual Assets* portal (virtual machine requests). The Amazon EC2 catalog items described next to it are deprecated (KB0867184).
 
 ## Related
 

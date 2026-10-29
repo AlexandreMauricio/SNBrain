@@ -204,6 +204,8 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Identity Center]] - a user's active sessions, login history and registered devices; identity metrics for admins (Brazil)
 - [[Machine Identity Console]] - integration accounts: overview, inbound integrations, security findings and score (Brazil)
 - [[Granular Admin Roles]] - what they are, instance operator, platform security roles, and the full cross-product list (Brazil)
+- [[Service Delegation]] - delegates for approvals, assignments and notifications; rules and setup (Brazil)
+- [[Geolocation and Location Tracking]] - tracked users, geo_history, Google Maps key, routing and tracking properties (Brazil)
 
 ## Forms and Lists (`Forms-and-Lists/`)
 
@@ -273,6 +275,7 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Classic Workflow Administration and Troubleshooting]] - contexts, cancel, schedules, script error exits, run time metrics, pause utility, encrypted scratchpad, workflow events
 - [[Playbook Activities Reference]] - shipped interactive and non-interactive activities with inputs and outputs; process and activity execution states
 - [[Playbook Patterns and Runtime Use]] - nested, wizard, guided decision and guest-access playbooks; record generator, Reflow; restart, cancel, optional activities, ATF
+- [[State Flows]] - sf_state_flow transitions that generate UI actions, business rules, client scripts, field controls and events (Brazil)
 
 ## Notifications and Email (`Notifications-and-Email/`)
 
@@ -514,3 +517,12 @@ Notes in this section come from the Brazil release of the Building applications 
 - [[Document Management]] - documents, versions, sharing, review and approval, references, lists, workspace, smart card signing, external providers, roles (documented, Brazil)
 - [[Document Viewer, PDF Generation and Document Conversion]] - view attachments inline, DOCX to PDF accessibility, accessible PDF export and PDF size and memory guardrails
 - [[Managed Documents]] - legacy dms_ document control: revisions, check-out/in, name formats, review and approval, Knowledge Document plugin
+
+## Surveys and Assessments (`Surveys-and-Assessments/`)
+
+- [[Surveys Overview and Survey Designer]] - survey definitions, designer, question types, templates, question bank, schedule periods, users, publishing (Brazil)
+- [[Survey Distribution, Triggers and Channels]] - invitations, recipients lists, trigger conditions, URLs, portal, mobile, kiosk, Outlook, Virtual Agent, export (Brazil)
+- [[Survey Results, Scorecards and Sentiment Analysis]] - metric results, normalized value, scorecards, NPS, sentiment connector, translation, legacy migration, domain separation (Brazil)
+- [[Assessments]] - metric types, assessable records, categories, scripted metrics, stakeholders, on-demand and scheduled, scorecards, decision matrix, bubble chart (Brazil)
+- [[Quizzes]] - quiz designer, scored questions and correct answers, category users, results and weights (Brazil)
+- [[Assessments and Surveys Tables, Roles and Plugins]] - asmt_ tables, properties, roles, script includes, business rules, ATF tests (Brazil)

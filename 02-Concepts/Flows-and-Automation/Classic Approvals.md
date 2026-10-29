@@ -3,9 +3,9 @@ type: concept
 tags: [concept, automation, workflow, service-catalog, change, security, email]
 status: documented
 source: ServiceNow docs, Australia, Build workflows > Classic approvals (read 2026-10-08 through the docs site; whole chapter): Classic approvals, Approval engines, Set up an approval engine, Approval rules, Set automatic approval rules, Gating approvals (via an approval rule, based on the item being ordered), Process approvals, Approve with a process guide, Schematic of a hypothetical approval process, Approval summarizer formatter, Summarizers (change, create), Approval with e-signature (activate, de-activate, select an approval table, local database, SSO with SAML 2.0, installed components), Approval status, Generate an approval using approval rules / the approvers related list / Workflow flows, Multiple approvers, Receive notifications, Embed an approval request within the Outlook email client, Dynamic approval forms, Scripts and engines execution order. https://www.servicenow.com/docs/r/australia/build-workflows/approvals/r_Approvals.html
-sn-release: Australia
+sn-release: Australia (Brazil differences section)
 verified:
-updated: 2026-10-08
+updated: 2026-10-29
 ---
 
 # Classic Approvals
@@ -104,6 +104,15 @@ Plugin *Approval with e-Signature* (`com.glide.e_signature_approvals`; needs *Co
 ## Where the approval engine sits
 
 Engines, including the approval engine, run between the *before* business rules of order below 1000 and those of 1000 and above; flows are triggered after the database write. Full sequence: [[Order of Execution for Rules, Engines and Notifications]].
+
+## Brazil docs (read 2026-10-29)
+
+The Brazil Platform Capabilities guide (Service Administration > Classic approvals, https://www.servicenow.com/docs/r/servicenow-platform/approvals/r_Approvals.html) repeats this chapter almost word for word. Differences, kept as unconfirmed variants:
+
+- Flows are called **Workflow Studio** flows (Australia: Flow Designer); the replacement is still the **Ask for Approval** action, alongside the classic workflow activities *Approval - Group* and *Approval - User*.
+- Approval rules menu given as **System Policy > Approvals** (approval engines page) and **System Policy > Approval Rules** (gating page); this note had **System Policy > Rules > Approvals**. Which label is current is unconfirmed.
+- The e-signature page again spells the table `sysapprover_approver` while its installed-components page says `sysapproval_approver`.
+- Outlook actionable messages plugin given as `com.sn_ms_oam` (approvals page) and `sn_ms_oam` (survey pages); see [[Survey Distribution, Triggers and Channels]] for the OAM Definition records that format request, requested item and change approval emails.
 
 ## Related
 
