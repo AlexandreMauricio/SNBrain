@@ -30,3 +30,15 @@ updated: 2026-10-29
 - [[Service Graph Connector for Tanium Atlas]] - Tanium Atlas data, SGC Central only, Zurich Patch 4 onward
 - [[Service Graph Connector for Tanium Atlas Endpoints]] - user-facing endpoints only (no servers); token bound to a service account; additional sensors
 - [[Service Graph Connectors for Workspace ONE UEM (VMware and Omnissa)]] - older VMware connector (guided setup, API key) and newer Omnissa connector (SGC Central)
+- [[Service Graph Connector for Active Directory]] - AD computer objects over LDAP, inactive threshold (not the user import)
+
+## Security
+
+- [[Service Graph Connector for Microsoft Defender for Endpoint]] - List machines API, OAuth app, machines moved from Server to Computer in 1.2.0
+- [[Service Graph Connector for Qualys]] - Global Asset API (CSAM) or Asset Management and Tagging API, class mapping rule tables
+- [[Service Graph Connector for Rapid7]] - InsightVM assets as unclassed hardware, API key
+- [[Service Graph Connector for SentinelOne]] - Get Agents API, endpoints, servers and cloud context
+- [[Service Graph Connector for Netskope]] - Netskope Client inventory, API key
+- [[Service Graph Connector for Splunk]] - forwarder hosts, optional ServiceNow add-on in Splunk for extended asset data
+- [[Service Graph Connector for Trellix]] - Trellix devices as servers with disks, file systems, software
+- [[Service Graph Connector for Akamai API Security]] - discovered APIs into API Component for API Insights
