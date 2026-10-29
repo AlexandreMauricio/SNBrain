@@ -152,6 +152,7 @@ Step-by-step procedures, grouped by topic (the notes themselves stay in one flat
 - [[Import Records from Another Instance with an XML Import Set]] - HTTPS XML data source, keep sys_ids, reconcile references (documented)
 - [[Create an ETL Transform Map in IntegrationHub ETL]] - guided setup from data source to schedule, test and rollback, duplicate (documented, Brazil)
 - [[Install a MID Server]] - network, MID user, download, Linux and Windows installers, silent install, validate, several MID Servers (documented, Brazil)
+- [[Create a Remote Table]] - plugin, remote table, query script with RESTMessageV2 and sn_tfrm transformer, caching, debugging (documented, Brazil)
 
 ## Reporting and dashboards
 

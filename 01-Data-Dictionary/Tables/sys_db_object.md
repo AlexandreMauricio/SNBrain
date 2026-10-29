@@ -24,7 +24,7 @@ Column names are not given in the guide; these are the form labels.
 | Name | ? | table name; `u_` prefix in global, scope namespace in an application, `st_` added for remote tables | documented |
 | Extends table | ? | parent table | documented |
 | Application | ? | owning application scope (read-only) | documented |
-| Remote table | ? | data comes from a script against an external source; cannot extend another table | documented |
+| Remote table | ? | data comes from a script against an external source; cannot extend another table | documented ([[Remote Tables]]) |
 | Extensible | ? | other tables may extend this one | documented |
 | Extension model | ? | blank (inherit, or table per class) or Table per hierarchy; may need adding to the form | documented |
 | Auto-number | ? | adds a numbered field with a number format | documented |
