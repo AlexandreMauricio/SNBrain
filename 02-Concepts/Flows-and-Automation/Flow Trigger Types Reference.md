@@ -63,7 +63,7 @@ Flows give control that inbound actions lack: moving attachments, choosing the t
 | Service Catalog | **Requested Item Record**, Table Name, Run Start Date/Time, Run Start Time UTC |
 | SLA Task | **Task SLA Record**, `sla_flow_inputs` (object with SLA definition values) |
 | Inbound Email | **Email Record**, [Table] Table (of the target), **Subject**, **Body Text**, **User Record** (Guest when the sender is unknown), **From address** |
-| MetricBase | MetricBase Trigger Definition Record, Level, Time of Metric Event, Record |
+| MetricBase ([[MetricBase]]) | MetricBase Trigger Definition Record, Level, Time of Metric Event, Record |
 | Kafka Message | Messages: array of Headers (key and value), Payload, Key |
 
 ## Guidelines

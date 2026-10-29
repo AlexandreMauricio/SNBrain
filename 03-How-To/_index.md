@@ -175,6 +175,7 @@ Step-by-step procedures, grouped by topic (the notes themselves stay in one flat
 - [[Create a Scheduled Export Set]] - definition, MID target, export set, daily delta schedule (documented)
 - [[Set Up Instance Data Replication]] - producer set, outbound entries, consumer set, approve, activate, seed, transform (documented, Brazil)
 - [[Upgrade IDR Replication Sets to V2]] - upgrade, begin upgrade, dry run, finish upgrade, rollback causes (documented, Brazil)
+- [[Create a MetricBase Trigger and Flow]] - metric, data, trigger levels, condition script, flow, test (documented, Brazil)
 
 ## Instance Administration
 

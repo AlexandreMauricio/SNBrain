@@ -400,6 +400,7 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Export Sets]] - definitions, MID Server targets, scheduled delta and parallel exports, history states (documented, Brazil)
 - [[Instance Data Replication (IDR) Overview]] - producer and consumer sets, continuous, bidirectional, discrete and scheduled modes, limits, hierarchy, V2 Hermes, comparison, cloning (documented, Brazil)
 - [[Instance Data Replication Reference]] - adapters, excluded tables, system properties, roles, data privacy (documented, Brazil)
+- [[MetricBase]] - time-series database, retention policies, APIs, anomaly models, band, linear predictor, gap and model triggers, health, roles (documented, Brazil)
 
 ## Instance Administration (`Instance-Administration/`)
 
