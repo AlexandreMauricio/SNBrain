@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, assets, cmdb]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Asset Management common applications" (pp. 292-510), read in full 2026-10-02; this note is the overview, the detail is in the linked notes
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "Asset Management common applications" (pp. 292-510), read in full 2026-10-02; this note is the overview, the detail is in the linked notes Re-checked against the Brazil ITSM docs (Asset Management common applications chapter, 249 topics, https://www.servicenow.com/docs/r/it-service-management/itsm-sam.html and siblings), 2026-10-29: same content; Brazil differences noted in the body.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-29
 ---
 
 # Asset Management common applications

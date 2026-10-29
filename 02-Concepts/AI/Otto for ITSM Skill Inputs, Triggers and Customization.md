@@ -2,10 +2,10 @@
 type: reference
 tags: [reference, ai, incident, change, request, admin]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "ServiceNow Otto for IT Service Management (ITSM)", topics "Supporting information", "Configure ServiceNow Otto for ITSM", "Skill inputs and triggers", "Configure Otto for Virtual Agent in ITSM", "ITSM Virtual Agent pre-built LLM topics", "Customize a ... skill" (incident summarization, resolution notes, activity response, change summarization, change risk explanation, risk assessment answer generator, Request Management skills) (pp. 14-87), read 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "ServiceNow Otto for IT Service Management (ITSM)", topics "Supporting information", "Configure ServiceNow Otto for ITSM", "Skill inputs and triggers", "Configure Otto for Virtual Agent in ITSM", "ITSM Virtual Agent pre-built LLM topics", "Customize a ... skill" (incident summarization, resolution notes, activity response, change summarization, change risk explanation, risk assessment answer generator, Request Management skills) (pp. 14-87), read 2026-10-02 Re-checked against the Brazil ITSM docs (ServiceNow Otto for ITSM chapter, 80 topics, https://www.servicenow.com/docs/r/it-service-management/now-assist-for-it-service-management-itsm/config-genai-va-itsm.html and siblings), 2026-10-29: same content; differences recorded as Brazil notes and variants.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-29
 ---
 
 # Otto for ITSM: skill inputs, triggers and customization
@@ -28,9 +28,9 @@ Interfaces: Service Operations Workspace gets everything (from version 6.0.0); C
 | Resolution notes generation | incident short description, work notes, additional comments | automatic when conditions are met, or *User triggered*. Otto context menu config: target field (default **Close notes**), refine actions Shorten / Elaborate, **Insert** |
 | Incident activity response recommendation | short description, priority, state, work notes, comments (read-only) | Otto context menu in the activity stream. Work notes: *Summarize actions*, *Post response*; additional comments: *Follow up*, *Post response*, *Acknowledge task*. Configured under **AI Experiences > Otto context menu > Configurations** |
 | Knowledge article generation | incident description, resolution notes, work notes, comments | **Create Knowledge** on Resolved or Closed. Other states: property `com.snc.incident.create_knowledge.multistate.enable` with the state numbers (1 New, 2 In Progress, 3 On Hold, 6 Resolved, 7 Closed, 8 Canceled) and a matching availability condition |
-| Incident assist | | Otto panel topics: similar resolved incidents, on-call experts, caller's assets, caller's recent incidents |
+| Incident assist | | **Brazil**: the skill is marked [DEPRECATED], moved to the Archive section from Australia Patch 2; its features live on in the *Incident assist* agentic workflow ([[Otto for ITSM Agentic Workflows and AI Agents Reference]]). Was: Otto panel topics: similar resolved incidents, on-call experts, caller's assets, caller's recent incidents |
 | Incident sentiment analysis | short description, description, priority, state, created, additional comments, task SLA | output: sentiment (Positive, Neutral, Negative), trend (Improving, Declining, Stable), reasoning; refreshed by scheduled job *Sentiment analysis scheduled job (incident)* |
-| Suggested steps generation | incidents clustered on short description; closed in the last 6 months by default | being deprecated from Australia, replaced by LEAP (`sn_itom_leap`). Needs about 2,000 records to cluster (**Launch clustering**); not domain separated |
+| Suggested steps generation | incidents clustered on short description; closed in the last 6 months by default | being deprecated, replaced by LEAP (`sn_itom_leap`); unconfirmed variants on when: from Australia (Australia PDF), *being prepared for future deprecation starting with Brazil* and *deprecated starting with Otto for ITSM version 15.0* (both on Brazil pages). Needs about 2,000 records to cluster (**Launch clustering**); not domain separated |
 | Major incident email content recommendation | incident fields and activities, business impact, resolution notes, `task_sla` (target, stage, time left, breached, pause), optionally `sys_cs_collab_message` payload (must be added by hand) | generative variables in the communication email templates |
 | Chat summarization | chat transcript | triggers: Virtual Agent to live agent hand-off, `/summarize` quick action, chat wrap-up (fills **Chat Summary**), short description at chat end, task creation (pre-fills short description and description). Property *Bulleted list* |
 | Chat reply recommendation | chat | user triggered; icon config with preset and refine actions (Shorten, Elaborate) |
@@ -50,7 +50,7 @@ Interfaces: Service Operations Workspace gets everything (from version 6.0.0); C
 
 - Skills run with the user's ACLs; **role masking** then limits what the model output may use to the data of the role in play.
 - Script include `NowAssistitsmGenAIUtilsSNC` (client-callable, server-side) backs several skills; its ACL requires itil or `sn_incident_read`.
-- Model providers: Now LLM Service (being deprecated; no longer default from the September 2026 release), Azure OpenAI, Google Gemini, Anthropic Claude on AWS; allowed providers in AI Control Tower, per-skill choice in AI Admin Hub.
+- Model providers: Now LLM Service (being deprecated; no longer default from the September 2026 release; yet a Brazil page says that from the September 2026 release the open-weight model **Gemma 4** is added to Now LLM Service, unconfirmed how the two fit), Azure OpenAI, Google Gemini, Anthropic Claude on AWS; allowed providers in AI Control Tower, per-skill choice in AI Admin Hub.
 
 ## Virtual Agent
 

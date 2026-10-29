@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, assets, cmdb, discovery, release-specific]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Asset Management common applications > ITSM Software Asset Management > Legacy Software Asset Management plugin" (pp. 293-355), read 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "Asset Management common applications > ITSM Software Asset Management > Legacy Software Asset Management plugin" (pp. 293-355), read 2026-10-02 Re-checked against the Brazil ITSM docs (Asset Management common applications chapter, 249 topics, https://www.servicenow.com/docs/r/it-service-management/itsm-sam.html and siblings), 2026-10-29: same content; Brazil differences noted in the body.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-29
 ---
 
 # Legacy Software Asset Management plugin

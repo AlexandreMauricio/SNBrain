@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, assets, request, service-catalog, integrations]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Asset Management common applications > Procurement" (pp. 443-485), read 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "Asset Management common applications > Procurement" (pp. 443-485), read 2026-10-02 Re-checked against the Brazil ITSM docs (Asset Management common applications chapter, 249 topics, https://www.servicenow.com/docs/r/it-service-management/itsm-sam.html and siblings), 2026-10-29: same content; Brazil differences noted in the body.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-29
 ---
 
 # Procurement
@@ -71,6 +71,7 @@ Store app *Asset Management - Procurement Integration* (with SAM Enterprise and 
 - Create assignment groups for the sourcing tasks before using the application.
 - If Field Service Management is active, its flow processes transfer orders.
 - Domain separation: Standard with exceptions; work in the right domain when creating POs.
+- Procurement Integration (Brazil): Basic and Standard support; several profiles per domain but only one published and active per domain (parent included); a PO creates a requisition only if its domain has a published profile; POs, PO lines, receiving slips and lines, entitlements, entitlement import errors and expense lines are created in the profile's domain. `itam_procurement_integration_job` is not domain separated (each job follows its profile); the profile and job log tables are. Needs `com.glide.domain.msp_extensions.installer`, `com.snc.procurement`, `com.glideapp.servicecatalog.domain_separation`. Path: **Software Asset Workspace > License operations > Purchasing > Procurement integrations**; the first Coupa profile uses the parent alias, each further one needs a **child alias**. The integration does not pull requisitions created in Coupa.
 
 ## Related
 

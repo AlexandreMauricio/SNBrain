@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, assets, cmdb, flows]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Asset Management common applications > Contract Management" (pp. 396-443), read 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "Asset Management common applications > Contract Management" (pp. 396-443), read 2026-10-02 Re-checked against the Brazil ITSM docs (Asset Management common applications chapter, 249 topics, https://www.servicenow.com/docs/r/it-service-management/itsm-sam.html and siblings), 2026-10-29: same content; Brazil differences noted in the body.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-29
 ---
 
 # Contract Management
@@ -88,7 +88,8 @@ Active Contracts by Cost Per Unit / Lifetime Cost / Monthly Cost / Yearly Cost /
 
 - **Contract History** (`clm_contract_history`) stores a copy whenever dates or terms change.
 - Subscription contracts are readable by every authenticated user (for the *My Assets* report).
-- Domain separation: data only; the job, renewals and approvals do not respect domains (the renewal workflow does).
+- Domain separation: data only; the job, renewals and approvals do not respect domains (the renewal workflow does). Brazil labels the support level **No support** while still describing per-domain contract records (`sys_domain` on `ast_contract`) and warning that automated processes ignore domains: test workflows per domain before production.
+- Brazil role lists add the Enterprise Asset Workspace roles `sn_eam.enterprise_admin` and `sn_eam.enterprise_asset_manager` beside `contract_manager` (Core UI and Hardware Asset Workspace) and `contract_system_admin`.
 - With Now Assist in Contract Management (`sn_cm_gen_ai`), **Initiate contract extraction** reads obligations and metadata from the document.
 
 ## Related

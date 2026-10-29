@@ -2,10 +2,10 @@
 type: reference
 tags: [reference, ai, incident, change, sla, automation]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "ServiceNow Otto for IT Service Management (ITSM)", topic "Use agentic AI in ServiceNow Otto for ITSM" and all its subtopics (ITSM, Voice, Virtual Agent, Change Management, Incident Management and DEX agentic workflows and standalone AI agents) (pp. 87-151), read 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "ServiceNow Otto for IT Service Management (ITSM)", topic "Use agentic AI in ServiceNow Otto for ITSM" and all its subtopics (ITSM, Voice, Virtual Agent, Change Management, Incident Management and DEX agentic workflows and standalone AI agents) (pp. 87-151), read 2026-10-02 Re-checked against the Brazil ITSM docs (ServiceNow Otto for ITSM chapter, 80 topics, https://www.servicenow.com/docs/r/it-service-management/now-assist-for-it-service-management-itsm/config-genai-va-itsm.html and siblings), 2026-10-29: same content; differences recorded as Brazil notes and variants.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-29
 ---
 
 # Otto for ITSM: agentic workflows and AI agents reference

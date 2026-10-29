@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, reporting, incident, change, problem, cmdb]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Benchmarks" (pp. 510-543), read in full 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "Benchmarks" (pp. 510-543), read in full 2026-10-02 Re-checked against the Brazil ITSM docs (Benchmarks chapter, 18 topics, https://www.servicenow.com/docs/r/it-service-management/benchmarks/benchmarks-landing.html), 2026-10-29: same content plus SPM KPIs and the Store dashboard.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-29
 ---
 
 # Benchmarks
@@ -59,6 +59,7 @@ Adapt conditions to your process (for example which priorities count as high). Y
 | CMDB | % duplicate, % non-compliant, % stale CIs | from `cmdb_health_scorecard` | lower |
 | Virtual Agent | % of users using it; % handed over to a live agent; CSAT | | |
 | Security | % critical and high security incidents; vulnerability age, per asset, MTTR, remediation efficiency | | |
+| Strategic Portfolio Management | SPM benchmarking KPIs (Brazil; needs SPM installed) | | |
 | Success Dashboard | self-solved %, call deflection %, structured tickets %, CSAT, MTTR, breached SLA %, first assignment resolution, automated resolutions | needs the Success Dashboard app | |
 
 Each ratio KPI is a formula indicator over two `Benchmark: Number of ...` / `Benchmark: Total time ...` indicators (for example average time to close a change = total time to close changes / number of changes closed).
@@ -71,6 +72,7 @@ Each ratio KPI is a formula indicator over two `Benchmark: Number of ...` / `Ben
 - Click a KPI for the trend chart; click one of your data points to open the PA scorecard.
 - Year-over-year analysis: property `sn_bm_client.months_copy_historical_pa_bm` (months), run PA job *Benchmarks Historical Data Collection* (24 months recommended; wait for state Collected), then scheduled job *Copy historical scores from PA to Benchmarks table*. Roles `sn_bm_client.benchmark_admin`, `pa_data_collector` or admin.
 - Recommendation candidates are refreshed monthly.
+- Brazil: the new Benchmarks dashboard (Next Experience) comes from the ServiceNow Store; the programme counts over 2,850 opted-in customers.
 
 ## Related
 

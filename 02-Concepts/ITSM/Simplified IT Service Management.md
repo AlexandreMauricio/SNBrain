@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, incident, change, request, ai, admin, portal]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Simplified IT Service Management" (pp. 223-291), read in full 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "Simplified IT Service Management" (pp. 223-291), read in full 2026-10-02 Re-checked against the Brazil ITSM docs (Simplified IT Service Management chapter, 40 topics, https://www.servicenow.com/docs/r/it-service-management/configuring-employee-experience-ai-native-itsm.html and siblings), 2026-10-29: same content apart from the change-role prefix variant.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-29
 ---
 
 # Simplified IT Service Management
@@ -57,7 +57,7 @@ Left pane: configuration summary and progress; **Configure with AI** (lists the 
 
 Plugin *ITSM Change Management Admin Experience* (`sn_itsm_chg_admin`). Same engine as [[Change Management Overview and Lifecycle]], reduced to Standard, Normal and Emergency with opinionated defaults; for multi-stage CABs or heavy workflow customisation use the full application. Console path **ITSM fulfiller experience > Change Management**.
 
-Roles: `sn_itsm_chg_admin.admin` contains `sn_itsm_chg_admin.forms_config`, `sn_chg_setup.lists_config`, `.team_roles_config`, `.risk_config`, `.cab_config`, `.change_models_config`, `.change_schedules_config`, `.notification_config`. These **no longer inherit `sn_ia_config.ia_user`**: assign it explicitly or the console cannot be configured after an upgrade.
+Roles: `sn_itsm_chg_admin.admin` contains `sn_itsm_chg_admin.forms_config`, `sn_chg_setup.lists_config`, `.team_roles_config`, `.risk_config`, `.cab_config`, `.change_models_config`, `.change_schedules_config`, `.notification_config`. Unconfirmed variant: the Brazil pages write the team roles, risk, CAB, change models, schedules and notification roles with the prefix `sn_itsm_chg_admin.` (`sn_itsm_chg_admin.team_roles_config`, `.risk_config`, `.cab_config`, `.change_models_config`, `.change_schedules_config`, `.notification_config`) and only the lists role as `sn_chg_setup.lists_config`. These **no longer inherit `sn_ia_config.ia_user`**: assign it explicitly or the console cannot be configured after an upgrade.
 
 | Section | What is set |
 |---|---|
