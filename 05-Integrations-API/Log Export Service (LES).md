@@ -16,7 +16,7 @@ From the Brazil docs. Steps: [[Set Up Log Export Service]]. What the logs are: [
 
 - Store application, scope `sn_logstoanalytics` (plugin `com.sn_logstoanalytics`). Installing it provisions Hermes, which can take a couple of hours.
 - Menu **Log Export Service (LES)**: Sources, Export Historical Data, Destination Configurations, Consumers, Consumer Status, Reports, the two guided setups.
-- Hermes is also used by Stream Connect and Instance Data Replication.
+- Hermes is also used by Stream Connect and [[Instance Data Replication (IDR) Overview|Instance Data Replication]].
 
 ## What can be exported
 

@@ -51,7 +51,7 @@ Each key is encrypted ("wrapped") by the one above it; the top lives in a hardwa
 | Instance Signature Key (ISK) | instance | signing |
 | Password2 key | instance | Password2 fields ([[Password2 Fields and the GlideEncrypter Deprecation]]) |
 | Customer Data Encryption Key (CDEK) | instance | keys created through KMF, wrapped by the IKEK |
-| IDR Data Encryption Key | instance | Instance Data Replication |
+| IDR Data Encryption Key | instance | [[Instance Data Replication (IDR) Overview]]\|Instance Data Replication]] |
 
 Self-hosted and developer instances use a *File Key Store* in place of KeySecure.
 

@@ -307,6 +307,7 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[DEX Self-Service and Device Actions]] - Device health check for employees, issue configurations, device actions, execution states, health rating calculation
 - [[DEX Incident Investigation for Service Desk Agents]] - Investigation tab for DEX devices: health checklist, top processes, suggested resolutions, playbook, automatic work notes
 - [[Playbook Experience Design for Workspace, Portal and Mobile]] - UI Builder components and bundles, Guided view, Service Portal content items and widget, mobile embedding
+- [[Entity View Action Mapper (EVAM)]] - multi-table card lists: definitions, data sources, bundles, view configurations, JSON view templates, actions, evam_admin (Brazil)
 
 ## Security (`Security/`)
 
@@ -397,6 +398,8 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Auditing and Record History]] - what sys_audit records and what it skips, inclusion and exclusion lists, retention, history sets, history views, roles
 - [[Easy Import]] - Excel insert and update templates from a list, validation, reference drop-downs, properties (documented, Brazil)
 - [[Export Sets]] - definitions, MID Server targets, scheduled delta and parallel exports, history states (documented, Brazil)
+- [[Instance Data Replication (IDR) Overview]] - producer and consumer sets, continuous, bidirectional, discrete and scheduled modes, limits, hierarchy, V2 Hermes, comparison, cloning (documented, Brazil)
+- [[Instance Data Replication Reference]] - adapters, excluded tables, system properties, roles, data privacy (documented, Brazil)
 
 ## Instance Administration (`Instance-Administration/`)
 

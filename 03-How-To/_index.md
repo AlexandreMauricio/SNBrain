@@ -124,6 +124,7 @@ Step-by-step procedures, grouped by topic (the notes themselves stay in one flat
 ## Knowledge
 
 ## Portals and Workspaces
+- [[Create a Multi-Source Card List with EVAM]] - one card list from two tables with per-table templates and actions (Brazil)
 
 ## Security and single sign-on
 
@@ -172,6 +173,8 @@ Step-by-step procedures, grouped by topic (the notes themselves stay in one flat
 - [[Roll Back a Patch, Plugin Activation or Background Script]] - rollback contexts and script execution history (documented)
 - [[Enable Auditing on a Table]] - Audit flag on the collection row, no_audit and audit_type=whitelist attributes, checking the result
 - [[Create a Scheduled Export Set]] - definition, MID target, export set, daily delta schedule (documented)
+- [[Set Up Instance Data Replication]] - producer set, outbound entries, consumer set, approve, activate, seed, transform (documented, Brazil)
+- [[Upgrade IDR Replication Sets to V2]] - upgrade, begin upgrade, dry run, finish upgrade, rollback causes (documented, Brazil)
 
 ## Instance Administration
 
