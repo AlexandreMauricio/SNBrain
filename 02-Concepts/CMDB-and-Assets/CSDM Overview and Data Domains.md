@@ -51,6 +51,9 @@ Business services used to live only in `cmdb_ci_service`; the docs say both tabl
 | Top-down Service Mapping, or manual entry in the *Create a Service Instance* form | Mapped Application Service `cmdb_ci_service_discovered` |
 | Dynamic CI Group (query-based) | `cmdb_ci_query_based_service` |
 | Tags | see variants below |
+| Dynamic Service (follows `cmdb_rel_ci`) | Calculated Application Service `cmdb_ci_service_calculated` (from the Service instances chapter) |
+
+Details, methods and roles: [[Service Instances (Application Services)]].
 
 New service instance subclasses in CSDM 5: Data (`cmdb_ci_data_service_instance`), Network (`cmdb_ci_network_service_instance`), Operational Process (`cmdb_ci_operational_process_service_instance`), Connection (`cmdb_ci_connection_service_instance`), Facility (`cmdb_ci_facility_service_instance`). Application services still exist and are still created with the application service wizard.
 
@@ -121,7 +124,7 @@ Enterprise architect / application owner (business applications), portfolio mana
 
 | Topic | Variants in the Brazil docs | Where |
 |---|---|---|
-| Tag-based service instance table | `cmdb_ci_service_by_tags` / `cmdb_ci_service_tags` | Service Delivery domain page, same page's methods table |
+| Tag-based service instance table | `cmdb_ci_service_by_tags` / `cmdb_ci_service_tags` | Service Delivery domain page, same page's methods table; the Service instances chapter uses `cmdb_ci_service_by_tags` throughout |
 | Business application table | `cmdb_ci_business_app` (most pages) / `cmdb_ci_business_application` (life cycle inheritance text) / "not `cmdb_ci_app`" (mapping page) | several |
 | Business application to service instance relationship | Consumes::Consumed By (domain pages, Crawl dashboard metric *App service to business app not Consumed by*) / Uses::Used By ("CSDM v5 implements", CI relationships page, which keeps Consumes for Enterprise Architecture Workspace TLM/TRM timelines) | |
 | Which service instances a business application may relate to | "ultimately an Application Service table and not any other type of Service Instance" | Design & Planning, CI relationships |

@@ -173,6 +173,8 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[CSDM Overview and Data Domains]] - CSDM principles, data domains and their tables, service types, prescribed relationships, implementation stages, data migration, unconfirmed table-name variants (documented, Brazil)
 - [[CSDM Life Cycle Stages and Synchronization]] - life-cycle value pairs, life_cycle_control and life_cycle_mapping, legacy-to-CSDM sync phases, asset/CI/IBI sync properties (documented, Brazil)
 - [[CSDM Life Cycle Values Reference]] - stages and statuses for tangible, logical, product, document/contract and location entities (documented, Brazil)
+- [[Service Instances (Application Services)]] - service instance types, tables and population methods, excluded classes, roles, service groups, maps, dashboard (documented, Brazil)
+- [[Application Services Components and Properties Reference]] - tables, sa.* map properties and APIs of com.snc.cmdb.it_service (documented, Brazil)
 
 ## SLA and Schedules (`SLA-and-Schedules/`)
 

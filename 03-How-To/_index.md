@@ -64,6 +64,10 @@ Step-by-step procedures, grouped by topic (the notes themselves stay in one flat
 - [[Enable CSDM Life Cycle Synchronization]] - map legacy statuses, run the discrepancy check and enable life cycle sync (documented, Brazil)
 - [[Synchronize Support and Managed By Groups for CIs]] - set groups per class in CI Class Manager or through a technology management offering and dynamic CI group (documented, Brazil)
 - [[Auto-Generate Product Models for Logical CIs]] - CSDM Product Model Assignment job and Default Product Model per class (documented, Brazil)
+- [[Create a Service Instance]] - Application Service wizard, CSDM relationships, five population methods, required attributes (documented, Brazil)
+- [[Convert Business or Manual Services to Application Services]] - bulk and single conversion, manual to dynamic (documented, Brazil)
+- [[Edit Manual Application Services - Add CIs, Update from CMDB, Link]] - add CIs on the map, update from CMDB, contained services (documented, Brazil)
+- [[Control Access to Application Services with Service Groups]] - service groups and group responsibilities (documented, Brazil)
 
 ## SLA and Schedules
 
