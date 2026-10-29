@@ -94,3 +94,4 @@ REST and SOAP APIs, import sets and transform maps, IntegrationHub, MID Server, 
 - [[Multi Provider Document Services Framework]] - OneDrive, SharePoint and Google Drive document sync: mp_ tables, spokes, OAuth app, personal authentication, document actions and subflows (documented, Brazil)
 - [[Knowledge External Content Integration]] - import WebDAV files into a knowledge base on a schedule (documented, Brazil)
 - [[Hermes Messaging Service]] - ServiceNow-hosted Kafka behind Stream Connect, LES and IDR: ports, certificates, namespaces, topics, inspector, diagnostics, cloning, roles (Brazil)
+- [[ServiceNow Voice with Amazon Connect]] - call center telephony: Voice apps, contact flows, provider components and operation handlers, Connect guided setup, SSO, real time transcription, PIN, roles (Brazil)

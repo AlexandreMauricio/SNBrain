@@ -57,6 +57,8 @@ Different workflows per type or classification: build them in the legacy workflo
 
 ## E-signature
 
+The newer template-based signing on tasks (typed or drawn signature, credentials, acknowledgment) is in [[E-signature Templates]].
+
 Plugin Approval with E-Signature ([[Classic Approvals]]): users retype user name and password on Approve/Reject; not stored on the document. Add the revision table in **System Definition > e-Signature Registry** with **Enabled** (the page names it `dms_document_revision`, label Document Revision; see the table variant above).
 
 ## Knowledge Document plugin

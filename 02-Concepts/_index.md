@@ -84,6 +84,7 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Digital Product Release Configuration and Templates]] - install, external tools, release calendars and readiness targets, approval definitions, PaCE policies, release templates, product-level settings
 - [[Working a Digital Product Release]] - products, features, enhancements, planning board, creating releases, running phases, CIs, changes, artifacts, approvals, retarget, hold, close
 - [[Digital Product Release Reference]] - DPR roles, tables, scheduled jobs, properties, notifications, shipped policies and data collectors
+- [[Interaction Management]] - the interaction table and plugin, states, context and channel metadata, wrap up (configuration, codes, AI, timer, fallback job), roles
 
 ## Service Catalog (`Service-Catalog/`)
 
@@ -206,6 +207,7 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Granular Admin Roles]] - what they are, instance operator, platform security roles, and the full cross-product list (Brazil)
 - [[Service Delegation]] - delegates for approvals, assignments and notifications; rules and setup (Brazil)
 - [[Geolocation and Location Tracking]] - tracked users, geo_history, Google Maps key, routing and tracking properties (Brazil)
+- [[Skills Management]] - skills, categories, level types and levels, user and group skills, task skills, skill determination rules, qualify and rank APIs, domain separation
 
 ## Forms and Lists (`Forms-and-Lists/`)
 
@@ -297,6 +299,7 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Email Client]]: sending email from a record; configurations, templates, quick messages
 - [[Notify Overview, Twilio and Providers]] - SMS, voice and conferences: plugins and drivers, Twilio Direct, public URLs, numbers and groups, provider selectors, SMS opt-out, roles, tables, properties
 - [[Notify Conference Calls and Use from Tasks, Incident Communications and On-Call]] - conference calls, Notify on Task, ICM conferences and updates, Major Incident workbench with Webex, On-Call SMS and voice escalation
+- [[Live Feed (Core UI, Discontinued)]] - discontinued Core UI social feed: record feeds on tasks, table notifications, security, domain separation, live_ tables
 
 ## Knowledge (`Knowledge/`)
 - [[Knowledge Management Overview]] - Big picture: plugins, cycle, setup order, release changes
@@ -526,6 +529,7 @@ Notes in this section come from the Brazil release of the Building applications 
 - [[Document Management]] - documents, versions, sharing, review and approval, references, lists, workspace, smart card signing, external providers, roles (documented, Brazil)
 - [[Document Viewer, PDF Generation and Document Conversion]] - view attachments inline, DOCX to PDF accessibility, accessible PDF export and PDF size and memory guardrails
 - [[Managed Documents]] - legacy dms_ document control: revisions, check-out/in, name formats, review and approval, Knowledge Document plugin
+- [[E-signature Templates]] - sign managed documents, knowledge articles or HR templates from a task: signature, credential or acknowledgment
 
 ## Surveys and Assessments (`Surveys-and-Assessments/`)
 
