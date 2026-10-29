@@ -170,6 +170,9 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[CMDB Coverage]] - IPAM allocated IPs matched to discovered CIs, discovery schedule gaps, jobs and properties (Brazil)
 - [[CMDB Success Advisor]] - Data Foundations, HAM and SAM advisors, principal class scope and recommendations, dashboard, integrations and settings tabs (Brazil)
 - [[CI Lifecycle Management (Legacy)]] - operational states, CI actions, not-allowed rules, leases, StateManagementScriptableApi (Brazil)
+- [[CSDM Overview and Data Domains]] - CSDM principles, data domains and their tables, service types, prescribed relationships, implementation stages, data migration, unconfirmed table-name variants (documented, Brazil)
+- [[CSDM Life Cycle Stages and Synchronization]] - life-cycle value pairs, life_cycle_control and life_cycle_mapping, legacy-to-CSDM sync phases, asset/CI/IBI sync properties (documented, Brazil)
+- [[CSDM Life Cycle Values Reference]] - stages and statuses for tangible, logical, product, document/contract and location entities (documented, Brazil)
 
 ## SLA and Schedules (`SLA-and-Schedules/`)
 

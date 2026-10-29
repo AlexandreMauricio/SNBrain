@@ -2,7 +2,7 @@
 type: concept
 tags: [concept, cmdb, data-integrity, reporting]
 status: documented
-source: ServiceNow Brazil docs, Platform Capabilities guide > CMDB > CSDM and CMDB Data Foundations Dashboards (4 topics, 410 cleaned lines, read in full through the docs site API 2026-10-29) - Monitor health, CMDB Data Foundations dashboard, CSDM Data Foundations dashboard, scheduled jobs. The CSDM stage reports (Foundation to Fly) are separate pages not in this chapter. https://www.servicenow.com/docs/r/servicenow-platform/configuration-management-database-cmdb/csdm-cmdb-foundations-dashboards.html
+source: ServiceNow Brazil docs, Platform Capabilities guide > CMDB > CSDM and CMDB Data Foundations Dashboards (4 topics, 410 cleaned lines, read in full through the docs site API 2026-10-29) - Monitor health, CMDB Data Foundations dashboard, CSDM Data Foundations dashboard, scheduled jobs. The CSDM stage reports (Foundation to Fly) are separate pages not in this chapter. https://www.servicenow.com/docs/r/servicenow-platform/configuration-management-database-cmdb/csdm-cmdb-foundations-dashboards.html; CSDM chapter pages Configure Data Foundations dashboard, CSDM Data Foundations dashboard, Foundation/Crawl/Walk/Run/Fly tab pages (read 2026-10-29) https://www.servicenow.com/docs/r/servicenow-platform/common-service-data-model-csdm/csdm-foundations-dashboard.html
 sn-release: Brazil
 verified:
 updated: 2026-10-29
@@ -58,11 +58,22 @@ Drill-down: select a tile to open Analytics Hub; with **Real-time** on, **Show R
 | | Incidents Referencing a CI | incidents of the last 60 days with `cmdb_ci` |
 | | Incidents Relating to both a Service and a CI | incidents of the last 60 days with both |
 
-The docs' formula for CIs with Names is printed with misplaced brackets; read it as (200 − count) / 200 × 100. To refresh the hostname widget by hand, run the Get Well collection first, then the PA collection.
+The docs print the CIs with Names formula with brackets that do not balance; the reading (200 − count) / 200 × 100 is an interpretation, unconfirmed. To refresh the hostname widget by hand, run the Get Well collection first, then the PA collection.
 
 ## CSDM dashboard
 
-Tabs follow the CSDM maturity stages: **Foundation**, **Crawl**, **Walk**, **Run**, **Fly** (CSDM (chapter not read yet; see [[Service Catalog and CSDM]])). Indicators collected include: application services missing or with incorrect business application relationships, missing business service offerings, business applications without an application service, business units without companies, CIs whose operational status and life cycle stage disagree, custom service tables, dynamic CI groups without a CMDB group, information objects (and those without a business application), locations without parent, product models without owner, technical service offerings (without support or change group, without a technical service).
+Tabs follow the CSDM implementation stages: **Foundation**, **Crawl**, **Walk**, **Run**, **Fly** ([[CSDM Overview and Data Domains]]). Indicators collected include: application services missing or with incorrect business application relationships, missing business service offerings, business applications without an application service, business units without companies, CIs whose operational status and life cycle stage disagree, custom service tables, dynamic CI groups without a CMDB group, information objects (and those without a business application), locations without parent, product models without owner, technical service offerings (without support or change group, without a technical service).
+
+### From the CSDM chapter (read 2026-10-29)
+
+- Menus: **All > CSDM > Configuration > CSDM Data Foundations Dashboard** (configure page) and **All > Configuration > CSDM Data Foundations Dashboard**; also from Service Graph Workspace or CMDB Workspace > Management > Optimize.
+- Roles for the CSDM dashboard: `app_service_admin`, `app_service_user`, `asset`, `cmdb_read`, `itil_admin`, `portfolio_admin`, `service_viewer` or `technology_service_owner`.
+- Before first use run the job **CSDM Get Well Metric Collection** (scores in **CSDM Data Foundations Metric Scores**, `sn_getwell_csdm_score`; daily). Unconfirmed variant: the configure page lists the IRE batch job as started by the *CMDB* Get Well collection.
+- **Result** colours: red 0 to 50 %, yellow 50 to 90 %, green above 90 %. Priority = metric weight × severity of the score (1 Critical to 5 Low). Some metrics stop collecting at a number of non-conforming CIs.
+- Foundation tab: **Named Product Models with Product Owners** (`cmdb_model` In production with name and owner; titled *...without Product Owners* on the reference page), **CI Status Values** (80 % for 1 to 5 custom status values, 60 % for 6 to 10, 40 % for 11 to 15, 20 % for 16 or more; base values in `sn_getwell_oob_status_table_field.list`, with a **Custom Status Values** related list), **Business Units with Companies**, **Locations with Parents** (installed, operational CIs whose location and location parent are set).
+- Crawl tab: *App services missing business app relationship*, *CIs with Mismatched Operational Status and Life Cycle Stage* (CMDB vs asset vs IBI; [[CSDM Life Cycle Stages and Synchronization]]), *App service to business app not Consumed by*, *Business apps missing app service relationship* (the three relationship metrics have their own collection jobs and can be tuned, see Performance).
+- Walk tab example: technology management offerings without a support group. Run tab example: business service offerings without service instance relationships. Fly tab example: information objects without a business application; since dashboard v2.2 *Information objects missing an app service relationship* and *Catalog request items related to service offerings* are no longer shown.
+- Product models for logical CIs: [[Auto-Generate Product Models for Logical CIs]].
 
 ## Performance
 
@@ -74,4 +85,4 @@ All metrics live in **CMDB/CSDM Get Well Metrics** (`sn_getwell_metric`):
 
 ## Related
 
-- [[CMDB Health]] · [[CMDB Workspace Insights and SGC Central]] · CSDM (chapter not read yet; see [[Service Catalog and CSDM]]) · [[CMDB Coverage]]
+- [[CMDB Health]] · [[CMDB Workspace Insights and SGC Central]] · [[CSDM Overview and Data Domains]] · [[Service Catalog and CSDM]] · [[CMDB Coverage]]

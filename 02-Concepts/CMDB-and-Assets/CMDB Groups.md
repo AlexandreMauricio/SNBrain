@@ -35,6 +35,10 @@ Roles: view `sn_cmdb_editor` or `itil`; use in CMDB queries also `cmdb_query_bui
    - **CMDB Group Contains Encoded Queries** > **New**: **Class**, **Condition**, and **CI Overview Condition** (used for the CMDB Workspace CI overview chart only when `sn_cmdb_ws.ci_overview.enable_simple_condition` is true; not used by Show All CI).
 3. **Show All CI** lists the members (CMDB tables only), with **Operational Status** and the CI Lifecycle Management **Actions** that apply (from **CMDB CI Actions**, `statemgmt_cmdb_actions`). Query-based groups are evaluated live, so a slow query can time out here.
 
+## In CSDM
+
+A **dynamic CI group** (`cmdb_ci_query_based_service`) takes its members from a CMDB group. Used under a technology management offering to sync support, change and managed-by groups to many CIs ([[Synchronize Support and Managed By Groups for CIs]]), or as a query-based service instance ([[CSDM Overview and Data Domains]]). Unconfirmed variant: one CSDM page names the CMDB Group table `cmdb_ci_query_based_service` instead of `cmdb_group`.
+
 ## Limits
 
 - `glide.cmdb.group.max_ci_limit`: maximum CIs per group, **10,000** by default. At the limit nothing more can be added until the property is raised.

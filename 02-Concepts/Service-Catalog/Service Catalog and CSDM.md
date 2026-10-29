@@ -15,7 +15,7 @@ updated: 2026-10-16
 ## Tables
 
 - Managed by the catalog: business services in Sell/Consume (technical services seen from Event Management in Operate); hardware and software model items `pc_hardware_cat_item`, `pc_software_cat_item` feeding asset management.
-- Used by the catalog: CI tables (`cmdb_ci*`), Service Offering (`sc_cat_item_subscribe`, per this page), Application Service (`cmdb_ci_service_discovered`), Product Model tables (`cmdb_model`).
+- Used by the catalog: CI tables (`cmdb_ci*`), Service Offering (`sc_cat_item_subscribe`, per this page; the CSDM chapter gives the offering table as `service_offering`: unconfirmed variants, see [[CSDM Overview and Data Domains]]), Application Service (`cmdb_ci_service_discovered`), Product Model tables (`cmdb_model`).
 - Old item-to-CMDB access links (`sc_cat_item_user_mtom`, `_group_`, `_dept_`, `_location_`, `_company_` and their `_no_mtom` partners) are no longer supported: use user criteria.
 
 ## Request catalog versus Product catalog
@@ -33,4 +33,6 @@ Catalog item tabs map to the model: Item Details, Process Engine, Picture, Prici
 
 ## Related
 
-- [[Service Offerings, Commitments and Availability]] · [[Service Catalog Overview, Item Types and Roles]]
+- [[Service Offerings, Commitments and Availability]] · [[Service Catalog Overview, Item Types and Roles]] · [[CSDM Overview and Data Domains]]
+
+The CSDM chapter adds: each catalog item is linked to **one** business service offering; catalogs (`sc_catalog`) are the Service Consumption layer and are not CMDB tables.

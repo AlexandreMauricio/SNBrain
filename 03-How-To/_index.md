@@ -61,6 +61,9 @@ Step-by-step procedures, grouped by topic (the notes themselves stay in one flat
 - [[Edit CI Relationships in Unified Map]] - add CIs, create, change and delete relationships in the map editor (Brazil)
 - [[Build a CMDB Query in Query Builder]] - classes, connections, filters, AND/OR, columns, run and save (Brazil)
 - [[Set Up CMDB Health]] - metrics, per-class rules, enabling the dashboard jobs, remediation (Brazil)
+- [[Enable CSDM Life Cycle Synchronization]] - map legacy statuses, run the discrepancy check and enable life cycle sync (documented, Brazil)
+- [[Synchronize Support and Managed By Groups for CIs]] - set groups per class in CI Class Manager or through a technology management offering and dynamic CI group (documented, Brazil)
+- [[Auto-Generate Product Models for Logical CIs]] - CSDM Product Model Assignment job and Default Product Model per class (documented, Brazil)
 
 ## SLA and Schedules
 

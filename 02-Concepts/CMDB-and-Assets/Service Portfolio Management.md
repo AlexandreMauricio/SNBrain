@@ -79,3 +79,4 @@ Domain separation: Basic with exceptions.
 ## Related
 
 - [[Service Offerings, Commitments and Availability]] · [[SLA Definitions and Task SLAs]] · [[Incident Management Overview and Lifecycle]] (Service and Service offering on tasks)
+- [[CSDM Overview and Data Domains]] (where services, offerings and service instances sit in the CSDM)
