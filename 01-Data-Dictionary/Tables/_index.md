@@ -40,3 +40,5 @@ One note per table, named with the exact table name. Overviews spanning a family
 - [[sc_cat_item]] - Catalog Item: base of all item types, child classes, related tables (documented, most column names unconfirmed)
 - [[item_option_new]] - Variable (question): catalog variables, lookup_source, answer tables (documented, most column names unconfirmed)
 - [[user_criteria]] - User Criteria: who can see catalog items and categories, link tables (documented, column names unconfirmed)
+- [[kb_knowledge]] - Knowledge articles; each version and translation a record (documented, Brazil)
+- [[kb_knowledge_base]] - Knowledge bases with owner, managers, flows, access lists (documented, Brazil)

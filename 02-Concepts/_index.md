@@ -291,6 +291,23 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Email Client]]: sending email from a record; configurations, templates, quick messages
 
 ## Knowledge (`Knowledge/`)
+- [[Knowledge Management Overview]] - Big picture: plugins, cycle, setup order, release changes
+- [[Knowledge Bases and Categories]] - knowledge base form, owners and managers, categories, featured content, subscription properties
+- [[Knowledge Base Access and User Criteria]] - Can/Cannot Read and Contribute, no-criteria property, special users, explicit roles, scoped bases, diagnostics
+- [[Knowledge Portal and Search]] - Knowledge Portal pages and widgets, search, AI Search, public users, SEO, sitemaps, mobile
+- [[Create and Edit Knowledge Articles]] - Knowledge form fields, editing rules, HTML editor, from tasks, Word import, comments, Agent Workspace
+- [[Knowledge Article Versioning]] - checkout, versions, make current, compare, retire with replacement, properties
+- [[Knowledge Article Templates and Knowledge Blocks]] - template tables, custom templates, field encryption, SEO; blocks with user criteria and APIs
+- [[Knowledge Translation and Internationalization]] - Language and Parent fields, translation tasks, Localization Framework bulk and machine translation
+- [[Knowledge Feedback, Ownership Groups and Article Quality]] - ownership groups, feedback tasks, AQI, KCS states, articles from incidents and cases
+- [[Knowledge Notifications and Subscriptions]] - all KM email notifications and how users subscribe
+- [[Knowledge Demand Insights and Predictive Intelligence]] - similar articles and knowledge gap analysis with ML
+- [[Self-Service Analytics and Case Deflection]] - activity patterns and deflection metrics
+- [[Knowledge Logs, Numbering and Extension Points]] - search and view logs, retention, duplicate numbers, v3 homepage module, extension points
+- [[Knowledge Management Add-in for Microsoft Word]] - setup and authoring articles in Word Online
+- [[Knowledge Workflows and Article Lifecycle]] - publish and retire flows, states, recall, approve, retire, republish, version numbering, validity
+- [[Knowledge Management Properties Reference]] - all KM system properties by group
+- [[Knowledge Management Roles, Tables and Plugins]] - roles, tables, plugins, domain separation, ATF quick start tests
 
 ## Portals and Workspaces (`Portals-and-Workspaces/`)
 
