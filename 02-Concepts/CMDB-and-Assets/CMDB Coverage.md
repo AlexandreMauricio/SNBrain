@@ -47,7 +47,7 @@ Afterwards, from the dashboard: **Discovery schedule gap > Create discovery sche
 
 `ci_match_status`: `none` (discovery gap), `single`, `multiple`, `not_evaluated`. Business rule *Validate IP Coverage CI Config* checks that table configuration records only change the IP address field.
 
-The docs write the relationship table as `cmdb_ci_rel`; the CMDB relationship table is `cmdb_rel_ci` ([[CI Relationships]]), so probably a typo.
+**Unconfirmed variant:** the docs write the relationship table as `cmdb_ci_rel`; elsewhere the CMDB relationship table is `cmdb_rel_ci` ([[CI Relationships]]). Both kept until checked in `sys_db_object` on an instance.
 
 ## Properties
 

@@ -48,7 +48,7 @@ Decision order: the query's **Query Execution Mode** in Saved Queries (`qb_saved
 
 ## Batch size
 
-Each run is processed in batches of 100. Override globally with `glide.cmdb.query.batch_size` (add it to `sys_properties`), or per query with **Execution Batch Size** in `qb_saved_query` (highest priority). Applies to UI runs, the scriptable API, scheduled jobs and CMDB groups. The docs suggest asking Support to size it. (The page also writes the property as `glide.cmdb.query.batch.size`, a typo.)
+Each run is processed in batches of 100. Override globally with `glide.cmdb.query.batch_size` (add it to `sys_properties`), or per query with **Execution Batch Size** in `qb_saved_query` (highest priority). Applies to UI runs, the scriptable API, scheduled jobs and CMDB groups. The docs suggest asking Support to size it. **Unconfirmed variant:** the same page also writes the property as `glide.cmdb.query.batch.size`; which name the instance reads is not tested.
 
 ## Properties
 

@@ -20,7 +20,7 @@ Sister vault: `HALO ITSM` (same structure and rules, for Halo ITSM). Keep the tw
 | `07-Troubleshooting/` | Symptom, cause, fix |
 | `08-Approaches/` | Comparisons where there are several ways to do the same thing (e.g. business rule or flow, UI policy or client script) |
 | `09-Exercises/` | Task briefs (training/assessment/client asks) paired with the notes that solve them |
-| `Templates/` | Note templates. Copy the matching one when creating a note |
+| `Templates/` | Note templates. Copy the matching one when creating a note (`Exercise.md` carries the Open with the requester and To undo after testing sections) |
 | `_attachments/` | Screenshots used in notes. Descriptive lowercase-hyphen names. Check for real customer data before adding |
 | `_meta/` | Tag vocabulary, docs reading list, tools |
 
@@ -29,7 +29,7 @@ Each content folder has an `_index.md` (map of content). Keep it up to date when
 ## Note rules
 
 1. **One topic per note.** Split rather than grow. Filenames are descriptive and unique, in Title Case with spaces for prose notes (`Configure an SLA Definition.md`). Table notes use the exact table **name**, lowercase with underscores as in `sys_db_object` (`incident.md`, `sc_req_item.md`), never the label.
-2. **Every note has frontmatter** (see `Templates/`). Required keys: `type`, `tags`, `status`, `source`, `updated`. Optional: `sn-release`, `verified`. `type` is one of `concept` (what something is and how it works), `reference` (a settings page, property list or lookup list; `Templates/Reference.md`), `how-to`, `table`, `query`, `script`, `troubleshooting`, `approach`, `exercise`, `meta`.
+2. **Every note has frontmatter** (see `Templates/`). Required keys: `type`, `tags`, `status`, `source`, `updated`. Optional: `sn-release`, `verified`, `verified-by` (who tested it). `type` is one of `concept` (what something is and how it works), `reference` (a settings page, property list or lookup list; `Templates/Reference.md`), `how-to`, `table`, `query`, `script`, `troubleshooting`, `approach`, `exercise`, `meta`.
 3. **`status` is honest:**
    - `verified`: tested in a real instance (PDI or other) by the user (say when in `verified:`, and the release in `sn-release:`)
    - `documented`: taken from official docs or another reliable source, not tested
@@ -40,10 +40,24 @@ Each content folder has an `_index.md` (map of content). Keep it up to date when
 6. **Never write secrets or real data:** no passwords, OAuth client secrets, API keys, instance names of real customers, customer names, real ticket contents. Use placeholders like `<instance>.service-now.com`, `<CLIENT_ID>` and invented sample data.
 7. **Don't paste large chunks of official docs.** Summarise in our own words and record the URL in `source`.
 8. **Uncertainty is stated in the note.** Unknown column meaning: write `?` or "meaning unconfirmed", never invent it.
+   - **Everything not `verified` is unconfirmed, and variants are kept.** When sources disagree (two spellings of a table or property, two roles, two defaults, two ways to do a task), record **all** variants side by side, each with its source, as *unconfirmed variants*. Never call one a typo or drop it on judgement alone. Only an exercise or a test in an instance settles which is right; then mark the winner `verified` and keep the others marked as not confirmed (or `outdated` with the reason). The vault is meant to grow: a note is never final.
 9. **Every how-to gets a generalised `Example` section** with placeholder names (`Example Group`, `Test User`), never the exact names or settings from a specific exercise or client.
 10. **Vault language is English.** The user may write notes in Portuguese. Translate them, and keep the original in the exercise note when useful.
 11. **Always give both the label and the name** the first time a field or table appears in a note: **Assigned to** (`assigned_to`), **Requested Item** (`sc_req_item`). Labels can be changed per instance, names cannot.
 12. **Say where a script runs and in which scope:** server or client, the record type (business rule, client script, script include, UI action, fix script, background script), and global or scoped application. Scoped APIs differ from global ones.
+13. **Never overwrite or downgrade a `verified` finding** (with `documented` or `unverified` material). Keep both, flag the difference, and compare in `08-Approaches/` when there are two ways.
+
+## Answering and guiding (always)
+
+Adopted from the sister vault `HALO ITSM`.
+
+- **Reference every vault note used.** Link each note the answer drew on (e.g. `02-Concepts/ITSM/Change Management Overview and Lifecycle.md`) with its `status`, next to the step it supports or in a "Vault notes used" list at the end. Mark anything else as general knowledge or inference.
+- Say plainly when a step comes from a `documented` note nobody has tested, and give every recorded variant when a name or setting is unconfirmed.
+- **Never assume something exists in the user's instance** because a note says so: a `verified` note proves it worked where it was tested, not in this instance. Ask which instance (PDI or other) when it matters.
+- Guide one stage at a time; ask for screenshots or what the screen shows whenever unsure.
+- **Open questions for the requester go in every reply** while an exercise has anything to confirm: end each reply with an **Open with the requester** list, kept the same in the exercise note.
+- **Record what to undo.** Any change made only for testing goes, when made, into the exercise's **To undo after testing** table with the value to put back.
+- **Capture as you go:** any field, label, default or behaviour the user shows that no note holds goes into the matching note during the task, marked as observed (not `verified`) until the user confirms. When it settles a recorded variant, say so in the note.
 
 ## Data dictionary specifics
 

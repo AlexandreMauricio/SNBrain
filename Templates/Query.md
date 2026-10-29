@@ -5,6 +5,7 @@ status: unverified
 source: <where it came from>
 sn-release:
 verified:
+verified-by:
 updated: <YYYY-MM-DD>
 ---
 

@@ -52,4 +52,4 @@ These child classes add no columns of their own.
 | `cmdb_ci_lb_network` | Network Load Balancer |
 | `cmdb_ci_lb_a10`, `cmdb_ci_lb_ace`, `cmdb_ci_lb_alteon`, `cmdb_ci_lb_cisco_csm`, `cmdb_ci_lb_cisco_css`, `cmdb_ci_lb_cisco_gss`, `cmdb_ci_lb_netscaler` | vendor load balancers |
 
-The docs page spells some of these with capitals or typos (`cmdb_ci_Unix_Server`, `cmdb_ci_lb_netsclaer`); the lowercase forms above follow the "CMDB tables descriptions" page. Confirm in `sys_db_object` before relying on one.
+The docs page spells some of these differently (unconfirmed variants) (`cmdb_ci_Unix_Server`, `cmdb_ci_lb_netsclaer`); the lowercase forms above follow the "CMDB tables descriptions" page. Confirm in `sys_db_object` before relying on one.

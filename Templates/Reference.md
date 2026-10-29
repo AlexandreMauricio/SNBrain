@@ -5,6 +5,7 @@ status: unverified
 source: <docs title + URL (read YYYY-MM-DD) / own experience>
 sn-release:
 verified:
+verified-by:
 updated: <YYYY-MM-DD>
 ---
 

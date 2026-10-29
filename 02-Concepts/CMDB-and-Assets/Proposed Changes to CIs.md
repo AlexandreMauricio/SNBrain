@@ -65,7 +65,7 @@ How a change is judged:
 1. If the CI's class or a parent class (searched up the hierarchy) has an active script, its boolean result decides. A non-boolean result counts as false.
 2. Otherwise the default check: the change is planned if it happened between **Work start** and **Work end** of the change request linked to the CI. The docs admit this is unreliable: a manual edit within that window also counts as planned.
 
-Script inputs: `current` (GlideRecord), `updatedOn` (GlideDateTime), `updatedBy` (String, who or what made the change), `fieldsChanged` (String, comma-separated field names; the docs' template calls it `changedFields`, a naming discrepancy on the page).
+Script inputs: `current` (GlideRecord), `updatedOn` (GlideDateTime), `updatedBy` (String, who or what made the change), `fieldsChanged` (String, comma-separated field names; the docs' template calls it `changedFields`; both names appear on the page, which one is passed is unconfirmed).
 
 ```javascript
 // Planned change validation script (server side): planned only if an admin made the change

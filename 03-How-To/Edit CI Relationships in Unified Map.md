@@ -38,7 +38,7 @@ Home node *Example App Server*. Add the CI *example-war-01* with **Add to map an
 
 ## Tables / fields involved
 
-- CI Relationship (`cmdb_rel_ci`; the docs also write `cmdb_ci_rel` on these pages, a typo), Relationship Type (`cmdb_rel_type`)
+- CI Relationship (`cmdb_rel_ci`; these pages also write `cmdb_ci_rel`, an unconfirmed variant kept until checked), Relationship Type (`cmdb_rel_type`)
 
 ## Gotchas
 

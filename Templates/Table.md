@@ -5,6 +5,7 @@ status: unverified
 source: <sys_dictionary result / script output / docs URL / own experience>
 sn-release:
 verified:
+verified-by:
 updated: <YYYY-MM-DD>
 ---
 
