@@ -490,3 +490,5 @@ Notes in this section come from the Brazil release of the Building applications 
 ## Documents (`Documents/`)
 
 - [[Document Management]] - documents, versions, sharing, review and approval, references, lists, workspace, smart card signing, external providers, roles (documented, Brazil)
+- [[Document Viewer, PDF Generation and Document Conversion]] - view attachments inline, DOCX to PDF accessibility, accessible PDF export and PDF size and memory guardrails
+- [[Managed Documents]] - legacy dms_ document control: revisions, check-out/in, name formats, review and approval, Knowledge Document plugin

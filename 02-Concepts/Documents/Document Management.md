@@ -13,7 +13,7 @@ updated: 2026-10-29
 
 **In one line:** plugin **Document Management** (`com.snc.platform_document_management`, built on `sys_attachment`) that keeps **document** records with **versions** (file or URL), sharing permissions, review and approval before publishing, links to any other record, and optional sync with OneDrive, SharePoint or Google Drive.
 
-From the Brazil docs; not tested. Part of **Document Services** with Document Viewer, PDF Generation and Document Conversion, Managed Documents and Multi Provider Document Services Framework. AI summaries of documents: Now Assist in Document Management.
+From the Brazil docs; not tested. Part of **Document Services** with [[Document Viewer, PDF Generation and Document Conversion]], [[Managed Documents]] and Multi Provider Document Services Framework. AI summaries of documents: Now Assist in Document Management.
 
 ## Records
 
@@ -67,8 +67,8 @@ OneDrive, SharePoint, Google Drive through Multi Provider Document Services Fram
 | `dm_sharing_levels_user` | `dm_user_role_read`, `dm_user_group_read`, `dm_user_criteria_read` |
 | `document_admin` (granular admin) | properties, ACLs and ACL roles for PDF generation, conversion and viewer plugins, plus CRUD on documents, references, versions, lists, list entries |
 
-Domain separation: **Standard** support. Documents live in the creator's domain; parent-domain users see child-domain documents; versions, references and permissions follow the document's domain; known issue: a new owner from another domain may not see references to records they cannot access ([[Domain Separation Support Levels by Application]]).
+Domain separation: **Standard** support per the Document Management page; *variant:* the domain separation support list puts "Document Services" under **No support** (unconfirmed which applies). Documents live in the creator's domain; parent-domain users see child-domain documents; versions, references and permissions follow the document's domain; known issue: a new owner from another domain may not see references to records they cannot access ([[Domain Separation Support Levels by Application]]).
 
 ## Related
 
-- Document Viewer, PDF Generation and Document Conversion · Managed Documents · Multi Provider Document Services Framework · Now Assist in Document Management
+- [[Document Viewer, PDF Generation and Document Conversion]] · [[Managed Documents]] · Multi Provider Document Services Framework · Now Assist in Document Management
