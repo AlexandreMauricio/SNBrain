@@ -58,6 +58,7 @@ Step-by-step procedures, grouped by topic (the notes themselves stay in one flat
 - [[Remediate a De-duplication Task]] - Duplicate CI Remediator step by step, and bulk remediation with de-duplication templates
 - [[Create and Run a Compliance Audit]] - filter, template conditions, audit with task assignment and schedule, preview, run, follow-on tasks
 - [[Propose, Verify and Apply a CI Change]] - proposed changes from Affected CIs, verify, apply after approval (Brazil)
+- [[Edit CI Relationships in Unified Map]] - add CIs, create, change and delete relationships in the map editor (Brazil)
 
 ## SLA and Schedules
 

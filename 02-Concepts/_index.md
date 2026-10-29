@@ -159,6 +159,10 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[CMDB Compliance - Desired State, Architecture Compliance and Audits]] - filters, templates, audits and results; audit types, roles, versions, health window, threshold and stability, follow-on tasks
 - [[Scripted Compliance Audits]] - audit logic as a script with SNC.CertificationProcessing: sample with placeholders, API arguments
 - [[Proposed Changes to CIs]] - prepare CI field and relationship changes on a change request, verification rules, planned change validation scripts (Brazil)
+- [[Intelligent Search for CMDB]] - natural language CI search, Refine your query, synonyms, implicit relationships, NLQ tables (Brazil)
+- [[Unified Map]] - CI map in CMDB and Service Graph workspaces: reading it, filters and presets, panels, timeline, roles, editor limits (Brazil)
+- [[Unified Map Administration Settings]] - configuration identifiers, workspace config properties, related items, attributes, references, class profiles, shared presets (Brazil)
+- [[Dependency Views]] - legacy CI map being deprecated from Brazil: menus, virtual grouping, indicators, predefined filters, menu actions, dependency types, properties, tables
 
 ## SLA and Schedules (`SLA-and-Schedules/`)
 
