@@ -2,7 +2,7 @@
 type: concept
 tags: [concept, cmdb, data-integrity, reporting, domain-separation]
 status: documented
-source: ServiceNow Brazil docs, Platform Capabilities guide > CMDB > CMDB Health (26 topics, 1,307 cleaned lines, read in full through the docs site API 2026-10-29) - landing, Explore, Overview, KPIs and metrics, Configure (8 topics), workspace experience, Dashboard, relationships health, CI health, remediation rules and applying them, tracking and troubleshooting, Reference (domain separation, components). https://www.servicenow.com/docs/r/servicenow-platform/configuration-management-database-cmdb/overview-cmdb-health.html
+source: ServiceNow Brazil docs, Platform Capabilities guide > CMDB > CMDB Health (26 topics, 1,307 cleaned lines, read in full through the docs site API 2026-10-29) - landing, Explore, Overview, KPIs and metrics, Configure (8 topics), workspace experience, Dashboard, relationships health, CI health, remediation rules and applying them, tracking and troubleshooting, Reference (domain separation, components). https://www.servicenow.com/docs/r/servicenow-platform/configuration-management-database-cmdb/overview-cmdb-health.html; also View CMDB benchmarks (https://www.servicenow.com/docs/r/servicenow-platform/configuration-management-database-cmdb/view-cmdb-benchmarks.html), read 2026-10-29
 sn-release: Brazil
 verified:
 updated: 2026-10-29
@@ -53,6 +53,10 @@ Completeness and correctness on the CI tile are always current; compliance depen
 - Per metric, **Create Task** opens a task for each failing CI, assigned to **Task Assignee Group**. Not for duplicates (use de-duplication tasks, [[Duplicate CI Remediation]]) or audits (use the audit tasks; a CI can have several, the rest in **Additional Tasks**).
 - **CMDB remediation rules** (**All > Configuration > CMDB Remediations**; `sn_cmdb_admin` or `itil_admin`): **Name**, **Task type**, **Task filter** (dot-walk to CI fields), **Execution** Manual or Automatic, **Active**, **Workflow**. The workflow is a published classic or Orchestration workflow (`wf_workflow`) on the same table as the task type, with *If condition matches* = None. Automatic runs once when a matching task is created (business rule *Run remediations for CMDBHealth task*).
 - Manual: dashboard (Class view) > KPI > metric tab > class > the CI's **Task** link > **Remediate** > pick a workflow > **Next**.
+
+## Benchmarks
+
+**Benchmarks > Dashboard** > IT Operations Management > ALL or CMDB shows three CMDB benchmarks: **% of non-compliant CIs**, **% of duplicate CIs**, **% of stale CIs**, as monthly averages with trends, compared with the average of peer instances. Needs the health jobs running and the CMDB KPIs enabled under **Benchmarks > Setup** (IT Operations Management). A day without a job run takes the most recent result; with several runs in a day only the last counts; the global average skips instances whose average is 0. (Chapter *View CMDB benchmarks*, read 2026-10-29.)
 
 ## Domain separation
 

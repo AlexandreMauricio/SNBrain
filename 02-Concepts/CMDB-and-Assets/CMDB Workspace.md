@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, cmdb, workspace, roles, admin]
 status: documented
-source: ServiceNow Brazil docs, Platform Capabilities guide > CMDB > "CMDB Workspace" > Explore (overview, Home, Governance, Explore and Search, Tasks, Data Owner, Lists views, Configuration identifiers framework) and Configure (set up, important actions, quick links, custom lists, attributes and class list for new CIs) (https://www.servicenow.com/docs/r/servicenow-platform/configuration-management-database-cmdb/cmdb-workspace.html and the pages under it), read through the docs site API 2026-10-09
+source: ServiceNow Brazil docs, Platform Capabilities guide > CMDB > "CMDB Workspace" > Explore (overview, Home, Governance, Explore and Search, Tasks, Data Owner, Lists views, Configuration identifiers framework) and Configure (set up, important actions, quick links, custom lists, attributes and class list for new CIs) (https://www.servicenow.com/docs/r/servicenow-platform/configuration-management-database-cmdb/cmdb-workspace.html and the pages under it), read through the docs site API 2026-10-09; also "Platform Analytics Solution for CMDB (legacy)" (https://www.servicenow.com/docs/r/servicenow-platform/configuration-management-database-cmdb/cmdb-content-pack.html), read 2026-10-29
 sn-release: Brazil
 verified:
-updated: 2026-10-09
+updated: 2026-10-29
 ---
 
 # CMDB Workspace
@@ -108,6 +108,8 @@ Lets one CMDB Workspace feature behave differently per workspace, mainly when it
 | `sn_cmdb_ws_ci_class_config` | CI class config | which classes are offered for a new CI | Config identifier, CI class, Active, Feature, Apply to hierarchy, Operation (include or exclude) |
 
 Both need role `sn_cmdb_ws.config_editor` and by default hold one entry covering the whole hierarchy.
+
+- The older **Platform Analytics Solution for Configuration Management (CMDB)** (preconfigured PA dashboards) is legacy, replaced by this workspace (Brazil docs).
 
 ## Related
 

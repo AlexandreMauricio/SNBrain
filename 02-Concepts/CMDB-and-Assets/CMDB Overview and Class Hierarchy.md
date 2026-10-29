@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, cmdb, schema, roles]
 status: documented
-source: ServiceNow Brazil docs, Platform Capabilities guide > Configuration Management > CMDB > Explore - "Overview of CMDB", "CMDB hierarchy", "CMDB tables descriptions", "Service tables", "CMDB schema model" (https://www.servicenow.com/docs/r/servicenow-platform/configuration-management-database-cmdb/explore-cmdb.html and the pages under it), read through the docs site API 2026-10-09
+source: ServiceNow Brazil docs, Platform Capabilities guide > Configuration Management > CMDB > Explore - "Overview of CMDB", "CMDB hierarchy", "CMDB tables descriptions", "Service tables", "CMDB schema model" (https://www.servicenow.com/docs/r/servicenow-platform/configuration-management-database-cmdb/explore-cmdb.html and the pages under it), read through the docs site API 2026-10-09; also CMDB > Reference (domain separation, CMDB APIs, quick start tests, glossary; the CI Class Models class list skipped) https://www.servicenow.com/docs/r/servicenow-platform/configuration-management-database-cmdb/cmdb-reference.html, read 2026-10-29
 sn-release: Brazil
 verified:
-updated: 2026-10-09
+updated: 2026-10-29
 ---
 
 # CMDB Overview and Class Hierarchy
@@ -79,6 +79,16 @@ Updating and administering usually needs more; each feature states its own role.
 
 - **Do not use the Translated Text field type for CMDB attributes.** CMDB values change and grow constantly, so translated fields slow features such as CMDB Health and need manual upkeep. Translated Text suits static data ([[Field Types Reference]]).
 - **Do not change the dictionary definition of base `cmdb_ci` attributes** (for example turning **Location** from a reference into a list): features built on the CMDB may stop working.
+
+## Domain separation and scripting APIs
+
+From the Brazil CMDB *Reference* chapter (read 2026-10-29):
+
+- CMDB domain separation support level is **Standard** (per-tenant business logic and data parameters set by the instance owner). Feature details: [[CMDB Health]], [[CMDB Query Builder]], IRE ([[Identification and Reconciliation Engine (IRE) Overview]]).
+- Script APIs ("CMDB SDK"): `CMDBGroupAPI` (scoped), `CMDBTransformUtil` (global), `CMDBUtil` (global), `IdentificationEngineScriptableApi` (global) and `IdentificationEngine` (scoped). In a domain-separated instance: creating and updating CIs goes through IRE in the **caller's domain**; relationships (`cmdb_rel_ci`) are **not** domain separated; CI and table queries are filtered to the caller's visible domains; CMDB metadata is not domain separated.
+- Glossary points worth keeping: *orphan CI* means two things — in [[CMDB Health]] a CI matching an orphan rule, in [[CMDB Data Manager]] a dependent CI missing its dependent relationship ([[Dependent CI Management and Cascade Cleanup]]); related tables (above) can also hold orphans when the referenced CI is deleted. Related list rows for components (disks, adapters) show only what the last Discovery found.
+- ATF quick start suites for the CMDB: [[ATF Quick Start Tests by Application]].
+- The chapter's alphabetical list of the roughly 260 classes added by the CMDB CI Class Models app was not transcribed; see [[CMDB CI Class Models App]] and the docs page when a class is needed.
 
 ## How the CMDB connects to other applications
 

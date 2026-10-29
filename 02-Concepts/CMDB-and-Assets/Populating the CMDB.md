@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, cmdb, discovery, import-sets, integrations]
 status: documented
-source: ServiceNow Brazil docs, Platform Capabilities guide > CMDB > "Populating the CMDB" (https://www.servicenow.com/docs/r/servicenow-platform/configuration-management-database-cmdb/c_OptionsToPopulateCMDB.html), read through the docs site API 2026-10-09
+source: ServiceNow Brazil docs, Platform Capabilities guide > CMDB > "Populating the CMDB" (https://www.servicenow.com/docs/r/servicenow-platform/configuration-management-database-cmdb/c_OptionsToPopulateCMDB.html), read through the docs site API 2026-10-09; also "Useful related lists in CI forms" (https://www.servicenow.com/docs/r/servicenow-platform/configuration-management-database-cmdb/c_UsefulRelatedListsInCIForms.html), read 2026-10-29
 sn-release: Brazil
 verified:
-updated: 2026-10-09
+updated: 2026-10-29
 ---
 
 # Populating the CMDB
@@ -26,6 +26,10 @@ updated: 2026-10-09
 - Relationships can be imported too: an import set targeting [[cmdb_rel_ci]] with parent, child and type.
 - The role needed for manual creation depends on the class table.
 - Class reference and modelling rules: [[CMDB Overview and Class Hierarchy]], [[CMDB Modelling Guidelines for Hardware, Virtual Machines and Cloud]], [[CMDB CI Class Models App]].
+
+## Seeing where a CI came from
+
+From the Brazil chapter *Useful related lists in CI forms* (read 2026-10-29): forms of manageable CIs (computers, printers, network gear, UPS, PDU) carry the related lists **Network Adapters**, **CI IPs** (with IP version) and **DNS Names for CIs**. The table Source (`sys_object_source`) records which discovery product found the CI, its id in that source and the last scan time; add the **Sources** related list to the CI form to see it. It fills automatically when the Discovery plugin is active, and the Data Foundations metric *CIs Processed via IRE* counts CIs that have a row there ([[CMDB and CSDM Data Foundations Dashboards]]).
 
 ## Related
 

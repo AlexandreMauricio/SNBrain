@@ -168,6 +168,8 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[CMDB Health Configuration Reference]] - health metrics preferences, per-class rules, weights, properties, jobs, tables (Brazil)
 - [[CMDB and CSDM Data Foundations Dashboards]] - get-well metrics by tab with formulas, collection jobs, performance limits (Brazil)
 - [[CMDB Coverage]] - IPAM allocated IPs matched to discovered CIs, discovery schedule gaps, jobs and properties (Brazil)
+- [[CMDB Success Advisor]] - Data Foundations, HAM and SAM advisors, principal class scope and recommendations, dashboard, integrations and settings tabs (Brazil)
+- [[CI Lifecycle Management (Legacy)]] - operational states, CI actions, not-allowed rules, leases, StateManagementScriptableApi (Brazil)
 
 ## SLA and Schedules (`SLA-and-Schedules/`)
 
@@ -373,6 +375,8 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Conversational Catalog Requests and Virtual Agent]] - Catalog Agent, LLM and NLU topic blocks, eligibility, slot filling, render types (documented, Brazil)
 - [[AI Authoring for Catalog Builder]] - Otto drafts catalog items, what it can generate, catalog item standards article (documented, Brazil)
 - [[Otto for Code]] - code generation, autocomplete, explain; providers, roles, properties, AI line markers (documented, Brazil)
+- [[Otto for CMDB Skills and Agentic Workflows]] - CI summary, duplicates, SGC diagnosis, readiness, search, create CI, governance, staleness, ingestion optimizer (Brazil)
+- [[CMDB MCP Server, Impact Analysis and Business Application Agents]] - MCP tools and roles, change and incident impact workflow, business application matching properties (Brazil)
 
 ## Data Management (`Data-Management/`)
 
