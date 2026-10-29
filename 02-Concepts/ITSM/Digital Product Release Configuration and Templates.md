@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, change, workspace, automation, admin, instance-admin]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Digital Product Release" > "Configuring Digital Product Release" (pp. 2293-2306: onboarding, installation, migration from Release Management v2, external tools, release calendar, release readiness targets, approval definitions, policies, release templates, custom template fields; pp. 2308-2309: product-level release settings; pp. 2376-2380: approval definition and readiness target forms), read in full 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "Digital Product Release" > "Configuring Digital Product Release" (pp. 2293-2306: onboarding, installation, migration from Release Management v2, external tools, release calendar, release readiness targets, approval definitions, policies, release templates, custom template fields; pp. 2308-2309: product-level release settings; pp. 2376-2380: approval definition and readiness target forms), read in full 2026-10-02 Re-checked against the Brazil ITSM docs (Digital Portfolio Management 63, Digital Product Release 75, Expense Line 11 topics, https://www.servicenow.com/docs/r/it-service-management/digital-portfolio-management/dpm-create-kpi-groups.html and siblings), 2026-10-29: same content.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-29
 ---
 
 # Digital Product Release Configuration and Templates

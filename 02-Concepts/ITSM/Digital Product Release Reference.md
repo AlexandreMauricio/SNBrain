@@ -2,10 +2,10 @@
 type: reference
 tags: [reference, change, roles, automation, notifications, admin]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Digital Product Release" (pp. 2358-2376 and 2378-2379: Policy Content Pack data collectors and policies, installed roles, scheduled jobs, tables, properties, email notifications, policy status aggregation; pp. 2386-2387: domain separation), read in full 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "Digital Product Release" (pp. 2358-2376 and 2378-2379: Policy Content Pack data collectors and policies, installed roles, scheduled jobs, tables, properties, email notifications, policy status aggregation; pp. 2386-2387: domain separation), read in full 2026-10-02 Re-checked against the Brazil ITSM docs (Digital Portfolio Management 63, Digital Product Release 75, Expense Line 11 topics, https://www.servicenow.com/docs/r/it-service-management/digital-portfolio-management/dpm-create-kpi-groups.html and siblings), 2026-10-29: same content.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-29
 ---
 
 # Digital Product Release Reference

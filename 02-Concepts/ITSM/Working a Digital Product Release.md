@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, change, workspace, automation, cmdb]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Digital Product Release" > "Using Digital Product Release" (pp. 2307-2357: requesting products and services, included products, creating releases quick and by wizard, features, enhancements, work items, external tool data, release planning board, timeline-oriented and stage-oriented execution for single and multiple products, restart phase, adding and removing products, scope, configuration items, change requests, AI release notes, artifacts, approvals, retargeting, hold, closing, readiness target view; pp. 2380-2383: request, release and key date forms), read in full 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "Digital Product Release" > "Using Digital Product Release" (pp. 2307-2357: requesting products and services, included products, creating releases quick and by wizard, features, enhancements, work items, external tool data, release planning board, timeline-oriented and stage-oriented execution for single and multiple products, restart phase, adding and removing products, scope, configuration items, change requests, AI release notes, artifacts, approvals, retargeting, hold, closing, readiness target view; pp. 2380-2383: request, release and key date forms), read in full 2026-10-02 Re-checked against the Brazil ITSM docs (Digital Portfolio Management 63, Digital Product Release 75, Expense Line 11 topics, https://www.servicenow.com/docs/r/it-service-management/digital-portfolio-management/dpm-create-kpi-groups.html and siblings), 2026-10-29: same content.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-29
 ---
 
 # Working a Digital Product Release

@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, automation, notifications, incident, assets, admin]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Digital End-User Experience" > "Proactive Engagement" (pp. 2083-2109: overview, setup, resolutions with DEX, email channel, user criteria, employee and agent experience, shipped solutions, throttling properties, alert closure, workbench, roles and tables, resolution types, input parameters, engagement settings, limitations, use cases), read in full 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "Digital End-User Experience" > "Proactive Engagement" (pp. 2083-2109: overview, setup, resolutions with DEX, email channel, user criteria, employee and agent experience, shipped solutions, throttling properties, alert closure, workbench, roles and tables, resolution types, input parameters, engagement settings, limitations, use cases), read in full 2026-10-02 Re-checked against the Brazil ITSM docs (Digital End-User Experience chapter, 303 topics, https://www.servicenow.com/docs/r/it-service-management/digital-end-user-experience-dex/configure-metric-rule-rate-limits.html and siblings), 2026-10-29: same content; alert rate limits and the event extension point added.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-29
 ---
 
 # Proactive Engagement

@@ -2,10 +2,10 @@
 type: reference
 tags: [reference, assets, roles, security, automation, admin]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Digital End-User Experience" > "Digital End-User Experience reference" (pp. 1912-1932 and 1964-2012: installed roles and tables, browser extension permissions, remedial actions, network experience and access pages, administration cards, application forms, metric rule and agent policy lists, Metrics analyzer, event form and shipped event configurations, non-persistent VDI parameters, metrics collected on macOS and Windows, Zoom metrics, Content Playbook policies; pp. 2013-2035: check definitions for macOS and Windows; pp. 2046-2053: properties and custom reporting tables), read in full 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "Digital End-User Experience" > "Digital End-User Experience reference" (pp. 1912-1932 and 1964-2012: installed roles and tables, browser extension permissions, remedial actions, network experience and access pages, administration cards, application forms, metric rule and agent policy lists, Metrics analyzer, event form and shipped event configurations, non-persistent VDI parameters, metrics collected on macOS and Windows, Zoom metrics, Content Playbook policies; pp. 2013-2035: check definitions for macOS and Windows; pp. 2046-2053: properties and custom reporting tables), read in full 2026-10-02 Re-checked against the Brazil ITSM docs (Digital End-User Experience chapter, 303 topics, https://www.servicenow.com/docs/r/it-service-management/digital-end-user-experience-dex/configure-metric-rule-rate-limits.html and siblings), 2026-10-29: same content; alert rate limits and the event extension point added.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-29
 ---
 
 # DEX Reference

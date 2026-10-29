@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, assets, integrations, security, instance-admin, admin]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Digital End-User Experience" (pp. 1787-1804: installing DEX and ACC, registration key, connectivity tests, Windows and macOS installation, sudoers, browser extension, Intune and Jamf bulk deployment; pp. 1832-1835: non-persistent VDI; pp. 1876-1882: proxy, switching instance, MID-less configuration, sudo banner), read in full 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "Digital End-User Experience" (pp. 1787-1804: installing DEX and ACC, registration key, connectivity tests, Windows and macOS installation, sudoers, browser extension, Intune and Jamf bulk deployment; pp. 1832-1835: non-persistent VDI; pp. 1876-1882: proxy, switching instance, MID-less configuration, sudo banner), read in full 2026-10-02 Re-checked against the Brazil ITSM docs (Digital End-User Experience chapter, 303 topics, https://www.servicenow.com/docs/r/it-service-management/digital-end-user-experience-dex/configure-metric-rule-rate-limits.html and siblings), 2026-10-29: same content; alert rate limits and the event extension point added.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-29
 ---
 
 # DEX Agent Deployment and Connectivity

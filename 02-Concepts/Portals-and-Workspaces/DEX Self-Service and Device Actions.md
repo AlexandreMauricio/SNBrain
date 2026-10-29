@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, portal, automation, assets, ai, admin]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Digital End-User Experience" > "Digital End-user Experience Self-service" (pp. 2109-2135: overview, configuration, issue configurations, categories, device actions, access and approval, using Device health check from Employee Center, Desktop Assistant and Virtual Agent, reference forms, shipped issue configurations, execution states, diagnosis checks, health calculation), read in full 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "Digital End-User Experience" > "Digital End-user Experience Self-service" (pp. 2109-2135: overview, configuration, issue configurations, categories, device actions, access and approval, using Device health check from Employee Center, Desktop Assistant and Virtual Agent, reference forms, shipped issue configurations, execution states, diagnosis checks, health calculation), read in full 2026-10-02 Re-checked against the Brazil ITSM docs (Digital End-User Experience chapter, 303 topics, https://www.servicenow.com/docs/r/it-service-management/digital-end-user-experience-dex/configure-metric-rule-rate-limits.html and siblings), 2026-10-29: same content; alert rate limits and the event extension point added.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-29
 ---
 
 # DEX Self-Service and Device Actions

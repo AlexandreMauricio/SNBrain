@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, assets, cmdb, security, roles, workspace, instance-admin]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Digital End-User Experience" (pp. 1776-1787: overview, users and roles, benefits, architecture, data security, isolation, retention, subscription and capacity limits, DEX or SAM, configuration sequence, system requirements, guided setup; and pp. 1883-1887: Application and Device Health pages), read in full 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "Digital End-User Experience" (pp. 1776-1787: overview, users and roles, benefits, architecture, data security, isolation, retention, subscription and capacity limits, DEX or SAM, configuration sequence, system requirements, guided setup; and pp. 1883-1887: Application and Device Health pages), read in full 2026-10-02 Re-checked against the Brazil ITSM docs (Digital End-User Experience chapter, 303 topics, https://www.servicenow.com/docs/r/it-service-management/digital-end-user-experience-dex/configure-metric-rule-rate-limits.html and siblings), 2026-10-29: same content; alert rate limits and the event extension point added.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-29
 ---
 
 # Digital End-User Experience Overview and Architecture

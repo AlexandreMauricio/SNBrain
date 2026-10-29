@@ -345,6 +345,7 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[DEX Incident Investigation for Service Desk Agents]] - Investigation tab for DEX devices: health checklist, top processes, suggested resolutions, playbook, automatic work notes
 - [[Playbook Experience Design for Workspace, Portal and Mobile]] - UI Builder components and bundles, Guided view, Service Portal content items and widget, mobile embedding
 - [[Entity View Action Mapper (EVAM)]] - multi-table card lists: definitions, data sources, bundles, view configurations, JSON view templates, actions, evam_admin (Brazil)
+- [[Employee Slate for ITSM]] - Service Health Broadcast with Ask Otto, tech lounge walk-in check-in and appointments on Employee Slate (documented, Brazil)
 
 ## Security (`Security/`)
 

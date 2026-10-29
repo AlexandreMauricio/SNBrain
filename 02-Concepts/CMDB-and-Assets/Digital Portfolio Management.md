@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, cmdb, workspace, reporting, roles]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Digital Portfolio Management" (pp. 2145-2153, 2212-2241 and 2259-2261: overview, users, homepage, life-cycle management, getting started, personalising the home page, custom record views, personal and enterprise portfolios, portfolio templates, Needs attention panels, relationship map, creating demands and improvement initiatives, list modules, persona and views), read in full 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "Digital Portfolio Management" (pp. 2145-2153, 2212-2241 and 2259-2261: overview, users, homepage, life-cycle management, getting started, personalising the home page, custom record views, personal and enterprise portfolios, portfolio templates, Needs attention panels, relationship map, creating demands and improvement initiatives, list modules, persona and views), read in full 2026-10-02 Re-checked against the Brazil ITSM docs (Digital Portfolio Management 63, Digital Product Release 75, Expense Line 11 topics, https://www.servicenow.com/docs/r/it-service-management/digital-portfolio-management/dpm-create-kpi-groups.html and siblings), 2026-10-29: same content.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-29
 ---
 
 # Digital Portfolio Management

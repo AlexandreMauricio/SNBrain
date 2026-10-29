@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, portal, notifications, scripting, script-include, admin]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Digital End-User Experience" (pp. 1838-1855: setting up Desktop Assistant, installers, OAuth, home page, themes, notifications API and troubleshooting, Virtual Agent, cards and sections; pp. 1904-1911: using Desktop Assistant, notifications, network test, usage metrics; pp. 2035-2046: usage metrics dashboard, installed roles and tables, notification API parameters, theme variables, screen loading issue), read in full 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "Digital End-User Experience" (pp. 1838-1855: setting up Desktop Assistant, installers, OAuth, home page, themes, notifications API and troubleshooting, Virtual Agent, cards and sections; pp. 1904-1911: using Desktop Assistant, notifications, network test, usage metrics; pp. 2035-2046: usage metrics dashboard, installed roles and tables, notification API parameters, theme variables, screen loading issue), read in full 2026-10-02 Re-checked against the Brazil ITSM docs (Digital End-User Experience chapter, 303 topics, https://www.servicenow.com/docs/r/it-service-management/digital-end-user-experience-dex/configure-metric-rule-rate-limits.html and siblings), 2026-10-29: same content; alert rate limits and the event extension point added.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-29
 ---
 
 # DEX Desktop Assistant

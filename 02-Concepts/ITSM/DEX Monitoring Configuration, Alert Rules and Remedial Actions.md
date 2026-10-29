@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, assets, cmdb, automation, scripting, admin, integrations]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Digital End-User Experience" (pp. 1804-1838: application monitoring, page-level monitoring, metric and event alert rules, metric collection and agent policies, offline monitoring, remedial actions including custom PowerShell actions, event monitoring, registry, file and compliance setup; pp. 1855-1876: Microsoft 365 and Zoom, alerts and alert grouping, converting an application source, user mapping, device location), read in full 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "Digital End-User Experience" (pp. 1804-1838: application monitoring, page-level monitoring, metric and event alert rules, metric collection and agent policies, offline monitoring, remedial actions including custom PowerShell actions, event monitoring, registry, file and compliance setup; pp. 1855-1876: Microsoft 365 and Zoom, alerts and alert grouping, converting an application source, user mapping, device location), read in full 2026-10-02 Re-checked against the Brazil ITSM docs (Digital End-User Experience chapter, 303 topics, https://www.servicenow.com/docs/r/it-service-management/digital-end-user-experience-dex/configure-metric-rule-rate-limits.html and siblings), 2026-10-29: same content; alert rate limits and the event extension point added.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-29
 ---
 
 # DEX Monitoring Configuration, Alert Rules and Remedial Actions
@@ -58,6 +58,8 @@ Events with **Source** = DEX and **Type** = DEX Metric Rules in Event (`em_event
 In the workspace an alert has tabs **Overview** (summary, impact with impacted devices and users, cause), **Details** (metric, history), **Related records** (services, CIs, impacted devices and users, repeated alerts, remedial action history; needs `sn_sow_em` 26.3.1) and **Remediate issue on devices** (devices grouped by OS and status; one selected = single-device actions, several = bulk actions). An incident created from the alert shows the DEX data on its origin card (needs `com.snc.uib.sow_incident` 7.1.0+).
 
 **Grouping**: alert correlation rule *DEX Metric Correlation Rule* (**Event Management > Rules > Alert Correlation Rules**) groups alerts of the same metric rule, whatever the CI: the first is primary, later ones secondary; closing the primary closes the group. Property `sn_dex.alert.correlation_rule.device.period` is the window in seconds (for example 300); alerts of the rule arriving within it join the group, later ones start a new group. Turn grouping off with value 0 or by deactivating the rule.
+
+**Brazil additions:** rate limits per 5-minute window: `sn_dex.per_alert_rule_rate_limit` (alerts one metric or event rule may raise; past it the rule's alerts are dropped and an error recorded) and `sn_dex.alert.rate_limit` (total across all rules; the docs give 300000 per 5 minutes as the upper bound; per-rule values cannot exceed the total); a separate threshold caps how many metric rules can be created. Device alert grouping window: `sn_dex.alert.correlation_rule.device_period` (default one hour); application alerts reuse the same `dex_alert_metadata` record and alert number until closed; impacted users in `dex_alert_impacted_users`. Custom event handling (enrichment, routing) before DEX processes a metric-rule event: implement extension point `sn_dex.DEXMetricRuleEventExtension` with a script include exposing `transform(event)` (server side, needs `com.sn_dex` 5.3.0+; some event properties are read only).
 
 ## Metric collection (agent policies)
 

@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, workspace, assets, reporting, incident, ai]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Digital End-User Experience" (pp. 1883-1903: Application and Device Health pages, insights, bulk remediation, Metrics analyzer, MCM, Teams and Zoom call quality, proactive resolution strategies, AI capabilities; pp. 1915-1916 and 1932-1964: landing cards, insights report fields, application pages, devices list, device details pages), read in full 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "Digital End-User Experience" (pp. 1883-1903: Application and Device Health pages, insights, bulk remediation, Metrics analyzer, MCM, Teams and Zoom call quality, proactive resolution strategies, AI capabilities; pp. 1915-1916 and 1932-1964: landing cards, insights report fields, application pages, devices list, device details pages), read in full 2026-10-02 Re-checked against the Brazil ITSM docs (Digital End-User Experience chapter, 303 topics, https://www.servicenow.com/docs/r/it-service-management/digital-end-user-experience-dex/configure-metric-rule-rate-limits.html and siblings), 2026-10-29: same content; alert rate limits and the event extension point added.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-29
 ---
 
 # DEX Workspace Pages, Insights and Device Investigation

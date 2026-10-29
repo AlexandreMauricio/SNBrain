@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, workspace, incident, automation, assets]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Digital End-User Experience" > "DEX for service desk agents" (pp. 2135-2144: incident investigation with DEX, device health checklist, top processes by CPU and memory, suggested resolutions, Action library, Playbook, automatic work notes), read in full 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "Digital End-User Experience" > "DEX for service desk agents" (pp. 2135-2144: incident investigation with DEX, device health checklist, top processes by CPU and memory, suggested resolutions, Action library, Playbook, automatic work notes), read in full 2026-10-02 Re-checked against the Brazil ITSM docs (Digital End-User Experience chapter, 303 topics, https://www.servicenow.com/docs/r/it-service-management/digital-end-user-experience-dex/configure-metric-rule-rate-limits.html and siblings), 2026-10-29: same content; alert rate limits and the event extension point added.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-29
 ---
 
 # DEX Incident Investigation for Service Desk Agents

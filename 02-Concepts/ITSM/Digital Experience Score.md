@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, reporting, assets, incident, sla, admin]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Digital End-User Experience" > "Digital Experience Score" (pp. 2053-2083: overview, score hierarchy, installation and demo data, metric definitions, qualitative mapping, survey configuration, dashboard tracking, installed roles and tables, properties, metric lists, calculation, normalization, data collection frequency), read in full 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "Digital End-User Experience" > "Digital Experience Score" (pp. 2053-2083: overview, score hierarchy, installation and demo data, metric definitions, qualitative mapping, survey configuration, dashboard tracking, installed roles and tables, properties, metric lists, calculation, normalization, data collection frequency), read in full 2026-10-02 Re-checked against the Brazil ITSM docs (Digital End-User Experience chapter, 303 topics, https://www.servicenow.com/docs/r/it-service-management/digital-end-user-experience-dex/configure-metric-rule-rate-limits.html and siblings), 2026-10-29: same content; alert rate limits and the event extension point added.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-29
 ---
 
 # Digital Experience Score

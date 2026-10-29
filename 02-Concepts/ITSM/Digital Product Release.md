@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, change, workspace, automation, ai, reporting]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Digital Product Release" (pp. 2262-2293: overview, workflow, personas, key terms, workspace, release processes, multi-product releases, restricted access, release states, AI release notes, dashboards, holiday schedules, flow actions, GRC integration, Service Operations Workspace; pp. 2338-2340: release bundles; pp. 2384-2386: risk score), read in full 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "Digital Product Release" (pp. 2262-2293: overview, workflow, personas, key terms, workspace, release processes, multi-product releases, restricted access, release states, AI release notes, dashboards, holiday schedules, flow actions, GRC integration, Service Operations Workspace; pp. 2338-2340: release bundles; pp. 2384-2386: risk score), read in full 2026-10-02 Re-checked against the Brazil ITSM docs (Digital Portfolio Management 63, Digital Product Release 75, Expense Line 11 topics, https://www.servicenow.com/docs/r/it-service-management/digital-portfolio-management/dpm-create-kpi-groups.html and siblings), 2026-10-29: same content.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-29
 ---
 
 # Digital Product Release
