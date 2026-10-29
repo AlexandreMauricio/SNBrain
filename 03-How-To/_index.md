@@ -57,6 +57,7 @@ Step-by-step procedures, grouped by topic (the notes themselves stay in one flat
 - [[Create a CMDB Data Manager Policy]] - policy wizard: data filter and impact analysis, assignment types, options per policy type, schedule, publish, run on demand
 - [[Remediate a De-duplication Task]] - Duplicate CI Remediator step by step, and bulk remediation with de-duplication templates
 - [[Create and Run a Compliance Audit]] - filter, template conditions, audit with task assignment and schedule, preview, run, follow-on tasks
+- [[Propose, Verify and Apply a CI Change]] - proposed changes from Affected CIs, verify, apply after approval (Brazil)
 
 ## SLA and Schedules
 

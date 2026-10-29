@@ -158,6 +158,7 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[CMDB Data Certification]] - certifying field values: dashboard, reviewing and resetting tasks, failed fields, converting legacy schedules, retention
 - [[CMDB Compliance - Desired State, Architecture Compliance and Audits]] - filters, templates, audits and results; audit types, roles, versions, health window, threshold and stability, follow-on tasks
 - [[Scripted Compliance Audits]] - audit logic as a script with SNC.CertificationProcessing: sample with placeholders, API arguments
+- [[Proposed Changes to CIs]] - prepare CI field and relationship changes on a change request, verification rules, planned change validation scripts (Brazil)
 
 ## SLA and Schedules (`SLA-and-Schedules/`)
 
