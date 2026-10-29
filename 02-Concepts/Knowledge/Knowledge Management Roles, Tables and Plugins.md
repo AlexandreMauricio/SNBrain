@@ -25,7 +25,7 @@ From the Brazil docs; not tested. Access by user criteria: [[Knowledge Base Acce
 | `knowledge_group_manager` | edit members of own ownership groups (not the manager); gets feedback tasks | `knowledge_group_member` |
 | `knowledge_group_member` | approve, edit, retire their group's articles | `knowledge` |
 | `kcs_candidate`, `kcs_contributor`, `kcs_publisher` | KCS levels (contributor validates in their area; publisher writes external-facing articles) | `knowledge` |
-| `admin` | flows, properties, forms, dashboards | (page lists `sn_templated_snip.template_snippet_admin`, `sn_employee.admin`, `taxonomy_admin`, `sn_ace.ace_user` near admin; meaning unclear) |
+| `admin` | flows, properties, forms, dashboards | (page lists `sn_templated_snip.template_snippet_admin`, `sn_employee.admin`, `taxonomy_admin`, `sn_ace.ace_user` near admin; meaning unclear; the first is the response templates admin role, see [[Response Templates]]) |
 
 Other roles met in KM pages: `sn_km_ml.knowledge_curation_user`, `sn_ssa_core.self_service_manager`, `user_criteria_admin`, `translator`, localization requester / fulfiller, `sn_voice_doc.user` (documents), `agent_workspace_user`. Prefer these specialised roles to `admin`. See also [[Base System Roles]].
 
@@ -46,7 +46,7 @@ Other roles met in KM pages: `sn_km_ml.knowledge_curation_user`, `sn_ssa_core.se
 | Knowledge Applied to Tasks | `m2m_kb_task` |
 | CSM Table Map / CSM Field Map | `csm_table_map` / `csm_field_map` (task → article mappings) |
 
-Others: `kb_knowledge_block` (extends `kb_knowledge`), `m2m_kb_knowledge_to_block`, `m2m_kb_to_block_history` (blocks); `kb_article_template`, `kb_article_template_definition`, `kb_template_*` (templates); `kb_version`; `kb_translation_task`; `kb_quality_checklist`, `kb_checklist_question`, `kb_article_checklist_answer` (AQI); `kb_usage_metrics`; `ts_query_kb` (searches); `kb_task_knowledge_coverage` (demand insights); `ds_redaction_audit_log` (documents).
+Others: `kb_knowledge_block` (extends `kb_knowledge`), `m2m_kb_knowledge_to_block`, `m2m_kb_to_block_history` (blocks); `kb_article_template`, `kb_article_template_definition`, `kb_template_*` (templates); `kb_version`; `kb_translation_task`; `kb_quality_checklist`, `kb_checklist_question`, `kb_article_checklist_answer` (AQI); `kb_usage_metrics`; `ts_query_kb` (searches); `kb_task_knowledge_coverage`, `kb_curation_task_cluster` (demand insights); `sysauto_kb_assist_job`, `kb_assist_scan_definition` (Knowledge Center article optimization, [[Knowledge Center Article Optimization and Health Score]]); `ds_redaction_audit_log` (documents).
 
 ## Plugins
 

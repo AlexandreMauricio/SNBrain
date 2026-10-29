@@ -223,6 +223,7 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[List Configuration and List Controls]] - layout, list control options and scripts, sort order, personal lists, ranking, context menus (documented)
 - [[List Editor]] - what it bypasses, properties, list_edit ACL operation (documented)
 - [[Application Menus and Modules]] - navigator menus (sys_app_application) and modules (sys_app_module): fields, link types, encoding of arguments (documented, Brazil)
+- [[Response Templates]] - templated snippets: canned replies with variables, conditions, channels and chat shortcuts; roles and tables (Brazil)
 
 ## Scripting (`Scripting/`)
 
@@ -308,6 +309,8 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Knowledge Workflows and Article Lifecycle]] - publish and retire flows, states, recall, approve, retire, republish, version numbering, validity
 - [[Knowledge Management Properties Reference]] - all KM system properties by group
 - [[Knowledge Management Roles, Tables and Plugins]] - roles, tables, plugins, domain separation, ATF quick start tests
+- [[Knowledge Center]] - Knowledge Center home, article editor, insights, gaps, requires attention, blocks, Box and SharePoint sources, properties (Brazil)
+- [[Knowledge Center Article Optimization and Health Score]] - AO jobs and scans, reading ease, auto-fix, auto-merge of duplicates, article and base health score (Brazil)
 
 ## Portals and Workspaces (`Portals-and-Workspaces/`)
 
@@ -401,6 +404,7 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Otto for CMDB Skills and Agentic Workflows]] - CI summary, duplicates, SGC diagnosis, readiness, search, create CI, governance, staleness, ingestion optimizer (Brazil)
 - [[CMDB MCP Server, Impact Analysis and Business Application Agents]] - MCP tools and roles, change and incident impact workflow, business application matching properties (Brazil)
 - [[Now Assist in Document Management]] - Smart Documents skill (Ask Otto): document summary, Q and A, voice assist, AI redaction with redaction codes
+- [[Otto in Knowledge Management]] - KB generation, context menu, duplicates, merge, gaps and article optimization skills; custom prompts per template (Brazil)
 
 ## Data Management (`Data-Management/`)
 

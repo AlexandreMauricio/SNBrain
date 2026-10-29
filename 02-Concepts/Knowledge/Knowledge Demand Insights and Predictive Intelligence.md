@@ -40,4 +40,5 @@ Needs read access to the tasks and `sn_km_ml.knowledge_curation_user`. **Knowled
 
 ## Related
 
+- [[Knowledge Management Dashboards]] (dashboard roles and data) · Knowledge Center gap skills: [[Knowledge Center]], [[Otto in Knowledge Management]]
 - [[Knowledge Feedback, Ownership Groups and Article Quality]] · [[Self-Service Analytics and Case Deflection]] · [[Contextual Search]]

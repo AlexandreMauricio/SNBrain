@@ -18,3 +18,4 @@ Reports, dashboards, Performance Analytics, database views.
 - [[ITSM Success Dashboard]] - self-solve, call deflection and cost-saving KPIs: formulas, setup checklist, registering contributing indicators
 - [[ITSM Platform Analytics Dashboards and KPIs]] - shipped ITSM dashboards and how each indicator is defined
 - [[DevOps Insights Dashboards]] - data collection jobs, report definitions per tab, Insights properties, product roll-up
+- [[Knowledge Management Dashboards]] - KM Platform Analytics dashboard indicators, KM Overview reports, Demand Insights dashboards and Pareto chart (Brazil)
