@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, task, reporting]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Continual Improvement Management" (pp. 822-877), read 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "Continual Improvement Management" (pp. 822-877), read 2026-10-02 Re-checked against the Brazil ITSM docs (Coaching 23 topics, Collaboration services 17 topics, Continual Improvement Management 25 topics, https://www.servicenow.com/docs/r/it-service-management/continual-improvement-management/integrate-extension-api.html and siblings), 2026-10-29: same content.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-29
 ---
 
 # Continual Improvement Management (CIM)
@@ -18,7 +18,7 @@ Plugin `com.sn_cim` (ITSM / CSM / HRSD Professional). Menu **Continual Improveme
 
 | Role | Does |
 |---|---|
-| `sn_cim.improvement_requester` | create and follow requests; granted automatically to itil, incident_manager, change_manager, PA and survey roles |
+| `sn_cim.improvement_requester` | create and follow requests; granted automatically to itil, incident_manager, change_manager, PA and survey roles; the Brazil list also names `sn_coaching.admin`, the Benchmarks admin and recommendation roles, and, when Strategic Portfolio Management is active, `scrum_master`, `it_demand_manager`, the portfolio manager role, `it_program_manager`, `it_project_manager`, `tm_test_manager` |
 | `sn_cim.improvement_coordinator` | runs the improvements assigned to them; workbench; contains the requester role and many PA, Benchmarks and CMDB read roles |
 | `sn_cim.improvement_manager` | everything: accept, assign, create enterprise strategies, close, delete |
 

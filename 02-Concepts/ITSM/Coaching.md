@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, incident, users, roles, automation]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Coaching" (pp. 774-808), read in full 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "Coaching" (pp. 774-808), read in full 2026-10-02 Re-checked against the Brazil ITSM docs (Coaching 23 topics, Collaboration services 17 topics, Continual Improvement Management 25 topics, https://www.servicenow.com/docs/r/it-service-management/continual-improvement-management/integrate-extension-api.html and siblings), 2026-10-29: same content.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-29
 ---
 
 # Coaching

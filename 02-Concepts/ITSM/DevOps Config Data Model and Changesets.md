@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, change, cmdb, integrations, data-integrity, admin]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "DevOps Config" (pp. 1553-1602 and 1643-1668: overview, CDM and PaCE, terms, setup sequence, applications and deployables, uploading config data, XML and CSV parsing, CDM system properties, config data tab, components, collections, variables, file nodes, Config Data Analyzer, changesets and conflicts), read in full 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "DevOps Config" (pp. 1553-1602 and 1643-1668: overview, CDM and PaCE, terms, setup sequence, applications and deployables, uploading config data, XML and CSV parsing, CDM system properties, config data tab, components, collections, variables, file nodes, Config Data Analyzer, changesets and conflicts), read in full 2026-10-02 Re-checked against the Brazil ITSM docs (DevOps Change Velocity 215 topics and DevOps Config 92 topics, https://www.servicenow.com/docs/r/it-service-management/devops-family/devops-config-k8s-policies.html and siblings), 2026-10-29: same content; one auto-close property added.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-29
 ---
 
 # DevOps Config Data Model and Changesets

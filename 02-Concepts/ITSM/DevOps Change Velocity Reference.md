@@ -2,10 +2,10 @@
 type: reference
 tags: [reference, change, integrations, roles, troubleshooting, instance-admin]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "DevOps Change Velocity" > reference (pp. 1473, 1493-1533, 1548-1552): components installed, properties, System Health dashboard, log levels, common errors, software quality results, domain separation, health scan checks; read in full 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "DevOps Change Velocity" > reference (pp. 1473, 1493-1533, 1548-1552): components installed, properties, System Health dashboard, log levels, common errors, software quality results, domain separation, health scan checks; read in full 2026-10-02 Re-checked against the Brazil ITSM docs (DevOps Change Velocity 215 topics and DevOps Config 92 topics, https://www.servicenow.com/docs/r/it-service-management/devops-family/devops-config-k8s-policies.html and siblings), 2026-10-29: same content; one auto-close property added.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-29
 ---
 
 # DevOps Change Velocity Reference
@@ -68,6 +68,7 @@ Change behaviour:
 | `sn_devops.enable_change_creation_with_partial_data` | create the change despite data retrieval errors | false |
 | `sn_devops.change_request_callback_timeout` | minutes | 120 |
 | `sn_devops.change_request.auto_close_successful_code`, `..._partial_successful_code`, `..._failure_code` | close codes used by auto close | `successful`, `successful_issues`, `unsuccessful` |
+| `sn_devops.change_request.auto_close_allow_override_end_time` | when true (as described), auto close overwrites **Actual end** with the pipeline end time; set false to keep it (Brazil) | |
 | `sn_devops.import_based_evidence_collection` | skip step-level events, collect by import | false |
 | `sn_devops.commit_rel_change_step_type` | step types using the Prod Deploy commit logic | |
 

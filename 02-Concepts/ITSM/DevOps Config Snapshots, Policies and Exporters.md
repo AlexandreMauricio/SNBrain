@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, change, integrations, data-integrity, scripting, admin]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "DevOps Config" (pp. 1591-1598 and 1668-1725: defining and mapping policies, running validation, fixing validation failures, activity history, deleting applications and changesets, validation process and CdmPolicyUtil, component libraries and shared components, snapshots, snapshot comparison, exporters, alert investigation, Insights dashboard), read in full 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "DevOps Config" (pp. 1591-1598 and 1668-1725: defining and mapping policies, running validation, fixing validation failures, activity history, deleting applications and changesets, validation process and CdmPolicyUtil, component libraries and shared components, snapshots, snapshot comparison, exporters, alert investigation, Insights dashboard), read in full 2026-10-02 Re-checked against the Brazil ITSM docs (DevOps Change Velocity 215 topics and DevOps Config 92 topics, https://www.servicenow.com/docs/r/it-service-management/devops-family/devops-config-k8s-policies.html and siblings), 2026-10-29: same content; one auto-close property added.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-29
 ---
 
 # DevOps Config Snapshots, Policies and Exporters

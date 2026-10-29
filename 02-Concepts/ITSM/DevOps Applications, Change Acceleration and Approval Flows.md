@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, change, flows, automation, integrations]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "DevOps Change Velocity" > applications, accelerating the change process, approval flows and policies, customizing flows, automating change creation, manual DevOps changes, category property, data retrieval errors and callback timeout (pp. 1312-1347), read in full 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "DevOps Change Velocity" > applications, accelerating the change process, approval flows and policies, customizing flows, automating change creation, manual DevOps changes, category property, data retrieval errors and callback timeout (pp. 1312-1347), read in full 2026-10-02 Re-checked against the Brazil ITSM docs (DevOps Change Velocity 215 topics and DevOps Config 92 topics, https://www.servicenow.com/docs/r/it-service-management/devops-family/devops-config-k8s-policies.html and siblings), 2026-10-29: same content; one auto-close property added.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-29
 ---
 
 # DevOps Applications, Change Acceleration and Approval Flows

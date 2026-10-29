@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, change, flows, automation, integrations, script-include]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "DevOps Change Velocity" > DevOps change models, pipeline migration to change models, DevOpsChangeRelationshipHelper, pull and merge requests, change request attributes and precedence, import based evidence collection (pp. 1374-1397), read in full 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "DevOps Change Velocity" > DevOps change models, pipeline migration to change models, DevOpsChangeRelationshipHelper, pull and merge requests, change request attributes and precedence, import based evidence collection (pp. 1374-1397), read in full 2026-10-02 Re-checked against the Brazil ITSM docs (DevOps Change Velocity 215 topics and DevOps Config 92 topics, https://www.servicenow.com/docs/r/it-service-management/devops-family/devops-config-k8s-policies.html and siblings), 2026-10-29: same content; one auto-close property added.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-29
 ---
 
 # DevOps Change Models
