@@ -149,6 +149,7 @@ Step-by-step procedures, grouped by topic (the notes themselves stay in one flat
 - [[Set Up SCIM Provisioning into the Instance]] - plugin, scim_admin user, OAuth or basic profile, identity provider side, test (Brazil)
 - [[Import Data with an Import Set]] - file data source, transform map, coalesce, run and review (documented)
 - [[Import Records from Another Instance with an XML Import Set]] - HTTPS XML data source, keep sys_ids, reconcile references (documented)
+- [[Create an ETL Transform Map in IntegrationHub ETL]] - guided setup from data source to schedule, test and rollback, duplicate (documented, Brazil)
 
 ## Reporting and dashboards
 

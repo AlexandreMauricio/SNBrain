@@ -45,3 +45,4 @@ REST and SOAP APIs, import sets and transform maps, IntegrationHub, MID Server, 
 - [[Import Set Properties Reference]] - loading, CSV and Excel, concurrency, web service, JDBC, logging properties (Brazil)
 - [[Integration Commons for CMDB]] - sn_cmdb_int_util: CMDB Integrations Dashboard, connection framework, deleted-record removal, partition size, ADM adapter, quick start tests (Brazil)
 - [[RTE Operations and Integration Commons Transforms Reference]] - RTE operation types and CMDB cleansing and class-derivation templates (Brazil)
+- [[IntegrationHub ETL]] - sn_int_studio guided ETL transform maps through RTE and IRE: terms, required fields, conditional and associated classes, deactivation, nested JSON, before/after scripts (Brazil)
