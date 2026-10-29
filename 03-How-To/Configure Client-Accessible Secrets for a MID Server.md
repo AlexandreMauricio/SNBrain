@@ -69,3 +69,7 @@ Secret group `example_ssh_client_secrets` (client accessible, target table `ssh_
 - The certificate in the example is valid 365 days: plan its renewal.
 - After a clone, client-side groups copied from the source must be reconfigured by hand.
 - If the SSH step is missing in Workflow Studio, the Integration Hub plugin providing it is not active.
+
+## Related
+
+- [[MID Server Security and Encryption]] · [[MID Server Overview and Architecture]]

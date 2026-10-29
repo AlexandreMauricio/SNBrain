@@ -110,4 +110,4 @@ Without a vault, the same routing through a MID Server uses template **HTTP Conn
 
 ## Related
 
-- [[Connections, Credentials and Aliases]] · [[Credential Types Reference]] · [[Connection and Credential Configuration Templates]] · [[Credentials Fail in Discovery or Orchestration]] · [[OAuth 2.0 Outbound - The Instance as OAuth Client]]
+- [[Connections, Credentials and Aliases]] · [[Credential Types Reference]] · [[Connection and Credential Configuration Templates]] · [[Credentials Fail in Discovery or Orchestration]] · [[OAuth 2.0 Outbound - The Instance as OAuth Client]] · [[MID Server Security and Encryption]]
