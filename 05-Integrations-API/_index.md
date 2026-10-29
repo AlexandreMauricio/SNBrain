@@ -36,3 +36,10 @@ REST and SOAP APIs, import sets and transform maps, IntegrationHub, MID Server, 
 - [[Log Export Service (LES)]] - streaming instance logs through Hermes (Kafka) to external analytics: sources, topics, Kafka and MID Server consumers, backfill runs, properties, roles
 - [[SCIM Provider - Provisioning Users and Groups into the Instance]] - SCIM 2.0 endpoints, authentication profiles, schemas, extension schema and ETL mapping, scripts for unmapped attributes, source definitions (Brazil)
 - [[SCIM Client - Provisioning from the Instance to Other Systems]] - REST message, SCIM provider record, resource and attribute mappings, SCIM2Client, logs, troubleshooting (Brazil)
+- [[Import Sets - Data Sources, Staging Tables and Cleanup]] - data source types and formats, staging tables, standard imp_ tables, cleanup, roles (Brazil)
+- [[Transform Maps, Field Maps and Coalesce]] - map options, field maps, reference matching, choice actions, coalesce variants and indexing (Brazil)
+- [[Transform Scripts and Script Variables]] - onStart to onComplete events, source/target/ignore/error variables, examples (Brazil)
+- [[Robust Import Set Transformers and ETL Definitions]] - ETL entities, coercion, RTE operations, nested JSON, IRE settings, run details (Brazil)
+- [[Scheduled and Concurrent Imports]] - scheduled import form, chained imports, partitions, concurrent jobs and monitoring (Brazil)
+- [[Web Service Import Sets and Direct File Posting]] - SOAP import set tables, sync and async modes, responses, sys_import.do posting (Brazil)
+- [[Import Set Properties Reference]] - loading, CSV and Excel, concurrency, web service, JDBC, logging properties (Brazil)

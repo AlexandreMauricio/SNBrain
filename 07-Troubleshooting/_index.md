@@ -25,3 +25,6 @@ Symptom, cause, fix.
 - [[Domain Separation Errors]] - invalid domain ids, wrong paths, loops, default-domain pile-ups, reading the domain query log
 - [[Encrypted Field Shows Empty or Unreadable]] - missing access policy, clone without key exchange, archive tables, script access, external key disabled (Brazil)
 - [[IRE Error Messages]] - identification engine error codes with cause and fix: rule, payload, data and runtime problems (documented)
+- [[Debugging Service Catalog Items]] - user criteria diagnostics, variable action logger and watcher, SQL debugger, UI customization states, item diagnostic rules (Brazil)
+- [[Debugging Scripts]] - Script Debugger, session log, code coverage, Script Tracer, session debug, field watcher, jslog (Brazil)
+- [[Import Set Performance and Errors]] - slow transforms, duplicates, skipped rows, error codes, where to look (Brazil)

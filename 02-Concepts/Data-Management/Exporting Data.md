@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, data-management, platform, roles]
 status: documented
-source: ServiceNow Australia Platform Administration PDF, "Exporting data" (pp. 653-656, 664-667), read 2026-10-01
+source: ServiceNow Australia Platform Administration PDF, "Exporting data" (pp. 653-656, 664-667), read 2026-10-01; Brazil Workflow Data Fabric > Exports, read 2026-10-16 (https://www.servicenow.com/docs/r/integrate-applications/exports-overview-page.html)
 sn-release: Australia
 verified:
-updated: 2026-10-01
+updated: 2026-10-16
 ---
 
 # Exporting data
@@ -62,3 +62,4 @@ Controls for this are in [[Export Limits and Properties]].
 ## Related
 
 - [[Export and Import Records as XML]] · [[Set Up Export to Google Sheets]] · [[Export Limits and Properties]]
+- Export sets in detail (definitions, MID Server targets, scheduled delta and parallel exports): [[Export Sets]] · [[Create a Scheduled Export Set]]

@@ -17,3 +17,5 @@ Comparisons where several ways exist for the same task.
 - [[UI Policy or Data Policy]] - dictionary, UI policy or data policy for mandatory and read-only (documented)
 - [[Inbound Email Flow or Inbound Email Action]]
 - [[Choosing an Encryption Option]] - full disk, database, cloud, field and edge encryption compared by who is kept out and who holds the key (documented)
+- [[Catalog Fulfilment Process - Flow, Workflow, Execution Plan or Steps]] - which process engine for a catalog item (documented)
+- [[Copying Records Between Instances]] - XML from lists, XML or CSV import sets over HTTPS, REST (documented)

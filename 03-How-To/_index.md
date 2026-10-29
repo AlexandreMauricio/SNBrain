@@ -34,6 +34,13 @@ Step-by-step procedures, grouped by topic (the notes themselves stay in one flat
 
 ## Service Catalog
 
+- [[Create a Catalog Item with Variables]] - classic item form, variables, choices, flow, user criteria (documented)
+- [[Create a Variable Set]] - single or multi-row set reused across items (documented)
+- [[Create an Order Guide]] - guide variables, rule base, cascading, item variable assignments (documented)
+- [[Create a Catalog UI Policy]] - conditions on variables and policy actions (documented)
+- [[Create and Apply a User Criteria Record]] - restrict an item or category, check with diagnostics (documented)
+- [[Create a Catalog Item in Catalog Builder]] - template, guided steps, publish (documented)
+
 ## CMDB and Assets
 
 - [[Configure a Service Availability KPI in Digital Portfolio Management]] - KPI group mapping, commitment, outage, PA collection job, check on the Run tab
@@ -129,6 +136,8 @@ Step-by-step procedures, grouped by topic (the notes themselves stay in one flat
 - [[Create a Connection and Credential Alias]] - alias, credential, HTTP connection and attributes for a flow integration
 - [[Set Up Log Export Service]] - Hermes check, certificates, sources, then a Kafka or MID Server consumer
 - [[Set Up SCIM Provisioning into the Instance]] - plugin, scim_admin user, OAuth or basic profile, identity provider side, test (Brazil)
+- [[Import Data with an Import Set]] - file data source, transform map, coalesce, run and review (documented)
+- [[Import Records from Another Instance with an XML Import Set]] - HTTPS XML data source, keep sys_ids, reconcile references (documented)
 
 ## Reporting and dashboards
 
@@ -150,6 +159,7 @@ Step-by-step procedures, grouped by topic (the notes themselves stay in one flat
 - [[Restore a Deleted Record]] - Deleted Records and Delete Recovery modules (documented)
 - [[Roll Back a Patch, Plugin Activation or Background Script]] - rollback contexts and script execution history (documented)
 - [[Enable Auditing on a Table]] - Audit flag on the collection row, no_audit and audit_type=whitelist attributes, checking the result
+- [[Create a Scheduled Export Set]] - definition, MID target, export set, daily delta schedule (documented)
 
 ## Instance Administration
 

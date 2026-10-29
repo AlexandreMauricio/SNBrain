@@ -37,3 +37,6 @@ One note per table, named with the exact table name. Overviews spanning a family
 - [[cmdb_ci_service]] - Service: business criticality, service classification, used for; svc_ci_assoc (documented, column names not given)
 - [[cmdb_rel_ci]] - CI Relationship: parent, child, type; related relationship tables (documented, column names not given)
 - [[cmdb_backup_storage_information]] - Backup Store Information: backup status of a CI, column names and choices, loading through an IRE related entry (documented)
+- [[sc_cat_item]] - Catalog Item: base of all item types, child classes, related tables (documented, most column names unconfirmed)
+- [[item_option_new]] - Variable (question): catalog variables, lookup_source, answer tables (documented, most column names unconfirmed)
+- [[user_criteria]] - User Criteria: who can see catalog items and categories, link tables (documented, column names unconfirmed)

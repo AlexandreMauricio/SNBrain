@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, scripting, business-rule, glide-api, javascript, automation]
 status: documented
-source: ServiceNow docs, Australia, Build workflows > Classic Business rules (read 2026-10-08 through the docs site; one page): how business rules work, prevent recursive business rules, business rules in scoped applications, create a business rule, global variables, business rules and client scripts, using NULL, display business rules, Task Active State Management, example scripts (compare dates, parse XML, abort action, operation, OR condition, glide list, lock user accounts, before-query rule). https://www.servicenow.com/docs/r/australia/build-workflows/business-rules-classic/c_BusinessRules.html
+source: ServiceNow docs, Australia, Build workflows > Classic Business rules (read 2026-10-08 through the docs site; one page): how business rules work, prevent recursive business rules, business rules in scoped applications, create a business rule, global variables, business rules and client scripts, using NULL, display business rules, Task Active State Management, example scripts (compare dates, parse XML, abort action, operation, OR condition, glide list, lock user accounts, before-query rule). https://www.servicenow.com/docs/r/australia/build-workflows/business-rules-classic/c_BusinessRules.html. Re-read in the Brazil API implementation and reference guide (Scripting > Classic Business rules, https://www.servicenow.com/docs/r/api-reference/business-rules-classic/c_BusinessRules.html, 2026-10-16): same content, plus installation settings and the debugging page
 sn-release: Australia
 verified:
-updated: 2026-10-08
+updated: 2026-10-16
 ---
 
 # Business Rules
@@ -141,3 +141,4 @@ Client scripts and UI policies act only on forms, so list editing, imports and w
 ## Related
 
 - [[Order of Execution for Rules, Engines and Notifications]] · [[Events and the Event Queue]] · [[UI Policies]] · [[Flows, Subflows and Actions Overview and Architecture]]
+- Brazil scripting notes: [[Script Includes and GlideAjax]] (instead of global rules) · [[Background Scripts, Script Processors and Schedule Pages]] (legacy *installation settings* `<table>CanWrite()` functions) · [[Debugging Scripts]] (Debug Business Rule (Details), Script Debugger) · [[Script Sandbox and Guarded Script]] (only *Client callable* rules run in the sandbox)

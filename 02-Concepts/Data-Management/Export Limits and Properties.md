@@ -2,10 +2,10 @@
 type: reference
 tags: [reference, data-management, platform]
 status: documented
-source: ServiceNow Australia Platform Administration PDF, "Exporting data", topic "Data export reference" (pp. 665-673), read 2026-10-01
+source: ServiceNow Australia Platform Administration PDF, "Exporting data", topic "Data export reference" (pp. 665-673), read 2026-10-01; Brazil Workflow Data Fabric > Exports, read 2026-10-16 (https://www.servicenow.com/docs/r/integrate-applications/system-export-sets/c_ExportSets.html)
 sn-release: Australia
 verified:
-updated: 2026-10-01
+updated: 2026-10-16
 ---
 
 # Export limits and properties
@@ -69,6 +69,18 @@ Apply to URL exports, list exports and export sets, unless a URL parameter overr
 | `glide.excel.fixed_currency_usd`, `glide.excel.convert_to_user_currency` | currency conversion in Excel |
 | `glide.export.debug` | logs export processing ("Export API" lines: query time, write time). Turn off after debugging |
 | `glide.oauth.export.to.sheets.alias` | sys_id of the connection alias for Google Sheets export |
+
+## Export set properties (Brazil)
+
+| Property | Effect |
+|---|---|
+| `glide.excel.local_based_currency` | Excel currency in the instance locale |
+| `glide.export.excel.duration.readable_string` | Excel durations as days, hours, minutes instead of seconds (default false) |
+| `glide.export.xlsx.zip64_mode` | XLSX written with Zip64 (default false) |
+| `glide.scheduled_export.stop_on_parent_error` | child scheduled exports skipped when the parent fails |
+| `glide.scheduled_export.min_rows_for_parallel_export` | rows needed for a parallel export (default 50,000) |
+
+See [[Export Sets]].
 
 ## Related
 
