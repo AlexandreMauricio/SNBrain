@@ -83,6 +83,8 @@ Plugin `com.glideapp.password_reset`; role `password_reset_admin`. **Only for lo
 4. An email with a link arrives (notification *Password Reset - Reset Link*; link lifetime `password_reset.request.expiry`).
 5. The user sets a new password under the policy.
 
+The full application (processes, credential stores such as AD and Entra ID, verifications, service desk reset, Windows app) is in [[Password Reset Application Overview]] and [[Configure a Password Reset Process]]. Unconfirmed variant: the reset-link notification is *Password Reset - Reset Link* here and *Password Reset URL* (event `password.reset.url`) in the Password Reset chapter.
+
 Settings: **Password Reset > Properties**. The docs' advice on limits: about 3 verification attempts; 5 to 7 security questions.
 
 ## Remember me

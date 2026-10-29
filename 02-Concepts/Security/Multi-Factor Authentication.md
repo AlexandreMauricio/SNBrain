@@ -66,7 +66,7 @@ Asking less often: **remember this browser** on the validation page skips MFA on
 | Authenticator app (TOTP) | tested: Google Authenticator, Microsoft Authenticator, LastPass Authenticator, Authy, FreeOTP, Duo, Okta Verify. The QR code pairs an app already installed. Device and instance clocks must agree within about 30 seconds; `glide.authenticate.multifactor.clock_skew` widens the window (seconds, default 10, max 60) |
 | Passkey, biometric (Windows Hello, Touch ID, Face ID), hardware key (FIDO2) | plugin **Integration - Web Authentication** (`com.snc.integration.webauthn`, installed by default); `glide.webauthn.enabled`. No phone needed (since Xanadu) |
 | Email one-time code | 6 digits, valid `glide.multifactor.onetime.code.validity` minutes (default 5); `glide.authenticate.multifactor.email.otp.enable`. Part of plugin `com.snc.integration.multifactor.authentication` |
-| SMS one-time code | plugin **Multi-factor authentication with SMS** (`com.snc.authentication.sms_mfa`; brings Notify - Twilio Direct Driver). Sent to the mobile number on the user record |
+| SMS one-time code | plugin **Multi-factor authentication with SMS** (`com.snc.authentication.sms_mfa`; brings Notify - Twilio Direct Driver; see [[Notify Overview, Twilio and Providers]]). Sent to the mobile number on the user record |
 
 FIDO2 and TOTP count as secure; email and SMS as weaker. A user can enrol several factors (recommended, so one lost device does not lock them out); the last one used is offered first. `glide.auth.mfa.ui.v2.enabled` lets users enrol a factor without first setting up an authenticator app.
 

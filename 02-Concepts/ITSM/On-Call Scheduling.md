@@ -57,7 +57,7 @@ Tables starting `v_` (`v_rotation`, `v_user_rotation`, `v_on_call`...) only feed
 - **Escalation type**: one roster → *Rotate through members*; several rosters → *Rotate through rosters*; **Override escalation** → *Custom* steps (audience: rosters, groups, users, devices, group manager; **Time to next step**, reminders). Several policies per shift can be selected by table and condition, with one **Default**.
 - Per roster: **Number of reminders**, **Time between reminders** (default 15 min). Time before escalation = (reminders + 1) × interval: 2 reminders at 10 min = 30 min.
 - **Catch-All**: who is told when nobody accepted (group manager, shift manager, an individual, all).
-- Channels: email, SMS and voice (need Notify), Slack (IntegrationHub spoke), Microsoft Teams (`sn_now_teams_it`), mobile push, custom. Users set them per contact attempt in **My Preferences**; a shift can **Override user preference**; a forced channel that fails is not retried on another.
+- Channels: email, SMS and voice (need Notify: [[Notify Conference Calls and Use from Tasks, Incident Communications and On-Call]]), Slack (IntegrationHub spoke), Microsoft Teams (`sn_now_teams_it`), mobile push, custom. Users set them per contact attempt in **My Preferences**; a shift can **Override user preference**; a forced channel that fails is not retried on another.
 - Members with time off are skipped.
 
 ### Trigger rules

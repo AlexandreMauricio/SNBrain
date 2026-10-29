@@ -12,7 +12,7 @@ updated: 2026-10-02
 
 **In one line:** communication plans attached to an incident that say who is told what, when and by which channel; each plan (`incident_alert`, numbered ICP) holds communication tasks (`incident_alert_task`, numbered ICT) sent by email, SMS, conference call or Slack.
 
-Plugin `com.snc.iam` (activated with [[Major Incident Management]]). SMS and conference calls need Notify (`com.snc.notify`).
+Plugin `com.snc.iam` (activated with [[Major Incident Management]]). SMS and conference calls need Notify (`com.snc.notify`): [[Notify Conference Calls and Use from Tasks, Incident Communications and On-Call]].
 
 ## Building blocks
 

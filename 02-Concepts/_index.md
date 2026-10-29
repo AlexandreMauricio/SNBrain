@@ -242,6 +242,7 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[GlideRecord Queries, GlideRecordSecure and Server Utilities]] - query operators, text search, NULL, GlideRecordSecure and query ACLs, DurationCalculator, XML, GSLog (documented, Brazil)
 - [[Background Scripts, Script Processors and Schedule Pages]] - Scripts - Background options, deprecated processors, schedule pages, installation settings (documented, Brazil)
 - [[JavaScript Syntax Editor]] - editor properties, shortcuts, macros, context menu (documented, Brazil)
+- [[Password Reset Extension Scripts]] - extension script categories (enrollment check, identification, verification, generator, lookup, post reset) and how to create one
 
 ## Flows and Automation (`Flows-and-Automation/`)
 
@@ -276,6 +277,7 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Playbook Activities Reference]] - shipped interactive and non-interactive activities with inputs and outputs; process and activity execution states
 - [[Playbook Patterns and Runtime Use]] - nested, wizard, guided decision and guest-access playbooks; record generator, Reflow; restart, cancel, optional activities, ATF
 - [[State Flows]] - sf_state_flow transitions that generate UI actions, business rules, client scripts, field controls and events (Brazil)
+- [[Notify Workflow Activities and Flow Actions]] - how a Notify call runs, call and SMS activities (and Zurich flow actions), IVR menus, event handlers, custom activities
 
 ## Notifications and Email (`Notifications-and-Email/`)
 
@@ -293,6 +295,8 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Notification Preferences and Channels]]: devices, subscriptions, mandatory and forced
 - [[Provider Notifications]]: Next Experience, Workspace and Virtual Agent notifications with actions
 - [[Email Client]]: sending email from a record; configurations, templates, quick messages
+- [[Notify Overview, Twilio and Providers]] - SMS, voice and conferences: plugins and drivers, Twilio Direct, public URLs, numbers and groups, provider selectors, SMS opt-out, roles, tables, properties
+- [[Notify Conference Calls and Use from Tasks, Incident Communications and On-Call]] - conference calls, Notify on Task, ICM conferences and updates, Major Incident workbench with Webex, On-Call SMS and voice escalation
 
 ## Knowledge (`Knowledge/`)
 - [[Knowledge Management Overview]] - Big picture: plugins, cycle, setup order, release changes
@@ -387,6 +391,11 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Edge Encryption Proxy Properties Reference]] - edgeencryption.properties by area, wrapper.conf and log4j2 settings (Brazil)
 - [[Edge Encryption Configuration - Keys, Jobs, Patterns and Integrations]] - instance-side keys and rotation, field, attachment and variable configurations, jobs, patterns, record producers, MID Server, ODBC, monitoring (Brazil)
 - [[Edge Encryption Rules and Rule APIs]] - proxy-side rule scripts: condition, action, order, request object, JSON and XML APIs, prohibited keywords (Brazil)
+- [[Password Reset Application Overview]] - Password Reset and Password Change: processes, self-service vs service desk, channels (VA, IVR, Windows), store apps, security score, domain separation
+- [[Password Reset Credential Stores]] - credential store types and form, AD prerequisites, Integration Hub subflows for third-party stores, asynchronous (RPA) reset
+- [[Password Reset Verifications and Enrollment]] - identification types, base verifications and parameters, auto and manual enrollment, custom verification types
+- [[Password Reset Windows Application]] - Forgot password link on the Windows login screen: requirements, EXE, MSI and wizard install, proxy, registry, limits
+- [[Password Reset Reference - Properties, Tables and Components]] - roles, properties, tables and purge, UI pages, workflows, notifications, REST API, reports
 
 ## AI (`AI/`)
 

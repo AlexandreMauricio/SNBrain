@@ -120,6 +120,7 @@ Step-by-step procedures, grouped by topic (the notes themselves stay in one flat
 - [[Enable the Email Client for a Table]]
 - [[Create an Email Client Template]]
 - [[Make a Notification Mandatory or Forced]]
+- [[Set Up Notify with Twilio, Zoom or Webex]] - activate Notify, connect Twilio, number groups, provider selector, Zoom and Webex connectors
 
 ## Knowledge
 
@@ -138,6 +139,7 @@ Step-by-step procedures, grouped by topic (the notes themselves stay in one flat
 - [[Upload a Certificate to the Instance]] - trust store or keystore certificate record and validation (Brazil)
 - [[Encrypt a Field with Field Encryption]] - module, key, access policy, encrypted field configuration, mass encryption (Brazil)
 - [[Encrypt a Field with Edge Encryption]] - key alias, encryption configuration, mass encryption job, other entry points (Brazil; product being deprecated)
+- [[Configure a Password Reset Process]] - create a process, CAPTCHA, enrollment and expiration reminders, service desk reset, unblock users, portal widget and CMS
 
 ## AI
 
