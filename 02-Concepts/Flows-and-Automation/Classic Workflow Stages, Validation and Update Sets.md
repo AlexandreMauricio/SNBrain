@@ -2,10 +2,10 @@
 type: reference
 tags: [reference, workflow, automation, update-sets, service-catalog, forms-lists]
 status: documented
-source: ServiceNow docs, Australia, Build workflows > Classic Workflow (read 2026-10-08 through the docs site): Workflow stages (use, add and translate, stage sets, create a stage field, select a stage field, display approvers, icons and tooltips, stage renderers, fields with deleted records), Workflow validation, Workflow validator and each validator page (ValidateTransitionOut, ValidateTransitionIn, ValidateDanglingTransition, ValidateSubflows, ValidateScriptForCurrentDotUpdate, ValidateLowestCommonTable, ValidateTableChange, ValidateParentFlow, ValidateSingleEnd, ValidateUpdateSetDependencies, ValidateUpdateSetParentDependencies, ValidateInputVarUpdateSetDependencies, ValidateWorkflowEndStages, ValidateWorkflowStageColumn, ValidateWorkflowStateValues), Workflow movement with update sets, Input variable movement (two input variables, removal, avoiding duplicate workflows). https://www.servicenow.com/docs/r/australia/build-workflows/legacy-workflow/c_WorkflowStages.html
-sn-release: Australia
+source: ServiceNow docs, Australia, Build workflows > Classic Workflow (read 2026-10-08 through the docs site): Workflow stages (use, add and translate, stage sets, create a stage field, select a stage field, display approvers, icons and tooltips, stage renderers, fields with deleted records), Workflow validation, Workflow validator and each validator page (ValidateTransitionOut, ValidateTransitionIn, ValidateDanglingTransition, ValidateSubflows, ValidateScriptForCurrentDotUpdate, ValidateLowestCommonTable, ValidateTableChange, ValidateParentFlow, ValidateSingleEnd, ValidateUpdateSetDependencies, ValidateUpdateSetParentDependencies, ValidateInputVarUpdateSetDependencies, ValidateWorkflowEndStages, ValidateWorkflowStageColumn, ValidateWorkflowStateValues), Workflow movement with update sets, Input variable movement (two input variables, removal, avoiding duplicate workflows). https://www.servicenow.com/docs/r/australia/build-workflows/legacy-workflow/c_WorkflowStages.html Re-checked against Brazil docs (Platform Capabilities guide > Additional capabilities > Classic Workflow, same 150 topics), 2026-10-29: no structural changes found; differences noted in the body.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-08
+updated: 2026-10-29
 ---
 
 # Classic Workflow Stages, Validation and Update Sets

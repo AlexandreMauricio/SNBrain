@@ -280,6 +280,9 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Playbook Patterns and Runtime Use]] - nested, wizard, guided decision and guest-access playbooks; record generator, Reflow; restart, cancel, optional activities, ATF
 - [[State Flows]] - sf_state_flow transitions that generate UI actions, business rules, client scripts, field controls and events (Brazil)
 - [[Notify Workflow Activities and Flow Actions]] - how a Notify call runs, call and SMS activities (and Zurich flow actions), IVR menus, event handlers, custom activities
+- [[Classic Orchestration Overview and Activity Packs]] - legacy Orchestration: plugins, probes through the MID Server, activity packs (AD, Azure AD, Exchange, F5, Infoblox, PowerShell, SCCM, SFTP, SSH), deprecated activities, PowerShell properties, usage dashboard
+- [[Orchestration Activity Designer and Databus]] - custom activity stages, templates (JDBC, SOAP, REST, PowerShell, SSH, SFTP, probe, JMS), publish and checkout, scoping, databus
+- [[Orchestration ROI and Client Software Distribution]] - ROI rate cards, automation entries, correlated tasks; CSD with SCCM, leases, properties, tables, extension framework
 
 ## Notifications and Email (`Notifications-and-Email/`)
 
@@ -300,6 +303,8 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Notify Overview, Twilio and Providers]] - SMS, voice and conferences: plugins and drivers, Twilio Direct, public URLs, numbers and groups, provider selectors, SMS opt-out, roles, tables, properties
 - [[Notify Conference Calls and Use from Tasks, Incident Communications and On-Call]] - conference calls, Notify on Task, ICM conferences and updates, Major Incident workbench with Webex, On-Call SMS and voice escalation
 - [[Live Feed (Core UI, Discontinued)]] - discontinued Core UI social feed: record feeds on tasks, table notifications, security, domain separation, live_ tables
+- [[Task Communications Management]] - TCM framework: plan, task, channel and contact definitions, recipient lists, comm_ tables, roles
+- [[Connect Chat and Connect Support (Core UI)]] - Core UI chat overlay, record conversations, Connect properties and actions, deprecated Connect Support
 
 ## Knowledge (`Knowledge/`)
 - [[Knowledge Management Overview]] - Big picture: plugins, cycle, setup order, release changes

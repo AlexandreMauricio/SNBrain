@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, workflow, automation, scripting, roles, domain-separation, javascript]
 status: documented
-source: ServiceNow docs, Australia, Build workflows > Classic Workflow (read 2026-10-08 through the docs site): Classic Workflow, Getting started with workflows, Workflow editor (palette, title bar, keyboard navigation, welcome page and canvas keyboard commands), Workflow management, Create a workflow (properties, from a table, for a catalog item, for an SLA definition, ending workflows with multiple branches), Work on workflows, Workflows used as subflows (pass a variable, prepare a subflow), Using variables in a workflow, Workflow catalog variables, Workflow concepts (versions, scope, domain separation, data separation, engine operation order, tables), Workflow roles. https://www.servicenow.com/docs/r/australia/build-workflows/legacy-workflow/c_WorkflowOverview.html
-sn-release: Australia
+source: ServiceNow docs, Australia, Build workflows > Classic Workflow (read 2026-10-08 through the docs site): Classic Workflow, Getting started with workflows, Workflow editor (palette, title bar, keyboard navigation, welcome page and canvas keyboard commands), Workflow management, Create a workflow (properties, from a table, for a catalog item, for an SLA definition, ending workflows with multiple branches), Work on workflows, Workflows used as subflows (pass a variable, prepare a subflow), Using variables in a workflow, Workflow catalog variables, Workflow concepts (versions, scope, domain separation, data separation, engine operation order, tables), Workflow roles. https://www.servicenow.com/docs/r/australia/build-workflows/legacy-workflow/c_WorkflowOverview.html Re-checked against Brazil docs (Platform Capabilities guide > Additional capabilities > Classic Workflow, same 150 topics), 2026-10-29: no structural changes found; differences noted in the body.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-08
+updated: 2026-10-29
 ---
 
 # Classic Workflow Overview
@@ -45,7 +45,7 @@ The docs' own example passes `null` as the record and the workflow name as third
 
 ## Editor
 
-**Workflow > Workflow Editor**. Welcome page (Published / Checked Out / Help), then a canvas per open workflow and a palette: **Workflows** (usable as subflows), **Core** (activities valid for this workflow's table), and with Orchestration **Packs**, **Custom**, **Data**.
+**Workflow > Workflow Editor**. Welcome page (Published / Checked Out / Help), (if it looks different after an upgrade, it was customised: **System UI > UI Pages** > `workflow_editor_welcome` > **Versions** > the upgrade's version > **Revert to this version**; Brazil docs), then a canvas per open workflow and a palette: **Workflows** (usable as subflows), **Core** (activities valid for this workflow's table), and with Orchestration **Packs**, **Custom**, **Data**.
 
 Title bar menu: New Workflow, Open Existing, **Copy**, **Publish**, **Checkout**, Delete (not when contexts exist), **Set Inactive**, Expand / Collapse Transitions, Start Workflow (only for Global-table workflows; others are tested by inserting a matching record), **Validate Workflow**, **Show Contexts**, **Properties**, **Edit Inputs**, **Edit Stages**. Keyboard: Tab between elements and activities, Enter to edit, arrows to move a selected activity (Shift for one pixel).
 
@@ -129,4 +129,4 @@ The workflow engine runs **default** workflows among the *before* engines and **
 
 ## Related
 
-- [[Classic Workflow Activities Reference]] · [[Classic Workflow Stages, Validation and Update Sets]] · [[Classic Workflow Administration and Troubleshooting]] · [[Flow Logic Reference]] · [[Classic Approvals]]
+- [[Classic Workflow Activities Reference]] · [[Classic Workflow Stages, Validation and Update Sets]] · [[Classic Workflow Administration and Troubleshooting]] · [[Flow Logic Reference]] · [[Classic Approvals]] · [[Classic Orchestration Overview and Activity Packs]] · [[Orchestration Activity Designer and Databus]]

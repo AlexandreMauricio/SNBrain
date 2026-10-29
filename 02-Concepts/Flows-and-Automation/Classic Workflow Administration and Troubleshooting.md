@@ -2,10 +2,10 @@
 type: reference
 tags: [reference, workflow, automation, admin, instance-admin, scripting, javascript]
 status: documented
-source: ServiceNow docs, Australia, Build workflows > Classic Workflow (read 2026-10-08 through the docs site): Workflow events (events in the base system, Glide events relative to workflows, event-specific functions, event-specific activities), Workflow administration, Administering workflow contexts, Cancel a workflow, Scheduling a workflow, Workflow timelines, Workflow error handling (error tracking features, create an error condition exit, reconfigure an approval condition), Workflow run time metrics, Workflow pause utility (request, pause and resume individual / all or multiple workflows, monitor pause requests), Encrypted workflow scratchpad, Troubleshoot workflows, Use the Workflow Operations Dashboard, Workflow performance timing, Correct a skipped workflow approval activity. https://www.servicenow.com/docs/r/australia/build-workflows/legacy-workflow/c_WorkflowAdministration.html
-sn-release: Australia
+source: ServiceNow docs, Australia, Build workflows > Classic Workflow (read 2026-10-08 through the docs site): Workflow events (events in the base system, Glide events relative to workflows, event-specific functions, event-specific activities), Workflow administration, Administering workflow contexts, Cancel a workflow, Scheduling a workflow, Workflow timelines, Workflow error handling (error tracking features, create an error condition exit, reconfigure an approval condition), Workflow run time metrics, Workflow pause utility (request, pause and resume individual / all or multiple workflows, monitor pause requests), Encrypted workflow scratchpad, Troubleshoot workflows, Use the Workflow Operations Dashboard, Workflow performance timing, Correct a skipped workflow approval activity. https://www.servicenow.com/docs/r/australia/build-workflows/legacy-workflow/c_WorkflowAdministration.html Re-checked against Brazil docs (Platform Capabilities guide > Additional capabilities > Classic Workflow, same 150 topics), 2026-10-29: no structural changes found; differences noted in the body.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-08
+updated: 2026-10-29
 ---
 
 # Classic Workflow Administration and Troubleshooting
