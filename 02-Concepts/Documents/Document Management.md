@@ -13,7 +13,7 @@ updated: 2026-10-29
 
 **In one line:** plugin **Document Management** (`com.snc.platform_document_management`, built on `sys_attachment`) that keeps **document** records with **versions** (file or URL), sharing permissions, review and approval before publishing, links to any other record, and optional sync with OneDrive, SharePoint or Google Drive.
 
-From the Brazil docs; not tested. Part of **Document Services** with [[Document Viewer, PDF Generation and Document Conversion]], [[Managed Documents]] and Multi Provider Document Services Framework. AI summaries of documents: Now Assist in Document Management.
+From the Brazil docs; not tested. Part of **Document Services** with [[Document Viewer, PDF Generation and Document Conversion]], [[Managed Documents]] and [[Multi Provider Document Services Framework]]. AI summaries of documents: [[Now Assist in Document Management]].
 
 ## Records
 
@@ -57,7 +57,7 @@ Store app **Document Template integration with Digital Signatures using Smart Ca
 
 ## External providers
 
-OneDrive, SharePoint, Google Drive through Multi Provider Document Services Framework (role `mp_document_admin`): tick **Connect With External Provider**, **Attach from Provider** (OneDrive folder path and file name; Google Drive file URL; or link the URL only), **Upload to Cloud** (optionally remove the file from the instance or do not store it), **Download from cloud** creates a version if changed. Properties `sn_docs_gdrive.google_drive.base_alias` / `current_alias`, `sn_docs_onedrive.one_drive.base_alias` / `current_alias` hold the personal and system connection aliases (`sys_alias`).
+OneDrive, SharePoint, Google Drive through [[Multi Provider Document Services Framework]] (role `mp_document_admin`): tick **Connect With External Provider**, **Attach from Provider** (OneDrive folder path and file name; Google Drive file URL; or link the URL only), **Upload to Cloud** (optionally remove the file from the instance or do not store it), **Download from cloud** creates a version if changed. Properties `sn_docs_gdrive.google_drive.base_alias` / `current_alias`, `sn_docs_onedrive.one_drive.base_alias` / `current_alias` hold the personal and system connection aliases (`sys_alias`).
 
 ## Roles and domain separation
 
@@ -71,4 +71,4 @@ Domain separation: **Standard** support per the Document Management page; *varia
 
 ## Related
 
-- [[Document Viewer, PDF Generation and Document Conversion]] · [[Managed Documents]] · Multi Provider Document Services Framework · Now Assist in Document Management
+- [[Document Viewer, PDF Generation and Document Conversion]] · [[Managed Documents]] · [[Multi Provider Document Services Framework]] · [[Now Assist in Document Management]]

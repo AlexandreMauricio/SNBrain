@@ -383,6 +383,7 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Otto for Code]] - code generation, autocomplete, explain; providers, roles, properties, AI line markers (documented, Brazil)
 - [[Otto for CMDB Skills and Agentic Workflows]] - CI summary, duplicates, SGC diagnosis, readiness, search, create CI, governance, staleness, ingestion optimizer (Brazil)
 - [[CMDB MCP Server, Impact Analysis and Business Application Agents]] - MCP tools and roles, change and incident impact workflow, business application matching properties (Brazil)
+- [[Now Assist in Document Management]] - Smart Documents skill (Ask Otto): document summary, Q and A, voice assist, AI redaction with redaction codes
 
 ## Data Management (`Data-Management/`)
 

@@ -91,3 +91,4 @@ REST and SOAP APIs, import sets and transform maps, IntegrationHub, MID Server, 
 - [[MID Server Upgrades]] - automatic and manual upgrade, pre-upgrade check, states, upgrade history, pinning (documented, Brazil)
 - [[MID Server Reference - Requirements, Properties and Parameters]] - supported OS and Java, sizing, properties, parameters, priority, file cleaner, privileged commands, MIDSystem (documented, Brazil)
 - [[Remote Tables]] - on-demand external data in a table: plugin, u_st_ tables, query and edit scripts, caching, flow definitions, debugging, domain separation (documented, Brazil)
+- [[Multi Provider Document Services Framework]] - OneDrive, SharePoint and Google Drive document sync: mp_ tables, spokes, OAuth app, personal authentication, document actions and subflows (documented, Brazil)

@@ -22,7 +22,7 @@ Shows attachments inside the platform instead of downloading them: Word (`.doc`,
 - Per table: **System Definition > Dictionary**, the table's **Collection** record, attribute **Use Document Viewer** = true (false to turn off for that table).
 - Use: **View** next to the attachment name. Falls back to download for platform- or Edge-encrypted files ([[Edge Encryption Overview]]), files over 50 MB, or password-protected non-PDFs.
 - DOCX → PDF accessibility: `com.snc.document.conversion.accessibility_enabled = true`.
-- Collaboration add-ons: Microsoft OneDrive Spoke, OneDrive document service spoke, Microsoft Azure AD Spoke and the Multi Provider Document Services Framework (edit in OneDrive / SharePoint, bi-directional; actions as subflows in the Document actions table). The page links the Rome plugin list.
+- Collaboration add-ons: Microsoft OneDrive Spoke, OneDrive document service spoke, Microsoft Azure AD Spoke and the [[Multi Provider Document Services Framework]] (edit in OneDrive / SharePoint, bi-directional; actions as subflows in the Document actions table). The page links the Rome plugin list.
 
 ## PDF generation and accessibility
 
