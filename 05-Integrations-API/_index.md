@@ -43,3 +43,5 @@ REST and SOAP APIs, import sets and transform maps, IntegrationHub, MID Server, 
 - [[Scheduled and Concurrent Imports]] - scheduled import form, chained imports, partitions, concurrent jobs and monitoring (Brazil)
 - [[Web Service Import Sets and Direct File Posting]] - SOAP import set tables, sync and async modes, responses, sys_import.do posting (Brazil)
 - [[Import Set Properties Reference]] - loading, CSV and Excel, concurrency, web service, JDBC, logging properties (Brazil)
+- [[Integration Commons for CMDB]] - sn_cmdb_int_util: CMDB Integrations Dashboard, connection framework, deleted-record removal, partition size, ADM adapter, quick start tests (Brazil)
+- [[RTE Operations and Integration Commons Transforms Reference]] - RTE operation types and CMDB cleansing and class-derivation templates (Brazil)
