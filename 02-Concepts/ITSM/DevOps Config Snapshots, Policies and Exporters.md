@@ -34,6 +34,8 @@ Application > **Snapshots** tab: per deployable, a list with **Name** (default `
 
 ## Policies (PaCE)
 
+Engine details (versions, variables, script, invocation API, roles): [[Policy as Code Engine (PaCE)]].
+
 1. **Admin** view > **Policies**: pick a shipped policy or **New** (name, category, description). A policy **version must be published and the policy activated** before it can run. Shipped policies cannot be changed, only copied.
 2. **Map** the policy to deployables (roles `cdm_policy_editor`, `cdm_editor`, `cdm_admin`):
 

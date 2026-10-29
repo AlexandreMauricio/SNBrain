@@ -404,6 +404,8 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Password Reset Verifications and Enrollment]] - identification types, base verifications and parameters, auto and manual enrollment, custom verification types
 - [[Password Reset Windows Application]] - Forgot password link on the Windows login screen: requirements, EXE, MSI and wizard install, proxy, registry, limits
 - [[Password Reset Reference - Properties, Tables and Components]] - roles, properties, tables and purge, UI pages, workflows, notifications, REST API, reports
+- [[HTTP Response Headers]] - sys_response_header records for all or specific pages, order and add-by, frame-ancestors and X-Frame-Options handling (documented, Brazil)
+- [[Policy as Code Engine (PaCE)]] - versioned compliance policies: life cycle, version states, low-code and script, apiVars and configParams, static and dynamic mapping, invocation API, GRC exceptions, sn_pace roles (documented, Brazil)
 
 ## AI (`AI/`)
 
@@ -443,6 +445,7 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Instance Data Replication (IDR) Overview]] - producer and consumer sets, continuous, bidirectional, discrete and scheduled modes, limits, hierarchy, V2 Hermes, comparison, cloning (documented, Brazil)
 - [[Instance Data Replication Reference]] - adapters, excluded tables, system properties, roles, data privacy (documented, Brazil)
 - [[MetricBase]] - time-series database, retention policies, APIs, anomaly models, band, linear predictor, gap and model triggers, health, roles (documented, Brazil)
+- [[RaptorDB Standard and Professional and Live Connect]] - database tiers, column store and HTAP, Live Connect read-only SQL over ODBC and JDBC (documented, Brazil)
 
 ## Instance Administration (`Instance-Administration/`)
 
@@ -528,6 +531,7 @@ Notes in this section come from the Brazil release of the Building applications 
 - [[Performance Analyzer]] - page load times of UX framework pages by application, route and interaction; the other testing and debugging tools named
 - [[ReleaseOps]] - pipelines, releases, deployment requests, analyzer rules, runbook tasks, states, setup, the release documentation AI agent
 - [[Application Repository, Publishing and Administering Apps]] - repository, Store and update set publishing, entitlements, customizations, mode conversion, clones, air-gapped repository, queued CI/CD operations, ISV licensing
+- [[ATF Test Generator and Cloud Runner]] - cloud user, test generation (catalog, forms, flows) with properties, Cloud Runner parallel runs, schedules, BOQ logs (documented, Brazil)
 
 ## Documents (`Documents/`)
 
