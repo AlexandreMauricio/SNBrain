@@ -486,3 +486,7 @@ Notes in this section come from the Brazil release of the Building applications 
 - [[Performance Analyzer]] - page load times of UX framework pages by application, route and interaction; the other testing and debugging tools named
 - [[ReleaseOps]] - pipelines, releases, deployment requests, analyzer rules, runbook tasks, states, setup, the release documentation AI agent
 - [[Application Repository, Publishing and Administering Apps]] - repository, Store and update set publishing, entitlements, customizations, mode conversion, clones, air-gapped repository, queued CI/CD operations, ISV licensing
+
+## Documents (`Documents/`)
+
+- [[Document Management]] - documents, versions, sharing, review and approval, references, lists, workspace, smart card signing, external providers, roles (documented, Brazil)
