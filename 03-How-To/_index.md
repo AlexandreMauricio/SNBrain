@@ -31,6 +31,7 @@ Step-by-step procedures, grouped by topic (the notes themselves stay in one flat
 - [[Create a Major Incident Trigger Rule]] - propose or promote incidents automatically
 - [[Create a Blackout or Maintenance Schedule]] - freeze periods and maintenance windows for conflict detection
 - [[Create an On-Call Escalation Trigger Rule]] - start an on-call escalation subflow from a task
+- [[Close Multiple Incidents from a List]] - Update Selected, or a list UI action with a dialog page and client-callable script include (documented, Brazil)
 
 ## Service Catalog
 

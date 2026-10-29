@@ -2,10 +2,10 @@
 type: reference
 tags: [reference, incident, admin]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Incident Management", topics "Incident Management properties", "Refresh impacted services and CIs for incident", "Email notification redirection" (pp. 2427-2433, 2444-2445, 2484-2485), read 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "Incident Management", topics "Incident Management properties", "Refresh impacted services and CIs for incident", "Email notification redirection" (pp. 2427-2433, 2444-2445, 2484-2485), read 2026-10-02 Re-checked against the Brazil ITSM docs (Incident Communications Management 32 and Incident Management 135 topics, https://www.servicenow.com/docs/r/it-service-management/incident-management/t_CreatingAUIAction.html and siblings), 2026-10-29: Brazil additions marked in the body.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-29
 ---
 
 # Incident properties reference
@@ -19,6 +19,8 @@ updated: 2026-10-02
 | `glide.ui.autoclose.time` | (days) | days after which Resolved incidents are closed; 0 disables |
 | `com.snc.incident.autoclose.basedon.resolved_at` | true on new instances | count the days from **Resolved**; false = from **Updated** |
 | `com.snc.incident.incident_task.closure` | true on new instances | close open incident tasks when the incident is closed or canceled |
+| `com.snc.incident.strike.count` | 3 | **three-strike rule** (Brazil docs): reminders sent to the caller while the incident is On Hold / Awaiting Caller; when all are used up the incident is resolved with code *Resolved - No response from caller*; 0 disables. A caller comment (portal or email reply) ends it |
+| `com.snc.incident.strike.wait_period` | 1 (business days) | interval between two reminders. Brazil notes both strike properties are available only to new (zboot) instances from Brazil |
 | `com.snc.incident.incident_alert.closure` | false | close open communication plans with the incident |
 | `com.snc.iam.incident_alert_task.closure` | false | close communication tasks with their plan |
 | `com.snc.incident.clone_fields_on_reopen` | list | fields copied into the new incident when a closed one is "reopened" by email |
@@ -55,6 +57,7 @@ updated: 2026-10-02
 | `com.snc.incident.populate_business_application` | fill the Business Applications related list |
 | `com.snc.incident.populate_service_offering` | fill the Service Offerings related list |
 | `com.snc.incident.refresh_impacted_services.message.show` | show the "refresh initiated" message |
+| `com.snc.incident.refresh_impacted_notify_user` | true: create the live feed message when the refresh finishes (Brazil) |
 
 ## Major incident (plugin `com.snc.incident.mim`)
 

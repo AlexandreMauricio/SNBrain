@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, incident, notifications]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Incident Communications Management" (pp. 2395-2419), read 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "Incident Communications Management" (pp. 2395-2419), read 2026-10-02 Re-checked against the Brazil ITSM docs (Incident Communications Management 32 and Incident Management 135 topics, https://www.servicenow.com/docs/r/it-service-management/incident-management/t_CreatingAUIAction.html and siblings), 2026-10-29: Brazil additions marked in the body.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-29
 ---
 
 # Incident Communications Management
@@ -59,6 +59,8 @@ The older state model (New, Work in Progress, Resolved, Closed, Canceled) applie
 | `sn_tcm_admin` | Task Communications Management configuration |
 
 Domain separation: Standard.
+
+Brazil role lists name the plan manager role `sn_comm_management.comm_plan_mgr` (as in [[Task Communications Management]]), against `comm_plan_manager` above: unconfirmed variants. Also from Brazil: `sn_comm_management.comm_plan_viewer` contains `sn_publications_recipients_list_user`, `email_client_template_read`, `contact_user`, `sn_publications_recipients_user`; on new (zboot) Brazil instances `sn_dex_desktop.notification_template_admin` (DEX Desktop Assistant notification channel) is granted through `sn_incident_write` when ITSM Roles is installed, otherwise through `itil`.
 
 ## Gotchas
 

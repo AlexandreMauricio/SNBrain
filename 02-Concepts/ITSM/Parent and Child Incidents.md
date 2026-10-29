@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, incident, task]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Incident Management", topics "Copy an incident or create a child incident", "Synchronizing parent and child incidents" (pp. 2476-2479), read 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "Incident Management", topics "Copy an incident or create a child incident", "Synchronizing parent and child incidents" (pp. 2476-2479), read 2026-10-02 Re-checked against the Brazil ITSM docs (Incident Communications Management 32 and Incident Management 135 topics, https://www.servicenow.com/docs/r/it-service-management/incident-management/t_CreatingAUIAction.html and siblings), 2026-10-29: Brazil additions marked in the body.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-29
 ---
 
 # Parent and child incidents
