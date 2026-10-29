@@ -42,3 +42,12 @@ updated: 2026-10-29
 - [[Service Graph Connector for Splunk]] - forwarder hosts, optional ServiceNow add-on in Splunk for extended asset data
 - [[Service Graph Connector for Trellix]] - Trellix devices as servers with disks, file systems, software
 - [[Service Graph Connector for Akamai API Security]] - discovered APIs into API Component for API Insights
+
+## Network and IPAM
+
+- [[Service Graph Connector for Infoblox]] - IPAM: pools, networks, subnets, allocated IPs, DNS aliases; IPAM tasks; soft deletion and cleanup from 1.5.0
+- [[Service Graph Connector for BlueCat]] - IPAM from BlueCat, IPv4/IPv6 switches, network regex filters
+- [[Service Graph Connector for Nautobot]] - servers and IPAM (namespaces, prefixes, IPs) from Nautobot
+- [[Service Graph Connector for NetBrain]] - network devices, switches, ESX server to switch links
+- [[Service Graph Connector for ExtraHop]] - deprecated ServiceNow-hosted connector; traffic-based relationships
+- [[Service Graph Connector for Confluent]] - Confluent organisation, environments, Kafka clusters and topics
