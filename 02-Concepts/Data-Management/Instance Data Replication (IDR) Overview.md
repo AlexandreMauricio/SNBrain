@@ -61,7 +61,7 @@ Jobs: **IDRProducerJob** on the producer detects changes, **IDRConsumerJob** on 
 
 ## Transport and versions
 
-V2 replication sets use the **Hermes** messaging service (Kafka) ([[Log Export Service (LES)]] uses it too); producer messages are kept **24 hours**. **Legacy** sets (pre-Utah Kafka implementation) are **deprecated in Zurich** and must be upgraded: [[Upgrade IDR Replication Sets to V2]]. During an instance upgrade IDR pauses itself and resumes from the last message (`data_replication_queue`); seeding pauses too and new seeding cannot start.
+V2 replication sets use the **Hermes** messaging service ([[Hermes Messaging Service]]) (Kafka) ([[Log Export Service (LES)]] uses it too); producer messages are kept **24 hours**. **Legacy** sets (pre-Utah Kafka implementation) are **deprecated in Zurich** and must be upgraded: [[Upgrade IDR Replication Sets to V2]]. During an instance upgrade IDR pauses itself and resumes from the last message (`data_replication_queue`); seeding pauses too and new seeding cannot start.
 
 Domain separation: **not explicitly supported** (IDR works at data level; filter by domain in the set if needed). Roles: `idr_admin`, `idr_read`, `idr_rest`.
 

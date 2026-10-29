@@ -93,3 +93,4 @@ REST and SOAP APIs, import sets and transform maps, IntegrationHub, MID Server, 
 - [[Remote Tables]] - on-demand external data in a table: plugin, u_st_ tables, query and edit scripts, caching, flow definitions, debugging, domain separation (documented, Brazil)
 - [[Multi Provider Document Services Framework]] - OneDrive, SharePoint and Google Drive document sync: mp_ tables, spokes, OAuth app, personal authentication, document actions and subflows (documented, Brazil)
 - [[Knowledge External Content Integration]] - import WebDAV files into a knowledge base on a schedule (documented, Brazil)
+- [[Hermes Messaging Service]] - ServiceNow-hosted Kafka behind Stream Connect, LES and IDR: ports, certificates, namespaces, topics, inspector, diagnostics, cloning, roles (Brazil)
