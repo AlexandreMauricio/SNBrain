@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, change, task, flows, cmdb]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Change Management" (pp. 544-773), read 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "Change Management" (pp. 544-773), read 2026-10-02 Re-checked against the Brazil ITSM docs (Change Management chapter, 220 topics, https://www.servicenow.com/docs/r/it-service-management/change-management/change-lockdown.html and siblings), 2026-10-29: Brazil additions marked in the body.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-29
 ---
 
 # Change Management overview and lifecycle
@@ -91,6 +91,14 @@ Since Yokohama, base flows in Workflow Studio replace the legacy workflows (*Cha
 | `com.snc.change_request.copy.attributes` | category, cmdb_ci, priority, risk, impact, type, assignment_group, assigned_to, short_description, description, change_plan, backout_plan, test_plan | fields copied |
 | `com.snc.change_request.copy.related_lists` | task_ci, task_cmdb_ci_service, change_task | lists copied (only these three allowed) |
 | `com.snc.change_request.attach.enable_copy` | true | copy attachments |
+| `com.snc.change_request.rl.change_task.attach.enable_copy` | | copy attachments of the originating change's tasks (Brazil; false to stop; attachments appear once the copy is saved) |
+| `com.snc.change_request.copy.rl.change_task.attributes`, `...copy.rl.task_ci.attributes`, `...copy.rl.task_cmdb_ci_service.attributes` | | fields copied per related list (Brazil). Standard changes cannot be copied by default: extend the read-only script include `ChangeUtils` and override `isCopyRulesValid` (server side, global) |
+| `com.snc.change_request.refresh_impacted.include_affected_cis` | | true = all Affected CIs checked against `svc_ci_assoc` (needed with dynamic CI groups); false = only the form's CI, CMDB walk through `CIUtils` (Brazil) |
+| `com.snc.change_request.refresh_impacted.event`, `...refresh_impacted_services.message.show` | | refresh in the background by event (notification when done); show the *Refresh impacted services is initiated* message (Brazil) |
+| `com.snc.change_request.populate_service_offering`, `...populate_business_application` | | fill Service Offerings / Business Applications from Impacted Services (an offering needs a Depends on relationship to an impacted service) (Brazil) |
+| `change.conflict.populateimpactedcis` | | `ChangeCollisionHelper` also checks conflicting CIs against `svc_ci_assoc` and `cmdb_ci_service` for directly impacted services |
+| `chg_ml_prop_risk.model_type`, `.solution_enabled`, `.classification_confidence_threshold`; `chg_ml_prop_sctp.quality` | | **Change > Intelligent Solution Configuration**: risk prediction by *Similarity* (count or confidence of similar records; ties take the higher risk) or *Classification*; minimum cluster quality for standard change proposals (Brazil) |
+| `com.snc.change_management.lockdown.preview.max_changes` | | rows in the lockdown preview ([[Change Lockdown]]) |
 | `com.snc.change_management.enforce_data_requirements` | true | enforce the form's data rules server-side for every update path (flow, REST, script) |
 | `glide.ui.risk_calculate_rule` | ui_action | risk calculation mode |
 | `com.snc.change_request.event.state_updated.enabled` / `.states` | false / empty | raise event `sn_change.state.updated` on state changes |

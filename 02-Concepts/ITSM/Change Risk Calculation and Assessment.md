@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, change, ai]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Change Management", topics "Analyze change request risk and impact" and subtopics, "Success Probability definitions", "Calculated Risk Score", "Change success score", "Predictive Intelligence for Change Management" (pp. 639-646, 742-754), read 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "Change Management", topics "Analyze change request risk and impact" and subtopics, "Success Probability definitions", "Calculated Risk Score", "Change success score", "Predictive Intelligence for Change Management" (pp. 639-646, 742-754), read 2026-10-02 Re-checked against the Brazil ITSM docs (Change Management chapter, 220 topics, https://www.servicenow.com/docs/r/it-service-management/change-management/change-lockdown.html and siblings), 2026-10-29: Brazil additions marked in the body.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-29
 ---
 
 # Change risk calculation and assessment

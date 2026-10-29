@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, change, admin]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Change Management", topics "Change model management", "Change Models properties", "Change templates", "Enhanced change data model", "Create a Change model" and subtopics, "Change template management flows", "Change model attributes" (pp. 545-550, 597-609, 653-654), read 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "Change Management", topics "Change model management", "Change Models properties", "Change templates", "Enhanced change data model", "Create a Change model" and subtopics, "Change template management flows", "Change model attributes" (pp. 545-550, 597-609, 653-654), read 2026-10-02 Re-checked against the Brazil ITSM docs (Change Management chapter, 220 topics, https://www.servicenow.com/docs/r/it-service-management/change-management/change-lockdown.html and siblings), 2026-10-29: Brazil additions marked in the body.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-29
 ---
 
 # Change models and change templates
@@ -34,6 +34,14 @@ updated: 2026-10-02
 | Transition Conditions | **Requires**: *Mandatory Fields*, *Transition Condition* (condition builder or script returning true), or a predefined **condition type** |
 
 State attributes: `allow_ci_modification` (CIs may be edited in that state) and `allow_implementation` (replaces the Implementation states field).
+
+### Brazil additions (Brazil ITSM docs, not in the Australia PDF)
+
+- **Change model attributes** (**Change > Models > Change Model Attributes**): Label, Name (underscores, used by scripts), Description, Application, Table (`change_request` or a child). Assigned per state in the state's **Attributes** list (Edit; clear **Active** to stop applying). An attribute does nothing until scripts check it. Shipped: *Allow CI Modification*, *Allow Implementation*, and further ones used by features: *Allow Conflict Detection* ([[Change Lockdown]]) and *Allow Child Change Creation* ([[Scaled Change (Primary and Child Changes)]]). If no state in a model has *Allow CI Modification*, the old behaviour applies (CI editable only in the initial state).
+- Attribute API (server side, global): `new ChangeRequest(gr).getStateAttributes()`, `.hasStateAttribute(name)`, `.modelContainsAttribute(name)`, `.isInitialState()`, `.getInitialState()`, `new ChangeModel(model).hasStateAttribute(state, name)`. Client side: `g_scratchpad.change_model` on the change form (`containsAttribute`, `hasStateAttribute`, `field`, `initial_state`). Shipped pair client script and business rule *Change model: Read only CI* show the pattern.
+- **State field policies** (related list on each model state): one field per policy, **Mandatory** and / or **Read only**, Application, Active. Enforced on the form and on the server (scripts and APIs too); messages list the missing or locked fields. Read only blocks only fields read only in both the old and the new state; preset values at creation are allowed; a field both mandatory and read only and empty can be filled once. Making a field mandatory adds a managed transition condition *State Field Policy Managed* (type Mandatory Fields) on every transition into that state, kept in sync automatically: do not edit it. Effective rules = policies of the current and target state + Mandatory Fields transition conditions + template field policies. Copied with the model. Base policies come from `com.snc.change_management.change_model.foundation` (e.g. Assignment group, CI, Short description, Description, planned dates, Close code and notes in given states).
+- **ITIL change process** field on the model: Standard, Normal, Emergency or None. `ChangeRequest` API `newNormal()`, `newStandard()`, `newEmergency()` use the active model designated for that process (one per domain; you need write access to the model currently holding it), else the default model.
+- Role `change_model_script_admin` (not elevated, inherited by no role): needed to edit the script field of transition conditions (**Requires** = Transition Script) and of **Change Model Condition Types** (Condition type = Script); others see it read only.
 
 Transitions only fire when something **evaluates the model**: flow action **Evaluate Change Model**, a business rule (example: *Change Registration: Auto State Change*), or event `change_model.evaluate` with the change sys_id as parameter.
 

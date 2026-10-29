@@ -85,6 +85,8 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Working a Digital Product Release]] - products, features, enhancements, planning board, creating releases, running phases, CIs, changes, artifacts, approvals, retarget, hold, close
 - [[Digital Product Release Reference]] - DPR roles, tables, scheduled jobs, properties, notifications, shipped policies and data collectors
 - [[Interaction Management]] - the interaction table and plugin, states, context and channel metadata, wrap up (configuration, codes, AI, timer, fallback job), roles
+- [[Scaled Change (Primary and Child Changes)]] - Major Change plugin: primary change generates one child change per affected CI through a flow; fields, worker records, properties (documented, Brazil)
+- [[Change Lockdown]] - approved freeze periods that put matching changes on hold; states, preview, Inside Change Lockdown conflicts (documented, Brazil)
 
 ## Service Catalog (`Service-Catalog/`)
 

@@ -2,10 +2,10 @@
 type: reference
 tags: [reference, change, admin, workspace, reporting]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Change Management", topics "Change Management plugins" and "Installed with..." (pp. 556-588), "Legacy Add a state to the state model" (pp. 654-658), "Mobile experience for Change Management" (pp. 715-717), "Legacy Change Management Platform Analytics Solutions" (pp. 717-730), "Change Management troubleshooting properties" (pp. 730-731), "Manage the workspace configuration for a Change request in Service Operations Workspace" (pp. 731-735), "Agentic AI in change management" (pp. 735-736), read 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "Change Management", topics "Change Management plugins" and "Installed with..." (pp. 556-588), "Legacy Add a state to the state model" (pp. 654-658), "Mobile experience for Change Management" (pp. 715-717), "Legacy Change Management Platform Analytics Solutions" (pp. 717-730), "Change Management troubleshooting properties" (pp. 730-731), "Manage the workspace configuration for a Change request in Service Operations Workspace" (pp. 731-735), "Agentic AI in change management" (pp. 735-736), read 2026-10-02 Re-checked against the Brazil ITSM docs (Change Management chapter, 220 topics, https://www.servicenow.com/docs/r/it-service-management/change-management/change-lockdown.html and siblings), 2026-10-29: Brazil additions marked in the body.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-29
 ---
 
 # Change Management plugins, tables and workspace configuration
@@ -74,6 +74,14 @@ Change Premium, Change Management, Open Changes Reports, Open Changes State Moni
 ## Agentic workflows for change
 
 Assess conflicts for a change request; Assess quality of a change request (against similar closed changes or policy documents); Explain SLA; Schedule a change; Suggest configuration items; Create outages; Create standard change request; Create standard change template proposal. See [[Otto for ITSM Skills and Agentic Workflows]].
+
+## Brazil additions
+
+- **Compliance dynamic schema** (**Change > Administration > Compliance Dynamic Schema**): regulated organisations record risk and compliance facts per change (personal data handled, audit trail needed...) as dynamic attributes in the namespace `change_request/risk_and_compliance_attributes`, stored as JSON in the field **Risk and compliance attributes**, with a **Risk and compliance category** field. The namespace record has tabs Dynamic Attributes, Dynamic Categories (with Parent), Dynamic Choices (choice sets for String attributes; Order, Value) and Dynamic Choice Overrides. Shipped attributes and categories are examples: deactivate rather than delete (keeps old values readable), add both fields to the change form.
+- **Business Stakeholder** plugin is written `com.snc_business_stakeholder` on one Brazil page and `com.snc.business_stakeholder` elsewhere (unconfirmed variant); needs ITSM Roles `com.snc.itsm.roles` first ([[ITSM Granular Roles]]).
+- **License change projections** (`com.sn_samp_change` with SAM Professional `com.snc.samp`): CPU or core changes proposed in New (Propose Change or Mass Update CI) go to SAM on the first approval state; form section *License change* (current, projected and changed spend, impacted installs) and related list *CI Projection Summary*; processor-licensed software only.
+- **Hardware Asset Management** (`com.sn_hamp`): **Asset action** on Affected CIs with an asset: *Deploy* (event `sn_hamp.asset.deploy`), *Update/Repair* (nothing), *Retire* (event `sn_hamp.asset.retire`, asset to In Stock if not retired).
+- New notes: [[Scaled Change (Primary and Child Changes)]], [[Change Lockdown]].
 
 ## Related
 

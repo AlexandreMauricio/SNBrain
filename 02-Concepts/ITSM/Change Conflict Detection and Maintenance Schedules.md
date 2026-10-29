@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, change, cmdb, sla]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Change Management", topics "Conflict detection" and subtopics, "Configuring maintenance schedules - Best practices" (pp. 625-639, 736-737), read 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "Change Management", topics "Conflict detection" and subtopics, "Configuring maintenance schedules - Best practices" (pp. 625-639, 736-737), read 2026-10-02 Re-checked against the Brazil ITSM docs (Change Management chapter, 220 topics, https://www.servicenow.com/docs/r/it-service-management/change-management/change-lockdown.html and siblings), 2026-10-29: Brazil additions marked in the body.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-29
 ---
 
 # Change conflict detection and maintenance schedules
@@ -71,4 +71,4 @@ Parents and children of the CI are checked through CMDB relationships, so a blac
 
 ## Related
 
-- [[Change Management Overview and Lifecycle]] · [[Create a Blackout or Maintenance Schedule]] · [[Change Schedules Timeline]]
+- [[Change Management Overview and Lifecycle]] · [[Create a Blackout or Maintenance Schedule]] · [[Change Schedules Timeline]] · [[Change Lockdown]] (Brazil: freeze periods that hold changes; conflict type *Inside Change Lockdown*)
