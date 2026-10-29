@@ -51,3 +51,13 @@ updated: 2026-10-29
 - [[Service Graph Connector for NetBrain]] - network devices, switches, ESX server to switch links
 - [[Service Graph Connector for ExtraHop]] - deprecated ServiceNow-hosted connector; traffic-based relationships
 - [[Service Graph Connector for Confluent]] - Confluent organisation, environments, Kafka clusters and topics
+
+## Monitoring and observability
+
+- [[Service Graph Connector for Observability - AppDynamics]] - servers, applications, tiers, calculated services; HTTP request template for events; single instance
+- [[Service Graph Connector for Observability - Datadog]] - hosts, service catalog and relations; webhooks on monitors
+- [[Service Graph Connector for Observability - Dynatrace]] - Dynatrace Managed / legacy SaaS (Classic APIs); problem notifications; Grail option
+- [[Service Graph Connector for Observability - Dynatrace SaaS]] - third-generation Dynatrace SaaS (DQL, platform token); migration cleanup from classic; CI retirement
+- [[Service Graph Connector for Observability - New Relic]] - NerdGraph API; alert destination, channel and workflow
+- [[Service Graph Connector for OpenTelemetry]] - Cloud Observability (Lightstep) topology; inferred services; being deprecated from Australia
+- [[Service Graph Connector for SolarWinds]] - Orion inventory through a MID Server; air gap; SAM and NPM modules
