@@ -32,6 +32,7 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[ServiceNow AI Platform Overview]]: what the platform is; experimentation and feature preview
 - [[Date and Time Fields, Formats and Time Zones]]: UTC storage, formats, time zones, time worked, resolve time
 - [[Update Sets]] - what is captured, states, default set, transfer, preview problems, collisions and coalesce strategies, commit, back out, batches, properties (documented, Brazil)
+- [[Force Records into an Update Set]] - GlideUpdateManager2 UI action and attachment script (unverified team notes)
 
 ## ITSM (`ITSM/`)
 

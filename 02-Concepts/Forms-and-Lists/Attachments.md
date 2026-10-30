@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, forms-lists, security, platform]
 status: documented
-source: ServiceNow Australia Platform Administration PDF, "Form administration", topic "Administering attachments" (pp. 754-760), read 2026-10-01
+source: ServiceNow Australia Platform Administration PDF, "Form administration", topic "Administering attachments" (pp. 754-760), read 2026-10-01 Team notes shared by the user's manager, 2026-10-30, file Attachments.md (unverified, sections marked).
 sn-release: Australia
 verified:
-updated: 2026-10-01
+updated: 2026-10-30
 ---
 
 # Attachments
@@ -47,6 +47,22 @@ For `attachment.read`, `current` is the `sys_attachment` record, `parm1` the fil
 ## Debugging
 
 `glide.ts.index.attachment.debug` (log indexing exceptions; safe to leave on) and `glide.ts.index.attachment.list_terms.debug` (log every indexed term; only while debugging).
+
+## Copy attachments by script (team notes)
+
+Unverified team notes, not tested. Server side, global scope, for example a background script.
+
+```javascript
+var attachment = new GlideSysAttachment();
+var incidentSysID = '<incident_sys_id>';
+var incGR = new GlideRecord('incident');
+incGR.get(incidentSysID);
+
+var copied = attachment.copy('incident', incidentSysID, 'problem', incGR.getValue('problem_id'));
+gs.info('Copied attachments: ' + copied);
+```
+
+`copy(sourceTable, sourceID, targetTable, targetID)` returns the sys_ids of the copied attachments. The notes give the return type as a String described as an array. To move an attachment between instances, see [[Force Records into an Update Set]].
 
 ## Related
 

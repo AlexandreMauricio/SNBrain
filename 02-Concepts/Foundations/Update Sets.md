@@ -125,4 +125,6 @@ Roles named: `admin` throughout; `teamdev_user` may retrieve; `update_set_admin`
 
 ## Related
 
+- [[Force Records into an Update Set]] (unverified team notes)
+
 - [[Move an Update Set between Instances]] · [[ReleaseOps]] · [[Update Versions and the Merge Tool]] · [[Skipped Records in Upgrades]] · [[Instance Clone Overview]] · [[Application Scope and Namespace Identifiers]] · [[Application Development Good Practices - Plan, Build, Validate, Deploy]] · [[Sys ID]]

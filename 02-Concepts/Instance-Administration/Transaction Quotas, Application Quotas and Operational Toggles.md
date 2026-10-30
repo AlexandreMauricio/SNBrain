@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, instance-admin, api, platform]
 status: documented
-source: ServiceNow Australia Platform Administration PDF, "Platform performance", topics "Transaction quotas", "Application quotas", "Operational toggles", "Transaction cancellation", "Platform performance reference" (pp. 2796-2830), read 2026-10-01
+source: ServiceNow Australia Platform Administration PDF, "Platform performance", topics "Transaction quotas", "Application quotas", "Operational toggles", "Transaction cancellation", "Platform performance reference" (pp. 2796-2830), read 2026-10-01 Team notes shared by the user's manager, 2026-10-30, file Transactions.md (unverified, sections marked).
 sn-release: Australia
 verified:
-updated: 2026-10-01
+updated: 2026-10-30
 ---
 
 # Transaction quotas, application quotas and operational toggles
@@ -53,6 +53,10 @@ Long transactions show a timer and a **Cancel** button after `glide.ui.transacti
 ## Operational toggles
 
 **System Run Level** menu: an **operational toggle** names a throttleable behaviour (for example how often type-ahead search polls); **toggle levels** give it values; **run level toggle mappings** pick the level for each system run level, with exception roles. Used to reduce load under stress.
+
+## Cancel your own transaction (team notes)
+
+Unverified team notes, not tested. Open `https://<instance>.service-now.com/cancel_my_transaction.do` in another tab, or save a bookmark with `javascript: top.location.pathname = 'cancel_my_transaction.do'` and click it in the tab of the target instance.
 
 ## Related
 

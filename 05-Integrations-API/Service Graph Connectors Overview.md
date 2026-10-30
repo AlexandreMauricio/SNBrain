@@ -2,11 +2,11 @@
 type: concept
 tags: [concept, integrations, cmdb, roles, domain-separation]
 status: documented
-source: ServiceNow Brazil docs, Platform Capabilities guide > Integrating third-party data into CMDB > Getting started with Service Graph Connectors, Service Graph Connectors (list), Domain separation, Cloud discovery solutions comparison (coverage tables are images, not read), Support Tools application (install, resolving issues) (read 2026-10-29). https://www.servicenow.com/docs/r/servicenow-platform/configuration-management-database-cmdb/cmdb-sgc-intro.html
+source: ServiceNow Brazil docs, Platform Capabilities guide > Integrating third-party data into CMDB > Getting started with Service Graph Connectors, Service Graph Connectors (list), Domain separation, Cloud discovery solutions comparison (coverage tables are images, not read), Support Tools application (install, resolving issues) (read 2026-10-29). https://www.servicenow.com/docs/r/servicenow-platform/configuration-management-database-cmdb/cmdb-sgc-intro.html Team notes shared by the user's manager, 2026-10-30, file Tables.md (unverified, sections marked).
 sn-release: Brazil
 verified:
 verified-by:
-updated: 2026-10-29
+updated: 2026-10-30
 ---
 
 # Service Graph Connectors Overview
@@ -69,6 +69,10 @@ GlideCacheManager.flushTable("sys_db_object");
 - **Service Graph Connector Support Tools** (`sn_sgc_support`, install as `admin` from **System Applications > All Available Applications > All**; brings Integration Commons and Glide Virtual Agent Lite `com.glide.cs.chatbot.lite`). **All > Service Graph Connectors > Troubleshooting** starts a virtual agent chat: **Debug a specific Service Graph Connector** (connection: properties, run the Workflow Studio action, HTTP logs; data: IRE / reconciliation / business rule / mapping customisations, reprocess an import row; performance: execution history; mapping: ETL map review) or **General analysis**.
 - Otto for CMDB *SGC diagnosis* skill ([[Otto for CMDB Skills and Agentic Workflows]]).
 - SGC Central's connection view and the CMDB Workspace performance insights ([[CMDB Workspace Insights and SGC Central]]).
+
+## Flushing a table's cache (team notes)
+
+Unverified team notes, not tested. The same two calls as above work for any table, per the team notes: `GlideTableManager.invalidateTable('<table_name>')`, then `GlideCacheManager.flushTable('<table_name>')`.
 
 ## Related
 

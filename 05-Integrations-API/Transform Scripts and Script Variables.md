@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, import-sets, scripting, javascript]
 status: documented
-source: ServiceNow docs, Brazil, Workflow Data Fabric > Imports > Import sets > Transform maps, topics "Transformation script variables", "Map with explicit transform map scripts", "Map with transformation event scripts", plus "Field map script variables", "Updating records using coalesce", "Add onBefore scripts to the transform map", "Scheduled data import scripting options", https://www.servicenow.com/docs/r/integrate-applications/system-import-sets/r_MapWithTransformationEventScripts.html, read 2026-10-16
+source: ServiceNow docs, Brazil, Workflow Data Fabric > Imports > Import sets > Transform maps, topics "Transformation script variables", "Map with explicit transform map scripts", "Map with transformation event scripts", plus "Field map script variables", "Updating records using coalesce", "Add onBefore scripts to the transform map", "Scheduled data import scripting options", https://www.servicenow.com/docs/r/integrate-applications/system-import-sets/r_MapWithTransformationEventScripts.html, read 2026-10-16 Team notes shared by the user's manager, 2026-10-30, file Transform Maps.md (unverified, sections marked).
 sn-release: Brazil
 verified:
-updated: 2026-10-16
+updated: 2026-10-30
 ---
 
 # Transform scripts and script variables
@@ -88,6 +88,29 @@ On the scheduled import: `cancel = true` (pre-script) stops it; `import_set` (`n
 ## Performance
 
 Each GlideRecord query in a transform script runs once per row: prefer built-in features (coalesce options, choice actions) and keep scripts light ([[Import Set Performance and Errors]]).
+
+## Order of execution (team notes)
+
+Unverified team notes, not tested. The docs pages above give the timing of each event; this adds where coalesce fits.
+
+1. onStart.
+2. Find the target record by evaluating coalesce field maps and scripts. This comes before every other per-row script, so a coalesce script must not depend on variables set in onBefore.
+3. onBefore.
+4. All field mappings.
+5. The map's main script, visible when **Run Script** is ticked.
+6. onAfter.
+7. Repeat steps 2 to 6 for each row.
+8. onComplete.
+
+**Unconfirmed variants:**
+
+| Item | Docs pages above | Team notes |
+|---|---|---|
+| `ignore` | onBefore skips this row; onStart stops the transform | stops the transformation and ignores all following rows |
+| `status_message` | returned in the SOAP or REST response | output message sent in the XML response |
+| `name`, `value` | onForeignInsert and onChoiceCreate | the field being processed, and its display value on the source record |
+
+Test `ignore` in onBefore before relying on either wording.
 
 ## Related
 

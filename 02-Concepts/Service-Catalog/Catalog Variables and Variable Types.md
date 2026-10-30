@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, service-catalog, fields]
 status: documented
-source: ServiceNow docs, Brazil, Platform Capabilities > Service Catalog > Reference, topics "Service catalog variables", "Types of service catalog variables" (and one page per type), "Variable support in various channels", "Create a service catalog variable", "Define help information", "Service Catalog variable attributes", "Define a question choice for a variable", "Audit service catalog variables", "Prefilling variable values on the catalog item form", "Configure a default width", "Define a regular expression for a variable", "Pass variables between tasks", "Using variables for price setup", https://www.servicenow.com/docs/r/servicenow-platform/service-catalog/c_ServiceCatalogVariables.html, read 2026-10-16
+source: ServiceNow docs, Brazil, Platform Capabilities > Service Catalog > Reference, topics "Service catalog variables", "Types of service catalog variables" (and one page per type), "Variable support in various channels", "Create a service catalog variable", "Define help information", "Service Catalog variable attributes", "Define a question choice for a variable", "Audit service catalog variables", "Prefilling variable values on the catalog item form", "Configure a default width", "Define a regular expression for a variable", "Pass variables between tasks", "Using variables for price setup", https://www.servicenow.com/docs/r/servicenow-platform/service-catalog/c_ServiceCatalogVariables.html, read 2026-10-16 Team notes shared by the user's manager, 2026-10-30, file Catalog Items.md and UI Macros.md (unverified, sections marked).
 sn-release: Brazil
 verified:
-updated: 2026-10-16
+updated: 2026-10-30
 ---
 
 # Catalog variables and variable types
@@ -81,6 +81,14 @@ Check box (**Price if checked**, **Recurring price if checked**, pricing models 
 ## Prefill from the URL or a component
 
 `/sp?id=sc_cat_item&sys_id=<item>&sysparm_variable_values={"<name>":"<value>"}` (reference values as sys_ids). Next Experience: property **variableValues** on the catalog item component in UI Builder; Virtual Agent inline items: same property as a JSON string. Prefilled values behave like typed ones (UI policies and client scripts react). Not for Custom, labels, containers or MRVS. Turn off with `glide.sc.enable_url_prefill` = false or the widget option **Disable URL prefill**.
+
+## Variable tables and macros (team notes)
+
+Unverified team notes, not tested.
+
+- **Variables shown on a catalog task:** table `sc_item_variables_task`. The notes say the variable must also be linked to the catalog item, even when it belongs to a multi-row set.
+- Storage in the notes agrees with the section above: `sc_item_option`, `sc_item_option_mtom`, `sc_multi_row_question_answer` for requested items; `question_answer`, `sc_multi_row_question_answer` for record producers.
+- **Macro variables on record producers:** `${jvar_question_id}` (sys_id), `${jvar_question_name}`, `${jvar_question_value}`, `${jvar_question_label}`. See [[UI Scripts, UI Pages, UI Macros and Jelly]].
 
 ## Related
 

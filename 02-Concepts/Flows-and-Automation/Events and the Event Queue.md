@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, automation, notifications, scripting, business-rule]
 status: documented
-source: ServiceNow Australia Platform Administration PDF, "System Events" (pp. 2724-2741), read 2026-10-01. Compared on 2026-10-08 with the docs site chapter Build workflows > System Events (same topics; it added the change events sample scripts and the URI log field). https://www.servicenow.com/docs/r/australia/build-workflows/system-events/system-events-landing.html; custom queue job copy from ServiceNow docs, Brazil, API implementation and reference > Scripting > Example scripts > "Server-side script use cases", https://www.servicenow.com/docs/r/api-reference/scripts/useful-server-side-scripts.html, read 2026-10-16
+source: ServiceNow Australia Platform Administration PDF, "System Events" (pp. 2724-2741), read 2026-10-01. Compared on 2026-10-08 with the docs site chapter Build workflows > System Events (same topics; it added the change events sample scripts and the URI log field). https://www.servicenow.com/docs/r/australia/build-workflows/system-events/system-events-landing.html; custom queue job copy from ServiceNow docs, Brazil, API implementation and reference > Scripting > Example scripts > "Server-side script use cases", https://www.servicenow.com/docs/r/api-reference/scripts/useful-server-side-scripts.html, read 2026-10-16 Team notes shared by the user's manager, 2026-10-30, file Events.md (unverified, sections marked).
 sn-release: Australia
 verified:
-updated: 2026-10-16
+updated: 2026-10-30
 ---
 
 # Events and the event queue
@@ -69,6 +69,14 @@ The shipped *change events* rule (after insert / update on change request) shows
 - **System Logs > Events** shows Created, Name, URI (the HTTP query that produced the event), Parm1, Parm2, Table, Processed, Processing time (ms), Queue.
 - **Reprocess Event** (related link on an event) puts it back in the queue: good for testing a notification.
 - During a platform upgrade only some events are processed: `glide.event_processor.all_events_upgrade_safe` (false) and `glide.event_processor.upgrade_safe_events` (list).
+
+## Scheduled events and logging tips (team notes)
+
+Unverified team notes, not tested.
+
+- `gs.eventQueueScheduled()` takes the same first four arguments as `gs.eventQueue()`. Its fifth is a `GlideDateTime` or a date/time element saying when to process the event, default now. In `gs.eventQueue()` the fifth is the queue name.
+- parm1 and parm2 show resolved in the event log, so a record number there helps troubleshooting.
+- With no other need, use `gs.getUserName()` and `gs.getUserID()` as the parms to see who triggered the event.
 
 ## Related
 

@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, forms-lists, admin, roles, release-specific]
 status: documented
-source: ServiceNow Australia Platform Administration PDF, "Form administration" (pp. 734-753), read 2026-10-01
+source: ServiceNow Australia Platform Administration PDF, "Form administration" (pp. 734-753), read 2026-10-01 Team notes shared by the user's manager, 2026-10-30, file Views.md (unverified, sections marked).
 sn-release: Australia
 verified:
-updated: 2026-10-01
+updated: 2026-10-30
 ---
 
 # Form layout, sections and views
@@ -48,6 +48,12 @@ Role: `personalize_form` (sections: `form_admin`; form splits: admin).
 
 - **Never put the same editable field in two sections of a form**: it can cause data loss and break UI and data policies. Read-only duplicates are fine.
 - In Core UI, the order of Additional comments and Work notes is set by the activity filter's **Configure available fields**, not by Form Layout.
+
+## View tables (team notes)
+
+Unverified team notes, not tested. Form views are stored in `sys_ui_view`, and forms, sections and lists reference a row there when they belong to a view. **View Rules** force a view on a form.
+
+**Unconfirmed variants for the View Rule table:** `sysrule` in the team notes; `sysrule_view` in [[Metadata File Types and Primary Tables]].
 
 ## Related
 

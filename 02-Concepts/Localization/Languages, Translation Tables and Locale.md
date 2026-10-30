@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, platform, admin, choice-list, fields]
 status: documented
-source: ServiceNow Australia Platform Administration PDF, "System Localization" (pp. 2317-2364), read 2026-10-01
+source: ServiceNow Australia Platform Administration PDF, "System Localization" (pp. 2317-2364), read 2026-10-01 Team notes shared by the user's manager, 2026-10-30, file Dictionary.md (unverified, sections marked).
 sn-release: Australia
 verified:
-updated: 2026-10-01
+updated: 2026-10-30
 ---
 
 # Languages, translation tables and locale
@@ -72,6 +72,17 @@ Plus `sys_language` (Languages: **Name**, **ID** as BCP 47 code, **Text directio
 ## Other properties
 
 `glide_i18n.date.default_to_locale` (format dates by user locale), `glide_i18n.ip_geolocation` (guess guest language), `glide_i18n.language_fallback_enabled`, `glide.ts.stemming_language`.
+
+## Reading a translated field by script (team notes)
+
+Unverified team notes, not tested. Server side. `getDisplayValue('<field>')` returns the text in the session language, if a matching Translated Text (`sys_translated_text`) row exists, otherwise English. The notes' snippet opened the record as `record` and then read `gr`; the version here uses one name.
+
+```javascript
+var record = new GlideRecord('<table name>');
+if (record.get('sys_id', '<sys id>')) {
+    var translatedText = record.getDisplayValue('<field name>');
+}
+```
 
 ## Related
 

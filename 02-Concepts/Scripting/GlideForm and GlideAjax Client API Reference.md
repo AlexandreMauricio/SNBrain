@@ -2,7 +2,7 @@
 type: reference
 tags: [reference, scripting, glide-api, javascript, client-script, forms-lists]
 status: documented
-source: ServiceNow Brazil docs, API reference > Client API reference > GlideForm (g_form) - Client and GlideAjax - Client (method lists and notes), read 2026-10-30. Next Experience GlideForm, parameter tables and examples not read. https://www.servicenow.com/docs/r/api-reference/client-api-reference/
+source: ServiceNow Brazil docs, API reference > Client API reference > GlideForm (g_form) - Client and GlideAjax - Client (method lists and notes), read 2026-10-30. Next Experience GlideForm, parameter tables and examples not read. https://www.servicenow.com/docs/r/api-reference/client-api-reference/ Team notes shared by the user's manager, 2026-10-30, file Client Scripts.md and Portal development.md (unverified, sections marked).
 sn-release: Brazil
 verified:
 verified-by:
@@ -43,6 +43,29 @@ From the Brazil docs; not tested. A separate *GlideForm (Next Experience)* page 
 3. `getXML(callback)` or `getXMLAnswer(callback)`.
 
 `getXMLWait()` blocks the browser and is **not available to scoped applications**; avoid it. `getAnswer()` reads the result. See [[Script Includes and GlideAjax]].
+
+## Date comparison and portal console (team notes)
+
+Unverified team notes, not tested. Both run in the browser.
+
+**Compare two dates in a client script.** `getDateFromFormat` turns a date string into a Unix timestamp. Globals `g_user_date_format` and `g_user_date_time_format` hold the user's formats. The notes' snippet passed two undefined names; the version here uses the values read from the form.
+
+```javascript
+var format = g_user_date_format;
+var startDateTimeStamp = getDateFromFormat(g_form.getValue('start_date'), format);
+var endDateTimeStamp = getDateFromFormat(g_form.getValue('end_date'), format);
+
+if (startDateTimeStamp > endDateTimeStamp) {
+    // handle the invalid range
+}
+```
+
+**Reach `g_form` from the browser console on a Service Portal catalog form,** for debugging only:
+
+```javascript
+var variablesWidget = document.querySelector('sp-variable-layout');
+var g_form = angular.element(variablesWidget).scope().getGlideForm();
+```
 
 ## Example
 

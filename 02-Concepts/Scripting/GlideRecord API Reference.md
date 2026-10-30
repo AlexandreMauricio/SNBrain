@@ -2,7 +2,7 @@
 type: reference
 tags: [reference, scripting, glide-api, javascript, encoded-query]
 status: documented
-source: ServiceNow Brazil docs, API reference > Server API reference > GlideRecord - Global and GlideRecord - Scoped (method lists and their notes), read 2026-10-30. Parameter tables and per-method examples not copied. https://www.servicenow.com/docs/r/api-reference/server-api-reference/c_GlideRecordAPI.html
+source: ServiceNow Brazil docs, API reference > Server API reference > GlideRecord - Global and GlideRecord - Scoped (method lists and their notes), read 2026-10-30. Parameter tables and per-method examples not copied. https://www.servicenow.com/docs/r/api-reference/server-api-reference/c_GlideRecordAPI.html Team notes shared by the user's manager, 2026-10-30, file GlideRecord.md (unverified, sections marked).
 sn-release: Brazil
 verified:
 verified-by:
@@ -47,6 +47,31 @@ By comparing the two pages' method lists; a missing method may just be undocumen
 
 - **Not on the scoped page:** `addDomainQuery`, `addExtraField`, `addInactiveQuery`, `addJoinQuery`, `addValue`, `applyEncodedQuery`, `applyTemplate`, `autoSysFields`, `changes`, `find`, `getFields`, `getLocation`, `getPlural`, `getRelatedLists`, `getRelatedTables`, `getRowNumber`, `hasAttachments`, `insertWithReferences`, `instanceOf`, `queryNoDomain`, `saveLocation`, `restoreLocation`, `setDisplayValue`, `setForceUpdate`, `setLocation`, `setNewGuid`, `setQueryReferences`, `setUseEngines`, and the dynamic attribute methods.
 - **Only on the scoped page:** `getElements`, `getLastErrorMessage`, `isActionAborted`, `isEncodedQueryValid`, `isValidEncodedQuery`, `isView`, `setNewGuidValue`.
+
+## Query tips (team notes)
+
+Unverified team notes, not tested. Server side. `GlideFilter` and the `ref_` syntax appear in no official page read so far.
+
+**Field of a child table from a parent query:** `ref_<child table>.<field>`.
+
+```javascript
+var taskGR = new GlideRecord('task');
+taskGR.addQuery('ref_incident.<incident field>', '<value>');
+```
+
+**Does a record match an encoded query?**
+
+```javascript
+GlideFilter.checkRecord(incidentGR, 'active=true');
+```
+
+**Exactly one result:** avoid `getRowCount()`, which the notes call unoptimised on large results, and which agrees with the rule above.
+
+```javascript
+if (gr.next() && !gr.hasNext()) {
+    // exactly one record
+}
+```
 
 ## Example
 

@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, workflow, automation, scripting, roles, domain-separation, javascript]
 status: documented
-source: ServiceNow docs, Australia, Build workflows > Classic Workflow (read 2026-10-08 through the docs site): Classic Workflow, Getting started with workflows, Workflow editor (palette, title bar, keyboard navigation, welcome page and canvas keyboard commands), Workflow management, Create a workflow (properties, from a table, for a catalog item, for an SLA definition, ending workflows with multiple branches), Work on workflows, Workflows used as subflows (pass a variable, prepare a subflow), Using variables in a workflow, Workflow catalog variables, Workflow concepts (versions, scope, domain separation, data separation, engine operation order, tables), Workflow roles. https://www.servicenow.com/docs/r/australia/build-workflows/legacy-workflow/c_WorkflowOverview.html Re-checked against Brazil docs (Platform Capabilities guide > Additional capabilities > Classic Workflow, same 150 topics), 2026-10-29: no structural changes found; differences noted in the body.
+source: ServiceNow docs, Australia, Build workflows > Classic Workflow (read 2026-10-08 through the docs site): Classic Workflow, Getting started with workflows, Workflow editor (palette, title bar, keyboard navigation, welcome page and canvas keyboard commands), Workflow management, Create a workflow (properties, from a table, for a catalog item, for an SLA definition, ending workflows with multiple branches), Work on workflows, Workflows used as subflows (pass a variable, prepare a subflow), Using variables in a workflow, Workflow catalog variables, Workflow concepts (versions, scope, domain separation, data separation, engine operation order, tables), Workflow roles. https://www.servicenow.com/docs/r/australia/build-workflows/legacy-workflow/c_WorkflowOverview.html Re-checked against Brazil docs (Platform Capabilities guide > Additional capabilities > Classic Workflow, same 150 topics), 2026-10-29: no structural changes found; differences noted in the body. Team notes shared by the user's manager, 2026-10-30, file Workflows.md (unverified, sections marked).
 sn-release: Australia, Brazil
 verified:
-updated: 2026-10-29
+updated: 2026-10-30
 ---
 
 # Classic Workflow Overview
@@ -126,6 +126,19 @@ The workflow engine runs **default** workflows among the *before* engines and **
 | `wf_workflow_schedule` | scheduled workflows |
 | `wf_stage`, `stage_set`, `stage_set_entry`, `stage_set_table` | stages |
 | `wf_estimated_runtime_config`, `wf_workflow_timing` | run time metrics |
+
+## Transaction behaviour (team notes)
+
+Unverified team notes, not tested. The text looks taken from a ServiceNow support article, whose address and diagrams were not captured. Summary:
+
+- **One event, one Glide transaction.** Insert, update, delete and cancel each start a transaction, whether from a UI action or a script.
+- **Default workflow:** runs before the data is stored, inside the same database event, so changes to `current` are saved with it.
+- **Deferred workflow:** runs after the data is stored, so the engine forces a second update. That update is an independent nested transaction, and it finishes before the original event's after business rules with order 1000 or higher.
+- Both cases mean `current.update()` is never needed in a workflow activity script. Each call creates an extra nested update and costs performance. This agrees with the Variables section above.
+- Most processes suit a default workflow. A deferred one needs care over the timing of the two updates.
+- Without a deferred workflow, nothing updates `current` by default in post-processing, which suits reacting to a change rather than changing the data further.
+
+**Unconfirmed variant:** the deferred setting is *Run after bus. rules run* in the docs and **Run After Business Rules** in the team notes. Check the label on the form.
 
 ## Related
 
