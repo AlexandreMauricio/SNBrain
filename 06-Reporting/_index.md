@@ -31,3 +31,7 @@ Reports, dashboards, Performance Analytics, database views.
 - [[Performance Analytics Data Collection]] - jobs, historical runs, optimized collector, limits, retention, display properties
 - [[Data Snapshots and Multiple Breakdowns]] - more than two breakdown levels, requirements, activation
 - [[Core UI Reporting]] - legacy reports: types, access layers, report_view and report_on ACLs, Brazil unpublishing, roles, properties
+- [[Usage Insights]] - tracks use of web and mobile apps: analysis, consent policies, custom events, bulk export, roles, properties
+- [[Process Mining]] - maps processes from the audit log: terms, access, projects, limits, roles, promin tables and properties
+- [[Task Mining]] - desktop agent activity analysis: workflow, data and privacy, agent, config records, roles
+- [[Executive Dashboards and Automation Discovery]] - C-suite dashboards and their roles; deprecated Automation Discovery
