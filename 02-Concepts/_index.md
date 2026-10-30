@@ -87,6 +87,7 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Interaction Management]] - the interaction table and plugin, states, context and channel metadata, wrap up (configuration, codes, AI, timer, fallback job), roles
 - [[Scaled Change (Primary and Child Changes)]] - Major Change plugin: primary change generates one child change per affected CI through a flow; fields, worker records, properties (documented, Brazil)
 - [[Change Lockdown]] - approved freeze periods that put matching changes on hold; states, preview, Inside Change Lockdown conflicts (documented, Brazil)
+- [[Advanced Work Assignment and Live Agent Tools]] - AWA routing, roles, tables, Agent Chat, Sidebar, Proactive Triggers
 
 ## Service Catalog (`Service-Catalog/`)
 
@@ -448,6 +449,7 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[AI Data Explorer]] - explorations, setup, record-level analysis warning, table or indicator choice, troubleshooting
 - [[Query Generation and the Semantic Layer]] - entities, dimensions, segments, protected scopes, tuning, jobs, logs, properties
 - [[Otto for Platform Analytics Skills]] - visualization generation, export and dashboard summary skills with their limits
+- [[Virtual Agent Overview and Assistant Designer]] - LLM and NLU topics, assistants, chat experiences, building topics, roles, tables
 
 ## Data Management (`Data-Management/`)
 
