@@ -35,3 +35,4 @@ Reports, dashboards, Performance Analytics, database views.
 - [[Process Mining]] - maps processes from the audit log: terms, access, projects, limits, roles, promin tables and properties
 - [[Task Mining]] - desktop agent activity analysis: workflow, data and privacy, agent, config records, roles
 - [[Executive Dashboards and Automation Discovery]] - C-suite dashboards and their roles; deprecated Automation Discovery
+- [[Core UI Dashboards, Filters and Widgets]] - legacy responsive dashboards, interactive filters, PA widgets, Analytics Hub, Interactive Analysis, solutions
