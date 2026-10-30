@@ -490,6 +490,7 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Zing Text Search and Global Search]]: keyword search syntax, text indexes, stop words, relevance, global search setup
 - [[AI Search Overview]]: indexed sources, search profiles, query language, security, external content
 - [[Contextual Search]]: related search results on forms and record producers
+- [[AI Search Indexing, Relevancy and Result Differences]] - why tools answer differently, roles, retention, guardrails, semantic configuration, Genius Results
 
 ## Localization (`Localization/`)
 
