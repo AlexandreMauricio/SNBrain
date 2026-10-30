@@ -291,6 +291,9 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Classic Orchestration Overview and Activity Packs]] - legacy Orchestration: plugins, probes through the MID Server, activity packs (AD, Azure AD, Exchange, F5, Infoblox, PowerShell, SCCM, SFTP, SSH), deprecated activities, PowerShell properties, usage dashboard
 - [[Orchestration Activity Designer and Databus]] - custom activity stages, templates (JDBC, SOAP, REST, PowerShell, SSH, SFTP, probe, JMS), publish and checkout, scoping, databus
 - [[Orchestration ROI and Client Software Distribution]] - ROI rate cards, automation entries, correlated tasks; CSD with SCCM, leases, properties, tables, extension framework
+- [[Automation Center]] - automation requests, goals, health and value across vendors
+- [[Data Stream Actions]] - large or paged API responses parsed into a stream for a flow
+- [[RPA Hub]] - software robots, Design Studio, roles, tables, properties, Otto for RPA Hub
 
 ## Notifications and Email (`Notifications-and-Email/`)
 

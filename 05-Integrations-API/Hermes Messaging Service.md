@@ -77,4 +77,4 @@ A Kafka admin creates namespace *Example Fulfilment* with prefix `examplefulfilm
 
 ## Related
 
-- [[Set Up Log Export Service]] · [[Flow Trigger Types Reference]] (Kafka trigger) · [[Digital End-User Experience Overview and Architecture]]
+- [[Stream Connect for Apache Kafka]] · [[Set Up Log Export Service]] · [[Flow Trigger Types Reference]] (Kafka trigger) · [[Digital End-User Experience Overview and Architecture]]
