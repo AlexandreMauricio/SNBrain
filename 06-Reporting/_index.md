@@ -19,3 +19,7 @@ Reports, dashboards, Performance Analytics, database views.
 - [[ITSM Platform Analytics Dashboards and KPIs]] - shipped ITSM dashboards and how each indicator is defined
 - [[DevOps Insights Dashboards]] - data collection jobs, report definitions per tab, Insights properties, product roll-up
 - [[Knowledge Management Dashboards]] - KM Platform Analytics dashboard indicators, KM Overview reports, Demand Insights dashboards and Pareto chart (Brazil)
+- [[Platform Analytics Experience Overview]] - the unified analytics interface: overview page, library, KPI tools, role variants
+- [[Migrating Core UI Reporting to Platform Analytics]] - Migration Center, partial migrations, compatibility mode, table mapping, properties, rollback
+- [[Platform Analytics Dashboards]] - inline and technical dashboards, elements, sharing, cache, export, update sets, tables
+- [[Proactive Analytics Insights on Dashboards]] - insight card types, jobs, properties, tables
