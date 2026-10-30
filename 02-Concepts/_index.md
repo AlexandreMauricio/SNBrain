@@ -364,6 +364,7 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Service Portal Widgets]] - widget parts and where they run, APIs, Angular Providers, troubleshooting
 - [[Next Experience UI and Unified Navigation]] - navigation, scope pickers, activation, landing pages, themes
 - [[Adoption Services, Boards and Legacy UI Tools]] - guided help, Visual Task Boards, Timeline, Content Management System
+- [[Mobile Platform Overview]] - Now Mobile and Mobile Agent, app configs, old and new terms, tables, mobile_admin
 
 ## Security (`Security/`)
 
