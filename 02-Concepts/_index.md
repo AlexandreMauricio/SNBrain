@@ -453,6 +453,8 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Query Generation and the Semantic Layer]] - entities, dimensions, segments, protected scopes, tuning, jobs, logs, properties
 - [[Otto for Platform Analytics Skills]] - visualization generation, export and dashboard summary skills with their limits
 - [[Virtual Agent Overview and Assistant Designer]] - LLM and NLU topics, assistants, chat experiences, building topics, roles, tables
+- [[AI Platform Map, Roles and Product Tiers]] - which tool does what, admin roles, Foundation, Advanced and Prime, LLMs
+- [[AI Agent Studio, Agentic Workflows and AI Control Tower]] - building and testing agents, external agents, AI governance areas
 
 ## Data Management (`Data-Management/`)
 
