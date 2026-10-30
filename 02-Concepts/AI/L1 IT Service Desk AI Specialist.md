@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, ai, incident, automation, workspace]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "L1 IT Service Desk AI Specialist" (pp. 2862-2883), read in full 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "L1 IT Service Desk AI Specialist" (pp. 2862-2883), read in full 2026-10-02 Re-checked against the Brazil ITSM docs (ITSM Mobile Agent 76, Success Dashboard 38, Virtual Agent 32, Virtual Agent Lite 3, L1 AI Specialist 33, ML solutions 6, On-Call Scheduling 80 topics, https://www.servicenow.com/docs/r/it-service-management/on-call-scheduling/config-oncall-communication-channel.html and siblings), 2026-10-30: Brazil additions marked in the body.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-30
 ---
 
 # L1 IT Service Desk AI Specialist
@@ -54,6 +54,11 @@ If the requester does not answer after the configured number of contacts (defaul
 **Test**: pick a recommended open incident and **Run**. Tests are not simulations: the record is really changed.
 
 Deactivate: card menu > **Deactivate**, or remove your assignment group.
+
+## Device remedial actions and employee consent (Brazil)
+
+- Give a DEX remedial action to the specialist: **Remedial Actions Framework > Administration > Remedial actions** > the action > **Remedial Action Roles** tab > add `sn_dex.ai_user` (`sn_reacf.sn_remedial_action_admin`); a Proactive Engagement resolution must be linked to it ([[DEX Monitoring Configuration, Alert Rules and Remedial Actions]]).
+- `sn_itsm_aia.consent_bypass_actions`: sys_ids of actions that need no employee consent. Others ask in the incident activity stream; the incident goes On Hold / Awaiting Caller until the reply or the timeout `sn_itsm_aia.engagement_timeout_minutes` (default 1440, one day). Each exchange creates an engagement record.
 
 ## Monitoring
 

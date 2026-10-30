@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, ai, incident, request, portal, notifications, integrations]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "ITSM Virtual Agent" (pp. 2763-2853), "ITSM Virtual Agent Lite" (pp. 2853-2855), "ITSM Employee Slate for Moveworks" (pp. 2855-2862), read in full 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "ITSM Virtual Agent" (pp. 2763-2853), "ITSM Virtual Agent Lite" (pp. 2853-2855), "ITSM Employee Slate for Moveworks" (pp. 2855-2862), read in full 2026-10-02 Re-checked against the Brazil ITSM docs (ITSM Mobile Agent 76, Success Dashboard 38, Virtual Agent 32, Virtual Agent Lite 3, L1 AI Specialist 33, ML solutions 6, On-Call Scheduling 80 topics, https://www.servicenow.com/docs/r/it-service-management/on-call-scheduling/config-oncall-communication-channel.html and siblings), 2026-10-30: Brazil additions marked in the body.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-30
 ---
 
 # ITSM Virtual Agent: topics and setup
@@ -97,8 +97,13 @@ Topics end in a deflection pattern; metrics are stored in `ssa_deflection_metric
 
 These feed the Virtual Agent KPIs in [[Benchmarks]].
 
+## Script variables named in Brazil
+
+*Manage Meetings EXO v1.0* replaces the deprecated *Manage Meetings EXO*; `default_collaboration_software` plus the matching spoke (`sn_msteams_com_spk`, or Zoom) adds a meeting link. Virtual machine CAI topics (role `sn_managevm_va.cai_vm_user`): `max_records` (default 100, records per Azure REST call), `carousel_entries_threshold` (above it a reference choice list replaces the carousel).
+
 ## Lite and Employee Slate
 
+- **Brazil:** ITSM Virtual Agent Lite is labelled *(Legacy)* and is being prepared for future deprecation starting with Brazil (hidden and not installed on new instances).
 - **ITSM Virtual Agent Lite** (`com.snc.itsm.virtualagent.lite`, with `com.glideapp.sm_va_core`; no subscription; keyword-based): category *ITSM Self Service Lite* with *Check Ticket Status* and *Report an Issue* (record producer).
 - **ITSM Employee Slate for Moveworks**: *Service Health Broadcast* widget (the three most recently updated outages, degradations or maintenance at the highest business criticality tier; statuses Outage, Degraded, Under maintenance, Operational; **View details** for all services; **Ask Otto** summarises, needs the Moveworks *Outage Lookup* plugin) and *Tech lounge* (walk-up check-in with live queue position and wait time, or book an in-person or remote appointment; needs the *IT Walk-up Visits* plugin and Walk-up Experience).
 

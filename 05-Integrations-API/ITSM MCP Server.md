@@ -2,10 +2,10 @@
 type: reference
 tags: [reference, ai, integrations, api, incident, change]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "ITSM MCP Server" (pp. 2588-2605), read in full 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "ITSM MCP Server" (pp. 2588-2605), read in full 2026-10-02 Re-checked against the Brazil ITSM docs (ITSM MCP Server, 8 topics, https://www.servicenow.com/docs/r/it-service-management/itsm-mcp-server-tools-reference.html), 2026-10-29: requester tool variants added.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-29
 ---
 
 # ITSM MCP Server
@@ -61,6 +61,10 @@ Custom change fields are exposed by overriding `getCustomFields` in script inclu
 | `requester.check_status` | incident or RITM by number or description ("my VPN ticket") |
 | `requester.escalate` | raises **Urgency** one level with a mandatory reason; refused if already High, if Resolved / Closed / Canceled, or if escalated in the last 24 hours |
 | `requester.add_comment` | customer-visible comment; not on closed or canceled tickets; no work notes |
+
+**Brazil version of the requester tools (unconfirmed variants):** the Brazil tools reference has no `requester.escalate` or `requester.add_comment`. Instead `incident.modify` and `incident.get_details` are **role-aware**: fulfillers (`itil`, `sn_incident_read` / `sn_incident_write`) get the full record and any field; a requester on an incident they own gets a reduced, customer-safe field set with comments-only activity and may only add a customer-visible comment, escalate (inputs `escalate` and `escalation_reason`, sent as a standalone operation; refused when Resolved, Closed or Canceled or urgency already High) or mark an active incident **Resolved**; other field updates return 403, others' incidents 404. Comments on requested items go through `request.modify` (customer-visible, own RITMs, not closed or canceled). `requester.check_status` returns incident fields (number, descriptions, priority, urgency, impact, state, created by and on) or RITM fields (number, approval, state, stage, estimated delivery, whether you are Requested for). Base role for all tools: `sn_mcp_server.viewer`; `change.query` is listed with `sn_change_read`.
+
+**Create incident as an MCP tool** (Brazil): `requester.create_incident` uses the *Create incident* AI agent. Make an AI agent usable as an MCP tool: server Auth scope `a2aauthscope`; **AI Agent Studio > Settings > Discoverability**: enable communication modes, mode **Synchronous**; on the agent's **Define the specialty** screen turn on **Allow third party access to this AI agent** (for a shipped agent, duplicate it and update the agent sys_id in the tool record).
 
 ### On-call (inactive by default)
 

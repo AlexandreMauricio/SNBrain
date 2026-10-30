@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, reporting, incident, request, knowledge, ai]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "ITSM Success Dashboard indicators" (pp. 2728-2763), read in full 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "ITSM Success Dashboard indicators" (pp. 2728-2763), read in full 2026-10-02 Re-checked against the Brazil ITSM docs (ITSM Mobile Agent 76, Success Dashboard 38, Virtual Agent 32, Virtual Agent Lite 3, L1 AI Specialist 33, ML solutions 6, On-Call Scheduling 80 topics, https://www.servicenow.com/docs/r/it-service-management/on-call-scheduling/config-oncall-communication-channel.html and siblings), 2026-10-30: Brazil additions marked in the body.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-30
 ---
 
 # ITSM Success Dashboard
@@ -65,6 +65,10 @@ Scorecards aggregate daily values monthly, quarterly or yearly (counts are summe
 - **Primary indicators** (`sn_sd_primary_indicator_registry`, PA links in `sn_sd_primary_indicator`) are prescribed: do not modify them. *Manual* ones are formulas over other primaries; *automatic* ones are the sum of their registered contributing indicators.
 - **Contributing indicators** (`sn_sd_contributing_indicator_registry`): create a daily-count PA indicator with its collection job, then register it (**Name**, **Contributing Indicator**, **Primary KPI**, **Service group** ITSM or HR); the primary's formula updates itself. Add *Persona Group Time Savings* for the cost view.
 - Help cards: `sn_sd_indicator_context_information` (icon, tagline, heading, HTML content, footer) linked through `sn_sd_m2m_indicator_context_information` with an order.
+
+## Extending (Brazil)
+
+Register a PA indicator under a primary one in `sn_sd_contributing_indicator_registry`; operational dashboards: `sn_sd_kpi_category` (name, dashboard type, order) and tab mapping `sn_sd_tab_m2m_dashboard`; context information in `sn_sd_indicator_context_information` with `sn_sd_m2m_indicator_context_information`.
 
 ## Related
 

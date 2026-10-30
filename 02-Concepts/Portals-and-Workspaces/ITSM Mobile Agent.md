@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, incident, notifications, workspace, admin]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "ITSM Mobile Agent" (pp. 2605-2728), read in full 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "ITSM Mobile Agent" (pp. 2605-2728), read in full 2026-10-02 Re-checked against the Brazil ITSM docs (ITSM Mobile Agent 76, Success Dashboard 38, Virtual Agent 32, Virtual Agent Lite 3, L1 AI Specialist 33, ML solutions 6, On-Call Scheduling 80 topics, https://www.servicenow.com/docs/r/it-service-management/on-call-scheduling/config-oncall-communication-channel.html and siblings), 2026-10-30: Brazil additions marked in the body.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-30
 ---
 
 # ITSM Mobile Agent

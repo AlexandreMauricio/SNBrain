@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, incident, notifications, flows, users]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "On-Call Scheduling" (pp. 2889-2982) and "Service Operations Workspace for ITSM > On-Call Scheduling in Service Operations Workspace" (pp. 3589-3618), read 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "On-Call Scheduling" (pp. 2889-2982) and "Service Operations Workspace for ITSM > On-Call Scheduling in Service Operations Workspace" (pp. 3589-3618), read 2026-10-02 Re-checked against the Brazil ITSM docs (ITSM Mobile Agent 76, Success Dashboard 38, Virtual Agent 32, Virtual Agent Lite 3, L1 AI Specialist 33, ML solutions 6, On-Call Scheduling 80 topics, https://www.servicenow.com/docs/r/it-service-management/on-call-scheduling/config-oncall-communication-channel.html and siblings), 2026-10-30: Brazil additions marked in the body.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-30
 ---
 
 # On-Call Scheduling
@@ -25,6 +25,7 @@ Plugin `com.snc.on_call_rotation` (active on new instances). Menu **On-Call Sche
 | Escalation policy (escalation set) and steps | `cmn_rota_escalation_set`, `cmn_rota_esc_step_def` | custom escalation path |
 | Trigger rule | `trigger_rule` (extends `sysrule_assignment`) | when to start, and what to run |
 | Escalation log | `on_call_escalation` → `on_call_escalation_level` → `on_call_escalation_con_attempt` → `on_call_escalation_comm` | tracking |
+| Roster changes, responses, sources (Brazil) | `on_call_add_member`, `on_call_remove_member`, `on_call_swap_member` (label *On-Call Move Member*), `on_call_escalation_response` (consumed entries are deleted), `sys_on_call_contact_source`, `on_call_communication_type`, `trigger_rule_table_cfg` | |
 | Preferences | `on_call_group_preference`, `on_call_user_preference`, `on_call_user_contact_preference`, `cmn_rota_contact_preference` | |
 | Templates | `sys_on_call_group_template`, `sys_on_call_shift_template` | |
 | Channel message configuration | `on_call_communication_channel_config` | |
@@ -79,6 +80,10 @@ An escalation is **cancelled** when the task's assignment group changes to a gro
 
 With `com.snc.on_call_rotation.log_escalations` on, an icon next to **Assignment group** on the task opens **On-Call Escalation Tracking** (green = active). Logs: **On-Call Scheduling > Escalations > Escalation Logs**.
 
+## Communication channel messages (Brazil)
+
+`on_call_communication_channel_config.list`: per channel (Email, Microsoft Teams, custom) the message and instructions sent to catch-all users. Variables: dynamic `{number}`, `{caller_id.user_name}`; reserved, not to be changed: `{accept_keyword}`, `{reject_keyword}`, `{message_number}`, `{on_call_group_notify_number}`; links `{URI}` (shows LINK) and `{URI_REF}` (shows the record number).
+
 ## Other properties
 
 `com.snc.on_call_rotation.allow_rota_overlap`, `com.snc.on_call_rotation.escalation_rule_rota_overlap`, `com.snc.on_call_rotation.pto.approval.required`, `com.snc.on_call_rotation.landing_page.group_limit` (20) / `.max_groups` (300), `com.snc.on_call_rotation.reminders.showtz`, `com.snc.notify.default.on_call_escalation_level` (-1 = everyone in the plan).
@@ -86,6 +91,8 @@ With `com.snc.on_call_rotation.log_escalations` on, an icon next to **Assignment
 Reminder emails: job *On-Call Reminders*, lead time from the roster, else the shift, else 2 days; none are sent for daily rotations with a lead time above 1 day.
 
 Domain separation: Standard.
+
+Also from Brazil: `com.snc.on_call_rotation.calendar_macro` (calendar macro; default DHTMLX, `ocf_calendar.xml` for Fullcalendar), `.support_legacy_spans` (also search `cmn_schedule_span` for overrides and time off), `.factor_daily_rotation_interval_all_day` (true = daily rotation at midnight), `.log.level`, `.landing_page.show_pending_actions`. `sn_on_call_admin` contains `sn_trigger_table_cfg_read`, `sn_trigger_table_cfg_write`, `sn_sow_on_call.sn_on_call_sow_admin`.
 
 ## In Service Operations Workspace
 
