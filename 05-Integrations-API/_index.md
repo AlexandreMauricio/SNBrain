@@ -95,3 +95,10 @@ REST and SOAP APIs, import sets and transform maps, IntegrationHub, MID Server, 
 - [[Knowledge External Content Integration]] - import WebDAV files into a knowledge base on a schedule (documented, Brazil)
 - [[Hermes Messaging Service]] - ServiceNow-hosted Kafka behind Stream Connect, LES and IDR: ports, certificates, namespaces, topics, inspector, diagnostics, cloning, roles (Brazil)
 - [[ServiceNow Voice with Amazon Connect]] - call center telephony: Voice apps, contact flows, provider components and operation handlers, Connect guided setup, SSO, real time transcription, PIN, roles (Brazil)
+- [[REST API Fundamentals]] - URI, headers, sysparm parameters, dot-walking, security, response codes, CORS, rate limits, main APIs
+- [[Scripted REST APIs]] - custom endpoints: script objects, security matrix, path-based ACLs, versions, size limits
+- [[Outbound REST Messages]] - REST Message records, RESTMessageV2, MID Server, logging, mutual authentication
+- [[SOAP Web Services]] - inbound direct, import set, scripted; roles, limits; outbound SOAPMessageV2
+- [[API Usage Monitoring and Connection Pooling]] - API analytics, inbound usage dashboard, registered integrations, HTTP pool
+- [[JSONv2, RSS and ODBC Interfaces]] - older data interfaces and the read-only ODBC driver
+- [[GraphQL API Framework]] - schemas, resolvers, namespaces, properties
