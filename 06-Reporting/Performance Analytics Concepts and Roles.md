@@ -55,6 +55,15 @@ Server side, in PA scripts (**Platform Analytics Administration > Indicators > S
 
 Avoid GlideRecord and GlideAggregate in these scripts; limit dot-walks, as each adds a join; prefer reporting fields and script includes. Background scripts reading scores for a scoped application need that application's role.
 
+## Other parts
+
+- **KPI Composer** (Store application): designs goals, success factors and KPIs as a tree, then generates tasks. **Being prepared for future deprecation.**
+- **Spotlight** (needs its plugin): ranks records by weighted criteria, not one field, so low priority items that linger surface. A **group** defines records and a threshold, **criteria** add weights; records over the threshold get a Spotlight. Scheduled jobs score them; results appear in interactive analysis or a List on a dashboard through `spotlight`. Share by URL to `pa_spotlight_viewer`.
+- **Diagnostics** (**Platform Analytics Administration > Troubleshooting > Diagnostics**, `sn_pa_diagnostics.pa_diagnostic`): read-only checks, stop after 2 minutes. They do not know about Platform Analytics artifacts, so a *not used* result may be wrong.
+- **External indicators**: SQL over a JDBC data source (MySQL 3306, SQL Server 1433, Oracle 1521); only scores are stored. Separate from Workflow Data Fabric tables.
+- **Scores tables**: `pa_scores` split into `pa_scores_l1` and `pa_scores_l2` in Istanbul; older instances migrate (KB1294371; monitor under **Indicator Settings > Scores Migration Monitor**).
+- **Domain separation** (Enhanced; needs the Domain Extension Installer): **Global** records with domain-aware collection (used by Solutions, usually best), **Domain-specific**, or **Hybrid**. Many domains can slow retrieval.
+
 ## Real-time scores
 
 Automated indicator, configured for it, no scripted aggregate, no database view source, no scripted breakdowns. Come directly from facts tables, so ACLs make them differ per viewer.

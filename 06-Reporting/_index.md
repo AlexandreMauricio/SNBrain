@@ -30,3 +30,4 @@ Reports, dashboards, Performance Analytics, database views.
 - [[Performance Analytics Concepts and Roles]] - indicators, sources, breakdowns, design, subscription, scripting variables, role table
 - [[Performance Analytics Data Collection]] - jobs, historical runs, optimized collector, limits, retention, display properties
 - [[Data Snapshots and Multiple Breakdowns]] - more than two breakdown levels, requirements, activation
+- [[Core UI Reporting]] - legacy reports: types, access layers, report_view and report_on ACLs, Brazil unpublishing, roles, properties
