@@ -179,6 +179,8 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[CSDM Life Cycle Values Reference]] - stages and statuses for tangible, logical, product, document/contract and location entities (documented, Brazil)
 - [[Service Instances (Application Services)]] - service instance types, tables and population methods, excluded classes, roles, service groups, maps, dashboard (documented, Brazil)
 - [[Application Services Components and Properties Reference]] - tables, sa.* map properties and APIs of com.snc.cmdb.it_service (documented, Brazil)
+- [[Discovery Overview]] - horizontal and top-down, the four phases, schedule types, workspace, tables
+- [[Service Mapping Overview]] - mapping methods for application services, roles
 
 ## SLA and Schedules (`SLA-and-Schedules/`)
 
@@ -574,3 +576,8 @@ Notes in this section come from the Brazil release of the Building applications 
 - [[Assessments]] - metric types, assessable records, categories, scripted metrics, stakeholders, on-demand and scheduled, scorecards, decision matrix, bubble chart (Brazil)
 - [[Quizzes]] - quiz designer, scored questions and correct answers, category users, results and weights (Brazil)
 - [[Assessments and Surveys Tables, Roles and Plugins]] - asmt_ tables, properties, roles, script includes, business rules, ATF tests (Brazil)
+
+## ITOM (`ITOM/`)
+
+- [[Event Management Overview]] - how events become alerts, message keys, roles
+- [[Agent Client Collector Overview]] - agent-based collection and monitoring, compared with Discovery
