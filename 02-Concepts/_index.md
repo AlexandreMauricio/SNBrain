@@ -483,6 +483,7 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Custom Instance URLs]] - company host names for the instance, portal and identity provider per URL, the instance URL, DNS order, errors (documented, Brazil)
 - [[System Logs, Log Files and Protected Tables]] - the log tables and their fields, retention and rotation, node log files, log attribution, protected tables, log roles
 - [[Brazil Release Changes from Australia]] - upgrade checks, deprecations, renames and platform, security and ITSM changes
+- [[System Properties - Additional List (Brazil)]] - lookup of 235 lesser-used properties not mentioned elsewhere in the vault
 
 ## Search (`Search/`)
 

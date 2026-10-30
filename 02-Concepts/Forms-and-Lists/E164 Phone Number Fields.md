@@ -5,7 +5,7 @@ status: documented
 source: ServiceNow Australia Platform Administration PDF, "Field administration", topic "Phone number field type" (pp. 961-972), read 2026-10-01
 sn-release: Australia
 verified:
-updated: 2026-10-01
+updated: 2026-10-30
 ---
 
 # E.164 phone number fields
@@ -37,6 +37,17 @@ Switching from optional to strict validation can make existing numbers fail.
 ## Territory display rules
 
 **System Policy > Rules > Telephone Display Rules**: per territory, **Country calling code**, **International direct dial**, **STD**, prefixes, **Active**, **Display** (in the selector; a hidden territory is added temporarily when a number with its code is typed), **Order** (default 100; lower is higher in the list). Validation and format rules are regular expressions already defined for all territories, applied in **Order**.
+
+## System properties (Brazil)
+
+From the Brazil Platform Administration guide, not tested.
+
+| Property or attribute | Effect |
+|---|---|
+| `glide.phone_number_e164.strict` = false, or `pn_strict` | numbers outside the territory format are allowed, marked green |
+| `glide.phone_number_e164.allow_national_entry`, or `pn_allow_national_entry` | changing it requires international format with + |
+| `glide.phone_number_e164.display_national` | `false` default; `true` or `form`, `all`, `user` show local format |
+| `glide.phone_number_e164.display_territory_text`, `.display_users_idd`, `.display_territory_selector` | display options, detail not read |
 
 ## Related
 

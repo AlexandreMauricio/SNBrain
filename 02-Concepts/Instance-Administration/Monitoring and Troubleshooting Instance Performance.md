@@ -5,7 +5,7 @@ status: documented
 source: ServiceNow Australia Platform Administration PDF, "Platform performance" and "System Diagnostics" (pp. 2794-2838), read 2026-10-01
 sn-release: Australia
 verified:
-updated: 2026-10-01
+updated: 2026-10-30
 ---
 
 # Monitoring and troubleshooting instance performance
@@ -55,6 +55,15 @@ Table: `sys_index_suggestion`.
 - Browsers should accept compressed responses (default).
 - Usage dashboards: **Self-Service > Dashboards > Usage Overview** and **ServiceNow Store Usage Overview** (roles admin, `usage_admin`).
 - Stats patterns are cached before being stored; a cache flush loses the unsaved ones.
+
+## Daily Slow Patterns (Brazil)
+
+From the Brazil Platform Administration guide, not tested. A daily rollup of performance patterns with day-over-day trend and anomaly signals, kept up to 33 days per the release notes.
+
+- Role `admin`; plugin **Daily Stats Snapshot** (`com.glide.stats.daily_snapshot`), not active by default.
+- **All > System Diagnostics > Stats > Daily Slow Patterns**. No dedicated dashboard: query the tables or build a report.
+- Tables: `daily_pattern`, `daily_query_pattern`, `daily_script_pattern`, `daily_transaction_pattern`, `daily_mutex_pattern`, `dailyevent_pattern` (name as written), `daily_iostats`.
+- `daily_iostats` is off unless `com.glide.stats.daily_snapshot.diff_iostats` = true.
 
 ## Related
 

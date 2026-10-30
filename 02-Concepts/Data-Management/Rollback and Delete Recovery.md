@@ -5,7 +5,7 @@ status: documented
 source: ServiceNow Australia Platform Administration PDF, "Roll back and delete recovery" (pp. 687-693), read 2026-10-01
 sn-release: Australia
 verified:
-updated: 2026-10-01
+updated: 2026-10-30
 ---
 
 # Rollback and delete recovery
@@ -72,6 +72,16 @@ Contexts are stored in Rollback Context (`sys_rollback_context`) and removed by 
 - Tables with the dictionary attribute `no_audit_delete=true`.
 - Many `sys_` tables, unless auditing is enabled for them.
 - References are restored only if the reference field is on an audited table. Image-type references are not restored.
+
+## Rollback expiry properties (Brazil)
+
+From the Brazil Platform Administration guide, not tested. Add the property to change it.
+
+| Property | Default |
+|---|---|
+| `glide.rollback.expiration_days_test_execution` | 10 days after a test execution |
+| `glide.rollback.expiration_days_upgrade` | 10 days after the latest upgrade |
+| `glide.rollback.stuck_expiration_days` | 30 extra days for stuck contexts, added to `glide.rollback.expiration_days_delete` |
 
 ## Related
 

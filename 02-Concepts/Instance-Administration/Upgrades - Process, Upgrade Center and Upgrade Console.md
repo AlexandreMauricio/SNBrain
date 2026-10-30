@@ -5,7 +5,7 @@ status: documented
 source: ServiceNow Australia Platform Administration PDF, "Using ServiceNow AI Platform upgrade tools": "Upgrade Center" and "Upgrade Console" (pp. 2839-3006), read 2026-10-01
 sn-release: Australia
 verified:
-updated: 2026-10-01
+updated: 2026-10-30
 ---
 
 # Upgrades: process, Upgrade Center and Upgrade Console
@@ -87,6 +87,15 @@ Automates app/plugin installs (and optionally skip resolutions) across instances
 ## Upgrade risk
 
 Forms of base records flagged **high** or **medium risk** (likely to change in future releases; table `sys_metadata_volatility`) show a warning before you customise them. **High Risk Customizations** lists where your customisations overlap them. Advice: do not customise those unless necessary; revert if you did.
+
+## Upgrade Center properties and risk data (Brazil)
+
+From the Brazil Platform Administration guide, not tested.
+
+- `glide.upgrade.preview.duration.instance.id`: which remote instance record a non-production instance queries for the duration estimate; if absent, all are used.
+- `glide.upgrade_center.regenerate_upgrade_preview` = true: regenerate the preview for all apps.
+- `glide.upgrade_center.task_board.owner`, `.members`: upgrade task board; the owner must be an admin, otherwise the first active admin by user name.
+- **High Risk Customizations** shows the overlap of high and medium risk files with your customisations, through virtual table `v_metadata_customization_risk`. Risk files are in `sys_metadata_volatility`, updated at each family upgrade; do not change it.
 
 ## Related
 

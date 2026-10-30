@@ -5,7 +5,7 @@ status: documented
 source: ServiceNow Australia Platform Administration PDF, "Email Administration", topic "Email properties" (pp. 2438-2456), read 2026-10-01
 sn-release: Australia
 verified:
-updated: 2026-10-01
+updated: 2026-10-30
 ---
 
 # Email properties reference
@@ -97,6 +97,20 @@ Stops signature logos piling up as attachments on the target record.
 ## Digests and other
 
 `glide.email.digest.default_interval` (sys_id of the default digest interval), `glide.email.digest.max_intervals` (100), `NotifyAffectedCI.max_rel_level` (5; parent CI levels notified by the *Affected ci notifications* business rule), `glide.cms.use_email_override_url`.
+
+## Additional properties (Brazil)
+
+From the Brazil Platform Administration guide, not tested.
+
+| Property | Default | Meaning |
+|---|---|---|
+| `glide.email.outbound.max_total_attachment_size_bytes` | 18874368 | total attachment size per outbound email |
+| `glide.email.inbound.generate.missing.text.part` | true | plain text for HTML-only inbound email |
+| `glide.email_address_filter.max_exceptions` | 1000 | exceptions per address filter |
+| `glide.notification.recipient.exclude_logging.*` | true where read | log why a recipient was excluded: `user_inactive`, `invalid_email`, `event_creator`, `device_inactive`, `device_schedule` |
+| `glide.notification.recipient.include_logging.*` | not read | log why included: `delegate`, `event_parm`, `recipient_fields`, `recipient_users`, `subscription` |
+
+Roles seen: `notification_category_admin`, `notification_classification_admin`, `notification_admin`, for `sys_notification_classification` (`com.glide.notification.classification`), digest tables `sys_email_digest_part`, `sys_email_digest_part_user`, and `sys_recipient_user_mapping`.
 
 ## Related
 
