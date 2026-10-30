@@ -430,6 +430,9 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[CMDB MCP Server, Impact Analysis and Business Application Agents]] - MCP tools and roles, change and incident impact workflow, business application matching properties (Brazil)
 - [[Now Assist in Document Management]] - Smart Documents skill (Ask Otto): document summary, Q and A, voice assist, AI redaction with redaction codes
 - [[Otto in Knowledge Management]] - KB generation, context menu, duplicates, merge, gaps and article optimization skills; custom prompts per template (Brazil)
+- [[AI Data Explorer]] - explorations, setup, record-level analysis warning, table or indicator choice, troubleshooting
+- [[Query Generation and the Semantic Layer]] - entities, dimensions, segments, protected scopes, tuning, jobs, logs, properties
+- [[Otto for Platform Analytics Skills]] - visualization generation, export and dashboard summary skills with their limits
 
 ## Data Management (`Data-Management/`)
 
