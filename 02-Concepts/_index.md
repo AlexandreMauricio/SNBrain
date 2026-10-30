@@ -357,6 +357,10 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Playbook Experience Design for Workspace, Portal and Mobile]] - UI Builder components and bundles, Guided view, Service Portal content items and widget, mobile embedding
 - [[Entity View Action Mapper (EVAM)]] - multi-table card lists: definitions, data sources, bundles, view configurations, JSON view templates, actions, evam_admin (Brazil)
 - [[Employee Slate for ITSM]] - Service Health Broadcast with Ask Otto, tech lounge walk-in check-in and appointments on Employee Slate (documented, Brazil)
+- [[Service Portal Overview and Configuration]] - portals, pages, widgets, tables, URLs, access, what is not supported, roles
+- [[Service Portal Widgets]] - widget parts and where they run, APIs, Angular Providers, troubleshooting
+- [[Next Experience UI and Unified Navigation]] - navigation, scope pickers, activation, landing pages, themes
+- [[Adoption Services, Boards and Legacy UI Tools]] - guided help, Visual Task Boards, Timeline, Content Management System
 
 ## Security (`Security/`)
 
