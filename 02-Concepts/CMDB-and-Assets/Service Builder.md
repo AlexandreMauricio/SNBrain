@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, cmdb, service-catalog, admin]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Service Builder" (pp. 3126-3137), read in full 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "Service Builder" (pp. 3126-3137), read in full 2026-10-02 Re-checked against the Brazil ITSM docs (final chapters), read 2026-10-30.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-30
 ---
 
 # Service Builder

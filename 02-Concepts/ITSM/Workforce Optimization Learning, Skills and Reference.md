@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, users, roles, workspace, ai, domain-separation, admin]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Workforce Optimization for ITSM" (pp. 3873-4075), second half of the chapter (coaching and learning, skills, reference, mobile, landing pages, advanced configuration), read in full 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "Workforce Optimization for ITSM" (pp. 3873-4075), second half of the chapter (coaching and learning, skills, reference, mobile, landing pages, advanced configuration), read in full 2026-10-02 Re-checked against the Brazil ITSM docs (final chapters), read 2026-10-30.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-30
 ---
 
 # Workforce Optimization Learning, Skills and Reference

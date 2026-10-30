@@ -2,17 +2,17 @@
 type: concept
 tags: [concept, workspace, users, roles, reporting, admin]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Workforce Optimization for ITSM" (pp. 3873-4075), read in full 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "Workforce Optimization for ITSM" (pp. 3873-4075), read in full 2026-10-02 Re-checked against the Brazil ITSM docs (final chapters), read 2026-10-30.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-30
 ---
 
 # Workforce Optimization for ITSM
 
 **In one line:** Workforce Optimization (WFO) gives team managers a **Manager Workspace** to watch queues in real time, plan shifts and schedules, assign work by skill, track team KPIs and coach agents; agents see their side in Service Operations Workspace.
 
-> **Being deprecated.** The guide says WFO for ITSM is being prepared for deprecation "starting with the Brazil release" (hidden, not installed on new instances, still supported), and its Admin Console from Australia. Treat it as legacy on new projects.
+> **Being deprecated.** The guide says WFO for ITSM is being prepared for deprecation "starting with the Brazil release" (hidden, not installed on new instances, still supported), and its Admin Console from Australia. Treat it as legacy on new projects. Brazil names the plugins affected: `com.snc.wfo_itsm`, plus `com.snc.sn_wfo_cfg_itsm` (Configurable Workspace), `com.snc.sn_wfo_usersurveys` (User Surveys, also flagged on its own page), `com.snc.sn_wfo_skill_review` (Skills Review) and `com.snc.sn_wfo_work_sched` (Work Scheduler).
 
 Store app *Workforce Optimization for ITSM Configurable Workspace* (`sn_wfo_cfg_itsm`, ITSM Enterprise); installs Team Performance (`sn_team_perf`), Coaching (`sn_coaching`), core `sn_wfo_cfg_ws`, `sn_wfo_common`. Demand Forecast needs MetricBase (`com.snc.clotho`) activated **first** (then `com.sn_agent_forecast` comes with it). Optional: Process Mining (`com.sn_po`), ITSM Virtual Agent (time-off topic), ITSM Mobile Agent.
 

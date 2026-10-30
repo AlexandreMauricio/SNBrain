@@ -2,10 +2,10 @@
 type: reference
 tags: [reference, incident, change, problem, request, sla]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Exploring IT Service Management", "IT Service Management applications" (pp. 11-13) and the introductions of Benchmarks (pp. 510-543), Coaching (pp. 774-808), Collaboration services (pp. 809-821), Digital End-User Experience (pp. 1776-2144), Digital Portfolio Management (pp. 2145-2261), Digital Product Release (pp. 2262-2386), ITSM Success Dashboard indicators (pp. 2728-2762), Platform Analytics ITSM Dashboards (pp. 2983-3004), Workforce Optimization for ITSM (pp. 3873-4075), read 2026-10-02. For the applications summarised only in this note, just the overview pages and component names were read
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "Exploring IT Service Management", "IT Service Management applications" (pp. 11-13) and the introductions of Benchmarks (pp. 510-543), Coaching (pp. 774-808), Collaboration services (pp. 809-821), Digital End-User Experience (pp. 1776-2144), Digital Portfolio Management (pp. 2145-2261), Digital Product Release (pp. 2262-2386), ITSM Success Dashboard indicators (pp. 2728-2762), Platform Analytics ITSM Dashboards (pp. 2983-3004), Workforce Optimization for ITSM (pp. 3873-4075), read 2026-10-02. For the applications summarised only in this note, just the overview pages and component names were read Re-checked against the Brazil ITSM docs (final chapters), read 2026-10-30.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-30
 ---
 
 # ITSM application suite overview
@@ -51,6 +51,17 @@ updated: 2026-10-02
 | **ITSM Success Dashboard indicators** | leadership KPIs on self-service and deflection | roles `sn_sd.success_dashboard_admin`, `_read`, `_details_read` |
 | **Platform Analytics ITSM Dashboards** | content pack of process dashboards (incident, problem, change, request, SLA) that replaces the per-process legacy dashboards deprecated since Xanadu; *IT Agent dashboard* in the workspace | `com.snc.pa.self_service_analytics` |
 | **Workforce Optimization for ITSM** | manager workspace for channels and routing, shift schedules, work scheduler, teams, skills and coaching. **Being prepared for deprecation since the Brazil release** (hidden on new instances) | `sn_wfo_cfg_itsm`, `sn_wfo_common`, `sn_shift_planning`, `sn_team_perf`; roles `sn_wfo.admin`, `sn_wfo.user`, `sn_shift_planning.admin` / `agent` |
+
+## Brazil additions
+
+The Brazil ITSM guide (2,804 topics, 40 chapters) was re-read against this map, and most chapters match the Australia notes. New or changed there:
+
+- Change: [[Scaled Change (Primary and Child Changes)]], [[Change Lockdown]].
+- Incident: [[Close Multiple Incidents from a List]], three-strike properties in [[Incident Properties Reference]].
+- Employee experience: [[Employee Slate for ITSM]].
+- Being deprecated from Brazil: [[Workforce Optimization for ITSM]] with its plugins, Agent Client Collector and MECM for Investigation ([[Investigation Framework, CI Actions and Remedial Actions]]).
+- Legacy: Virtual Agent Lite ([[ITSM Virtual Agent Topics and Setup]]).
+- Walk-up has its own note: [[Walk-up Experience]].
 
 ## Related
 

@@ -2,10 +2,10 @@
 type: reference
 tags: [reference, sla, admin, automation]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Service Level Management", topics "Service Level Management plugins", "SLA timer", "Configure the SLA timer", "Create SLA breakdown definitions", "SLA calculation", "Repair SLA", "Add custom business rules to SLA", "Scheduled jobs for SLA", "SLA timeline", "SLA (Legacy) engines", "Configure SLA properties" (pp. 3141, 3144-3154, 3160-3173, 3186-3201, 3210-3214), read 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "Service Level Management", topics "Service Level Management plugins", "SLA timer", "Configure the SLA timer", "Create SLA breakdown definitions", "SLA calculation", "Repair SLA", "Add custom business rules to SLA", "Scheduled jobs for SLA", "SLA timeline", "SLA (Legacy) engines", "Configure SLA properties" (pp. 3141, 3144-3154, 3160-3173, 3186-3201, 3210-3214), read 2026-10-02 Re-checked against the Brazil ITSM docs (final chapters), read 2026-10-30.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-30
 ---
 
 # SLA engine, repair, timeline and breakdowns
@@ -66,6 +66,8 @@ Records who held the task during each slice of a task SLA: table `sla_breakdown_
 
 Which task SLA a workspace timer shows: **Service Level Management > Administration > SLA Timer Configuration** (`sla_timer_config`, mappings `sla_timer_config_mapping`). **SLA timer source**: None, *First to breach* (optionally filtered by condition or **Target**), *Task to SLA mapping* (ordered list of definitions). Options **Show completed**, **Show cancelled**, **Show actual time**. Colour: green, yellow at 50 % left, orange at 25 % left.
 
+Brazil additions: role `sn_slm_timer.sla_timer_admin` (full administration of the timer configuration, contains `sn_sla_definition_read`); script include `SLATimerConfigAPI` (installed with the SLA Timer Config API; finds the task SLA about to breach; server side, scope not stated on the page).
+
 ## Custom business rules on `task_sla`
 
 - Never update the engine's own fields.
@@ -76,6 +78,8 @@ Which task SLA a workspace timer shows: **Service Level Management > Administrat
 - Dashboard **Service Level Management > Overview** (`com.snc.sla.overview`): my at-risk (≥ 75 %), breached, active SLAs.
 - Domain separation: Standard; a task SLA takes the domain of its task; definitions can be overridden in a child domain.
 - ATF tests: `com.snc.service_level_management.atf`.
+
+- Contract SLAs (Brazil): the **Process non-contractual SLAs** check box lets contractual SLAs and internal ones (OLA, underpinning contracts) run on the same task. It is available to zboot and upgrade customers. The property `com.snc.sla.contract.tables` is not available to zboot customers, so contracts are processed for any table there rather than a listed set.
 
 ## Related
 

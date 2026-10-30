@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, change, task]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Release Management" (pp. 3101-3111), read 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "Release Management" (pp. 3101-3111), read 2026-10-02 Re-checked against the Brazil ITSM docs (final chapters), read 2026-10-30.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-30
 ---
 
 # Release Management

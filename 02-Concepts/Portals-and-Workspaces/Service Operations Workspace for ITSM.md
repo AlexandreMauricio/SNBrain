@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, workspace, incident, change, admin]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Service Operations Workspace for ITSM" (pp. 3215-3703), read in full 2026-10-02 (this note is the overview; detail is in the linked notes). The summaries of "Simplified IT Service Management" (pp. 223-291), "ITSM Mobile Agent" (pp. 2605-2727) and "Walk-up Experience" (pp. 3792-3872) at the end are still overview depth
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "Service Operations Workspace for ITSM" (pp. 3215-3703), read in full 2026-10-02 (this note is the overview; detail is in the linked notes). The summaries of "Simplified IT Service Management" (pp. 223-291), "ITSM Mobile Agent" (pp. 2605-2727) and "Walk-up Experience" (pp. 3792-3872) at the end are still overview depth Re-checked against the Brazil ITSM docs (final chapters), read 2026-10-30.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-30
 ---
 
 # Service Operations Workspace for ITSM

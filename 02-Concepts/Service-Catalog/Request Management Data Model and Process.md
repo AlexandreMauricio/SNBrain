@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, request, service-catalog, task]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Request Management" (pp. 3112-3125), read 2026-10-02; Brazil Platform Capabilities guide > Self-service > Service catalog requests (https://www.servicenow.com/docs/r/servicenow-platform/self-service/p_ServiceCatalogRequests.html), read 2026-10-29. The ITSM guide covers only the request side; catalog items, variables and flows are covered by the Service Catalog notes made from the Brazil docs chapter (read 2026-10-16), linked under Related
+source: ServiceNow Australia IT Service Management PDF, "Request Management" (pp. 3112-3125), read 2026-10-02; Brazil Platform Capabilities guide > Self-service > Service catalog requests (https://www.servicenow.com/docs/r/servicenow-platform/self-service/p_ServiceCatalogRequests.html), read 2026-10-29. The ITSM guide covers only the request side; catalog items, variables and flows are covered by the Service Catalog notes made from the Brazil docs chapter (read 2026-10-16), linked under Related Re-checked against the Brazil ITSM docs (final chapters), read 2026-10-30.
 sn-release: Australia (Brazil for the submitted-requests section)
 verified:
-updated: 2026-10-29
+updated: 2026-10-30
 ---
 
 # Request Management data model and process
@@ -47,6 +47,8 @@ All three task tables extend [[task]].
 ## Universal Request integration
 
 Plugin `com.snc.universal_request`, property `sn_uni_req.com.snc.ur.request_integration` = true. The RITM becomes the **primary ticket** of a universal request; **Create Request** and **Transfer** (with or without resolution, to a department) are available. Linking requires `glide.sc.use_cart_layouts` = true and **Use Cart Layout** on the item. Default state mapping (RITM → UR): Open, Work in Progress, Pending → In Progress; Closed Complete / Skipped / Incomplete → Closed.
+
+Brazil addition: the property `sn_uni_req.transfer_type`, on the Universal Request properties page, sets how request transfers are handled (the transfer with or without resolution above). Roles named on the page: `itil`, a routing agent, `sn_request_write`, `sn_hr_core_case_writer`. Values not recorded.
 
 ## Roles and domain
 

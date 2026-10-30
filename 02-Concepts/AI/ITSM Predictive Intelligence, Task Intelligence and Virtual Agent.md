@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, ai, incident]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Machine learning solutions for IT Service Management" (pp. 2883-2888) and "Task Intelligence for ITSM" (pp. 3761-3787), read in full 2026-10-02. The Virtual Agent, AI specialist and MCP server parts that used to be summarised here now have their own notes
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "Machine learning solutions for IT Service Management" (pp. 2883-2888) and "Task Intelligence for ITSM" (pp. 3761-3787), read in full 2026-10-02. The Virtual Agent, AI specialist and MCP server parts that used to be summarised here now have their own notes Re-checked against the Brazil ITSM docs (final chapters), read 2026-10-30.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-30
 ---
 
 # ITSM Predictive Intelligence and Task Intelligence

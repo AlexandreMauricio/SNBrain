@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, workspace, incident, cmdb, integrations, admin]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Service Operations Workspace for ITSM", topics on the Investigation Framework (Agent Client Collector / Microsoft Endpoint Configuration Manager for Investigation, metric definitions, CI actions, Remedial Actions Framework), "Remedial actions using Playbook", "Incident Management in Service Operations Workspace reference" (components installed, features of the Investigation tab) (pp. 3372-3393, 3506-3521), read 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "Service Operations Workspace for ITSM", topics on the Investigation Framework (Agent Client Collector / Microsoft Endpoint Configuration Manager for Investigation, metric definitions, CI actions, Remedial Actions Framework), "Remedial actions using Playbook", "Incident Management in Service Operations Workspace reference" (components installed, features of the Investigation tab) (pp. 3372-3393, 3506-3521), read 2026-10-02 Re-checked against the Brazil ITSM docs (final chapters), read 2026-10-30.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-30
 ---
 
 # Investigation Framework, CI actions and remedial actions
@@ -20,6 +20,8 @@ updated: 2026-10-02
 | Microsoft Endpoint Configuration Manager (MECM) for Investigation | `sn_mecm_adapter`, with spoke `sn_ms_epcfgmgr_spk` | runs PowerShell scripts and CMPivot queries through MECM |
 
 Admin role `sn_cimaf.sn_cimaf_admin`; remedial actions `sn_reacf.sn_remedial_action_admin`.
+
+> **Being deprecated (Brazil).** Both providers above, *Agent Client Collector for Investigation* and *Microsoft Endpoint Configuration Manager for Investigation*, are marked as being prepared for future deprecation starting with Brazil (hidden, no longer installed on new instances; see KB0867184). The docs in this note describe the Australia behaviour.
 
 ### MECM specifics
 

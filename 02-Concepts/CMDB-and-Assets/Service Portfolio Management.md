@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, cmdb, sla, service-catalog]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Service Portfolio Management" (pp. 3704-3760) and "Service Builder" (pp. 3126-3136), read in full 2026-10-02; form-level detail is in the companion note
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "Service Portfolio Management" (pp. 3704-3760) and "Service Builder" (pp. 3126-3136), read in full 2026-10-02; form-level detail is in the companion note Re-checked against the Brazil ITSM docs (final chapters), read 2026-10-30.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-30
 ---
 
 # Service Portfolio Management
@@ -32,6 +32,8 @@ Plugins: Core `com.snc.service_portfolio_core` (adds `service_offering`), Founda
 | `sc_cat_item_service`, `sc_cat_item_subscribe_mtom` | catalog representation |
 
 **Convert services in bulk** moves records from `cmdb_ci_service` to the business or technology-management child table.
+
+Brazil additions, tables installed with **Service Portfolio Management Premium**: Metric Definition (`spm_metric_definition`, metrics for the application), Portfolio Metric (`spm_portfolio_metric`), SPM Node Weight (`spm_node_weight`, a node's weight against its sibling nodes). Also Service Availability (`service_availability`, calculated availability of a service; open with `service_availability.list`). Sample content plugin: `com.snc.service_portfolio.demo_data`.
 
 ## Lifecycle fields
 
@@ -73,6 +75,8 @@ New instances use the **standard** structure (nodes only, any depth; KPI groups 
 ## Service Builder
 
 Store application `sn_service_builder`: a guided experience to define a business or technology management service and its offerings (tabs Details, Team, Service Performance, Manage Offerings with Details / Team / Operations / Financials / Performance, Review and Submit). States Draft → Awaiting approval → Published; auto-approved by default, customisable as a subflow. Editing checks out a draft while the published version stays active.
+
+Brazil: installing Service Builder from the Store also installs plugin `com.snc.service_builder`, and it uses the same role set as Service Portfolio Management. Recorded next to the store application name `sn_service_builder` above as unconfirmed variants.
 
 Domain separation: Basic with exceptions.
 

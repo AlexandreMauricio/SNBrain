@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, incident, request, portal, assets, integrations]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Walk-up Experience" (pp. 3792-3872), read in full 2026-10-02 (the quick start test table continues onto the next chapter's first page)
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "Walk-up Experience" (pp. 3792-3872), read in full 2026-10-02 (the quick start test table continues onto the next chapter's first page) Re-checked against the Brazil ITSM docs (final chapters), read 2026-10-30.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-30
 ---
 
 # Walk-up Experience

@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, problem, incident, knowledge]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "Problem Management" (pp. 3005-3100), read 2026-10-02
-sn-release: Australia
+source: ServiceNow Australia IT Service Management PDF, "Problem Management" (pp. 3005-3100), read 2026-10-02 Re-checked against the Brazil ITSM docs (final chapters), read 2026-10-30.
+sn-release: Australia, Brazil
 verified:
-updated: 2026-10-02
+updated: 2026-10-30
 ---
 
 # Problem Management overview and lifecycle
@@ -90,6 +90,8 @@ Legacy model (instances from before Madrid that have not migrated): Open, Known 
 ## Problem models
 
 Property `com.snc.problem_management.models.enabled` (on for new instances since Yokohama). A model (`prb_model`, **Problem > Administration > Problem Models**) lists **Model States**, each with **Model State Transitions** (From, To, **Automatic transition**) and optional **Transition Conditions** (condition builder or script). **Default problem model** makes it the one used for new problems. Task models (`prb_task_model`) are offered through an **interceptor** answer whose target URL is `problem_task.do?sys_id=-1&sysparm_query=prb_task_model=<sys_id>`. Records created before enabling keep the non-model life cycle. Same idea as [[State Models and State Transitions]].
+
+Brazil addition: editing the **Condition (Script)** field on a transition condition needs the role `problem_model_script_admin`; without it the script editor is read only, and the docs say no existing role inherits it, so it must be granted on its own. Parallels `change_model_script_admin` ([[Change Models and Change Templates]]).
 
 ## Migrating from the legacy states
 
