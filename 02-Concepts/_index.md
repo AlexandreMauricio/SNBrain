@@ -247,6 +247,12 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Background Scripts, Script Processors and Schedule Pages]] - Scripts - Background options, deprecated processors, schedule pages, installation settings (documented, Brazil)
 - [[JavaScript Syntax Editor]] - editor properties, shortcuts, macros, context menu (documented, Brazil)
 - [[Password Reset Extension Scripts]] - extension script categories (enrollment check, identification, verification, generator, lookup, post reset) and how to create one
+- [[GlideRecord API Reference]] - methods by purpose, cautions, scoped differences
+- [[GlideSystem API Reference]] - gs methods by purpose, scoped differences
+- [[GlideDateTime API Reference]] - date and time methods, time zone flavours
+- [[GlideAggregate and GlideQuery API Reference]] - aggregates and the chainable query API
+- [[GlideElement and GlideUser API Reference]] - field and user objects
+- [[GlideForm and GlideAjax Client API Reference]] - g_form methods by purpose, GlideAjax
 
 ## Flows and Automation (`Flows-and-Automation/`)
 
