@@ -41,6 +41,8 @@ ETL, Transform Map and Script consumers each need a **Kafka stream** (`sys_kafka
 - **Alerting:** event-type alerts on errors, threshold alerts on values such as lag.
 - **Stream Connect Dashboard:** producers, consumers, replicators, and 13 months of data use.
 
+**ServiceNow Kafka Consumer** is a different, older spoke built on Confluent REST Proxy API v2. **From Brazil it is being prepared for future deprecation:** not activated on new instances and hidden from the catalog, but supported for existing deployments. The docs recommend Stream Connect for new work.
+
 ## Tables
 
 | Table | Holds |

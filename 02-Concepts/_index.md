@@ -294,6 +294,8 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Automation Center]] - automation requests, goals, health and value across vendors
 - [[Data Stream Actions]] - large or paged API responses parsed into a stream for a flow
 - [[RPA Hub]] - software robots, Design Studio, roles, tables, properties, Otto for RPA Hub
+- [[RPA Unattended and Attended Robots]] - setup, high density robots, Desktop In Desktop, form starts, requirements
+- [[Client Software Distribution 2.0]] - catalog software deployment through Configuration Manager, Jamf and Intune, compared with CSD
 
 ## Notifications and Email (`Notifications-and-Email/`)
 

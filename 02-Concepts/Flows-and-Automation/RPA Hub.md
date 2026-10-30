@@ -2,7 +2,7 @@
 type: concept
 tags: [concept, automation, roles, schema, domain-separation, ai, release-specific]
 status: documented
-source: ServiceNow Brazil docs, Workflow Data Fabric > RPA Hub (Explore, Getting started, Configure, properties, Reference: components, domain separation, AI limits, glossary start), RPA Desktop Design Studio (Explore), read at overview depth 2026-10-30. Design Studio components (427 topics), plugin methods, Unattended Robot and Attended Robot pages listed, not read. https://www.servicenow.com/docs/r/integrate-applications/create-integrations-applications.html
+source: ServiceNow Brazil docs, Workflow Data Fabric > RPA Hub (Explore, Getting started, Configure, properties, Reference: components, domain separation, AI limits, glossary start), RPA Desktop Design Studio (Explore; Build: ports and plugins), read at overview depth 2026-10-30. Design Studio components (427 topics) and most Build steps listed, not read. https://www.servicenow.com/docs/r/integrate-applications/create-integrations-applications.html
 sn-release: Brazil
 verified:
 verified-by:
@@ -26,6 +26,17 @@ From the Brazil docs; not tested. Application `sn_rpa_fdn` from the Store, insta
 | **Attended Robot** | runs beside a person, started from their desktop or a form |
 
 Interface translation covers the instance only, not these desktop clients. Multi-tenancy gives logical partitions for customers, each with its own access, robots, licences and logs.
+
+Robot detail: [[RPA Unattended and Attended Robots]].
+
+## Design Studio
+
+- **Projects:** with AI, manual, from a template, local or cloud; also skill projects.
+- **Ports:** gray Control ports set the run order; orange Data ports pass data. Inputs on the left, outputs on the right. A red Data port has logging turned off, for sensitive data; green means **Transform Data** is applied.
+- **RPA plugins:** Windows libraries added through **Plugin manager**; you can create user plugins. Internet Explorer, Essential Connectors, Essential Toolkit and Universal App Connector are present by default.
+- **Components** (427 pages, not read): Actions (UI), Conditions, Connectors, Data Modellers, General, ITSM connector, Loops, RPA Hub, Security, ServiceNow, Utilities, Wait.
+- **Connectors include:** Chromium, IE, Windows, Universal app, Java, SAP, Terminal (Mainframe), Microsoft Excel, Outlook, Word, PDF, Email, FTP, SSH.
+- **ITSM connector:** PowerShell and WMI methods.
 
 ## Concepts
 

@@ -110,3 +110,4 @@ REST and SOAP APIs, import sets and transform maps, IntegrationHub, MID Server, 
 - [[Integration Hub Overview and Subscription]] - packs and plugins, usage dashboard, connections, integration steps, Import
 - [[Stream Connect for Apache Kafka]] - producers, consumers, Direct Kafka, replication, schemas, tables and roles
 - [[Remote Process Sync]] - process sync across instances, queues, roles, properties (replaces eBonding)
+- [[Integration Hub Spokes Catalog]] - lookup of documented spoke names, Now Assist for Integration Hub and its AI agents

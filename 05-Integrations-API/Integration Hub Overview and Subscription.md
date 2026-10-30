@@ -15,7 +15,7 @@ updated: 2026-10-30
 
 From the Brazil docs; not tested. Part of [[Workflow Data Fabric and Connect Hub|Workflow Data Fabric]]. Without it, [[Workflow Studio Overview|Workflow Studio]] stays inside the instance: base actions and steps, including the Script step. It can be previewed on a Personal Development Instance.
 
-- **Outbound:** a flow calls a third-party API. Spokes package these calls as reusable actions; build your own with Spoke Generator.
+- **Outbound:** a flow calls a third-party API. Spokes package these calls as reusable actions ([[Integration Hub Spokes Catalog]]); build your own with Spoke Generator.
 - **Inbound:** a webhook from a third party starts a flow. See [[Saved Triggers and External Event Sources]].
 
 ## Subscription
