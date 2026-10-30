@@ -16,7 +16,7 @@ updated: 2026-10-29
 
 | Property | Default | Effect |
 |---|---|---|
-| `glide.ui.autoclose.time` | (days) | days after which Resolved incidents are closed; 0 disables |
+| `glide.ui.autoclose.time` | (days) | days after which Resolved incidents are closed; 0 disables. Brazil release notes: counted in **business days**, not calendar days (not tested) |
 | `com.snc.incident.autoclose.basedon.resolved_at` | true on new instances | count the days from **Resolved**; false = from **Updated** |
 | `com.snc.incident.incident_task.closure` | true on new instances | close open incident tasks when the incident is closed or canceled |
 | `com.snc.incident.strike.count` | 3 | **three-strike rule** (Brazil docs): reminders sent to the caller while the incident is On Hold / Awaiting Caller; when all are used up the incident is resolved with code *Resolved - No response from caller*; 0 disables. A caller comment (portal or email reply) ends it |
