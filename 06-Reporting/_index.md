@@ -27,3 +27,6 @@ Reports, dashboards, Performance Analytics, database views.
 - [[Platform Analytics Filters]] - filter types, cascades, groups, URL parameters, domain filters
 - [[KPI Details and KPI Signals]] - indicator library, targets, UUIDs, signals, baselines
 - [[Platform Analytics Roles, Caching and Library Recommendations]] - role table, data cache and prefetch, recommendations, workspace pages
+- [[Performance Analytics Concepts and Roles]] - indicators, sources, breakdowns, design, subscription, scripting variables, role table
+- [[Performance Analytics Data Collection]] - jobs, historical runs, optimized collector, limits, retention, display properties
+- [[Data Snapshots and Multiple Breakdowns]] - more than two breakdown levels, requirements, activation
