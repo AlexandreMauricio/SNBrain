@@ -90,6 +90,7 @@ The vault will hold far more than fits in one session's context, and a new sessi
 5. **Record discrepancies** (different names, releases, defaults across pages) in the note itself and mention them to the user.
 6. **Audit before committing:** run `powershell -File _meta/tools/audit.ps1`. Fix missing frontmatter keys, tags outside the vocabulary, broken links, and notes missing from an `_index.md`.
 7. Update `_index.md` (use `powershell -File _meta/tools/add-index-line.ps1 -Index 02-Concepts/_index.md -Section "ITSM" -Line "- [[Note]] - description"` so the line lands under the right topic heading; `03-How-To/_index.md` has sections too; indexes without `## ` sections take no `-Section`), update `_meta/Docs Reading List.md`, then commit.
+$L
 
 **File-writing hazards (Windows PowerShell 5.1):**
 - Never use `Set-Content -Encoding utf8` or `Out-File` for notes: they add a UTF-8 **BOM**, which can stop Obsidian reading the frontmatter. Use the Write/Edit tools, or `[IO.File]::WriteAllText(path, text, (New-Object Text.UTF8Encoding($false)))`. `audit.ps1` reports any BOM.
