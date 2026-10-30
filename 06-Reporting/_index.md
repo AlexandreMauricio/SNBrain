@@ -23,3 +23,7 @@ Reports, dashboards, Performance Analytics, database views.
 - [[Migrating Core UI Reporting to Platform Analytics]] - Migration Center, partial migrations, compatibility mode, table mapping, properties, rollback
 - [[Platform Analytics Dashboards]] - inline and technical dashboards, elements, sharing, cache, export, update sets, tables
 - [[Proactive Analytics Insights on Dashboards]] - insight card types, jobs, properties, tables
+- [[Platform Analytics Data Visualizations]] - types, data sources, filtering, chart interactions, roles, properties, tables
+- [[Platform Analytics Filters]] - filter types, cascades, groups, URL parameters, domain filters
+- [[KPI Details and KPI Signals]] - indicator library, targets, UUIDs, signals, baselines
+- [[Platform Analytics Roles, Caching and Library Recommendations]] - role table, data cache and prefetch, recommendations, workspace pages
