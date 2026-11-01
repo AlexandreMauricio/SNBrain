@@ -2,11 +2,11 @@
 type: reference
 tags: [reference, scripting, glide-api, javascript, client-script, forms-lists]
 status: documented
-source: ServiceNow Brazil docs, API reference > Client API reference > GlideForm (g_form) - Client and GlideAjax - Client (method lists and notes), read 2026-10-30. Next Experience GlideForm, parameter tables and examples not read. https://www.servicenow.com/docs/r/api-reference/client-api-reference/ Team notes shared by the user's manager, 2026-10-30, file Client Scripts.md and Portal development.md (unverified, sections marked).
+source: ServiceNow Brazil docs, API reference > Client API reference > GlideForm (g_form) - Client and GlideAjax - Client (method lists and notes), read 2026-10-30. Next Experience GlideForm, parameter tables and examples not read. https://www.servicenow.com/docs/r/api-reference/client-api-reference/ Team notes shared by the user's manager, 2026-10-30, file Client Scripts.md and Portal development.md (unverified, sections marked). Team notes updated copy read 2026-11-01.
 sn-release: Brazil
 verified:
 verified-by:
-updated: 2026-10-30
+updated: 2026-11-01
 ---
 
 # GlideForm and GlideAjax Client API Reference
@@ -48,7 +48,7 @@ From the Brazil docs; not tested. A separate *GlideForm (Next Experience)* page 
 
 Unverified team notes, not tested. Both run in the browser.
 
-**Compare two dates in a client script.** `getDateFromFormat` turns a date string into a Unix timestamp. Globals `g_user_date_format` and `g_user_date_time_format` hold the user's formats. The notes' snippet passed two undefined names; the version here uses the values read from the form.
+**Compare two dates in a client script.** `getDateFromFormat` turns a date string into a Unix timestamp. Globals `g_user_date_format` and `g_user_date_time_format` hold the user's formats.
 
 ```javascript
 var format = g_user_date_format;
@@ -58,6 +58,12 @@ var endDateTimeStamp = getDateFromFormat(g_form.getValue('end_date'), format);
 if (startDateTimeStamp > endDateTimeStamp) {
     // handle the invalid range
 }
+```
+
+**Translated field message in a client script.** The team notes say `getMessage()` looks up the Message (`sys_ui_message`) table by key, as in [[Languages, Translation Tables and Locale]], which adds that the text goes in the script's **Messages** field. The notes do not mention that field, so test it.
+
+```javascript
+g_form.showFieldMsg('<field>', getMessage('<message key>'), 'error');
 ```
 
 **Reach `g_form` from the browser console on a Service Portal catalog form,** for debugging only:

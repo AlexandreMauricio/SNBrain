@@ -257,6 +257,8 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[GlideAggregate and GlideQuery API Reference]] - aggregates and the chainable query API
 - [[GlideElement and GlideUser API Reference]] - field and user objects
 - [[GlideForm and GlideAjax Client API Reference]] - g_form methods by purpose, GlideAjax
+- [[GlideDateTime Formatting Recipes]] - parse and format dates, avoid JavaScript Date, business duration (unverified team notes)
+- [[Team Script Conventions]] - naming, magic values, reading fields, try and catch, logging (unverified team notes)
 
 ## Flows and Automation (`Flows-and-Automation/`)
 

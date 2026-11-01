@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, access-control, security, roles, platform, scripting, schema, release-specific]
 status: documented
-source: ServiceNow docs, Brazil, Platform security > Access Management > Access Control Lists (ACLs) (whole section, 30 topics, 1,657 cleaned lines, read in full 2026-10-08 through the docs site) - Explore Access Control Lists, ACL types, Datatype ACL, ACL control of function fields, Security jump-start ACL rules plugin, Configure an ACL, Deny-Unless ACL, Allow ACL, Query ACLs, Secure records in an embedded list, Related record access, Contextual Security Manager, Role Management V2 (prevent duplicates, upgrade, patcher job, role auditing), Double-check form submission, Default deny property, Advanced ACL configuration, Provide external users access to a table, Apply ACL script conditions to reference fields, Apply ACLs to AJAXGlideRecord, Evaluate the admin override at the access level, ACL debugging tools, troubleshooting reference, configuration watcher, execution plan. https://www.servicenow.com/docs/r/platform-security/access-control/access-control-rules.html
+source: ServiceNow docs, Brazil, Platform security > Access Management > Access Control Lists (ACLs) (whole section, 30 topics, 1,657 cleaned lines, read in full 2026-10-08 through the docs site) - Explore Access Control Lists, ACL types, Datatype ACL, ACL control of function fields, Security jump-start ACL rules plugin, Configure an ACL, Deny-Unless ACL, Allow ACL, Query ACLs, Secure records in an embedded list, Related record access, Contextual Security Manager, Role Management V2 (prevent duplicates, upgrade, patcher job, role auditing), Double-check form submission, Default deny property, Advanced ACL configuration, Provide external users access to a table, Apply ACL script conditions to reference fields, Apply ACLs to AJAXGlideRecord, Evaluate the admin override at the access level, ACL debugging tools, troubleshooting reference, configuration watcher, execution plan. https://www.servicenow.com/docs/r/platform-security/access-control/access-control-rules.html Team notes shared by the user's manager, file ACLs.md, read 2026-11-01 (unverified, section marked; the developer course page itself not read).
 sn-release: Brazil
 verified:
-updated: 2026-10-08
+updated: 2026-11-01
 ---
 
 # Access Control Lists (ACLs)
@@ -159,6 +159,27 @@ Installed on every new instance; not meant for existing ones (test first). It ad
 | template_editor | `sys_template` |
 | itil_admin | `sys_home` |
 | everyone | read `sysevent_email_action` (for subscriptions); a user without roles can update only their own `sys_user` record |
+
+## `--None--` versus `*` (team notes)
+
+Unverified team notes, not tested, summarising the developer course page *To * or Not to \**. The field list in an ACL's **Name** has two special options:
+
+| Option | Team notes say it grants |
+|---|---|
+| `--None--` | the table's records and all their fields |
+| `*` | every field with no field-specific ACL |
+
+- Only `--None--` grants the **records**, so a `*` ACL needs a `--None--` ACL on the same table.
+- A field ACL beats `*`, which agrees with the processing order above.
+
+| Read ACLs on the table | Example Admin User | Example Table User |
+|---|---|---|
+| `--None--` both roles; `Field 3` admin role | all fields | all but Field 3 |
+| `--None--` both roles; `*` admin role; `Field 3` both roles | all fields | Field 3 only |
+
+In the second case the `*` ACL looks redundant, but it is what denies the other roles. So: to mostly grant, use `--None--` alone. To mostly deny, use `--None--` and `*`, then add a field ACL for each field others may see.
+
+**Unconfirmed variant:** the team notes call `--None--` a grant on fields too, while this note says a record needs a table ACL and then a field ACL. Test with Debug Security.
 
 ## Discrepancies in the docs
 
