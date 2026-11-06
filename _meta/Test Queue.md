@@ -8,7 +8,7 @@ updated: 2026-11-06
 
 # Test queue
 
-**Generated 2026-11-06: 186 items in 138 notes.** Everything the vault still calls open or unconfirmed, grouped by folder. With an instance open, pick an item, test it, and record the result in the note ([[Recording Results and Inbox]]): answer the open question, add the instance to `observed-in:`, or mark the note `verified`. Then regenerate this page:
+**Generated 2026-11-06: 191 items in 142 notes.** Everything the vault still calls open or unconfirmed, grouped by folder. With an instance open, pick an item, test it, and record the result in the note ([[Recording Results and Inbox]]): answer the open question, add the instance to `observed-in:`, or mark the note `verified`. Then regenerate this page:
 
 `powershell -ExecutionPolicy Bypass -File _meta/tools/test-queue.ps1`
 
@@ -207,8 +207,17 @@ Exercise notes are left out: their open items live in each exercise (*Open with 
 
 ## 02-Concepts/Portals-and-Workspaces
 
+- [[Configurable Workspace Administration - Lists, Forms, Activity Stream and Email]] (documented; observed in updated: 2026-11-06)
+    - Unconfirmed: | Form template semantic search | `com.glide.ais.semantic_search` = true and `glide.template.sematic_search` = true (spelled *sematic* on the page; unconfirmed whether that is the real name) |
 - [[Mobile Platform Overview]] (documented)
     - Inference: Tables: `sys_sg_native_client`, `sys_sg_navigation`, `sys_sg_screen`, `sys_sg_form_screen`, `sys_sg_list_screen`, `sys_sg_master_detail_screen`, `sys_sg_applet_launcher`, `sys_sg_button`, `sys_sg_data_item`, `sys_sg_v...
+- [[Next Experience Landing Pages and Start Pages]] (documented; observed in updated: 2026-11-06)
+    - Inference: From the Brazil docs; not tested. The precedence below is pieced together from separate pages (inference where marked). Workspace landing pages are configured per workspace instead: Service Operations Workspace Access...
+    - Inference: Where the user-selected start page sits relative to the preference and property is not stated (inference). The docs also say an administrator can set a start page that users cannot override.
+- [[Next Experience Themes and Theme Builder]] (documented; observed in updated: 2026-11-06)
+    - Unconfirmed: Default font: the configuring-themes page says **Lato**; Theme Builder pages say a deleted custom font falls back to **Source Sans Pro** (Regular). Both kept; which applies to which theme is unconfirmed.
+- [[Next Experience UI and Unified Navigation]] (documented; observed in updated: 2026-11-06)
+    - Unconfirmed: Picker keyboard shortcuts are off until two properties per picker are created: `glide.ui.keyboard.shortcuts.polaris.application_picker.enabled` / `.key_combo` (default `ctrl+alt+a`), `...domain_separation_picker...` (...
 - [[Service Portal Embeddables]] (documented; observed in updated: 2026-11-06)
     - Inference: From the Brazil docs; not tested. Pages updated September 2026, so likely new or changed in Brazil (inference). Widget basics: Service Portal Widget Development. Not the same as **Web Embeddables** sessions for extern...
     - Unconfirmed: The docs examples write the controller as `app.controller('caseListWidget', function($scope, spEmbeddables) {...})` rather than the usual widget `function()` form; which one a widget record needs is unconfirmed.

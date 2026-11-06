@@ -372,7 +372,7 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Employee Slate for ITSM]] - Service Health Broadcast with Ask Otto, tech lounge walk-in check-in and appointments on Employee Slate (documented, Brazil)
 - [[Service Portal Overview and Configuration]] - portals, pages, widgets, tables, URLs, access, what is not supported, roles
 - [[Service Portal Widgets]] - widget parts and where they run, APIs, Angular Providers, troubleshooting
-- [[Next Experience UI and Unified Navigation]] - navigation, scope pickers, activation, landing pages, themes
+- [[Next Experience UI and Unified Navigation]] - activation, menus and All Menu Editing, Workspaces menu, pickers, banners, properties, client interactions, preferences, shortcuts
 - [[Adoption Services, Boards and Legacy UI Tools]] - guided help, Visual Task Boards, Timeline, Content Management System
 - [[Mobile Platform Overview]] - Now Mobile and Mobile Agent, app configs, old and new terms, tables, mobile_admin
 - [[Service Portal Widget Development]] - data cycle (data, input, options, server.get/update/refresh), guidelines, option schema, Angular Providers, embedded widgets, dependencies, translation, widgets on catalog forms
@@ -383,6 +383,10 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Service Portal Search Configuration]] - AI Search vs Zing in portals, search sources and data fetch scripts, pagination, facets, suggestions, default and contextual sources
 - [[Service Portal Access, Login and Redirects]] - public, roles, widget public table allow list, user criteria, SSO and SPEntryPage redirects, e-signature, self-registration, deactivation
 - [[Service Portal SEO, Announcements and Usage Analytics]] - readable URLs, meta tags, dynamic titles, hreflang, Sitemap Generator, announcements, Usage Insights events, Performance and Portal Analyzer
+- [[Next Experience Themes and Theme Builder]] - Theme Builder, styles and variants, publishing and default theme, dark theme, empty states, login page, clone preservers
+- [[Next Experience Landing Pages and Start Pages]] - start page options and precedence, landing page variants, my_home_navigation_page, glide.login.home, footer
+- [[Configurable Workspace Administration - Lists, Forms, Activity Stream and Email]] - workspace parts, list and form properties, text commands, regex validation, activity stream, email, AI features
+- [[Declarative Actions in Workspaces]] - workspace buttons: action types, UI interaction or UXF client action, layouts and groups, custom modal, conditions
 
 ## Security (`Security/`)
 
