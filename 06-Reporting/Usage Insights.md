@@ -2,11 +2,11 @@
 type: concept
 tags: [concept, reporting, security, roles, api, release-specific]
 status: documented
-source: ServiceNow Brazil docs, Platform Analytics guide > Usage Insights (Exploring, Navigating, Configuring, Enable, User privacy and consent, consent policy types, location detection, tracking controls, Conversations, Viewing dashboards, Creating custom events, Bulk export overview, Analytics overlay, roles, properties, durations, domain separation), read 2026-10-30. Retention, cohort, funnel and navigation path steps, tracked field and cookie lists, Mobile and Service Portal pages, and export setup steps listed, not read in detail. https://www.servicenow.com/docs/r/now-intelligence/usage-insights/user-exp-analytics-landing.html
+source: ServiceNow Brazil docs, Platform Analytics guide > Usage Insights (Exploring, Navigating, Configuring, Enable, User privacy and consent, consent policy types, location detection, tracking controls, Conversations, Viewing dashboards, Creating custom events, Bulk export overview, Analytics overlay, roles, properties, durations, domain separation), read 2026-10-30. Retention, cohort, funnel and navigation path steps, tracked field and cookie lists, Mobile and Service Portal pages, and export setup steps listed, not read in detail. https://www.servicenow.com/docs/r/now-intelligence/usage-insights/user-exp-analytics-landing.html ServiceNow Brazil docs, Service Portal > Analyzing portal performance and usage, read 2026-11-06.
 sn-release: Brazil
 verified:
 verified-by:
-updated: 2026-10-30
+updated: 2026-11-06
 ---
 
 # Usage Insights
@@ -80,6 +80,8 @@ Store app, asynchronous REST request returning a job ID; JSON batches go to a Ka
 | `glide.analytics.tracking.force_allowed.portals` | no consent pop-up | |
 
 Changing a portal sys_id starts a new dashboard.
+
+**Service Portal pages (Brazil, read 2026-11-06):** one page says tracking is enabled for all portals by default, another that it is not enabled by default (create it from the portal record with **Create Analytics Settings**). Unconfirmed; detail and event list in [[Service Portal SEO, Announcements and Usage Analytics]].
 
 ## Example
 

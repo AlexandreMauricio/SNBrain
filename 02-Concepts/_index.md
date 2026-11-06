@@ -377,6 +377,12 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Mobile Platform Overview]] - Now Mobile and Mobile Agent, app configs, old and new terms, tables, mobile_admin
 - [[Service Portal Widget Development]] - data cycle (data, input, options, server.get/update/refresh), guidelines, option schema, Angular Providers, embedded widgets, dependencies, translation, widgets on catalog forms
 - [[Service Portal Embeddables]] - UI Builder components in portal pages: plugins, enabling, theme mapping, spEmbeddables API
+- [[Service Portal Portal Record, Branding and Themes]] - portal fields, header menu and items, catalogs and KBs, Agent Chat configuration, CSS stacking, Branding Editor, themes and includes, theme variants, text resize, right-to-left
+- [[Service Portal Pages, Containers and Page Route Maps]] - Designer, page and container fields, widget instances and context menu, deferred loading, route maps, standard ticket page, attachment directives, Approval Configuration
+- [[Service Portal Base Widget Library]] - base widgets with their key instance options: general, search, knowledge, catalog, service status
+- [[Service Portal Search Configuration]] - AI Search vs Zing in portals, search sources and data fetch scripts, pagination, facets, suggestions, default and contextual sources
+- [[Service Portal Access, Login and Redirects]] - public, roles, widget public table allow list, user criteria, SSO and SPEntryPage redirects, e-signature, self-registration, deactivation
+- [[Service Portal SEO, Announcements and Usage Analytics]] - readable URLs, meta tags, dynamic titles, hreflang, Sitemap Generator, announcements, Usage Insights events, Performance and Portal Analyzer
 
 ## Security (`Security/`)
 

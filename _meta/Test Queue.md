@@ -8,7 +8,7 @@ updated: 2026-11-06
 
 # Test queue
 
-**Generated 2026-11-06: 185 items in 138 notes.** Everything the vault still calls open or unconfirmed, grouped by folder. With an instance open, pick an item, test it, and record the result in the note ([[Recording Results and Inbox]]): answer the open question, add the instance to `observed-in:`, or mark the note `verified`. Then regenerate this page:
+**Generated 2026-11-06: 186 items in 138 notes.** Everything the vault still calls open or unconfirmed, grouped by folder. With an instance open, pick an item, test it, and record the result in the note ([[Recording Results and Inbox]]): answer the open question, add the instance to `observed-in:`, or mark the note `verified`. Then regenerate this page:
 
 `powershell -ExecutionPolicy Bypass -File _meta/tools/test-queue.ps1`
 
@@ -213,7 +213,7 @@ Exercise notes are left out: their open items live in each exercise (*Open with 
     - Inference: From the Brazil docs; not tested. Pages updated September 2026, so likely new or changed in Brazil (inference). Widget basics: Service Portal Widget Development. Not the same as **Web Embeddables** sessions for extern...
     - Unconfirmed: The docs examples write the controller as `app.controller('caseListWidget', function($scope, spEmbeddables) {...})` rather than the usual widget `function()` form; which one a widget record needs is unconfirmed.
 - [[Service Portal Overview and Configuration]] (documented)
-    - Unconfirmed: **Domain separation:** the supported-features page says Data only level; the reference page says unsupported. Unconfirmed variants.
+    - Unconfirmed: **Domain separation:** the supported-features page says Data only level; the reference page says unsupported (support level *No support*: portals, pages and widgets are not domain separated, but widget data follows th...
 
 ## 02-Concepts/Scripting
 
@@ -399,6 +399,7 @@ Exercise notes are left out: their open items live in each exercise (*Open with 
 - [[Usage Insights]] (documented)
     - Unconfirmed: | `glide.analytics.enabled` | track analytics | `false` on the property page, yet the docs say enabled by default: unconfirmed |
     - Unconfirmed: | `glide.analytics.user.consent.script_timeout` | consent script, ms, 100 to 5000 | 2000 (one page writes `glide.analytics.consent.script_timeout`: unconfirmed variant) |
+    - Unconfirmed: *Service Portal pages (Brazil, read 2026-11-06):** one page says tracking is enabled for all portals by default, another that it is not enabled by default (create it from the portal record with **Create Analytics Sett...
 
 ## Confirm in a second instance (0)
 
