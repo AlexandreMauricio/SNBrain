@@ -8,7 +8,7 @@ updated: 2026-11-06
 
 # Test queue
 
-**Generated 2026-11-06: 182 items in 136 notes.** Everything the vault still calls open or unconfirmed, grouped by folder. With an instance open, pick an item, test it, and record the result in the note ([[Recording Results and Inbox]]): answer the open question, add the instance to `observed-in:`, or mark the note `verified`. Then regenerate this page:
+**Generated 2026-11-06: 183 items in 137 notes.** Everything the vault still calls open or unconfirmed, grouped by folder. With an instance open, pick an item, test it, and record the result in the note ([[Recording Results and Inbox]]): answer the open question, add the instance to `observed-in:`, or mark the note `verified`. Then regenerate this page:
 
 `powershell -ExecutionPolicy Bypass -File _meta/tools/test-queue.ps1`
 
@@ -224,6 +224,8 @@ Exercise notes are left out: their open items live in each exercise (*Open with 
 - [[GlideTableHierarchy and GlideElementDescriptor API Reference]] (documented)
     - Unconfirmed: | `getTableExtensions()`, `getAllExtensions()` | the tables that extend it; the docs word the two descriptions alike, so which includes the table itself is unconfirmed |
     - Unconfirmed: Dictionary attributes are read with `getED().getBooleanAttribute('<attribute>')`, which the team's UI action in Force Records into an Update Set uses. That method is not on this page, so its documentation is unconfirmed.
+- [[Next Experience Client APIs (g_modal, GlideForm, GlideList)]] (documented; observed in updated: 2026-11-06)
+    - Inference: Absent from the Next Experience page: `getOption`, `isSectionVisible`, `setRelatedLinksDisplay`, `isLiveUpdating`, `refreshSlushbucket`, `getDisplayBox`, `showTemplateBar`, `hideTemplateBar`. Whether they fail in work...
 - [[Team Script Conventions]] (unverified)
     - Unconfirmed: **Try and catch:** no empty `catch` without a justification. The notes follow this with a bare *Script actions*; its meaning is unconfirmed.
     - Unconfirmed: *Unconfirmed variant:** the team example assigns directly (`grOrder.state = cancelState;`), while GlideRecord API Reference says to use `setValue()` rather than direct assignment before `update()`.

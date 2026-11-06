@@ -6,14 +6,14 @@ source: ServiceNow Brazil docs, API reference > Client API reference > GlideForm
 sn-release: Brazil
 verified:
 verified-by:
-updated: 2026-11-01
+updated: 2026-11-06
 ---
 
 # GlideForm and GlideAjax Client API Reference
 
 **In one line:** `g_form` controls the open form in the browser, and **GlideAjax** calls a client-callable script include. Both client side, in [[Client Scripts]], UI policy scripts and client UI actions.
 
-From the Brazil docs; not tested. A separate *GlideForm (Next Experience)* page exists, not read.
+From the Brazil docs; not tested. Workspaces use *GlideForm (Next Experience)*: see [[Next Experience Client APIs (g_modal, GlideForm, GlideList)]].
 
 ## g_form
 

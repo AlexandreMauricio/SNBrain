@@ -13,7 +13,7 @@ updated: 2026-11-06
 
 **In one line:** browser-side classes to open dialogs, show a form in a dialog, and move the user to another page or record in Core UI.
 
-From the Brazil docs, not tested. They run in the browser, usually from a UI action with **Client** ticked ([[UI Actions]]). Configurable workspaces use other APIs, `g_modal` and GlideModal (Next Experience), which are not read here. Service Portal uses `spModal` ([[Service Portal Widgets]]).
+From the Brazil docs, not tested. They run in the browser, usually from a UI action with **Client** ticked ([[UI Actions]]). Configurable workspaces use `g_modal` and GlideModal (Next Experience): [[Next Experience Client APIs (g_modal, GlideForm, GlideList)]]. Service Portal uses `spModal` ([[Service Portal Widgets]]).
 
 ## GlideModal
 
