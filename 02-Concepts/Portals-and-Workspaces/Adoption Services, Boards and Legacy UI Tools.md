@@ -2,18 +2,18 @@
 type: concept
 tags: [concept, portal, instance-admin, release-specific]
 status: documented
-source: ServiceNow Brazil docs, ServiceNow AI Platform user interface > Adoption services (67 topics), Visual Task Boards (55), Timeline Visualizations (13), Content Management System (82), landing and section overviews only, read 2026-10-30. Step pages not read. Configurable Workspace UI (122), Working in Core UI (165) and Personalize your experience (69) compared by name only. https://www.servicenow.com/docs/r/platform-user-interface/next-experience-readiness-checker.html
+source: ServiceNow Brazil docs, ServiceNow AI Platform user interface > Adoption services (67 topics), Visual Task Boards (55), Timeline Visualizations (13), Content Management System (82), landing and section overviews only, read 2026-10-30. Step pages not read. Configurable Workspace UI (122), Working in Core UI (165) and Personalize your experience (69) compared by name only. https://www.servicenow.com/docs/r/platform-user-interface/next-experience-readiness-checker.html All four chapters read in full 2026-11-06; details moved to their own notes (see the top of the body).
 sn-release: Brazil
 verified:
 verified-by:
-updated: 2026-10-30
+updated: 2026-11-06
 ---
 
 # Adoption Services, Boards and Legacy UI Tools
 
 **In one line:** a short map of smaller UI features: help for users, visual boards, timelines, and the older Content Management System.
 
-From the Brazil docs; not tested. Kept together as a map until one needs its own note.
+From the Brazil docs; not tested. Now a map: full details in [[Guided Tours, Embedded Help and Help Center]], [[Visual Task Boards and Timeline Visualizations]] and [[Content Management System (CMS)]].
 
 ## Adoption services
 
@@ -41,7 +41,7 @@ A high-level view of an organisation's activities over time, for leaders. Plugin
 
 ## Content Management System
 
-The older way to build a custom interface. Plugins `com.glide.cms` and `com.glide.cms.extensions` are **being prepared for future deprecation**: hidden, not available to activate, still supported. Tables include `content_page`, `content_type`, `content_link`, `content_block_programmatic`.
+The older way to build a custom interface. Plugins `com.glide.cms` and `com.glide.cms.extensions` are **being prepared for future deprecation**: hidden, not available to activate, still supported. The full Brazil chapter (read 2026-11-06) is firmer: CMS can no longer be activated, is deprecated in the **C release** and support ends then (security fixes until then); see [[Content Management System (CMS)]]. Tables include `content_page`, `content_type`, `content_link`, `content_block_programmatic`.
 
 For new work the docs point to [[Service Portal Overview and Configuration]].
 

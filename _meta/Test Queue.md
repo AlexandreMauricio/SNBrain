@@ -8,7 +8,7 @@ updated: 2026-11-06
 
 # Test queue
 
-**Generated 2026-11-06: 193 items in 144 notes.** Everything the vault still calls open or unconfirmed, grouped by folder. With an instance open, pick an item, test it, and record the result in the note ([[Recording Results and Inbox]]): answer the open question, add the instance to `observed-in:`, or mark the note `verified`. Then regenerate this page:
+**Generated 2026-11-06: 192 items in 143 notes.** Everything the vault still calls open or unconfirmed, grouped by folder. With an instance open, pick an item, test it, and record the result in the note ([[Recording Results and Inbox]]): answer the open question, add the instance to `observed-in:`, or mark the note `verified`. Then regenerate this page:
 
 `powershell -ExecutionPolicy Bypass -File _meta/tools/test-queue.ps1`
 
@@ -220,8 +220,6 @@ Exercise notes are left out: their open items live in each exercise (*Open with 
     - Inference: Where the user-selected start page sits relative to the preference and property is not stated (inference). The docs also say an administrator can set a start page that users cannot override.
 - [[Next Experience Themes and Theme Builder]] (documented; observed in updated: 2026-11-06)
     - Unconfirmed: Default font: the configuring-themes page says **Lato**; Theme Builder pages say a deleted custom font falls back to **Source Sans Pro** (Regular). Both kept; which applies to which theme is unconfirmed.
-- [[Next Experience UI and Unified Navigation]] (documented; observed in updated: 2026-11-06)
-    - Unconfirmed: Picker keyboard shortcuts are off until two properties per picker are created: `glide.ui.keyboard.shortcuts.polaris.application_picker.enabled` / `.key_combo` (default `ctrl+alt+a`), `...domain_separation_picker...` (...
 - [[Service Portal Embeddables]] (documented; observed in updated: 2026-11-06)
     - Inference: From the Brazil docs; not tested. Pages updated September 2026, so likely new or changed in Brazil (inference). Widget basics: Service Portal Widget Development. Not the same as **Web Embeddables** sessions for extern...
     - Unconfirmed: The docs examples write the controller as `app.controller('caseListWidget', function($scope, spEmbeddables) {...})` rather than the usual widget `function()` form; which one a widget record needs is unconfirmed.

@@ -392,6 +392,9 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Next Experience Landing Pages and Start Pages]] - start page options and precedence, landing page variants, my_home_navigation_page, glide.login.home, footer
 - [[Configurable Workspace Administration - Lists, Forms, Activity Stream and Email]] - workspace parts, list and form properties, text commands, regex validation, activity stream, email, AI features
 - [[Declarative Actions in Workspaces]] - workspace buttons: action types, UI interaction or UXF client action, layouts and groups, custom modal, conditions
+- [[Content Management System (CMS)]] - deprecated legacy sites: sites, pages, content types, blocks, security, styles; migrate to Service Portal
+- [[Guided Tours, Embedded Help and Help Center]] - Embedded Help records and qualifiers, Help Center guidance, onboarding modals, Guided Tour Designer and auto-launch, Dynamic Guidance, Guided Setup
+- [[Visual Task Boards and Timeline Visualizations]] - freeform, flexible and guided boards, lanes, labels, card limits, checklists; timeline visualization setup and roles
 
 ## Security (`Security/`)
 
