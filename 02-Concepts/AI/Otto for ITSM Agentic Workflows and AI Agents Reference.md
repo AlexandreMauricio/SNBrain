@@ -2,10 +2,10 @@
 type: reference
 tags: [reference, ai, incident, change, sla, automation]
 status: documented
-source: ServiceNow Australia IT Service Management PDF, "ServiceNow Otto for IT Service Management (ITSM)", topic "Use agentic AI in ServiceNow Otto for ITSM" and all its subtopics (ITSM, Voice, Virtual Agent, Change Management, Incident Management and DEX agentic workflows and standalone AI agents) (pp. 87-151), read 2026-10-02 Re-checked against the Brazil ITSM docs (ServiceNow Otto for ITSM chapter, 80 topics, https://www.servicenow.com/docs/r/it-service-management/now-assist-for-it-service-management-itsm/config-genai-va-itsm.html and siblings), 2026-10-29: same content; differences recorded as Brazil notes and variants.
+source: ServiceNow Australia IT Service Management PDF, "ServiceNow Otto for IT Service Management (ITSM)", topic "Use agentic AI in ServiceNow Otto for ITSM" and all its subtopics (ITSM, Voice, Virtual Agent, Change Management, Incident Management and DEX agentic workflows and standalone AI agents) (pp. 87-151), read 2026-10-02 Re-checked against the Brazil ITSM docs (ServiceNow Otto for ITSM chapter, 80 topics, https://www.servicenow.com/docs/r/it-service-management/now-assist-for-it-service-management-itsm/config-genai-va-itsm.html and siblings), 2026-10-29: same content; differences recorded as Brazil notes and variants. ServiceNow Brazil docs, Enable AI Experiences > AI agents library > IT Service Management AI agents (37 topics), read 2026-11-06 (map UBGwc5glUUjVANqQeiJeZA).
 sn-release: Australia, Brazil
 verified:
-updated: 2026-10-29
+updated: 2026-11-06
 ---
 
 # Otto for ITSM: agentic workflows and AI agents reference
@@ -66,6 +66,37 @@ All manual (no trigger), used from the Otto panel with a prompt naming the chang
 | Voice (`sn_itsm_voice_aia`) | agents *Create incidents with voice*, *Manage tickets with voice* (status, escalate, comment), *Password reset with voice* (emails the article, texts the link or reads the URL); demo "primers": request a catalog item (submits software items, emails a link for others), troubleshoot Outlook from knowledge, submit an account unlock item. Knowledge search needs an AI Search profile and a search retrieval tool on the agent |
 | Virtual Agent | platform *Request Status* agent (view and update tickets from Virtual Agent, the Otto panel or Teams); *DEMO Password reset agent* (inactive; enable under **Select channels and status**, assistant *ServiceNow Otto in Virtual Agent (default)*; uses the *ESC Portal Default Search Profile*) |
 | Digital End-User Experience | *DEX issue diagnosis and resolution*: agents *DEX diagnosis* (root cause from device health data of the 24 hours before the incident, events, similar incidents; Zoom diagnostics) and *DEX resolution plan* (remedial actions, self-help, past resolutions, knowledge; stamps work notes on approval). Roles `sn_dex.service_desk_user` or `sn_dex.engineer`, plus itil. The incident must be under a month old with exactly one DEX-monitored device as CI or affected CI; the prompt must contain "diagnose and resolve" |
+
+## Brazil AI agents library (docs 2026-11-06)
+
+The Brazil library lists 36 ITSM agents. 32 already appear above (from the Australia guide). The rest are new:
+
+| Agent | Does | Allowed role |
+|---|---|---|
+| Agent client collector (ACC) diagnostic | suggests fixes for ACC error codes from the ACC Error Reports | `agent_client_collector_user`, `agent_client_collector_admin` |
+| DEX remediation trigger | runs the supported remedial actions of a resolution plan on Windows and macOS endpoints | `sn_dex.ai_user`, `sn_dex.engineer`, `sn_dex.service_desk_user` |
+| Submit account unlock catalog (voice) | submits the account unlock catalog request during a call | `admin` (as written: *Admin*) |
+| Troubleshoot Outlook issue (voice) | troubleshoots Outlook and sends an article link | `admin` (as written) |
+
+Also new in Brazil: **(autonomous)** variants of *Create change request*, *Change request plans* and *Change template suggestion*, plus *Change CI suggestion (latest)*, which fills the primary and affected CIs without prompting. Their library pages list no allowed or data access roles (not captured).
+
+**Roles named per agent (Brazil):**
+
+| Agent | Allowed role | Data access role |
+|---|---|---|
+| Categorize ITSM incident, Link major incident or problem | `itil` | `itsm.aia.worker` |
+| Classify service and CI | `itil`, `sn_service_desk_agent` | `itsm.aia.worker` |
+| Change conflict assessor | `sn_itsm_aia.sn_aia_chg_conflict` | `itil`, `sn_change_write` |
+| Change quality assessor | `sn_itsm_aia.sn_aia_chg_quality` | `itil`, `sn_change_write` |
+| Schedule change request | `sn_itsm_aia.sn_aia_chg_schedule` | `itil`, `sn_change_write` |
+| DEX diagnosis, DEX resolution plan | `sn_incident_write` | `dex.incident.ai.worker` |
+| Incident category configuration, Incident routing configuration | `admin` | `admin` |
+| Standard change template proposal | `change_manager`, `itil` | the same |
+| ITSM incident resolution plan investigation | `snc_internal` | `itil`, `sn_service_desk_agent` |
+
+The data access role `itsm.aia.worker` bundles a long list of read and write roles; the Categorize page lists them in full.
+
+**Brazil wording vs this note:** *Incident category configuration* now covers the whole life cycle of incident categories in `sys_choice`, by conversation, CSV or XLSX upload, or industry recommendations. *Incident routing configuration* creates, changes and deactivates assignment rules.
 
 ## Related
 

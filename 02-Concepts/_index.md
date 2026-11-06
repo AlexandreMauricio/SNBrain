@@ -465,6 +465,8 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Virtual Agent Overview and Assistant Designer]] - LLM and NLU topics, assistants, chat experiences, building topics, roles, tables
 - [[AI Platform Map, Roles and Product Tiers]] - which tool does what, admin roles, Foundation, Advanced and Prime, LLMs
 - [[AI Agent Studio, Agentic Workflows and AI Control Tower]] - building and testing agents, external agents, AI governance areas
+- [[AI Agents Library - Platform and Creator Agents]] - shipped platform, survey, admin, AI Control Tower and Otto for Creator agents with their roles (documented, Brazil)
+- [[AI Agents Library - CMDB, ITOM and Asset Agents]] - CI search and governance, alert investigation per observability tool, service mapping, asset repair and sourcing agents (documented, Brazil)
 
 ## Data Management (`Data-Management/`)
 
