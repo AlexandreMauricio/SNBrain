@@ -2,7 +2,7 @@
 type: concept
 tags: [concept, ai, roles, release-specific]
 status: documented
-source: ServiceNow Brazil docs, Enable AI Experiences > AI agents and agentic workflows > AI Agent Studio (77 topics) and Agentic workflows (13), Establishing AI governance > AI Control Tower (295), section overviews, read 2026-10-30. AI agents library (602), AI Agent Studio (legacy) (134), AI Control Tower (legacy) (158), Autonomous Workforce and AI Desktop Actions not read. Docs site API, map UBGwc5glUUjVANqQeiJeZA. ServiceNow Brazil docs, AI agents library agent pages, read 2026-11-06.
+source: ServiceNow Brazil docs, Enable AI Experiences > AI agents and agentic workflows > AI Agent Studio (77 topics) and Agentic workflows (13), Establishing AI governance > AI Control Tower (295), section overviews, read 2026-10-30. AI agents library read in part on 2026-11-06 (see the library notes); not read: AI Agent Studio (legacy) (134), AI Control Tower (legacy) (158), Autonomous Workforce and AI Desktop Actions not read. Docs site API, map UBGwc5glUUjVANqQeiJeZA. ServiceNow Brazil docs, AI agents library agent pages, read 2026-11-06.
 sn-release: Brazil
 verified:
 verified-by:
