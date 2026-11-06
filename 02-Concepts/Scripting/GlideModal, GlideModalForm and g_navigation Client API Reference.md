@@ -2,7 +2,7 @@
 type: reference
 tags: [reference, scripting, client-script, ui-action, glide-api]
 status: documented
-source: ServiceNow Brazil docs, API implementation and reference > Client API reference, pages GlideModal - Client, GlideModalForm - Client, GlideNavigation - Client, GlideGuid - Client, GlideURLV3 - Client, read 2026-11-06 through the docs site API (map ooCZhg2g6YDYvKp3oBwAxA). g_modal and GlideModal (Next Experience) pages not read.
+source: ServiceNow Brazil docs, API implementation and reference > Client API reference, pages GlideModal - Client, GlideModalForm - Client, GlideNavigation - Client, GlideGuid - Client, GlideURLV3 - Client, read 2026-11-06 through the docs site API (map ooCZhg2g6YDYvKp3oBwAxA). g_modal and GlideModal (Next Experience) pages not read. ServiceNow Brazil docs, API reference page(s) GlideAgentWorkspace (g_aw) - Client, read 2026-11-06 through the docs site API (map ooCZhg2g6YDYvKp3oBwAxA).
 sn-release: Brazil
 verified:
 verified-by:
@@ -31,6 +31,10 @@ From the Brazil docs, not tested. They run in the browser, usually from a UI act
 | `g_navigation` | `open(url, target)`, `openRecord(table, sys_id)`, `openPopup(url, name, features, ...)`, `refreshNavigator()`, `reloadWindow()` |
 | `g_guid` | `generate(length)`: a unique identifier |
 | `GlideURL` (GlideURLV3) | `new GlideURL(contextPath)`, `addParam()`, `getURL()`. Only with ListV2 and ListV3; not in Service Portal, Now Mobile or Agent Workspace |
+
+## g_aw (Agent Workspace)
+
+`g_aw.openRecord(table, sysId, params)` opens a record in a subtab, while `g_aw.closeRecord()`, `setSectionExpanded(section, expanded)` and `domainScopeProvider()` handle the rest. It works from UI actions and client scripts in **Agent Workspace**, which [[Migrating from ITSM Agent Workspace to Service Operations Workspace]] treats as being replaced.
 
 ## Example
 

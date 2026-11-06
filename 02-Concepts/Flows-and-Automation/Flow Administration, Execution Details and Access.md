@@ -2,10 +2,10 @@
 type: reference
 tags: [reference, flows, automation, roles, access-control, data-management, api, admin]
 status: documented
-source: ServiceNow docs, Australia, Build workflows > Workflow Studio > Flows, subflows, and actions (read 2026-10-08 through the docs site): Flow execution details, Configuring flows, Flow administration, Flow execution details retention, Flow execution settings, Activate flow reporting, FDIH Dashboard (and Get insights), Flow priority (Show field, Set priority), See related flows for action / subflow, User access to Workflow Studio flows, Manage access to flow features, Content filtering (definitions, rules), API access, Create code snippets, Create a client callable flow, Restricted caller access, Set flow user preferences, Update Flow Diagramming. Section start https://www.servicenow.com/docs/r/australia/build-workflows/workflow-studio/configuring-flow-designer.html
+source: ServiceNow docs, Australia, Build workflows > Workflow Studio > Flows, subflows, and actions (read 2026-10-08 through the docs site): Flow execution details, Configuring flows, Flow administration, Flow execution details retention, Flow execution settings, Activate flow reporting, FDIH Dashboard (and Get insights), Flow priority (Show field, Set priority), See related flows for action / subflow, User access to Workflow Studio flows, Manage access to flow features, Content filtering (definitions, rules), API access, Create code snippets, Create a client callable flow, Restricted caller access, Set flow user preferences, Update Flow Diagramming. Section start https://www.servicenow.com/docs/r/australia/build-workflows/workflow-studio/configuring-flow-designer.html ServiceNow Brazil docs, API reference page(s) ScriptableFlowRunner - Scoped, ScriptableFlowRunnerResult - Scoped, GlideFlow - Client, read 2026-11-06 through the docs site API (map ooCZhg2g6YDYvKp3oBwAxA).
 sn-release: Australia
 verified:
-updated: 2026-10-08
+updated: 2026-11-06
 ---
 
 # Flow Administration, Execution Details and Access
@@ -115,6 +115,27 @@ The guide names the class only as FlowAPI; the `sn_fd` namespace is general know
 
 - **Create Code Snippet** (More Actions; active flow or published action): a ready JavaScript call to paste into a business rule or Scripts - Background.
 - **Client callable** (role `security_admin`): create an ACL of type `client_callable_flow_object`, operation execute, with a role; then on the item **Manage security > Callable by Client API** and add that ACL. Consider what data it exposes.
+
+### Builder API: ScriptableFlowRunner
+
+From the Brazil API reference (documented, not tested). Server side, namespace `sn_fd`, which the reference confirms.
+
+```javascript
+var result = sn_fd.FlowAPI.getRunner()
+    .subflow('global.example_subflow')     // or flow(), action(), datastream()
+    .inForeground()                        // or inBackground()
+    .withInputs({ table_name: 'incident' })
+    .timeout(60000)                        // milliseconds
+    .run();
+gs.info(result.getContextId() + ' ' + JSON.stringify(result.getOutputs()));
+```
+
+- Other options: `addInput(name, value)`, `inDomain(domainId)`, `validateInputs(true)` (throw on unexpected inputs), and `quick()` (no execution details or context records, for high volume).
+- The result (`ScriptableFlowRunnerResult`) gives `getContextId()`, `getOutputs()`, `getDomainId()`, `getDate()`, `getFlowObjectName()`, `getFlowObjectType()`, `getDataStream()` and `debug()`.
+
+**Unconfirmed variants on who quick runs run as:** the table above (Workflow Studio guide) says Quick methods **always run as System**. The API reference adds `asUser()` (run as the triggering user) and `withRoles()` (run with the roles set in the flow properties) for use together with `quick()`.
+
+**GlideFlow (client):** `GlideFlow.startFlow('<scope>.<name>', inputs)`, `startSubflow`, `startAction`, and `getExecution(id)`, all returning promises. The execution then has `awaitCompletion()`, `getExecutionStatus()` and `getOutputs()`. It works in classic UI client scripts only, **not the Workspace Experience UI**, and needs the item to be client callable with an ACL, as above.
 
 ## Cross-scope access
 

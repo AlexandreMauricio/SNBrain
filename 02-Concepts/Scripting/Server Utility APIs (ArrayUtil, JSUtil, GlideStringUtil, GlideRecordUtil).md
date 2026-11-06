@@ -2,7 +2,7 @@
 type: reference
 tags: [reference, scripting, glide-api, javascript]
 status: documented
-source: ServiceNow Brazil docs, API implementation and reference > Server API reference, pages ArrayUtil - Global, JSUtil - Global, GlideStringUtil - Scoped, Global, GlideSecureRandomUtil - Scoped, Global, GlideRecordUtil - Global, GlideScopedEvaluator - Global, GlideURI - Global, GlideExcelParser - Scoped, Global, read 2026-11-06 through the docs site API (map ooCZhg2g6YDYvKp3oBwAxA). Scoped variants of GlideScopedEvaluator and GlideURI not read.
+source: ServiceNow Brazil docs, API implementation and reference > Server API reference, pages ArrayUtil - Global, JSUtil - Global, GlideStringUtil - Scoped, Global, GlideSecureRandomUtil - Scoped, Global, GlideRecordUtil - Global, GlideScopedEvaluator - Global, GlideURI - Global, GlideExcelParser - Scoped, Global, read 2026-11-06 through the docs site API (map ooCZhg2g6YDYvKp3oBwAxA). Scoped variants of GlideScopedEvaluator and GlideURI not read. ServiceNow Brazil docs, API reference page(s) CSVParser - Scoped, GlideTextReader - Scoped, GlidePluginManager - Scoped, read 2026-11-06 through the docs site API (map ooCZhg2g6YDYvKp3oBwAxA).
 sn-release: Brazil
 verified:
 verified-by:
@@ -30,6 +30,16 @@ Docs quirks, recorded as written:
 
 - The JSUtil page describes `notNil` with the same words as `nil`. By its name and general knowledge, it is the opposite.
 - The GlideURI - Global page also contains a GlideModalV3 `switchView()` entry and a stray `getGlideURI()` heading, which seem misplaced.
+
+## Reading files and checking plugins
+
+| Class | Scope | Use |
+|---|---|---|
+| `CSVParser` (`sn_impex`) | scoped | `parseLineToArray(line, delimiter, quote)`; defaults to comma and double quote |
+| `GlideTextReader` | scoped | `new GlideTextReader(inputStream)`, `readLine()`, `getEncoding()`. Reads line by line from a stream, so the 5 MB attachment limit does not apply |
+| `GlidePluginManager` | scoped | `isActive(pluginID)` |
+
+Pair GlideTextReader with `GlideSysAttachment.getContentStream()` ([[GlideSysAttachment, GlideFilter and GSLog API Reference]]) to read a large CSV attachment one row at a time.
 
 ## Example
 

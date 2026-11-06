@@ -2,7 +2,7 @@
 type: reference
 tags: [reference, scripting, glide-api, javascript, encoded-query]
 status: documented
-source: ServiceNow Brazil docs, API reference > Server API reference > GlideRecord - Global and GlideRecord - Scoped (method lists and their notes), read 2026-10-30. Parameter tables and per-method examples not copied. https://www.servicenow.com/docs/r/api-reference/server-api-reference/c_GlideRecordAPI.html Team notes shared by the user's manager, 2026-10-30, file GlideRecord.md (unverified, sections marked).
+source: ServiceNow Brazil docs, API reference > Server API reference > GlideRecord - Global and GlideRecord - Scoped (method lists and their notes), read 2026-10-30. Parameter tables and per-method examples not copied. https://www.servicenow.com/docs/r/api-reference/server-api-reference/c_GlideRecordAPI.html Team notes shared by the user's manager, 2026-10-30, file GlideRecord.md (unverified, sections marked). ServiceNow Brazil docs, API reference page(s) GlideQueryCondition - Global, read 2026-11-06 through the docs site API (map ooCZhg2g6YDYvKp3oBwAxA).
 sn-release: Brazil
 verified:
 verified-by:
@@ -72,6 +72,20 @@ if (gr.next() && !gr.hasNext()) {
     // exactly one record
 }
 ```
+
+## Conditions with OR (GlideQueryCondition)
+
+From the Brazil API reference (documented). `addQuery()`, `addActiveQuery()`, `addNullQuery()`, `addNotNullQuery()`, `addJoinQuery()` and their kin return a **GlideQueryCondition**. Chain `addOrCondition(field, operator, value)` for OR, or `addCondition(...)` for AND. `addSystem...` and `addUser...` variants exist for system and user queries.
+
+```javascript
+var gr = new GlideRecord('incident');
+var cond = gr.addQuery('category', 'hardware');
+cond.addOrCondition('category', 'software');
+gr.addQuery('priority', 1);
+gr.query();
+```
+
+For complex mixes the docs suggest building the filter in a list, **Copy query**, and passing it to `addEncodedQuery()`. **Trap:** an invalid field name in an encoded query is silently dropped, so the rest of the query runs, and it may return every record.
 
 ## Example
 

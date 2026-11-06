@@ -2,11 +2,11 @@
 type: reference
 tags: [reference, scripting, glide-api, javascript]
 status: documented
-source: ServiceNow Brazil docs, API reference > Server API reference > GlideSystem - Global and GlideSystem - Scoped (method lists and notes), read 2026-10-30. Parameter tables and examples not copied. https://www.servicenow.com/docs/r/api-reference/server-api-reference/c_GlideSystemScopedAPI.html
+source: ServiceNow Brazil docs, API reference > Server API reference > GlideSystem - Global and GlideSystem - Scoped (method lists and notes), read 2026-10-30. Parameter tables and examples not copied. https://www.servicenow.com/docs/r/api-reference/server-api-reference/c_GlideSystemScopedAPI.html ServiceNow Brazil docs, API reference page(s) GlideSession - Global, read 2026-11-06 through the docs site API (map ooCZhg2g6YDYvKp3oBwAxA).
 sn-release: Brazil
 verified:
 verified-by:
-updated: 2026-10-30
+updated: 2026-11-06
 ---
 
 # GlideSystem API Reference
@@ -42,6 +42,10 @@ By comparing the two pages' lists; test before relying on them.
 - **Not on the scoped page:** `log`, `logError`, `logWarning`, `print`, `now`, `nowDateTime`, `nowNoTZ`, `nowGlideDateTime`, `dateDiff`, `calDateDiff`, `beginningOfToday`, `endOfToday`, `getXMLText`, `getXMLNodeList`, `getPreference`, `hasRoleInGroup`, `getMessageS`, `getUserNameByUserID`, the impersonation methods, and others.
 
 So in a scoped application log with `gs.info()`, not `gs.log()`.
+
+## GlideSession (gs.getSession())
+
+From the Brazil API reference (global page, documented): `getLanguage()`, `getTimeZoneName()`, `getRoles()`, `isInteractive()`, `isLoggedIn()`, and session values for the client: `putClientData(name, value)`, `getClientData(name)`, `clearClientData(name)`. The values set by `putClientData` can be read in client scripts (`g_user.getClientData()`, general knowledge). A scoped page exists and was not read.
 
 ## Example
 

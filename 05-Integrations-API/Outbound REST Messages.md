@@ -2,11 +2,11 @@
 type: concept
 tags: [concept, api, integrations, scripting, script]
 status: documented
-source: ServiceNow Brazil docs, API implementation and reference > Web services > Outbound > REST (elements, Create a message, HTTP method, Test, header, MID Server, special characters, variables, scripting, examples), Logging, Mutual authentication, read 2026-10-30. Outbound REST authentication sub-pages (OAuth, credentials) listed, not read; see the linked notes. https://www.servicenow.com/docs/r/api-reference/web-services/c_OutboundRESTWebService.html
+source: ServiceNow Brazil docs, API implementation and reference > Web services > Outbound > REST (elements, Create a message, HTTP method, Test, header, MID Server, special characters, variables, scripting, examples), Logging, Mutual authentication, read 2026-10-30. Outbound REST authentication sub-pages (OAuth, credentials) listed, not read; see the linked notes. https://www.servicenow.com/docs/r/api-reference/web-services/c_OutboundRESTWebService.html ServiceNow Brazil docs, API reference page(s) RESTResponseV2 - Scoped, Global, read 2026-11-06 through the docs site API (map ooCZhg2g6YDYvKp3oBwAxA).
 sn-release: Brazil
 verified:
 verified-by:
-updated: 2026-10-30
+updated: 2026-11-06
 ---
 
 # Outbound REST Messages
@@ -45,6 +45,8 @@ var status = response.getStatusCode();
 ```
 
 Wrap in `try`/`catch`: a missing message or a scope problem throws. Keep credentials on a record, not in code. The docs samples use `setBasicAuth()`.
+
+**Response object (RESTResponseV2, from the Brazil API reference):** `getStatusCode()`, `getBody()`, `haveError()`, `getErrorCode()`, `getErrorMessage()`, `getHeader(name)`, `getHeaders()`, `getAllHeaders()` (keeps duplicates), `getCookies()`, `getQueryString()` (the resolved query sent), `getResponseAttachmentSysid()` (when the body was saved as an attachment), and `waitForResponse(seconds)` after `executeAsync()`.
 
 **No record:** `new sn_ws.RESTMessageV2()` then `setHttpMethod()`, `setEndpoint()`, `setRequestBody()`.
 
