@@ -6,6 +6,7 @@ source: <sys_dictionary result / script output / docs URL / own experience>
 sn-release:
 verified:
 verified-by:
+observed-in:
 updated: <YYYY-MM-DD>
 ---
 

@@ -6,6 +6,7 @@ source: <where it came from>
 sn-release:
 verified:
 verified-by:
+observed-in:
 updated: <YYYY-MM-DD>
 ---
 

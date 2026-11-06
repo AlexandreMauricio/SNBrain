@@ -6,12 +6,13 @@ source: task brief supplied by user (author <FirstName>), <date>; solution from 
 sn-release:
 verified:
 verified-by:
+observed-in:
 updated:
 ---
 
 # Exercise: <Short Generic Name>
 
-Author: <FirstName>. Instance: <generic label, e.g. PDI or client-A, never the real instance name>, <date>.
+Author: <FirstName>. Instance: <label from `_meta/Instances.md`, e.g. pdi-1 (PDI) or client-A (client), never the real instance name>, <date>.
 
 ## Brief
 
@@ -23,7 +24,7 @@ Author: <FirstName>. Instance: <generic label, e.g. PDI or client-A, never the r
 
 ## Flow
 
-<Only when the solution is a flow (flow, workflow, approval, several record types); delete otherwise. Screenshots: embed the files from the documentation notes, checked for real data.>
+<Only when the solution is a flow (flow, workflow, approval, several record types); delete otherwise. Conventions: `_meta/Procedures/Diagrams.md`. Screenshots: embed the files from the documentation notes (`_meta/Procedures/Screenshots.md`).>
 
 ```mermaid
 flowchart TD
@@ -36,6 +37,14 @@ flowchart TD
 | Requirement | Approach | Note |
 |---|---|---|
 | | | |
+
+## Options considered
+
+<Every route weighed, including the rejected ones, so the next similar ask starts from the comparison. When two options both work, create or extend an `08-Approaches/` note and link it ([[Improvement Loop]]).>
+
+| Option | Verdict | Why | Evidence |
+|---|---|---|---|
+| | chosen / rejected / fallback | | docs / observed / verified / inference |
 
 ## Open with the requester
 
@@ -56,6 +65,10 @@ flowchart TD
 ## Outcome
 
 <What was built, what differed from the plan, what the instance had, lacked or labelled differently.>
+
+## Since written
+
+<Dated lines added when a later docs page, release or instance finding affects this exercise, written by whoever finds it (`impact.ps1` lists the exercises to check). Format: `- <date>: <what changed> (<evidence>, link to the note). Effect here: <...>.` Delete the section while empty.>
 
 ## Reuse it for
 

@@ -1,0 +1,22 @@
+# Runs the vault audit on every push and pull request, so structural problems
+# (broken links, tags outside the vocabulary, missing index lines, BOMs...) show up
+# on GitHub without waiting for someone's next session. Same script as local runs.
+name: Vault audit
+
+on:
+  push:
+  pull_request:
+
+# A newer push cancels the run of the one before it, so a burst of pushes gives one result (and one email at most).
+concurrency:
+  group: audit-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Run audit.ps1 -Strict
+        shell: powershell
+        run: powershell -ExecutionPolicy Bypass -File _meta/tools/audit.ps1 -Strict

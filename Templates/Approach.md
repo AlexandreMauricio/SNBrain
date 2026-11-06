@@ -6,6 +6,7 @@ source: own experience
 sn-release:
 verified:
 verified-by:
+observed-in:
 updated: <YYYY-MM-DD>
 ---
 

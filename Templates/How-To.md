@@ -6,6 +6,7 @@ source: <docs URL / own experience>
 sn-release:
 verified:
 verified-by:
+observed-in:
 updated: <YYYY-MM-DD>
 ---
 
@@ -14,6 +15,19 @@ updated: <YYYY-MM-DD>
 **Goal:** <one sentence>
 **Prerequisites:** <roles, plugins, properties, data needed>
 **Navigation:** <All > Application > Module, or the table.do / table.list URL>
+
+## Flow
+
+<Only for flows, approvals, multi-record builds; delete otherwise. Conventions: `_meta/Procedures/Diagrams.md`.>
+
+```mermaid
+flowchart TD
+    T([Trigger]) --> A[Step or state]
+    A -->|outcome| B[Next step]
+    B --> E([End])
+```
+
+**At a glance:** Trigger <...> · Changes <...> · Check it worked <...>
 
 ## Steps
 
@@ -39,3 +53,7 @@ updated: <YYYY-MM-DD>
 ## Gotchas
 
 - <update set capture, scope, ACLs, release differences>
+
+## Since written
+
+<Dated lines when a later docs page, release or instance finding affects these steps ([[Improvement Loop]]). Delete while empty.>
