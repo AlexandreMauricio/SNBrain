@@ -6,7 +6,7 @@ source: ServiceNow Brazil docs, ServiceNow AI Platform user interface > Next Exp
 sn-release: Brazil
 verified:
 verified-by:
-observed-in:
+observed-in: [pdi-1]
 updated: 2026-11-06
 ---
 
@@ -45,7 +45,7 @@ Edit application menus and modules in place from the All menu (**Edit applicatio
 
 Application, Domain, Update set and **Crypto module** pickers (the last when the key management setting is opt_in). A red circle means a non-Global application scope. `glide.ui.next_experience.instance_tools_disabled` = false shows the instance tools row (scope and update set) and hides the picker icon. Domain picker roles: [[Domain Separation Administration]].
 
-Picker keyboard shortcuts are off until two properties per picker are created: `glide.ui.keyboard.shortcuts.polaris.application_picker.enabled` / `.key_combo` (default `ctrl+alt+a`), `...domain_separation_picker...` (`ctrl+alt+d`), `...update_set_picker...` (`ctrl+alt+u`). The general shortcut table also gives Control+Alt+a for the **All menu**. Control+Alt+a opening the All menu was tested by the user (verified, instance label pending, 2026-11-06), with the picker shortcut properties not known to exist there; what happens once `application_picker.enabled` is created is still untested.
+Picker keyboard shortcuts are off until two properties per picker are created: `glide.ui.keyboard.shortcuts.polaris.application_picker.enabled` / `.key_combo` (default `ctrl+alt+a`), `...domain_separation_picker...` (`ctrl+alt+d`), `...update_set_picker...` (`ctrl+alt+u`). The general shortcut table also gives Control+Alt+a for the **All menu**. Control+Alt+a opening the All menu was tested by the user (verified pdi-1 2026-11-06), with the picker shortcut properties not known to exist there; what happens once `application_picker.enabled` is created is still untested.
 
 ## Scripting
 
@@ -89,7 +89,7 @@ Searchable modal with categories: **Display**, **Accessibility** (show date and 
 
 ## Keyboard shortcuts
 
-Turned on in Accessibility preferences; Control+/ lists those for the current screen; users can remap (at least one modifier) and **Restore Defaults**. Selected Windows defaults: compose email Control+Alt+e, new record Shift+Alt+n, favorite Control+Shift+f, impersonate Control+Shift+i, landing page Control+Alt+z, domain toolbar Control+Alt+t, refresh list Shift+Alt+r, save Control+s; menus: All Control+Alt+a, Admin Control+Shift+a (both verified, instance label pending, 2026-11-06), Favorites Control+Alt+f, Help Control+Shift+/, History Control+Alt+h, Workspaces Control+Alt+w, Notifications Control+Shift+k, Otto Alt+Shift+a (voice Alt+Shift+v), user menu Control+Shift+u; focus: global search Control+Alt+g, main content Control+Alt+p, workspace / page / record tabs Control+Alt+2 / 3 / 4. macOS uses Command or Option equivalents.
+Turned on in Accessibility preferences; Control+/ lists those for the current screen; users can remap (at least one modifier) and **Restore Defaults**. Selected Windows defaults: compose email Control+Alt+e, new record Shift+Alt+n, favorite Control+Shift+f, impersonate Control+Shift+i, landing page Control+Alt+z, domain toolbar Control+Alt+t, refresh list Shift+Alt+r, save Control+s; menus: All Control+Alt+a, Admin Control+Shift+a (both verified pdi-1 2026-11-06), Favorites Control+Alt+f, Help Control+Shift+/, History Control+Alt+h, Workspaces Control+Alt+w, Notifications Control+Shift+k, Otto Alt+Shift+a (voice Alt+Shift+v), user menu Control+Shift+u; focus: global search Control+Alt+g, main content Control+Alt+p, workspace / page / record tabs Control+Alt+2 / 3 / 4. macOS uses Command or Option equivalents.
 
 ## Example
 

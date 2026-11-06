@@ -419,5 +419,5 @@ Verified how-tos, recipes and fixes with fewer than two instances in `observed-i
 
 ## Waiting for a newer instance (0)
 
-Notes written from a release family newer than any instance recorded in [[Instances]] (latest known: none recorded). Test these once an instance reaches that release, and record its release first.
+Notes written from a release family newer than any instance recorded in [[Instances]] (latest known: Brazil). Test these once an instance reaches that release, and record its release first.
 

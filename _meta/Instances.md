@@ -18,3 +18,4 @@ Add a row the first time a contributor names a new instance. Under **Known state
 
 | Label | Kind | Release | Contributor | First seen | Known state | Exercises built there |
 |---|---|---|---|---|---|---|
+| `pdi-1` | personal developer instance from the ServiceNow Developer site, temporary (random, not kept) | **Brazil Patch 1** (build tag glide-brazil-08-25-2026__patch1-09-21-2026, build date 10-05-2026; read 2026-11-06) | Alexandre | 2026-11-06 | Next Experience on; used once to test keyboard shortcuts. Being temporary, it holds nothing to rely on later; a new PDI gets a new label | none |
