@@ -375,6 +375,8 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Next Experience UI and Unified Navigation]] - navigation, scope pickers, activation, landing pages, themes
 - [[Adoption Services, Boards and Legacy UI Tools]] - guided help, Visual Task Boards, Timeline, Content Management System
 - [[Mobile Platform Overview]] - Now Mobile and Mobile Agent, app configs, old and new terms, tables, mobile_admin
+- [[Service Portal Widget Development]] - data cycle (data, input, options, server.get/update/refresh), guidelines, option schema, Angular Providers, embedded widgets, dependencies, translation, widgets on catalog forms
+- [[Service Portal Embeddables]] - UI Builder components in portal pages: plugins, enabling, theme mapping, spEmbeddables API
 
 ## Security (`Security/`)
 

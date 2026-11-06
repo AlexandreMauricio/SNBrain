@@ -2,7 +2,7 @@
 type: concept
 tags: [concept, portal, scripting, javascript, release-specific]
 status: documented
-source: ServiceNow Brazil docs, ServiceNow AI Platform user interface > Service Portal > Using portal widgets, Developing custom widgets (overviews of guidelines, tutorial, clone, create, option schema, API reference, Angular Providers, embedded widgets, dependencies, internationalize, troubleshooting, embeddables, diagnostics), read at overview depth 2026-10-30. Tutorial steps and API method detail not read. https://www.servicenow.com/docs/r/platform-user-interface/service-portal/service-portal-roles.html ServiceNow Brazil docs, API reference page GlideSPScriptable - Scoped and spModal - Client, read 2026-11-06 through the docs site API (map ooCZhg2g6YDYvKp3oBwAxA).
+source: ServiceNow Brazil docs, ServiceNow AI Platform user interface > Service Portal > Using portal widgets, Developing custom widgets (overviews of guidelines, tutorial, clone, create, option schema, API reference, Angular Providers, embedded widgets, dependencies, internationalize, troubleshooting, embeddables, diagnostics), read at overview depth 2026-10-30. The whole chapter was read in full on 2026-11-06: detail is in Service Portal Widget Development, Service Portal Embeddables and the troubleshooting note. https://www.servicenow.com/docs/r/platform-user-interface/service-portal/service-portal-roles.html ServiceNow Brazil docs, API reference page GlideSPScriptable - Scoped and spModal - Client, read 2026-11-06 through the docs site API (map ooCZhg2g6YDYvKp3oBwAxA).
 sn-release: Brazil
 verified:
 verified-by:
@@ -44,7 +44,7 @@ c.server.get({action: 'refresh'}).then(function(r) {
 });
 ```
 
-The second snippet's `.then` shape is general knowledge plus the page's `server.get` mention, not checked against the API page.
+The Widget API reference confirms `server.get`, `server.update` and `server.refresh` return a promise; reading the result as `r.data` is general knowledge, not on the page. Data cycle, options, providers, embedding and translation: [[Service Portal Widget Development]].
 
 ## Reuse
 
@@ -52,13 +52,13 @@ The second snippet's `.then` shape is general knowledge plus the page's `server.
 - **Embedded widgets:** `<widget></widget>` in a template, or from a client or server script.
 - **Dependencies** (`sp_dependency`): JavaScript, CSS and Angular modules linked to widgets.
 - **Angular templates** (`sp_ng_template`).
-- **Embeddables:** UI Builder components placed in portal pages and external sites.
+- **Embeddables:** UI Builder components placed in portal pages and external sites ([[Service Portal Embeddables]]).
 - **Translation:** `${}` or `gs.getMessage()` in template and scripts.
 - UI macros on a catalog form can be replaced with a widget.
 
 ## Troubleshooting
 
-Reduce complexity first, use **Widget diagnostics** from a portal page to see customisation levels, and check `sp_log`. Portal-side, `glide.sp.show_console_error` shows console errors.
+Reduce complexity first, use **Widget diagnostics** from a portal page to see customisation levels, and check `sp_log` (full steps: [[Service Portal Widget Misbehaves or Loads Slowly]]). Portal-side, `glide.sp.show_console_error` shows console errors.
 
 ## $sp and spModal methods
 
@@ -93,4 +93,4 @@ Clone a base catalog widget as *Example Quick Order*, add option *Example Max It
 
 ## Related
 
-- [[Service Portal Overview and Configuration]] · [[Scripting Overview - Script Types and Where They Run]]
+- [[Service Portal Overview and Configuration]] · [[Scripting Overview - Script Types and Where They Run]] · [[Service Portal Widget Development]] · [[Service Portal Embeddables]] · [[Service Portal Widget Misbehaves or Loads Slowly]]

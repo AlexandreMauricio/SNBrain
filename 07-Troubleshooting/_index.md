@@ -31,3 +31,4 @@ Symptom, cause, fix.
 - [[CMDB Health Scores Missing or Incomplete]] - no data, failure threshold reached, incomplete score, timeouts, broken-hierarchy orphans (Brazil)
 - [[Instance Data Replication Errors and Statuses]] - diagnostics, jobs, consumer statuses and messages, seeding retries, lag, xmlstats (documented, Brazil)
 - [[MID Server Troubleshooting]] - logs, Server Issues, duplicate names, post-clone credentials, user connectivity, resource alerts, ECC hardening (documented, Brazil)
+- [[Service Portal Widget Misbehaves or Loads Slowly]] - isolate, access, providers, widget diagnostics colours and compare, debug output, console scope (documented)
