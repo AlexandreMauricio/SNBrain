@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, scripting, notifications, email, glide-api]
 status: documented
-source: ServiceNow Australia Platform Administration PDF, "System notifications", topics "Scripting for email notifications", "Mail script variables", "Example scripting for email notifications", "Advanced conditions for email notifications" (pp. 2496-2497, 2512-2515), read 2026-10-01
+source: ServiceNow Australia Platform Administration PDF, "System notifications", topics "Scripting for email notifications", "Mail script variables", "Example scripting for email notifications", "Advanced conditions for email notifications" (pp. 2496-2497, 2512-2515), read 2026-10-01 ServiceNow Brazil docs, API reference page GlideEmailOutbound - Scoped, read 2026-11-06 through the docs site API (map ooCZhg2g6YDYvKp3oBwAxA).
 sn-release: Australia
 verified:
-updated: 2026-10-01
+updated: 2026-11-06
 ---
 
 # Mail scripts
@@ -82,6 +82,10 @@ Decides whether to send at all. Return true or set `answer`:
     return !gs.getUser().isMemberOf('Example Group');
 })();
 ```
+
+## The email object as an API
+
+The `email` object is the class **GlideEmailOutbound**. The Brazil API reference (scoped page, documented) says it behaves the same in global and scoped mail scripts, and adds `getSubject()` and `getWatermark()` to the methods above.
 
 ## Related
 

@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, data-management, data-integrity, security, cmdb, admin, roles, release-specific]
 status: documented
-source: ServiceNow docs, Brazil, Platform security > Platform Security > Auditing (whole chapter, 25 topics, 791 cleaned lines, read in full 2026-10-08 through the docs site) - Exploring Auditing, Configuring auditing for a table (inclusion and exclusion listing, impersonation tracking, system tables), Audit Management Console and retention, Viewing Sys Audit and Audit Relationship Change tables, History sets, differences between audit and history sets, access to history, number of entries, History List, Calendar and Timeline (related records, export, compare), tracking reference field changes, inserts and CI relationships, granular admin roles. https://www.servicenow.com/docs/r/platform-security/c_AuditedTables.html
+source: ServiceNow docs, Brazil, Platform security > Platform Security > Auditing (whole chapter, 25 topics, 791 cleaned lines, read in full 2026-10-08 through the docs site) - Exploring Auditing, Configuring auditing for a table (inclusion and exclusion listing, impersonation tracking, system tables), Audit Management Console and retention, Viewing Sys Audit and Audit Relationship Change tables, History sets, differences between audit and history sets, access to history, number of entries, History List, Calendar and Timeline (related records, export, compare), tracking reference field changes, inserts and CI relationships, granular admin roles. https://www.servicenow.com/docs/r/platform-security/c_AuditedTables.html ServiceNow Brazil docs, API reference page HistoryWalker - Scoped, Global, read 2026-11-06 through the docs site API (map ooCZhg2g6YDYvKp3oBwAxA).
 sn-release: Brazil
 verified:
-updated: 2026-10-08
+updated: 2026-11-06
 ---
 
 # Auditing and Record History
@@ -82,6 +82,28 @@ Form context menu **History**:
 |---|---|
 | `audit_viewer` | read `sys_audit`, `sys_journal_field`, `sys_history_set` |
 | `audit_admin` | write and delete on `sys_audit` (avoid manual edits; use jobs for bulk deletion) |
+
+## HistoryWalker API
+
+Server side, scoped and global, from the Brazil API reference (documented, not tested). It rebuilds a record as it was at an earlier update, then moves forward or backward through its updates.
+
+- `new HistoryWalker(table, sys_id, useAudit)` or `new HistoryWalker(table, sys_id, '<walker>')`.
+- `walkTo(updateCount)` (returns true if possible; not supported by the CHECKPOINT walker) or `walkTo('<checkpoint>')`, `walkForward()`, `walkBackward()`, then `getWalkedRecord()` or `getWalkedRecordCopy()`, and `getUpdateNumber()`.
+- Options: `setRecordLevelSecurity(false)` and `setFieldLevelSecurity(false)` turn off read checks, while `setWithChanges()`, `setWithJournalFields()` and `setWithVariables()` choose what is filled in.
+
+| Walker | Reads | Ordered by |
+|---|---|---|
+| HISTORY | builds or reuses `sys_history_set` and `sys_history_line` from `sys_audit` | `update`, loosely tied to `sys_mod_count` |
+| AUDIT | `sys_audit` directly; slower, and without an insert row unless `glide.sys.audit_inserts` is true (false in the base system) | `record_checkpoint` |
+| CHECKPOINT | history set, or `sys_audit` when `sys_mod_count` exceeds `com.glide.history_walker.max_history_count` (1,000) | `internal_checkpoint`, a timestamp, so truly chronological |
+
+The docs call CHECKPOINT the most reliable, and warn that `sys_mod_count` is unreliable because clients can overwrite it. They promise **four** retrieval methods but describe these three.
+
+```javascript
+// Server side, global; the incident as it was at update 2
+var walker = new HistoryWalker('incident', '<incident_sys_id>', true);
+if (walker.walkTo(2)) gs.info(walker.getWalkedRecord().getValue('state'));
+```
 
 ## Related
 

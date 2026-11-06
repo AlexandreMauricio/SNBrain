@@ -2,11 +2,11 @@
 type: concept
 tags: [concept, portal, scripting, javascript, release-specific]
 status: documented
-source: ServiceNow Brazil docs, ServiceNow AI Platform user interface > Service Portal > Using portal widgets, Developing custom widgets (overviews of guidelines, tutorial, clone, create, option schema, API reference, Angular Providers, embedded widgets, dependencies, internationalize, troubleshooting, embeddables, diagnostics), read at overview depth 2026-10-30. Tutorial steps and API method detail not read. https://www.servicenow.com/docs/r/platform-user-interface/service-portal/service-portal-roles.html
+source: ServiceNow Brazil docs, ServiceNow AI Platform user interface > Service Portal > Using portal widgets, Developing custom widgets (overviews of guidelines, tutorial, clone, create, option schema, API reference, Angular Providers, embedded widgets, dependencies, internationalize, troubleshooting, embeddables, diagnostics), read at overview depth 2026-10-30. Tutorial steps and API method detail not read. https://www.servicenow.com/docs/r/platform-user-interface/service-portal/service-portal-roles.html ServiceNow Brazil docs, API reference page GlideSPScriptable - Scoped and spModal - Client, read 2026-11-06 through the docs site API (map ooCZhg2g6YDYvKp3oBwAxA).
 sn-release: Brazil
 verified:
 verified-by:
-updated: 2026-10-30
+updated: 2026-11-06
 ---
 
 # Service Portal Widgets
@@ -59,6 +59,33 @@ The second snippet's `.then` shape is general knowledge plus the page's `server.
 ## Troubleshooting
 
 Reduce complexity first, use **Widget diagnostics** from a portal page to see customisation levels, and check `sp_log`. Portal-side, `glide.sp.show_console_error` shows console errors.
+
+## $sp and spModal methods
+
+From the Brazil API reference (documented, not tested).
+
+**`$sp` (GlideSPScriptable, widget server script):**
+
+| Group | Methods |
+|---|---|
+| Parameters and options | `getParameter(name)`, `getValue(name)`, `getValues(data, names)`, `getDisplayValue(field)` |
+| Records | `getRecord(table, sys_id)`, `canReadRecord(gr)` or `canReadRecord(table, sys_id)`, `getField`, `getFields`, `getFieldsObject`, `getRecordValues`, `getRecordDisplayValues`, `getRecordElements`, `getForm(table, sys_id)`, `getListColumns(table, view)`, `getStream(table, sys_id)` |
+| Catalog | `getCatalogItem(sys_id[, isOrdering])`, `getRecordVariables(gr, includeNil)`, `getRecordVariablesArray`, `getVariablesArray` |
+| Knowledge | `getKBCount`, `getKBCategoryArticles`, `getKBCategoryArticleSummaries` |
+| Portal | `getPortalRecord()`, `canSeePage(pageID)`, `getMenuItems`, `getMenuHREF`, `mapUrlToSPUrl(url)`, `getWidget(sysID, options)` (embed a widget from the server), `getUserInitials()`, `isRTLEnabled()`, `isUserCriteriaEnabled()`, `userCanSeeSearchSourceByCriteria`, `log(message)` |
+
+**`spModal` (widget client script):** `alert(message)`, `confirm(message)`, `prompt(message, default)` and `open(options)`, each followed by `.then(fn)`. Options for `open`: `title`, `message`, `buttons`, `input` and `value`, `size` (`sm` or `lg`), `backdrop` (true, false or `static`), `keyboard`, `noDismiss`, and `widget` with `widgetInput` and `shared` to embed another widget.
+
+```javascript
+// Widget client controller
+function(spModal) {
+    var c = this;
+    c.onOpen = function() {
+        spModal.open({ title: 'Example dialog', widget: 'example-widget', widgetInput: { sys_id: c.data.sys_id } })
+            .then(function() { c.server.update(); });
+    };
+}
+```
 
 ## Example
 

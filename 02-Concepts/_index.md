@@ -262,6 +262,9 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Team Script Conventions]] - naming, magic values, reading fields, try and catch, logging (unverified team notes)
 - [[GlideDate, GlideDuration and GlideSchedule API Reference]] - date-only, duration and business-hours classes, which time zone each method uses (documented, Brazil)
 - [[GlideSysAttachment, GlideFilter and GSLog API Reference]] - attachments by script, case-sensitive record matching, levelled logging (documented, Brazil)
+- [[Server Utility APIs (ArrayUtil, JSUtil, GlideStringUtil, GlideRecordUtil)]] - array, null, string, random, record copy, stored-script, URI and Excel helpers, with scope (documented, Brazil)
+- [[GlideTableHierarchy and GlideElementDescriptor API Reference]] - table extension and field metadata by script (documented, Brazil)
+- [[GlideModal, GlideModalForm and g_navigation Client API Reference]] - dialogs, a form in a dialog, navigation in Core UI (documented, Brazil)
 
 ## Flows and Automation (`Flows-and-Automation/`)
 

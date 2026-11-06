@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, users, roles, security, release-specific]
 status: documented
-source: ServiceNow Australia Platform Administration PDF, "Monitoring user activity", topics "Impersonating users", "Impersonation logs", "User impersonation auditing" (pp. 446-453), read 2026-10-01
+source: ServiceNow Australia Platform Administration PDF, "Monitoring user activity", topics "Impersonating users", "Impersonation logs", "User impersonation auditing" (pp. 446-453), read 2026-10-01 ServiceNow Brazil docs, API reference page GlideImpersonate - Global, read 2026-11-06 through the docs site API (map ooCZhg2g6YDYvKp3oBwAxA).
 sn-release: Australia
 verified:
-updated: 2026-10-01
+updated: 2026-11-06
 ---
 
 # Impersonation
@@ -43,6 +43,10 @@ An admin account to do the work, an `itil` (or similar) account to test as a tec
 | **User impersonation auditing** | plugin `com.glide.security.audit`, property `glide.audit.user.impersonation.enabled` | **System Logs > User Impersonation**: per session **Impersonated by**, **Impersonated to**, start and end time, and every action in order (URL, SQL count, business rule count, response time) |
 
 Impersonation audit records follow the transaction log retention (seven days by default).
+
+## GlideImpersonate API
+
+Server side, global only, from the Brazil API reference (documented, not tested). `new GlideImpersonate()` with `impersonate(userSysId)`, `isImpersonating()`, `canImpersonate(userSysId)`, `canDebug(userSysId)`. The docs recommend it for background transactions such as scheduled jobs, say actions are recorded as the impersonated user, and say to call `impersonate()` again with the admin's sys_id when finished. Testing only.
 
 ## Related
 
