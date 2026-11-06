@@ -235,6 +235,11 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[List Editor]] - what it bypasses, properties, list_edit ACL operation (documented)
 - [[Application Menus and Modules]] - navigator menus (sys_app_application) and modules (sys_app_module): fields, link types, encoding of arguments (documented, Brazil)
 - [[Response Templates]] - templated snippets: canned replies with variables, conditions, channels and chat shortcuts; roles and tables (Brazil)
+- [[Filters, Condition Builder and Query Operators]] - AND/OR and top-level OR, empty values, saved filters, dynamic filter options, scripted filters, encoded query syntax, operators by field type, date values, list search (documented)
+- [[Core UI Lists, Forms and Related Lists]] - classic list and form use, URL navigation, related list loading and defined relationships, watch list, email client, checklists (documented)
+- [[Core UI Navigation, Settings and Common Elements]] - navigator commands, system settings, tree picker, dot-walking, tags, user presence, shortcuts, request cancellation, user preferences (documented)
+- [[Core UI Help, Views, Images and Appearance]] - views, view rules and navigation handlers, help contexts, db_image, accessibility, Core UI branding and themes (documented)
+- [[Map Pages and Google Maps]] - locations and geocoding, Google Maps API key properties, scripted and advanced map pages (documented)
 
 ## Scripting (`Scripting/`)
 

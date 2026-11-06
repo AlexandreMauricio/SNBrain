@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, forms-lists, admin, roles, release-specific]
 status: documented
-source: ServiceNow Australia Platform Administration PDF, "Form administration" (pp. 734-753), read 2026-10-01 Team notes shared by the user's manager, 2026-10-30, file Views.md (unverified, sections marked).
+source: ServiceNow Australia Platform Administration PDF, "Form administration" (pp. 734-753), read 2026-10-01 Team notes shared by the user's manager, 2026-10-30, file Views.md (unverified, sections marked). Brazil docs, Working in Core UI > View management, read 2026-11-06 (view rule section extended).
 sn-release: Australia
 verified:
-updated: 2026-10-30
+updated: 2026-11-06
 ---
 
 # Form layout, sections and views
@@ -53,8 +53,8 @@ Role: `personalize_form` (sections: `form_admin`; form splits: admin).
 
 Unverified team notes, not tested. Form views are stored in `sys_ui_view`, and forms, sections and lists reference a row there when they belong to a view. **View Rules** force a view on a form.
 
-**Unconfirmed variants for the View Rule table:** `sysrule` in the team notes; `sysrule_view` in [[Metadata File Types and Primary Tables]].
+**Unconfirmed variants for the View Rule table:** `sysrule` in the team notes; `sysrule_view` in [[Metadata File Types and Primary Tables]]. The Brazil Core UI view-management pages (docs, 2026-11-06) give no table name. They add: a view chosen by a user is stored as a user preference and beats `sysparm_view` unless `sysparm_view_forced=true`; **navigation handlers** (`sys_navigator`) run before view rules unless `glide.ui.view_rule.check_after_nav_handler` = true. Details: [[Core UI Help, Views, Images and Appearance]].
 
 ## Related
 
-- [[Configure a Form Layout]] · [[UI Actions]] · [[UI Policies]] · [[Form Templates]] · [[Attachments]]
+- [[Configure a Form Layout]] · [[UI Actions]] · [[UI Policies]] · [[Form Templates]] · [[Attachments]] · [[Core UI Help, Views, Images and Appearance]] · [[Core UI Lists, Forms and Related Lists]]

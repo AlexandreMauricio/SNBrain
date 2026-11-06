@@ -2,10 +2,10 @@
 type: query
 tags: [query, encoded-query, forms-lists]
 status: documented
-source: ServiceNow Australia Platform Administration PDF, "List administration" (pp. 1006-1007, 1014-1015) and "Exporting data" (pp. 656-661), read 2026-10-01
+source: ServiceNow Australia Platform Administration PDF, "List administration" (pp. 1006-1007, 1014-1015) and "Exporting data" (pp. 656-661), read 2026-10-01 Related links to the Brazil Core UI notes added 2026-11-06.
 sn-release: Australia
 verified:
-updated: 2026-10-01
+updated: 2026-11-06
 ---
 
 # Filter and sort a list with URL parameters
@@ -46,4 +46,4 @@ https://<instance>.service-now.com/incident_list.do?sysparm_query=active=true^OR
 
 ## Related
 
-- [[Export Data with a URL]] · [[List Configuration and List Controls]]
+- [[Export Data with a URL]] · [[List Configuration and List Controls]] · [[Filters, Condition Builder and Query Operators]] · [[Core UI Lists, Forms and Related Lists]]

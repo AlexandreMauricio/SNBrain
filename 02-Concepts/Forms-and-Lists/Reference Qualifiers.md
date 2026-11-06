@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, reference-field, encoded-query, scripting, script-include]
 status: documented
-source: ServiceNow Australia Platform Administration PDF, "Field administration", topic "Reference qualifiers" (pp. 981-988), read 2026-10-01
+source: ServiceNow Australia Platform Administration PDF, "Field administration", topic "Reference qualifiers" (pp. 981-988), read 2026-10-01 Related links to the Brazil Core UI notes added 2026-11-06.
 sn-release: Australia
 verified:
-updated: 2026-10-01
+updated: 2026-11-06
 ---
 
 # Reference qualifiers
@@ -62,4 +62,4 @@ if (listEditRefQualTag == "database") return "sys_class_name=cmdb_ci_database";
 
 ## Related
 
-- [[Configure a Reference Qualifier]] · [[Reference Fields]] · [[Dictionary Entry Form]]
+- [[Configure a Reference Qualifier]] · [[Reference Fields]] · [[Dictionary Entry Form]] · [[Filters, Condition Builder and Query Operators]]

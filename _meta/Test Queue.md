@@ -8,7 +8,7 @@ updated: 2026-11-06
 
 # Test queue
 
-**Generated 2026-11-06: 191 items in 142 notes.** Everything the vault still calls open or unconfirmed, grouped by folder. With an instance open, pick an item, test it, and record the result in the note ([[Recording Results and Inbox]]): answer the open question, add the instance to `observed-in:`, or mark the note `verified`. Then regenerate this page:
+**Generated 2026-11-06: 193 items in 144 notes.** Everything the vault still calls open or unconfirmed, grouped by folder. With an instance open, pick an item, test it, and record the result in the note ([[Recording Results and Inbox]]): answer the open question, add the instance to `observed-in:`, or mark the note `verified`. Then regenerate this page:
 
 `powershell -ExecutionPolicy Bypass -File _meta/tools/test-queue.ps1`
 
@@ -138,8 +138,12 @@ Exercise notes are left out: their open items live in each exercise (*Open with 
 
 ## 02-Concepts/Forms-and-Lists
 
+- [[Core UI Navigation, Settings and Common Elements]] (documented; observed in updated: 2026-11-06)
+    - Unconfirmed: **Tree picker:** dictionary attribute `tree_picker=true` (role `personalize_dictionary`) on references to hierarchical tables (a parent field pointing to the same table), dependent CIs, or users by group. At most 1000...
 - [[Form Layout, Sections and Views]] (documented)
-    - Unconfirmed: *Unconfirmed variants for the View Rule table:** `sysrule` in the team notes; `sysrule_view` in Metadata File Types and Primary Tables.
+    - Unconfirmed: *Unconfirmed variants for the View Rule table:** `sysrule` in the team notes; `sysrule_view` in Metadata File Types and Primary Tables. The Brazil Core UI view-management pages (docs, 2026-11-06) give no table name. T...
+- [[Map Pages and Google Maps]] (documented; observed in updated: 2026-11-06)
+    - Inference: Map page *Example Open Changes by Site* (advanced): data item on `change_request` where active is true, coordinate definition dot-walking `location.latitude` and `location.longitude` (inference that dot-walked fields ...
 
 ## 02-Concepts/Foundations
 

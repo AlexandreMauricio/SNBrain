@@ -2,10 +2,10 @@
 type: concept
 tags: [concept, forms-lists, roles, scripting]
 status: documented
-source: ServiceNow Australia Platform Administration PDF, "List administration" (pp. 998-1007, 1013-1026), read 2026-10-01
+source: ServiceNow Australia Platform Administration PDF, "List administration" (pp. 998-1007, 1013-1026), read 2026-10-01 Related links to the Brazil Core UI notes added 2026-11-06.
 sn-release: Australia
 verified:
-updated: 2026-10-01
+updated: 2026-11-06
 ---
 
 # List configuration and list controls
@@ -82,4 +82,4 @@ Plugin `com.glide.sorting`. A **ranking definition** (**System Definition > Rank
 
 ## Related
 
-- [[List Editor]] · [[UI Actions]] · [[Form Layout, Sections and Views]]
+- [[List Editor]] · [[UI Actions]] · [[Form Layout, Sections and Views]] · [[Core UI Lists, Forms and Related Lists]] · [[Filters, Condition Builder and Query Operators]]
