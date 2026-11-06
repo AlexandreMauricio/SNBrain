@@ -5,7 +5,7 @@ status: documented
 source: ServiceNow docs, Brazil, Platform Capabilities > Service Catalog, topics "Service Catalog", "Exploring Service Catalog", "Types of catalog items", "Service Catalog items", "Service Catalog for managers and end users", "Service Catalog request screens", "Service Catalog terms and roles", "Service Catalog scoping", "Tables provided with multiple service catalogs", "Set up a service catalog", "Service Catalog customization", "Customization vs configuration", "Installed with Service Catalog", https://www.servicenow.com/docs/r/servicenow-platform/service-catalog/service-catalog.html, read 2026-10-16 Team notes shared by the user's manager, 2026-10-30, file User Criteria.md (unverified, sections marked).
 sn-release: Brazil
 verified:
-updated: 2026-10-30
+updated: 2026-11-06
 ---
 
 # Service Catalog overview, item types and roles
@@ -84,7 +84,7 @@ Script include `DemoSCCreateItem` (demonstrates the scoped Service Catalog API).
 
 ## Check user criteria by script (team notes)
 
-Unverified team notes, not tested. Server side. `SNC.UserCriteriaLoader` appears in no official page read so far. `getAllUserCriteria()` returns the sys_ids of the criteria that match the logged-in user, as an `ArrayList<String>`.
+Unverified team notes, not tested. Server side. `SNC.UserCriteriaLoader` has no page in the Brazil API reference (checked 2026-11-06). The documented `sn_uc.UserCriteria` API edits criteria but cannot check a match: [[Service Catalog Scripting APIs (CartJS, CatItem, UserCriteria, g_service_catalog)]]. `getAllUserCriteria()` returns the sys_ids of the criteria that match the logged-in user, as an `ArrayList<String>`.
 
 ```javascript
 SNC.UserCriteriaLoader.getAllUserCriteria().contains(user_criteria)

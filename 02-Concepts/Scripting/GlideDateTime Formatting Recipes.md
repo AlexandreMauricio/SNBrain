@@ -6,7 +6,7 @@ source: Team notes shared by the user's manager, file GlideDateTime.md, read 202
 sn-release:
 verified:
 verified-by:
-updated: 2026-11-01
+updated: 2026-11-06
 ---
 
 # GlideDateTime Formatting Recipes
@@ -38,7 +38,7 @@ gs.info(gd.getByFormat('dd MMM yyyy') + gt.getByFormat(' HH:mm:ss'));
 
 ## Local parts
 
-The post copies local time into a `GlideDate` to read it in the user's zone. `localTime` is used as a property here and does not appear in [[GlideDateTime API Reference]], so it is unconfirmed.
+The post copies local time into a `GlideDate` to read it in the user's zone. `localTime` is used as a property here. It appears neither in [[GlideDateTime API Reference]] nor on the Brazil GlideDateTime - Global page (checked 2026-11-06), so it is unconfirmed. The documented `getLocalDate()` and `getLocalTime()` are the safer route.
 
 ```javascript
 var gdt = new GlideDateTime();
@@ -62,7 +62,7 @@ var hour = parseInt(gd.getByFormat('HH'));
 
 The post's version uses a `switch`; this is the same check, shortened. The `+ ''` converts a Java string to JavaScript.
 
-**Unconfirmed variants in the source:** one section shows `new GlideDate().getByFormat(...)` returning **GMT**, and the weekday section says `new GlideDate()` **uses your time zone**. Test before relying on it, near midnight in a zone far from UTC.
+**Unconfirmed variants in the source:** one section shows `new GlideDate().getByFormat(...)` returning **GMT**, and the weekday section says `new GlideDate()` **uses your time zone**. The API docs (read 2026-11-06) do not settle it. They do not state a zone for `getByFormat()`, and they say `setValue()` uses the system zone, UTC by default; see [[GlideDate, GlideDuration and GlideSchedule API Reference]]. Test before relying on it, near midnight in a zone far from UTC.
 
 ## Business duration
 
@@ -73,7 +73,7 @@ function getBusinessDuration(scheduleID, gdtStart, gdtEnd) {
 }
 ```
 
-With an 11-hour, Monday to Friday schedule, the last 7 days return `2 07:00:00`, which reads as 55 hours because each day counts as 24. See [[Schedules and Schedule Entries]]. The post's example used a real sys_id; pass your own schedule's.
+The docs confirm `duration()` uses the schedule's time zone, or the session's, and that `getDurationValue()` returns `d HH:mm:ss`. With an 11-hour, Monday to Friday schedule, the last 7 days return `2 07:00:00`, which reads as 55 hours because each day counts as 24. See [[Schedules and Schedule Entries]]. The post's example used a real sys_id; pass your own schedule's.
 
 ## Example
 

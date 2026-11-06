@@ -5,7 +5,7 @@ status: documented
 source: ServiceNow Australia Platform Administration PDF, "Form administration", topic "Administering attachments" (pp. 754-760), read 2026-10-01 Team notes shared by the user's manager, 2026-10-30, file Attachments.md (unverified, sections marked).
 sn-release: Australia
 verified:
-updated: 2026-10-30
+updated: 2026-11-06
 ---
 
 # Attachments
@@ -62,7 +62,7 @@ var copied = attachment.copy('incident', incidentSysID, 'problem', incGR.getValu
 gs.info('Copied attachments: ' + copied);
 ```
 
-`copy(sourceTable, sourceID, targetTable, targetID)` returns the sys_ids of the copied attachments. The notes give the return type as a String described as an array. To move an attachment between instances, see [[Force Records into an Update Set]].
+`copy(sourceTable, sourceID, targetTable, targetID)` returns the sys_ids of the copied attachments. This snippet matches the example on the Brazil GlideSysAttachment - Global page, which shows the return value as a comma-separated String and says attachment attributes are copied too. See [[GlideSysAttachment, GlideFilter and GSLog API Reference]]. To move an attachment between instances, see [[Force Records into an Update Set]].
 
 ## Related
 

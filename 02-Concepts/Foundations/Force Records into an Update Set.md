@@ -6,14 +6,14 @@ source: Team notes shared by the user's manager, 2026-10-30, files UI Actions.md
 sn-release:
 verified:
 verified-by:
-updated: 2026-10-30
+updated: 2026-11-06
 ---
 
 # Force Records into an Update Set
 
 **In one line:** `GlideUpdateManager2.saveRecord()` writes one record to the current update set, even on a table that is not captured by default, such as an attachment or a reference data row.
 
-Unverified team notes. Check both scripts on a personal instance first. `GlideUpdateManager2` appears in no official page read so far, so its behaviour and availability are unconfirmed. Captured and uncaptured tables are in [[Update Sets]], which also warns never to add `update_synch` to a table yourself. These scripts do not add it.
+Unverified team notes. Check both scripts on a personal instance first. `GlideUpdateManager2` has no page in the Brazil API reference (its table of contents checked 2026-11-06), so it is undocumented, and its behaviour and availability are unconfirmed. Captured and uncaptured tables are in [[Update Sets]], which also warns never to add `update_synch` to a table yourself. These scripts do not add it.
 
 ## UI action
 

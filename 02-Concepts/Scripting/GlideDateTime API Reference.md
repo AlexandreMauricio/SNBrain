@@ -6,7 +6,7 @@ source: ServiceNow Brazil docs, API reference > Server API reference > GlideDate
 sn-release: Brazil
 verified:
 verified-by:
-updated: 2026-11-01
+updated: 2026-11-06
 ---
 
 # GlideDateTime API Reference
@@ -43,5 +43,5 @@ gs.info(dur.getDisplayValue());
 
 ## Related
 
-- [[GlideDateTime Formatting Recipes]] (unverified team notes)
+- [[GlideDateTime Formatting Recipes]] (unverified team notes) · [[GlideDate, GlideDuration and GlideSchedule API Reference]]
 - [[GlideSystem API Reference]] · [[GlideRecord Queries, GlideRecordSecure and Server Utilities]]

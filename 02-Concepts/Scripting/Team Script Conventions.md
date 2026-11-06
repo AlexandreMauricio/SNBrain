@@ -6,7 +6,7 @@ source: Team notes shared by the user's manager, file Best Practices.md, read 20
 sn-release:
 verified:
 verified-by:
-updated: 2026-11-01
+updated: 2026-11-06
 ---
 
 # Team Script Conventions
@@ -21,7 +21,7 @@ Unverified team conventions. They are preferences as much as facts, so check the
 - **Magic values:** give literal strings and numbers a named variable, or better a constant, so `'4'` becomes `cancelState`.
 - **Reading a field:** always `getValue()`. On a dot-walk, prefer `toString()`, which the notes say throws if the field is null. Concatenating to get a value is called inefficient.
 - **Try and catch:** no empty `catch` without a justification. The notes follow this with a bare *Script actions*; its meaning is unconfirmed.
-- **Logging:** use GSLog and add more detail to messages. See [[GlideRecord Queries, GlideRecordSecure and Server Utilities]].
+- **Logging:** use GSLog and add more detail to messages. See [[GlideSysAttachment, GlideFilter and GSLog API Reference]].
 
 **Unconfirmed variant:** the team example assigns directly (`grOrder.state = cancelState;`), while [[GlideRecord API Reference]] says to use `setValue()` rather than direct assignment before `update()`.
 

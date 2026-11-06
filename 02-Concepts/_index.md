@@ -114,6 +114,7 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[Service Catalog and CSDM]] - Sell/Consume layer, service offerings, Product Catalog models (documented, Brazil)
 - [[Service Catalog Properties Reference]] - glide.sc properties by section (documented, Brazil)
 - [[Catalog Item, Record Producer and Order Guide Forms]] - form fields by tab (documented, Brazil)
+- [[Service Catalog Scripting APIs (CartJS, CatItem, UserCriteria, g_service_catalog)]] - order items, edit items and user criteria by script, read the parent form from an MRVS (documented, Brazil)
 
 ## CMDB and Assets (`CMDB-and-Assets/`)
 
@@ -259,6 +260,8 @@ What things are, how they relate, and the settings that control them. Notes are 
 - [[GlideForm and GlideAjax Client API Reference]] - g_form methods by purpose, GlideAjax
 - [[GlideDateTime Formatting Recipes]] - parse and format dates, avoid JavaScript Date, business duration (unverified team notes)
 - [[Team Script Conventions]] - naming, magic values, reading fields, try and catch, logging (unverified team notes)
+- [[GlideDate, GlideDuration and GlideSchedule API Reference]] - date-only, duration and business-hours classes, which time zone each method uses (documented, Brazil)
+- [[GlideSysAttachment, GlideFilter and GSLog API Reference]] - attachments by script, case-sensitive record matching, levelled logging (documented, Brazil)
 
 ## Flows and Automation (`Flows-and-Automation/`)
 

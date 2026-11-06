@@ -6,7 +6,7 @@ source: ServiceNow Brazil docs, API reference > Server API reference > GlideReco
 sn-release: Brazil
 verified:
 verified-by:
-updated: 2026-10-30
+updated: 2026-11-06
 ---
 
 # GlideRecord API Reference
@@ -50,7 +50,7 @@ By comparing the two pages' method lists; a missing method may just be undocumen
 
 ## Query tips (team notes)
 
-Unverified team notes, not tested. Server side. `GlideFilter` and the `ref_` syntax appear in no official page read so far.
+Unverified team notes, not tested. Server side. The `ref_` syntax appears in no official page read so far. `GlideFilter` is documented ([[GlideSysAttachment, GlideFilter and GSLog API Reference]]), and it is **case-sensitive**, unlike GlideRecord queries.
 
 **Field of a child table from a parent query:** `ref_<child table>.<field>`.
 
