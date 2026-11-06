@@ -3,7 +3,7 @@ type: meta
 tags: [meta]
 status: documented
 source: own
-updated: 2026-10-01
+updated: 2026-11-06
 ---
 
 # Index: Integrations-API
@@ -96,6 +96,10 @@ REST and SOAP APIs, import sets and transform maps, IntegrationHub, MID Server, 
 - [[Hermes Messaging Service]] - ServiceNow-hosted Kafka behind Stream Connect, LES and IDR: ports, certificates, namespaces, topics, inspector, diagnostics, cloning, roles (Brazil)
 - [[ServiceNow Voice with Amazon Connect]] - call center telephony: Voice apps, contact flows, provider components and operation handlers, Connect guided setup, SSO, real time transcription, PIN, roles (Brazil)
 - [[REST API Fundamentals]] - URI, headers, sysparm parameters, dot-walking, security, response codes, CORS, rate limits, main APIs
+- [[Core Platform REST APIs - Table, Attachment, Aggregate, Batch, Import Set and Others]] - Table, Attachment, Aggregate, Batch, Import Set endpoints and parameters; Email, User Role Inheritance, Script Debugger, Knowledge APIs (Brazil)
+- [[CMDB REST APIs - Instance, Meta, IRE and Data Ingestion]] - identifyreconcile and its dry run, Enhanced IRE options, CMDB Instance CRUD and relations, class metadata, deprecated Data Ingestion (Brazil)
+- [[Service Catalog and Change Management REST APIs]] - sn_sc catalog, cart, checkout, producers, order guides; sn_chg_rest models, templates, tasks, CIs, conflicts, schedules, approvals, roles (Brazil)
+- [[CICD REST APIs]] - sn_cicd pipeline endpoints: source control, ATF, Instance Scan, app repository, batch install, plugins, update sets, progress polling (Brazil)
 - [[Scripted REST APIs]] - custom endpoints: script objects, security matrix, path-based ACLs, versions, size limits
 - [[Outbound REST Messages]] - REST Message records, RESTMessageV2, MID Server, logging, mutual authentication
 - [[SOAP Web Services]] - inbound direct, import set, scripted; roles, limits; outbound SOAPMessageV2

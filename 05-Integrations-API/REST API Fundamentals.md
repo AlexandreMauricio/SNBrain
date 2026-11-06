@@ -2,11 +2,11 @@
 type: concept
 tags: [concept, api, integrations, security, access-control, encoded-query]
 status: documented
-source: ServiceNow Brazil docs, API implementation and reference > Web services > REST APIs (overview, Explore a table, OpenAPI export, Inbound rate limiting, Debug, session debug header, CORS requirements, Define a CORS rule, Enable OAuth, response codes), REST API reference > Table API (query parameters only), Aggregate, Attachment, Batch and Import Set API opening pages, read 2026-10-30. REST API Explorer tutorial pages and per-endpoint request and response samples listed, not read in detail. https://www.servicenow.com/docs/r/api-reference/rest-api-explorer/c_RESTAPI.html
+source: ServiceNow Brazil docs, API implementation and reference > Web services > REST APIs (overview, Explore a table, OpenAPI export, Inbound rate limiting, Debug, session debug header, CORS requirements, Define a CORS rule, Enable OAuth, response codes), REST API reference > Table API (query parameters only), Aggregate, Attachment, Batch and Import Set API opening pages, read 2026-10-30. REST API Explorer tutorial pages and per-endpoint request and response samples listed, not read in detail. https://www.servicenow.com/docs/r/api-reference/rest-api-explorer/c_RESTAPI.html Per-API pages of the REST API reference read 2026-11-06 (see the four API notes in Related).
 sn-release: Brazil
 verified:
 verified-by:
-updated: 2026-10-30
+updated: 2026-11-06
 ---
 
 # REST API Fundamentals
@@ -55,8 +55,14 @@ Column names, operators and values are case-sensitive. An invalid part of a quer
 | Table | `/api/now/table/{tableName}` | CRUD |
 | Attachment | `/api/now/attachment` | `/file`, `/upload`, `/{sys_id}/file`; one file per call; `com.glide.attachment.max_size` default 1024 MB. No single role adds attachments |
 | Aggregate | `/api/now/stats/{tableName}` | counts, sums and averages |
-| Batch | | several calls in one; item limits 5 MB in (`glide.rest.batch.max.inputSize`, max 10) and 10 MB out (`glide.rest.batch.max.outputSize`); not for parallel work |
+| Batch | `/api/now/batch` | several calls in one; item limits 5 MB in (`glide.rest.batch.max.inputSize`, max 10) and 10 MB out (`glide.rest.batch.max.outputSize`); not for parallel work |
 | Import Set | `/api/now/import/{stagingTableName}` | synchronous transforms; `/insertMultiple`; [[Import Sets - Data Sources, Staging Tables and Cleanup]] |
+| Email, User Role Inheritance, Script Debugger, Knowledge | `/api/now/email`, `/api/global/user_role_inheritance`, `/api/now/js/debugpoints/...`, `/api/sn_km_api/knowledge/articles` | send and read email, roles with their origin, breakpoints, article search |
+| CMDB Instance, CMDB Meta, Identification and Reconciliation | `/api/now/cmdb/instance/{className}`, `/api/now/cmdb/meta/{className}`, `/api/now/identifyreconcile` | write CIs through the IRE; [[CMDB REST APIs - Instance, Meta, IRE and Data Ingestion]] |
+| Service Catalog, Change Management | `/api/sn_sc/servicecatalog`, `/api/sn_chg_rest/change` | order items, run producers; create and move changes; [[Service Catalog and Change Management REST APIs]] |
+| CICD | `/api/sn_cicd/...` | pipelines: source control, ATF, Instance Scan, app repository, plugins, update sets; [[CICD REST APIs]] |
+
+Endpoint-by-endpoint detail for the first five rows and the smaller APIs: [[Core Platform REST APIs - Table, Attachment, Aggregate, Batch, Import Set and Others]].
 
 Tools: **System Web Services > REST API Explorer** (`rest_api_explorer`; **it acts on real data**), table form > **Configure > Table > Explore REST API**, and export to **OpenAPI** YAML or JSON (`web_service_admin`, `rest_api_explorer` or `admin`).
 
@@ -109,4 +115,5 @@ curl -H "Accept: application/json" -u "<USER>:<PASSWORD>" "https://<instance>.se
 
 ## Related
 
+- [[Core Platform REST APIs - Table, Attachment, Aggregate, Batch, Import Set and Others]] · [[CMDB REST APIs - Instance, Meta, IRE and Data Ingestion]] · [[Service Catalog and Change Management REST APIs]] · [[CICD REST APIs]]
 - [[Scripted REST APIs]] · [[Outbound REST Messages]] · [[SOAP Web Services]] · [[API Usage Monitoring and Connection Pooling]] · [[Non-Interactive Users]] · [[Integration Options and Interfaces Overview]]

@@ -8,7 +8,7 @@ updated: 2026-11-06
 
 # Test queue
 
-**Generated 2026-11-06: 192 items in 143 notes.** Everything the vault still calls open or unconfirmed, grouped by folder. With an instance open, pick an item, test it, and record the result in the note ([[Recording Results and Inbox]]): answer the open question, add the instance to `observed-in:`, or mark the note `verified`. Then regenerate this page:
+**Generated 2026-11-06: 194 items in 145 notes.** Everything the vault still calls open or unconfirmed, grouped by folder. With an instance open, pick an item, test it, and record the result in the note ([[Recording Results and Inbox]]): answer the open question, add the instance to `observed-in:`, or mark the note `verified`. Then regenerate this page:
 
 `powershell -ExecutionPolicy Bypass -File _meta/tools/test-queue.ps1`
 
@@ -302,6 +302,10 @@ Exercise notes are left out: their open items live in each exercise (*Open with 
 
 - [[API Usage Monitoring and Connection Pooling]] (documented)
     - Unconfirmed: | `com.glide.api.stats.daily_ limit` (space in the docs: unconfirmed) | 20000 per node |
+- [[CMDB REST APIs - Instance, Meta, IRE and Data Ingestion]] (documented; observed in updated: 2026-11-06)
+    - Inference: Payload: `items[]` (`className`, `values`, `internal_id`, `lookup[]` with its own `className`, `internal_id` and `sys_object_source_info.source_feed`) and `relations[]`. Looks like the payload of the script API `Ident...
+- [[Core Platform REST APIs - Table, Attachment, Aggregate, Batch, Import Set and Others]] (documented; observed in updated: 2026-11-06)
+    - Unconfirmed: `sysparm_query_category`: "name of the category to use for queries"; what the categories are is not explained on the page (meaning unconfirmed).
 - [[Data Catalog and Metadata Collectors]] (documented)
     - Unconfirmed: | `connection_admin` | collectors; **cannot edit assets** per its description, yet inherits the steward role: unconfirmed | `df_data_steward`, `external_app_install_admin`, `agent_admin`, `wdf_operator`, `credential_a...
 - [[DevOps Azure DevOps Integration]] (documented)

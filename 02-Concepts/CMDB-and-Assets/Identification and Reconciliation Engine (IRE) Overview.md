@@ -5,7 +5,7 @@ status: documented
 source: ServiceNow Brazil docs, Platform Capabilities guide > CMDB > "CMDB Identification and Reconciliation (IRE)" > Explore (Components and process, Identification and Reconciliation Engine), "General guidelines for using CMDB Identification" (payload part), "IRE support for non-CMDB tables" (overview; the per-rule procedures for non-CMDB tables repeat the CMDB ones and were only skimmed), Reference > "Domain separation" (https://www.servicenow.com/docs/r/servicenow-platform/configuration-management-database-cmdb/c_CMDBIdentifyandReconcile.html and the pages under it), read through the docs site API 2026-10-09
 sn-release: Brazil
 verified:
-updated: 2026-10-09
+updated: 2026-11-06
 ---
 
 # Identification and Reconciliation Engine (IRE) Overview
@@ -129,4 +129,6 @@ KB0750382 (log the payload sent to IRE), KB0750386 (how IRE processes a payload 
 
 ## Related
 
+
+- [[CMDB REST APIs - Instance, Meta, IRE and Data Ingestion]] (REST endpoints for the IRE)
 - [[IRE Error Messages]] · [[CMDB Dependent Relationship Rules - Hosting and Containment]] · [[CI Classes, Dependency and Principal Class]] · [[CMDB Modelling Guidelines for Hardware, Virtual Machines and Cloud]]

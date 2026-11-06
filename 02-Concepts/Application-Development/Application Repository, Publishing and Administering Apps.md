@@ -5,7 +5,7 @@ status: documented
 source: ServiceNow docs, Brazil, Building applications > Deploying applications > Administer your apps (whole section, 1,180 cleaned lines, read in full 2026-10-08 through the docs site) - Application sharing; ServiceNow application repository (manage applications, entitlements, release a scope, publish, install, delete, manage and publish and install customizations, convert to application repository mode, convert to development mode, preserve applications during a clone and results after a clone, repository for self-hosted air-gapped customers with install and configuration); Publish an application to the ServiceNow Store; Create application files to include sample data; Publish an application to an Update Set; Queued Application Operations; Custom licensing for ISV applications and its definition; Domain separation and Creator Workflow apps. https://www.servicenow.com/docs/r/application-development/r_ManagingApplications.html
 sn-release: Brazil
 verified:
-updated: 2026-10-08
+updated: 2026-11-06
 ---
 
 # Application Repository, Publishing and Administering Apps
@@ -108,6 +108,8 @@ The latest update of every application file is copied into a new, **complete** u
 **Sample data as application files:** on the list of an application table, filter, then **Create Application Files** (column context menu in List v2, list title menu in List v3) > **Load When**: *New Install and Upgrades*, *New Install*, or *New Install with Demo Data*. It is a snapshot; later changes to the records are not followed.
 
 ## Queued application operations (CI/CD)
+
+Every `sn_cicd` endpoint with its parameters: [[CICD REST APIs]].
 
 Since Tokyo, CI/CD API calls that need the instance-wide update lock (`UpdateMutex`, visible in `sys_mutex`) are **queued** instead of rejected when the lock is busy. The API contracts are unchanged.
 
